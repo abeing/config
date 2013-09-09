@@ -1,0 +1,16 @@
+vbell off
+vbell_msg "Ring"
+
+autodetach on
+
+startup_message off
+
+defscrollback 1000
+
+hardstatus alwayslastline "%{-b gk}%{+b kg}%50>%n %t%{-b gk}%+w %=%C%<"
+
+bindkey "^[[c" next
+bindkey "^[[d" prev
+bindkey "^[[b" focus
+
+altscreen on

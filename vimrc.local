@@ -1,0 +1,8 @@
+set colorcolumn=80
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set smartindent
+colorscheme solarized
+set background=light
+let g:indent_guides_enable_on_vim_startup = 0
