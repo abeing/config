@@ -1,3 +1,5 @@
 [user]
 	email = adam@theorylounge.org
 	name = Adam Miezianko
+[core]
+	editor = vim
