@@ -48,4 +48,5 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/git/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/usr/games/bin
 
 # Customize the ls colours
-eval `dircolors ~/ls-colors-solarized/dircolors`
+# This is apparently not portable to BSD-based systems.
+# eval `dircolors ~/ls-colors-solarized/dircolors`
