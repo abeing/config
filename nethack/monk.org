@@ -35,15 +35,16 @@ spider, glass piercer, gnome, gnome king, gnome lord, gnomish wizard, goblin,
 gold golem, gray dragon, gray ooze, gray unicorn, green-elf, gremlin, grid bug,
 guardian naga hatchling, hill orc, hobbit, hobgoblin, homunculus, horse,
 housecat, human mummy, human zombie, iguana, imp, incubus, iron piercer, jackal,
-killer bee, kitten, kobold, kobold zombie, leprechaun, lichen, lieutenant,
-lizard, lynx, manes, mind flayer, monkey, mountain centaur, mumak, orc-captain,
-orc mummy, orc shaman, owlbear, piranha, pony, quantum mechanic, quasit, rabid
-rat, raven, red naga, rock piercer, rope golem, rothe, rust monster, newt,
-quivering blob, sasquatch, scorpion, sergeant, sewer rat, shrieker, snake,
-soldier, soldier ant, stalker, tengu, tiger, titan, troll, umber hulk, vampire,
-vampire bat, violet fungus, warg, water nymph, wolf, woodland- elf, wood nymph,
-watch captain, watchman, water elemental, water moccasin, werewolf, winter wolf
-cub, wraith, yellow light
+killer bee, kitten, kobold, kobold zombie, leocrotta, leprechaun, lichen,
+lieutenant, lizard, lurker above, lynx, manes, mind flayer, monkey, mountain
+centaur, mumak, ochre jelly, orc-captain, orc mummy, orc shaman, owlbear,
+piranha, plains centaur, pony, quantum mechanic, quasit, rabid rat, raven, red
+naga, rock piercer, rope golem, rothe, rust monster, newt, quivering blob,
+sasquatch, scorpion, sergeant, sewer rat, shrieker, snake, soldier, soldier ant,
+stalker, tengu, tiger, titan, troll, umber hulk, vampire, vampire bat, violet
+fungus, warg, water nymph, wolf, woodland- elf, wood nymph, watch captain,
+watchman, water elemental, water moccasin, werewolf, winter wolf cub, wraith,
+xorn, yellow light
 
 * Food
 
