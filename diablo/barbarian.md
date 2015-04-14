@@ -20,27 +20,37 @@ Acquire
 
 ## Weapon
 
-  - Bul-Kathos Oath [ww]
-  - Heart Slaughter [fc]
-  - Immortal King's Boulder Breaker [ww]
-  - Odyn Son [ww]
-  - Schaefer's Hammer [ww]
-  - Scourge [ww]
-  - Shard of Hate [ww]
-  - Stalgard's Decimator [ww]
-  - The Furnace [ww]
-  - Thunderfury [ww, fc]
+- Bul-Kathos Oath [ww]
+- Devastator [hota]
+- Fury of the Vanished Peak [hota]
+- Gavel of Justice [hota]
+- Heart Slaughter [fc]
+- Immortal King's Boulder Breaker [ww]
+- Maximus [hota]
+- Odyn Son [ww]
+- Remoreseless [hota]
+- Schaefer's Hammer [ww]
+- Scourge [ww]
+- Shard of Hate [ww]
+- Stalgard's Decimator [ww]
+- Sun Keeper [hota]
+- The Burning Axe of Sankis [hota]
+- The Furnace [ww, hota]
+- Thunderfury [ww, fc]
 
 ## Gamble
 
-1. Pants - Immortal King, Reakor
-2. Boots - Immortal King, Reakor
-3. Shoulders - Reakor
-4. Gloves - Immortal King
-5. Helm - Immortal King, Reakor
-6. Chest - Immortal King
-7. Belt - Immortal King
-8. Weapon - Immortal King?
+1. Pants - Immortal King [ww], Reakor [fc]
+2. Boots - Immortal King [ww], Reakor [fc]
+3. Shoulders - Reakor [fc]
+4. Gloves - Immortal King [ww], Magefist [hota]
+5. Helm - Immortal King [ww], Reakor [fc], Andariel's Visage [hota]
+6. Chest - Immortal King [ww, hota], Cindercoat [hota]
+7. Belt - Immortal King [fc]
+8. Ring - Stone of Jordan [hota]
+9. Weapon - Immortal King?
+
+-------------------------------------------------------------------------------
 
 # Whirlwind
 
@@ -66,7 +76,7 @@ Passive
 ## WW Gear
 
 ### Craftable
-  - Aughild'ss Authority
+  - Aughild's Authority
 
 ### Weapons
   1. Bul-Kathos Oath
@@ -74,7 +84,7 @@ Passive
   3. Odyn Son
   4. Scourge
   5. Stalgard's Decimator
-  6. Schaefer's Hammer
+  6. Schaefer's Hammer [HAVE]
   7. Immortal King's Boulder Breaker
   8. Thunderfury
   9. The Furnace
@@ -98,7 +108,11 @@ Defense: Resist All > Armor = Life
 
 Utility: Area Damage > Life on Hit > Cost Reduction
 
+-------------------------------------------------------------------------------
+
 # Furious Charge
+
+- http://www.reddit.com/r/Diablo3Barbarians/wiki/newbie-fc
 
 Mouse
 - Frenzy - Maniac
@@ -147,6 +161,64 @@ Offense: Cooldown Reduction > Crit Damage > Crit Chance
 Defense: Resist All > Armor > Life
 
 Utility: Area Damage > Life on Hit
+
+-------------------------------------------------------------------------------
+
+# Hammer of the Ancients
+
+- http://www.reddit.com/r/Diablo3Barbarians/wiki/hota-2-1-0
+
+Mouse
+- Frenzy / Maniac
+- Hammer of the Ancients / Smash
+
+Action
+- Sprint / Marathon
+- Avalanche / Volcano
+- Batte Rage / Bloodshed
+- Wrath of the Berserker / Insanity
+
+Passive
+- Bloodthirst
+- Superstition
+- Unforgiving
+- Rampage
+
+## HOTA Gear
+
+### Craftable
+- Aughild'ss Authority
+- Devestator
+- Reaper's Wraps [HAVE]
+
+### Weapons
+1. Gavel of Justice
+2. Fury of the Vanished Peak
+3. The Furnace
+4. Maximus
+5. Remoreseless
+6. The Burning Axe of Sankis
+7. Sun Keeper
+8. Devastator
+
+### Gems
+  1. Bane of the Trapped (Rank 25) [HAVE]
+  2. Pain Enhancer
+  3. Taeguk (avoid)
+  4. Gem of Efficacious Toxin
+  5. Bane of the Powerful [HAVE]
+  6. Wreath of Lightning
+  7. Mirinae [HAVE]
+
+## WW Paragon Points
+
+Core: Movement Speed to 25% > Strength > Vitality
+
+Offense: Crit Damage > Crit Chance > Attack Speed
+
+Defense: Resist All > Armor = Life
+
+Utility: Area Damage > Life on Hit > Cost Reduction
 
 -------------------------------------------------------------------------------
 
