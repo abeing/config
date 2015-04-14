@@ -8,12 +8,12 @@
 ## Gems
 
 Level
-  1. Bane of the Powerful
+  1. Bane of the Trapped
+  2. Bane of the Powerful
+  3. Mirinae, Teardrop of the Starweaver
 
 Acquire
-  - Bane of the Trapped (Rank 25) [ww-1, fc-1]
   - Gem of Efficacious Toxin [ww-3, fc-3]
-  - Mirinae [ww-7, fc-4]
   - Pain Enhancer [ww-2, fc-2]
   - Taeguk (avoid)
   - Wreath of Lightning [ww-6, fc-5]
@@ -80,13 +80,13 @@ Passive
   9. The Furnace
 
 ### Gems
-  1. Bane of the Trapped (Rank 25)
+  1. Bane of the Trapped (Rank 25) [HAVE]
   2. Pain Enhancer
   3. Taeguk (avoid)
   4. Gem of Efficacious Toxin
   5. Bane of the Powerful [HAVE]
   6. Wreath of Lightning
-  7. Mirinae
+  7. Mirinae [HAVE]
 
 ## WW Paragon Points
 
