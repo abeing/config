@@ -7,7 +7,7 @@ startup_message off
 
 defscrollback 1000
 
-hardstatus alwayslastline "%{-b gk}%{+b kg}%50>%n %t%{-b gk}%+w %=%C%<"
+hardstatus alwayslastline '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{+b m}(%{W}%n*%f%t%?(%u)%?%{m})%{-b w}%?%+Lw%?%?%= %{g}][%{c} %D %M %d %{g}%c %{g}]'
 
 bindkey "^[[c" next
 bindkey "^[[d" prev
