@@ -1,10 +1,140 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" I never use vi, so I want the better vim configuration. 
+set nocompatible
+
+" Number of lines of command history.
+set history=700 
+
+" UNK Enable filetype plugins
+" filetype plugin on
+" filetype indent on
+
+" Auto read a file changed from outside vim.
+set autoread
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colors and Fonts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Zen Burn!
+colorscheme zenburn
+
+" I like syntax highlighting.
+syntax enable
+
+" Draw a colum at 80 for visual width.
 set colorcolumn=80
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" User Interface
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Number of lines to scroll when moving past the edge of the window.
+set scrolloff=10
+
+" Wildcard (autocomplete) menu.
+set wildmenu
+
+" Ignore compiled and other temporary files when completing.
+set wildignore=*.o,*~,*.pyc
+
+" Always show the current position.
+set ruler
+
+" UNK Height of the command bar.
+set cmdheight=2
+
+" Show matching brackets when text cursor is over one of them.
+set showmatch
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Status Line
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Always show the status line.
+set laststatus=2
+
+set statusline=
+set statusline+=%9(%l,%c%)  " Line, character.
+set statusline+=\ %f " Buffer number, file name without path.
+set statusline+=\ %h%m%r%w  " Status flags.
+set statusline+=%=
+set statusline+=%q
+set statusline+=\ %n
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Searching 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Ignore case when searching.
+set ignorecase
+
+" When searching try to be smart about cases.
+set smartcase
+
+" Highlight search results.
+set hlsearch
+
+" Makes search act like search in modern broswers.
+set incsearch
+
+" Disable highlight when <leader><cr> is pressed.
+map <silent> <leader><cr> :noh<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tabs and Indentation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Use spaces instead of tabs.
 set expandtab
+
+" Be smart when using tabs.
+set smarttab
+
+" 1 tab = 2 spaces.
 set shiftwidth=2
 set softtabstop=2
+
+" Indent when writing new lines, smartly and automatically.
+set autoindent
 set smartindent
-colorscheme solarized
-set background=dark
+
+" Highlight prolematic whitespace
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Moving around, tabs, windows and buffers.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Treat long lines as break lines (useful when moving around in them.
+map j gj
+map k gk
+
+" Smart way to move between windows.
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Close the current buffer.
+map <leader>bd :Bclose<cr>
+
+" Close all the buffers.
+map <leader>ba :1,1000 bd!<cr>
+
+" Useful mappings for managing tabs.
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+" Switch CWD to the directory of the open buffer.
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
 let g:indent_guides_enable_on_vim_startup = 0
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
