@@ -95,8 +95,8 @@ set expandtab
 set smarttab
 
 " 1 tab = 2 spaces.
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " Indent when writing new lines, smartly and automatically.
 set autoindent
@@ -105,6 +105,10 @@ set smartindent
 " Highlight prolematic whitespace
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
+
+" If using indent_guides plugin, I like to have sane settings.
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Moving around, tabs, windows and buffers.
