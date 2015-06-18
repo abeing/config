@@ -6,6 +6,12 @@
     and 8 red pixels.
   - Craft a digital key and four red pixel potions.
 
+- Qiwi to wear Shiny Ring at 10 Mysticality
+
+# Qiwi
+
+- Do the guild introductory quests: meatcar and Whitey's Grove.
+
 # Ascension Guide
 
 http://board404.c6h12o6.co.uk/showthread.php?tid=545
@@ -94,7 +100,7 @@ Items to pull from Hangk's:
 - Scrumptious reagent potions and cocktailcrafting ingredients.
 
 Familiars, necessary and 20lbs:
-- Mosquito
+* Mosquito
 - Levitating Potato
 - Barrrnacle
 - Angry goat
@@ -146,10 +152,6 @@ Hermit:
 - Buy some ten-leaf clovers from the Hermit.
 
 # Quests
-
-## The Rain on the Plain is Mainly Garbage (Council 10)
-
-I'm able to explore the ground floor of the castle now.
 
 ## Black to the Future (Council unknown)
 
