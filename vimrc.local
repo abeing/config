@@ -66,7 +66,7 @@ set statusline+=%q
 set statusline+=\ %n
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Searching 
+" Searching and diffing
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Ignore case when searching.
@@ -83,6 +83,11 @@ set incsearch
 
 " Disable highlight when <leader><cr> is pressed.
 map <silent> <leader><cr> :noh<cr>
+
+" Ignore whitespace differences in diff mode.
+if &diff
+    set diffopt+=iwhite
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tabs and Indentation
