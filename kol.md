@@ -1,7 +1,7 @@
 # Things
 
-- The Haunted Pantry, in Spookyraven Manor on the Right Side of the Tracks
-- The Outskirts of Cobb's Knob, on the Nearby Plains
+- Go to the Misspelled Cemetary in the Plains, find Fernswarthy's grave, and
+  get the key to his tower.
 
 - Finish exploring the Typical Tavern's basement
 
@@ -27,8 +27,8 @@ Unlock early on:
 * After ascending, open the Pork Elf Goodies Sack and sell the five gems.
 - Do the guild introductory quests: meatcar and Whitey's Grove.
 - Unlock the Hidden Temple.
-- Build the meatcar.
-- Recover the Untinker's hammer.
+* Build the meatcar.
+* Recover the Untinker's hammer.
 - The Inexplicable Door. Make a Digital Key (40 white pixels) and four red
   pixel potions.
 
