@@ -1,16 +1,23 @@
 # Things
 
-- Make a digital key and four red pixel potions
-  - Equip the Continuum Transfunctioner
-  - Adventure in The Inexplicable Door until I have 40 white pixels, 12 black,
-    and 8 red pixels.
-  - Craft a digital key and four red pixel potions.
+- The Haunted Pantry, in Spookyraven Manor on the Right Side of the Tracks
+- The Outskirts of Cobb's Knob, on the Nearby Plains
 
-- Qiwi to wear Shiny Ring at 10 Mysticality
+- Finish exploring the Typical Tavern's basement
 
-# Qiwi
+- Make Barskin tent
+  - Get wooden stakes from Arboreal Respite in Spooky Forest
+    - Follow the stream then knock on the cottage door
 
-- Do the guild introductory quests: meatcar and Whitey's Grove.
+- meat maid
+  + meat maid body
+  - meat maid head
+    - brainy skull
+      - smart skull
+        - four-leaf at The VERY Unquiet Graves
+      - disembodied brain
+        - four-leaf at The VERY Unquiet Graves
+    + maiden wig
 
 # Ascension Guide
 
@@ -18,10 +25,10 @@ http://board404.c6h12o6.co.uk/showthread.php?tid=545
 
 Unlock early on:
 * After ascending, open the Pork Elf Goodies Sack and sell the five gems.
-* Do the guild introductory quests: meatcar and Whitey's Grove.
-* Unlock the Hidden Temple.
-* Build the meatcar.
-* Recover the Untinker's hammer.
+- Do the guild introductory quests: meatcar and Whitey's Grove.
+- Unlock the Hidden Temple.
+- Build the meatcar.
+- Recover the Untinker's hammer.
 - The Inexplicable Door. Make a Digital Key (40 white pixels) and four red
   pixel potions.
 
@@ -34,9 +41,9 @@ Unlock leater on (level 7+):
 - Cell 37 (level 8+)
 - The Shore
 - Cap'm Caronch's denture / the pirate ship
-* Strange Leaflet quest
+- Strange Leaflet quest
 - The Hole in the Sky
-* Spookyraven Manor
+- Spookyraven Manor
 
 Buffs:
 - Ball Pit or Vending Machine in clan hall.
@@ -48,7 +55,7 @@ Items:
 - Mysterious Silver Lapel Pin: regenerats 5-9 HP per adventure.
 - Heart of the Volacno: regenerates 10-20 HP per adventure and 2-5 MP per
   adventure.
-- Mr. Accessory: +15 all attributes. For cash, can wear three.
+* Mr. Accessory: +15 all attributes. For cash, can wear three.
 - Astral Shirt: +10% all attributes. After ascending at least twice, for
   Torso Awaregness.
 
@@ -135,7 +142,6 @@ Removing negative effects:
 - `Soft green echo eyedrop antidote` and `anti-anti-antidote` (poison only)
 
 Hermit:
-- Sweet Rims: for meatcar.
 - Dingy planks: for dingy dinghy.
 - Volleyball, seal tooth: for blood-faced volleyball familiar.
 - Epic Weapon quest (varies)
@@ -153,70 +159,24 @@ Hermit:
 
 # Quests
 
-## Black to the Future (Council unknown)
-
-Part of Snaugh and the Quest for the Holy MacGuffin.
-
-## Snaugh and the Quest for the Holy MacGuffin (Council 11)
-
-Currently on stage: Black to the Future.
-
-## Make War, Not... Oh, Wait (Council 12)
-
-## Me and My Nemesis
-
-On the last stage: The Secret Tropical Island Volcano Lair. Use the map to
-access the volcano lair.
-
-Equip the fouet de tortue-dressage and use Apprivoisez la tortue on turtle
-guards with little hats in the Outer Compound.
-
-## An Old Guy and The Ocean
-
-## Who Hunts The Easy Hunters
-
-## Who Hunts The Hard Hunters
-
-## A Quest, LOL
-
-## Helping Make Ends Meat
-
-The Meatsmith wants you to recover his check from the Skeleton Store in Market
-Square.
-
-# Give a Hippy a Boat...
-
-Find a boat for the hippy near the Old Landfill.
-
-- Fight junksprites in the Landfill to obtain funky junky keys and Worse Homes
-  and Gardens.
-- Each time you adventure in the Landfill with a key in inventory, you will
-  access the choice adventure Once More Unto the Junk. Navigate this adventure
-  three times to obtain the three quest items:
-  - Go left to the bathroom and take the tub to obtain an old claw-foot
-    bathtub.
-  - Go center to the den and take the antenna to obtain an old clothesline
-    pole.
-  - Go right to the workshop and take the sign to obtain an antique cigar sign.
-- Go to your inventory and read Worse Homes and Gardens. Choose to craft the
-  junk junk.
-- Return to the hippy to complete the quest.
-
-# Future Quests
-
-Council:
-- The Ultimate Final Epic Conflict of the Ages
-
-Guild:
-- Snaugh's Delivery Service
-
-Other:
-
-After ascending:
-- A Bugbear of a Problem
-- Going Postal
-
 # Cooking
+
+## Recipes
+
+*bat wing* + skewer = bat wing kabob
+*batgut* + spices = bat haggis
+*enchanted bean* + flat dough = enchanted bean burrito
+*rat appendix* + skewer = rat appendix kabob
+
+## Cooking Sources
+
+flat dough - use wad of dough
+skewer - The Bugbear Bakery, 80 meat
+wad of dough - The Bugbear Bakery, 80 meat
+
+## Stir Fry
+
+- bat wing
 
 ## Pizzas
 
