@@ -1,4 +1,41 @@
-# Northshire Abbey (1-5)
+# List Building
+
+## Parsed
+
+Alchemy Items
+Cooking Items
+
+Warrior Quests
+
+Stormwind
+Westfall
+Redridge Mountains
+Stranglethorn Vale
+
+Eastern Kingdoms
+  Alterac Mountains
+  Arathi Highlands
+  Badlands
+  Blackrock Mountain
+  Blasted Lands
+  Burning Steppes
+  Deadwind Pass
+  Deeprun Tram
+  Dustkwood
+  Eastern Plaguelands
+  Elwynn Forst
+  Northshire Abbey
+
+## To Parse
+
+Eastern Kingdoms
+  Dun Morogh
+Cooking Quests
+Fishing Quests
+
+# Quests
+
+## Northshire Abbey (1-5)
 
 [1] A Threat Within
 [2] Kobold Camp Cleanup
@@ -81,6 +118,24 @@ Drop: ??? (from gnolls)
 [10] The Collector
 [10] Manhunt
 
+## Warrior 1-10
+
+{Northshire Abbey: Kobold Camp Cleanup}
+[1] Simple Letter
+
+[1] Simple Memorandum (for rep, maybe)
+[1] Simple Rune (for rep, maybe)
+[1] Simple Sigil (for rep, maybe)
+
+Elwynn Forest:
+[10] A Warrior's Training
+[10] Bartleby the Drunk
+[10] Beat Bartelby
+[10] Bartleby's Mug
+
+[10] Marshal Haggard
+[10] Dead-tooth Jack
+
 # Westfall (10-20)
 
 [10] A Swift Message
@@ -141,6 +196,11 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 [16] Stormwind Library
 
 [20] A Donation of Wool
+
+## Deeprun Tram (12)
+
+[12] Deeprun Rat Roundup
+[12] Me Brother, Nipsy
 
 # Redridge Mountains (15-25)
 
@@ -235,6 +295,32 @@ Drop: An Unsent Letter (from Edwin VanCleef in The Deadmines)
 [31] The Head of the Beast
 [31] Brotherhood's End
 [31] An Audience with the King
+
+## Warrior 20-30
+
+Wu Shen, Weapon Trainer in Stormwind:
+[20] Yorus Barleybrew
+[22] The Rethban Gauntlet
+[22] The Shieldsmith
+[28+] Fire Hardened Mail
+
+{Fire Hardened Mail}
+[28] Grimand Elmore
+[28] Burning Blood
+[30] Grimand's Armor
+
+{Fire Hardened Mail}
+[28] Mathiel
+[30] Sunscorched Shells
+[30] Mathiel's Armor
+
+{Fire Hardened Mail}
+[28] Klockmort Spannerspan
+[29] Iron Coral
+[30] Klockmort's Creation
+
+{Fire Hardened Mail}
+[60] Furen's Armor [uncatagorized]
 
 # Stormwind (20-30)
 
@@ -362,6 +448,122 @@ Drop: An Old History Book (anywhere in the zone?)
 {Stormwind: Vital Supplies}
 [45] Supplies for Nethergarde
 
+## Warrior (30-40)
+
+[30] The Islander
+[30] The Affray
+[30] The Windwatcher
+[40] Cyclonian
+[40+] The Summoning
+[40] Whirlwind Weapon
+
+{Cyclonian}
+[37] Essense of the Exile
+
+## Stranglethorn Vale (30-45)
+
+[30] Welcome to the Jungle
+
+{Welcome to the Jungle}
+[31] Tiger Mastery
+[33] Tiger Mastery
+[35] Tiger Mastery
+[37] Tiger Mastery
+
+{Welcome to the Jungle}
+[31] Panther Mastery
+[33] Panther Mastery
+[38] Panther Mastery
+[40+] Panther Mastery
+
+{Welcome to the Jungle}
+[34] Raptor Mastery
+[36] Raptor Mastery
+[41] Raptor Mastery
+[43+] Raptor Mastery
+
+[31] Supply and Demand
+[36] Some Assembly Required
+[38+] Excelsior
+
+[32] Investigate the Camp
+
+[32] Supplies for Private Thorsen
+
+[33] Jungle Secrets
+[35] Bookie Herod
+[37] The Hidden Key
+[37] The Spy Revealed!
+[37] Patrol Schedules
+[37] Report to Doren
+
+[33] The Second Rebellion {and}
+  [34] Bad Medicine
+[38] Special Forces
+[40+] Colonel Kurzen
+[38] Kurzen's Mystery
+[40] Troll Witchery
+[46+] Mai'Zoth
+
+[35] Singing Blue Shards
+[41] Venture Company Mining
+
+[35] Bloodscalp Ears
+[42] Skullsplitter Tusks
+
+[36] Hostile Takover
+
+[37] Krazek's Cookery
+[37] Favor for Krazek
+[37] Return to Corporal Kaleb
+
+[37] The Haunted Isle
+[37] The Stone of the Tides
+[37] Water Elementals
+[37] Magical Analysis
+[37] Ansirem's Key
+[39] "Pretty Boy" Duncan
+[40+] The Curse of the Tides
+
+{Welcome to the Jungle}
+[40] The Green Hills of Stranglethorn
+[40] Chapter I {and}
+[40] Chapter II {and}
+[40] Chapter III {and}
+[40] Chapter IV
+
+[41] Scaring Shaky
+[41] Return to MacKinley
+[44] Voodoo Dues
+[44+] Cracking Maury's Foot
+
+[41] The Bloodsail Buccaneers {and}
+  [42] Keep An Eye Out
+  [41] Up to Snuff
+[41] The Bloodsail Buccaneers
+[41] The Bloodsail Buccaneers
+[43] The Bloodsail Buccaneers
+[45] The Bloodsail Buccaneers
+
+[43] Akiris by the Bundle
+[43] Akiris by the Bundle
+
+Drop: Cortello's Riddle (looted in pirate camps)
+[43] Cortello's Riddle
+[43] Cortello's Riddle
+[51] Cortello's Riddle
+
+{Tiger Mastery}
+{Panther Mastery}
+{Raptor Mastery}
+[43+] Big Game Hunter
+
+[44] Zanzil's Secret
+{Thousand Needles: Zanzil's Mixture and a Fool's Stout}
+
+[45] Stranglethorn Fever
+[45] Stranglethorn Fever
+
 # Stormwind (30-40)
 
 [32] Malin's Request
@@ -378,6 +580,141 @@ Drop: An Old History Book (anywhere in the zone?)
 [40] A Meal Served Cold
 
 [40+] The Perenolde Tiara
+
+## Alterac Mountains (33-40)
+
+Magistrate Henry Maleb in Southshore
+[33] Syndicate Assassins
+
+Henchman Valik in Syndicate Camp
+[34] Valik
+
+[36] Crushridge Bounty
+[40+] Crushridge Warmongers
+
+Drop: Assassin's Contract (from Shadowy Assassin)
+[38] Assassin's Contract
+[40] Baron's Demise
+
+Item: Syndicate Documents
+[34] Foreboding Plans
+[36] Noble Deaths
+
+Item: Syndicate Documents
+[34] Encrypted Letter
+[34] Letter to Stormpike
+[34] Further Mysteries
+[40] Dark Council
+
+Item: The Encorcelled Parchment in a Worn Wooden Chest?
+[40] The Ensorcelled Parchment
+[40] Stormpike's Deciphering
+
+## Badlands (35-45)
+
+[35] A Dwarf and His Tools
+
+Object: Crumpled Map
+[35] A Sign of Hope
+{Uldaman: A Sign of Hope}
+{Uldaman: Amulet of Secrets}
+[40] Prospect of Faith
+[40] Prospect of Faith
+[40] Passing Word of a Threat
+[40] Passing Word of a Threat
+[44+] An Ambassador of Evil
+{Uldaman: The Lost Tablet of Will}
+
+[37] Study of the Elements: Rock
+[39] Study of the Elements: Rock
+[42] Study of the Elements: Rock
+
+[37] Coolant Heads Prevail
+[37] Gyro... What?
+[37] Liquid Stone
+
+[37+] Pearl Diving
+
+{Ironforge: Ironband Wants You!}
+[38] Find Agmond
+[42] Murdaloc
+{Uldaman: Agmond's Fate}
+
+[38] Mirages
+[40] Scrounging {and}
+[43] Tremors of the Earth
+[50+] Tremors of the Earth
+[50] Seal of the Earth
+
+Drop: The Black Box (from Zaricotl)
+[40] The Black Box
+
+{Uldaman: Solution to Doom}
+[40] To Ironforge for Yagyin's Digest
+[44+] The Star, the Hand and the Heart
+[40] Forbidden Knowledge
+
+{Theldurin the Lost}
+[41] The Lost Fragments
+{Summoning the Princess}
+
+{Gyro... What?}
+{Study of Elements: Rock}
+[42] This Is Going to Be Hard
+[42] This Is Going to Be Hard
+[45] This Is Going to Be Hard
+
+{Study of Elements: Rock}
+[42] Stone Is Better than Cloth
+
+[40] Barbecued Buzzard Wings
+
+[45+] Fiery Blaze Enchantments
+
+## Arathi Highlands (35-50)
+
+[29+pvp] Claiming Arathi Basin (repeatable)
+
+[31] Northfold Manor
+[37+] Stromgarde Badges
+
+[35] Land Ho!
+[40] Deep Sea Salvage
+
+[35] Legends of the Earth
+
+Drop: Pendant of Myzrael
+[35] Crystal in the Mountains
+Object: Shards of Myzrael
+[37] The Princess Trapped
+[38] Stones of Binding
+[42+] Breaking the Keystone
+[40] Myzrael's Allies
+[40] Theldurin the Lost
+{Badlands: The Lost Fragments}
+[50+] Summoning the Princess
+
+{Stormwind: Malin's Request}
+[36] Worth Its Weight in Gold
+[39] Wand over Fist
+[39+] Trelane's Defenses
+[39+] An Apprentice's Enchantment
+[39+] Attack on the Tower
+[39+] Malin's Request
+
+[39+] Wanted! Marez Cowl
+
+[40] Drowned Sorrows
+
+[40+] Wanted! Otto and Falconcrest
+
+Professor Phizzlethorpe
+[40] Sunken Treasure
+[40] Sunken Treasure
+[40] Sunken Treasure
+[40] Sunken Treasure
+[40] Sunken Treasure
+[44] Death From Below
 
 # Westfall (44+)
 
@@ -410,7 +747,81 @@ Drop: An Old History Book (anywhere in the zone?)
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
 
-# Stormwind (50-60)
+## Warrior (50+)
+
+[52] A Troubled Spirit
+[52] Warrior Kinship
+[52] War on the Shadowsworn
+[52++] Voodoo Feathers
+
+# Stranglethorn Vale (50+)
+
+[50] Whiskey Slim's Lost Grog
+
+[51+] The Captain's Chest
+
+Drop: Carefully Folded Note (in half-buried bottle on the beach)
+[45] Message in a Bottle
+[51+] Message in a Bottle
+
+Drop: Monogrammed Sash (Mok'rash in Stranglethorn Vale)
+[50+] The Monogrammed Sash
+[51] The Captain's Cutlass
+[52+] Facing Negolash
+
+[52] Enticing Negolash
+
+Bloodsail Bucaneer reputation grind
+[55] Dressing the Part
+[60] Avast Ye, Scallywag
+[60] Avast Ye, Admiral!
+[1] Traitor to the Bloodsail
+
+Drop: Arena Master
+[55pvp] Arena Master
+[45] Arena Grandmaster
+
+## Blasted Lands (50-55)
+
+[50] A Boar's Vitality
+[50] Spirit of the Boar
+
+[50] The Basilisk's Bite
+[50] Infallible Minds
+
+[50] Snickerfang Jowls
+[50] Rage of Ages
+
+[50] The Decisive Striker
+[50] Salt of the Scorpok
+
+[50] Vulture's Vigor
+[50] Spiritual Domination
+
+[55] To Serve Kum'isha
+[55] Kum'isha's Endeavors
+
+[55] Everything Counts in Large Amounts
+[55] One Draenei's Junk
+
+## Burning Steppes (50-56)
+
+[50] Tablet of the Seven
+
+[52] Extinguish the Firegut
+[53] Gor'tesh the Brute Lord
+[53] Ogre Head On A Stick = Party
+
+[56] FIFTY! YEP!
+
+Repeatable Shoulder Enchants
+[55] Libram of Constitution
+[55] Libram of Resilience
+[55] Libram of Rumination
+[55] Libram of Tenacity
+[55] Libram of Voracity
+
+## Stormwind (50-60)
 
 {Western Plaguelands: Better Late Than Never}
 [52] Good Natured Emma
@@ -422,19 +833,40 @@ Drop: An Old History Book (anywhere in the zone?)
 [55] The New Frontier
 {Darnassus: The New Frontier}
 
-# Stormwind 60+
+## Blackrock Mountain (52+)
 
-[60+] The First and the Last
-[60+] Honor the Dead
-{Western and Eastern Plaguelands}
-[60+] The Blightcaller Cometh
-{Eastern Plaguelands}
+[52D] Overmaster Pyron
+{Blackrock Depths: Incendius}
 
-{Blackrock Depths: Jail Break!}
-[60+++] Stormwind Rendezvous
-[60+++] The Great Masquerade
-[60+++] The Dragon's Eye
-{Blackrock Spire: Drakefire Amulet}
+## Eastern Plaguelands (55-60)
+
+[10] Augustus' Receipt Book
+
+[55] Argent Dawn Commission [repeatable]
+
+[55] Zaeldarr the Outcast
+
+[56] Blood Tinged Skies
+
+[56] Carrion Grubbage
+
+[58] That's Asking A Lot
+[58+] When Smokey Sings, I Get Violent
+
+[60] Hamey's Plea
+
+[60] Writ of Safe Passage
+
+[60] The Ranger Lord's Behest
+[60+] Duskwing, Oh How I Hate Thee...
+{Stratholme: Ramstein}
+
+[60D] The Restless Souls
+{Strathomlme: The Restless Souls}
+
+[60pvp] Establishing New Outposts
+
+## Stormwind 60+
 
 Drop: Head of Onyxia (from Onyxia in Onyxia's Lair)
 [60] Victory for the Alliance
@@ -521,3 +953,459 @@ Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
 [300] Flask of Supreme Power (Drop: Ras Frostwhipser in Scholomance)
 [300] Flask of the Titans (Drop: General Drakkisath in Upper Blackrock Spire)
 [300] Transmute Elemental Fire (Reputation: Thorium Brotherhood Friendly)
+
+# Cooking
+
+[1] Crispy Bat Wing (Horde Vendor: Abigail Shiel)
+[1] Brilliant Smallfish (Vendor: Catherine Leland in Stormwind)
+[1] Gingerbread Cookie (Winter Veil event)
+[1] Slitherskin Mackerel (Vendor: Kriggon Talsone in Westfall)
+[10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
+[20] Scorpid Surprise (Horde Only)
+[25] Beer Basted Boar Ribs (Quest: Beer Basted Boar Ribs in Dun Morogh)
+[35] Roasted Kodo Meat (Horde Only)
+[35] Egg Nog (Winter Veil event)
+[40] Smoked Bear Meat (Vendor: Drac Roughcut in Loch Modan)
+[50] Fillet of Frenzy (Vendor: Laird in Felwood)
+[50] Goretusk Liver Pie (Quest: Goretusk Liver Pie in Westfall)
+[50] Loch Frenzy Delight (Vendor: Khara Deepwater in Loch Modan)
+[50] Longjaw Mud Snapper (Vendor: Khara Deepwater in Loch Modan)
+[50] Rainbow Fin Albacore (Vendor: Catherine Leland in Stormwind City)
+[50] Strider Stew (Quest: Easy Strider Living in Darkshore)
+[60] Blood Sausage (Quest: Thelsamar Blood Sausages in Loch Modan)
+[60] Thistle Tea (Vendor: Smudge Thunderwood in Hillsbrad)
+[75] Westfall Stew (Quest: Westfall Stew in Westfall)
+[80] Crocolisk Steak (Quest: Crocolisk Hunting in Loch Modan)
+[80] Smoked Sagefish (Vendor: Kelsey Yance in Stranglethorn Vale)
+[85] Savory Deviate Delight (Zone Drop: The Barrens)
+[85] Cooked Crab Claw (Vendor: Kendor Kabonka in Stormwind)
+[90] Clam Chowder (Vendor: Kriggon Talsone in Westfall)
+[90] Dig Rat Stew (Horde Only)
+[90] Murloc Fin Soup (Quest: Selling Fish in Redridge Mountains)
+[100] Bristle Whisker Catfish (Vendor: Catherine Leland in Stormwind)
+[100] Crispy Lizard Tail (Horde Only)
+[100] Redridge Goulash (Quest: Redridge Goulash in Redridge Mountains)
+[100] Seasoned Wolf Kabob (Quest: Seasoned Wolf Kabobs in Duskwood)
+[110] Big Bear Steak (Vendor: Ulthaan in Stonetalon Mountains)
+[110] Gooey Spider Cake (Quest: Dusky Crab Cakes in Duskwood)
+[110] Lean Venison (Vendor: Ulthaan in Stonetalon Mountains)
+[110] Succulent Pork Ribs (Vendor: Kendor Kabonka in Stormwind City)
+[120] Crocolisk Gumbo (Quest: Apprentice's Duties in Wetlands)
+[125] Expert Cookbook (Vendor: Shandrina in Stonetalon Mountains)
+[125] Hot Lion Chops (Vendor: Vendor-Tron 1000 in Desolace)
+[125] Lean Wolf Steak (Vendor: Super-Seller 680 in Desolace)
+[130] Curiously Tasty Omlete (Quest: Ormer's Revenge in Wetlands)
+[150] Heavy Crocolisk Stew (Horde Only)
+[150] Tasty Lion Steak (Quest: Costly Menace in Hillsbrad Foothills)
+[175] Barbecued Buzzard Wing (Quest: [40] Barbecued Buzzard Wings in Badlands)
+[175] Carrion Surprise (Vendor: Vendor-Tron 1000 in Desolace)
+[175] Giant Clam Scorcho (Vendor: Kelsey Yance in Stranglethorn Vale)
+[175] Hot Wolf Ribs (Vendor: Vivianna in Feralas)
+[175] Jungle Stew (Vendor: Corporal Bluth in Stranglethorn Vale)
+[175] Mithril Head Trout (Vendor: Kelsey Yance in Stranglethorn Vale)
+[175] Mystery Stew (Vendor: Janet Hommers in Stonetalon Mountains)
+[175] Roast Raptor (Vendor: Corporal Bluth in Stranglethorn Vale)
+[175] Rockscale Cod (Vendor: Kelsey Yance in Stranglethorn Vale)
+[175] Soothing Turtle Bisque (Quest: Soothing Turtle Bisque in Hillsbrad Foothills)
+[175] Sagefish Delight (Vendor: Kelsey Yance in Stranglethorn Vale)
+[200] Dragonbreath Chili (Vendor: Helenia Olden in The Barrens) [SS]
+[200] Heavy Kodo Stew (Vendor: Janet Hommers in Stonetalon Mountains)
+[225] Cooked Glossy Mightfish (Vendor: Kelsey Yance in Stranglethorn Vale)
+[225] Filet of Redgill (Vendor: Kelsey Yance in Stranglethorn Vale)
+[225] Monster Omelet (Vendor: Himmik in Winterspring)
+[225] Spiced Chili Crab (Vendor: Kriggon Talsone in Westfall)
+[225] Spotted Yellowtail (Vendor: Gikkix in Tanaris)
+[225] Tender Wolf Steak (Vendor: Dirge Quickcleave in Tanaris)
+[225] Undermine Clam Chowder (Vendor: Jabbey in Tanaris)
+[240] Grilled Squid (Vendor: Gikkix in Tanaris)
+[240] Hot Smoked Bass (Vendor: Kelsey Yance in Stranglethorn Vale)
+[250] Nightfin Soup (Vendor: Gikkix in Tanaris)
+[250] Poached Sunscale Salmon (Vendor: Gikkix in Tanaris)
+[275] Baked Salmon (Vendor: Vivianna in Feralas)
+[275] Runn Tum Tuber Surprise (Drop: Pusillin in Dire Maul)
+[275] Lobster Stew (Vendor: Vivianna in Feralas)
+[275] Mightfish Steak (Vendor: Viviana in Feralas)
+[300] Dirge's Kickin' Chimaerok Chops (Quest: Dirge's Kickin' Chimaerok Chops)
+
+# Epic Quest Chains
+
+## Zul'Gurub (44-60)
+
+Tanaris
+[44] Screecher Spirits
+
+Zul'Farrak
+[47D] The Prophecy of Mosh'aru
+
+The Hinterlands
+[50+] The Ancient Egg
+
+Sunken Temple
+[53D] The God Hakkar
+
+Eastern Plaguelands
+[58+] The Lost Tablets of Mosh'aru
+
+Blackrock Spire
+[58] The Final Tablets
+
+Zul'Gurub
+[58] Confront Yeh'kinya
+
+Tanaris
+[60] The Hand of Rastakhan
+
+## Black Dragon Molt (48-58)
+
+Searing Gorge
+[48] Divine Retribution
+[48] The Flawless Flame
+[48] Forging the Shaft
+[50] The Flame's Casing
+[50] The Torch of Retribution
+[50] The Torch of Retribution
+[50] Squire Maltrake
+[52] Set Them Ablaze!
+[50] Trinkets...
+
+Burning Steppes
+[54] A Taste of Flame
+[58D] A Taste of Flame
+
+## Fragments of the Past (56-57)
+
+Felwood [56] To Winterspring!
+-or-
+Darnassus [56] Starfall
+
+Winterspring
+[56] The Ruins of Kel'Theril
+[56] Troubled Spirits of Kel'Theril
+
+Eastern Plaguelands
+[56] Fragments of the Past
+[57+] Fragments of the Past
+[58] Tormented By the Past
+
+Winterspring
+[60] Remourseful Highborne
+[58] The Crystal of Zin-Malor
+
+## Frozen Eggs / Dawn's Gambit (54-60)
+
+Burning Steppes
+[52] Broodling Essence
+[54] Felnok Steelspring
+
+Winterspring
+[54] Chillwind Horns
+[54] Return to Tinkee
+
+Blackrock Spire
+[60R] Tinkee Steamboil
+[60R] Egg Freezing
+[60R] Egg Collection
+
+Burning Steppes
+[60D] Leonid Barthalomew
+
+Scholomance
+[60D] Betina Bigglezink
+[60D] Dawn's Gambit
+
+## Darrowshire (55-60)
+
+Eastern Plaguelands
+
+Either
+  [55] Sister Pamela
+  [55] Little Pamela
+[55] Pamela's Doll
+
+Side Quests
+  {Pamela's Doll}
+  [56] Uncle Carlin
+  [55] Defenders of Darrowshire
+
+{Pamela's Doll}
+[56] Auntie Marlene
+[56+] A Strange Historian
+
+Western Plaguelands
+[56] The Annals of Darrowshire
+
+Eastern Plaguelands
+[56] Brother Carlin
+Both
+  [57] Visions of Darrowshire
+  [56+] Heroes of Darrowshire
+[60] Marauders of Darrowshire
+[60] Return to Chromie
+[60R] The Battle of Darrowshire
+[60] Hidden Treasures
+
+## Fallen Hero of the Horde (57-60)
+
+[57] Petty Squabbles
+[57] A Tale of Sorrow
+[57] The Stones That Bind Us
+[57] Heroes of Old
+[57] Heroes of Old
+[58+] Kirith
+[60] The Cover of Darkness
+[60] The Demon Hunter
+
+Azshara
+[57] Loramus
+[58] Breaking the Ward
+[58] The Name of the Beast
+[58+] The Name of the Beast
+[58] The Name of the Beast
+[58+] Azsharite
+[58] The Formation of Felbane
+
+Stranglethorn Vale
+[58] Enchanted Azsharite Fel Weaponry
+[58] Return to the Blasted Lands
+
+Blasted Lands
+[60+] Uniting the Shattered Amulet
+[60+] You Are Rakh'likh, Demon
+
+## Tyrion Fordring (56-60)
+
+[56] Demon Dogs
+[56] Redemption
+[57] Of Forgotten Memories
+[58] Of Lost Honor
+[58] Of Love and Family
+[58] Of Love and Family
+
+Western Plaguelands
+[60] Find Myranda
+[60] Scarlet Subterfuge
+[60] In Dreams
+
+## Blightcaller (60)
+
+Stormwind City
+[60] The First and the Last
+[60] Honor the Dead
+
+Western Plaguelands
+[60] Flint Shadowmore
+
+Eastern Plaguelands
+[60+] The Eastern Plagues
+
+Stormwind City
+[60] The Blightcaller Cometh
+
+Eastern Plaguelands
+[60R] Order Must Be Restored
+
+## The Argent Hold (60)
+
+Stratholme
+[60D] The Archivist
+Drop: Head of Balnazzar
+[60D] The Truth Comes Crashing Down
+[60D] Above and Beyond
+
+Eastern Plaguelands
+[60+] Lord Maxwell Tyrosus
+[60+] The Argent Hold
+
+## Ras Frostwhisper (60)
+
+Scholomance
+[60D] Doctor Theolen Krastinov, the Butcher
+[60D] Krastinov's Bag of Horrors
+[60D] Kirtonos the Herald
+
+Western Plaguelands
+[60+] The Human, Ras Frostwhisper
+[60+] The Dying, Ras Frostwhisper
+
+Stratholme
+[60D] Menethil's Gift
+
+Eastern Plaguelands
+[60+] Menethil's Gift
+
+Western Plaguelands
+[60] Souldbound Keepsake
+
+Scholomance
+[60D] The Lich, Ras Frostwhisper
+
+## Onyxia Key Chain (54-60)
+
+Burning Steppes
+[54+] Dragonkin Menace
+[54] The True Masters
+[54] The True Masters
+[54] The True Masters
+[54] The True Masters
+[54] The True Masters
+[54] The True Masters
+
+Blackrock Depths
+[54D] Marshal Windsor
+[54] Abandoned Hope
+
+Drop: A Crumpled Note
+[58D] A Crumpled Up Note
+[58D] A Shred of Hope
+[58D] Jail Break!
+
+Stormwind
+[60R] Stormwind Rendezvous
+[60R] The Great Masquerade
+[60R] The Dragon's Eye
+
+Blackrock Spire
+[60R] Drakefire Amulet
+
+## Tier 0.5
+
+Ironforge
+[60] Just Compenstation
+
+Eastern Plaguelands
+[60] In Search of Anthion
+
+Stratholme
+[60D] Dead Man's Plea
+
+Eastern Plaguelands
+[60] Proof of Life
+[60] Anthion's Strange Request
+
+Dire Maul
+[60D] Anthion's Old Friend
+[60D] Falrin Treeshaper
+[60D] The Instigator's Enchantment
+
+Blackrock Depths
+[60D] The Challenge
+
+Ironforge
+[60D] Anthion's Parting Words
+
+Blackrock Mountain
+[60] Bodley's Unfortunate Fate
+[60R] Three Kings of Flame
+[60+] Components of Importance
+[60+] Components of Importance
+[60+] Components of Importance
+[60+] Components of Importance
+
+Blackrock Spire
+[60D] The Left Piece of Lord Valthalak's Amulet
+
+Unspecified
+[60] I See Alcaz Island In Your Future
+
+Blackrock Mountain
+[60+] More Components of Importance
+[60+] More Components of Importance
+[60+] More Components of Importance
+[60+] More Components of Importance
+
+Dire Maul
+[60D] The Right Piece of Lord Valthalak's Amulet
+
+Blackrock Mountain
+[60R] Final Preparations
+
+Blackrock Spire
+[60R] Blackrock Spire: Mea Culpa, Lord Valthalak
+
+Blackrock Mountain
+[60] Return to Bodley
+
+## Argent Dawn
+
+[60] Minion's Scourgestones [repeatable]
+[60] Invader's Scourgestones [repeatable]
+[60] Corruptor's Scourgestones [repeatable]
+
+[60] Binding the Dreadnaught
+[60] Dark Iron Scraps [repeatable]
+
+[60] Bonescythe Digs
+[60] Bone Fragments [repeatable]
+
+[60] The Elemental Equation
+[60] Core of Elements [repeatable]
+
+[60] Savage Fronds
+[60] Savage Fronds [repeatable]
+
+[60] Cryptstalker Armor Doesn't Make Itself
+[60] Crypt Fiend Parts [repeatable]
+
+[60] They Call Me "The Rooster"
+[60] Craftsman's Writ [repeatable]
+  [60] Craftsman's Writ - Brightcloth Pants
+  [60] Craftsman's Writ - Dense Weightstone
+  [60] Craftsman's Writ - Flask of Petrification
+  [60] Craftsman's Writ - Gnomish Battle Chicken
+  [60] Craftsman's Writ - Goblin Sapper Charge
+  [60] Craftsman's Writ - Greater Arcane Protection Potion
+  [60] Craftsman's Writ - Huge Thorium Battleaxe
+  [60] Craftsman's Writ - Imperial Plage Chest
+  [60] Craftsman's Writ - Lightning Eel
+  [60] Craftsman's Writ - Major Healing Potion
+  [60] Craftsman's Writ - Major Mana Potion
+  [60] Craftsman's Writ - Plated Armorfish
+  [60] Craftsman's Writ - Radiant Circlet
+  [60] Craftsman's Writ - Rugged Armor Kit
+  [60] Craftsman's Writ - Runecloth Bag
+  [60] Craftsman's Writ - Runecloth Boots
+  [60] Craftsman's Writ - Runecloth Robe
+  [60] Craftsman's Writ - Runic Leather Pants
+  [60] Craftsman's Writ - Stonescale Eel
+  [60] Craftsman's Writ - Thorium Grenade
+  [60] Craftsman's Writ - Thorium Tube
+  [60] Craftsman's Writ - Volcanic Hammer
+  [60] Craftsman's Writ - Wicked Leather Belt
+  [60] Craftsman's Writ - Wicked Leather Headband
+
+[60] The Ice Guard (not repeatable?)
+[60] The Shadow Guard (not repeatable?)
+
+### Friendly
+
+[60] Superior Armaments of Battle - Friend of the Dawn
+[60] Epic Armaments of Battle - Friend of the Dawn
+
+### Honored
+
+[60] Superior Armaments of Battle - Honored Amongst the Dawn
+[60] Epic Armaments of Battle - Honored Amongst the Dawn
+
+### Revered
+
+[60] Mantles of the Dawn [repea]
+[60] Superior Armaments of Battle - Revered Amongst the Dawn
+[60] Epic Armaments of Battle - Revered Amongst the Dawn
+
+### Exalted
+
+[60] Chromatic Mantle of the Dawn [repeatable]
+[60] Superior Armaments of Battle - Exalted Amongst the Dawn
+[60] Epic Armaments of Battle - Exalted Amongst the Dawn
+
+---
+
+# Future Content
+
+## Naxxramas
+
+One of:
+  [60] The Dread Citadel - Naxxramas [honored]
+  [60] The Dread Citadel - Naxxramas [revered]
+  [60] The Dread Citadel - Naxxramas [exalted]
+[60R] Echoes of War
