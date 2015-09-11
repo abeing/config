@@ -25,11 +25,15 @@ Eastern Kingdoms
   Eastern Plaguelands
   Elwynn Forst
   Northshire Abbey
+  Hillsbrad Foothills
+  Ironforge
+  Loch Modan
 
 ## To Parse
 
 Eastern Kingdoms
   Dun Morogh
+
 Cooking Quests
 Fishing Quests
 
@@ -177,7 +181,7 @@ Elwynn Forest:
 
 [20] The Coastal Menace
 
-Drop: Westfall Deed (some Defais: bandit, dockworker, dockmaster, rogue wizard)
+Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 [9] Fulbrow's Deed
 
 Drop: Captain Sander's Treasure Map (from murlocs)
@@ -186,7 +190,7 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 [16] Captain Sander's Hidden Treasure (Part 3)
 [16] Captain Sander's Hidden Treasure (Part 4)
 
-# Stormwind (10-20)
+## Stormwind (10-20)
 
 [15] Elmore's Task
 [15] Stormpike's Delivery
@@ -195,7 +199,64 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 
 [16] Stormwind Library
 
-[20] A Donation of Wool
+## Loch Modan (10-22)
+
+[10] Honor Students
+[10] Ride to Ironforge
+[10] Gryth Thurden
+[10] Return to Brock
+
+[11] Rat Catching
+
+[11] Thelsamar Blood Sausages
+
+[12] The Trogg Threat
+
+[12] In Defense of the King's Lands [Troggs and Scouts]
+[15] In Defense of the King's Lands [Skullthumpers and Seers]
+[15] In Defense of the King's Lands [Shamans and Bonesnappers]
+[17] In Defense of the King's Lands [Grawmug and hisguards]
+
+[15] Crocolisk Hunting
+
+[15] Filthy Paws
+
+[15] Mountaineer Stormpike's Task
+[14] Stormpike's Order
+
+Ironforge: [15] Find Bingles
+[15] Bingles' Missing Supplies
+
+[15] Excavation Progress Report
+[15] Report to Ironforge
+[15] Powder to Ironband
+[15] Resupplying the Excavation
+[15] After the Ambush
+[15] Protecting the Shipment
+
+[16] A Hunter's Boast
+[17] A Hunter's Challenge
+[20+] Vyrin's Revenge
+[20+] Vyrin's Revenge
+
+[18] Ironband's Excavation
+[18] Gathering Idols
+
+[18] A Dark Threat Looms
+[18] A Dark Threat Looms
+[18] A Dark Threat Looms
+[18] A Dark Threat Looms
+[18+] A Dark Threat Looms
+[18] A Dark Threat Looms
+[20] A Dark Threat Looms
+
+[19+] Mercenaries
+
+[22+] WANTED: Chok'sul
+
+[39] Badlands Reagent Run
+[42] Uldaman Reagent Run
+[44+] Badlands Reagent Run II
 
 ## Deeprun Tram (12)
 
@@ -267,17 +328,23 @@ Drop: Glowing Shadowhide Pendant (Shadowhide gnolls in Redridge)
 
 # The Deadmines (18-22)
 
+Stormwind
 [18] Collecting Memories
 
+Stormwind
 [20] Oh Brother...
 
+Westfall
 (After Red Leather Bandanas)
 [17++] Red Silk Bandanas
 
+Westfall
 (After The Defias Brotherhood)
 [22++] The Defias Brotherhood
 
-(After Speak with Shoni)
+Ironforge
+[15] Speak with Shoni
+Stormwind
 [20++] Underground Assault
 
 # Defias Chain (22-31)
@@ -350,8 +417,6 @@ Wu Shen, Weapon Trainer in Stormwind:
 [36] The Missing Diplomat
 [38] The Missing Diplomat
 [38] The Missing Diplomat
-
-[30] A Donation of Silk
 
 [30] A Noble Brew
 [30] A Noble Brew
@@ -447,6 +512,29 @@ Drop: An Old History Book (anywhere in the zone?)
 
 {Stormwind: Vital Supplies}
 [45] Supplies for Nethergarde
+
+## Hillsbrad Foothills (30-37)
+
+[30] Down the Coast
+[32] Farren's Proof
+[32] Farren's Proof
+[32] Farren's Proof
+[32] Stormwind Ho!
+[32] Reassignment
+
+[30+] Humbert's Sword
+
+[31] Soothing Turtle Bisque
+
+[33] Hints of a New Plague?
+[36] Hints of a New Plague?
+[36] Hints of a New Plague?
+[37] Hints of a New Plague?
+[37] Hints of a New Plague?
+
+[34] Bartolo's Yeti Fur Cloak
+
+[34] Costly Menace
 
 ## Warrior (30-40)
 
@@ -564,7 +652,7 @@ Drop: Cortello's Riddle (looted in pirate camps)
 [45] Stranglethorn Fever
 [45] Stranglethorn Fever
 
-# Stormwind (30-40)
+## Stormwind (30-40)
 
 [32] Malin's Request
 {Arathi Highlands: Worth Its Weight in Gold}
@@ -580,6 +668,14 @@ Drop: Cortello's Riddle (looted in pirate camps)
 [40] A Meal Served Cold
 
 [40+] The Perenolde Tiara
+
+## Desolace (33-39)
+
+Ironforge: [33] Reclaimers' Business in Desolace
+[39] The Karnitol Shipwrech
+...
+[33] Reagents for Reclaimers Ince.
+...
 
 ## Alterac Mountains (33-40)
 
@@ -609,6 +705,13 @@ Item: Syndicate Documents
 Item: The Encorcelled Parchment in a Worn Wooden Chest?
 [40] The Ensorcelled Parchment
 [40] Stormpike's Deciphering
+
+## Gnomeregan (34)
+
+Drop: Grim-Encrusted Ring
+[34] Grime-Encrusted Ring
+[34] Return of the Ring
+Ironforge: [34] Gnome Improvement
 
 ## Badlands (35-45)
 
@@ -675,6 +778,13 @@ Drop: The Black Box (from Zaricotl)
 
 [29+pvp] Claiming Arathi Basin (repeatable)
 
+Object: Waterlogged Envelope in Arathi Highlands
+[30] Sully Ballo's Letter
+[30] Sara Balloo's Plea
+[30] A King's Tribute
+[31] A King's Tribute
+[31] A King's Tribute
+
 [31] Northfold Manor
 [37+] Stromgarde Badges
 
@@ -736,16 +846,19 @@ Professor Phizzlethorpe
 [45] Vital Supplies
 {Duskwood}
 
-[45] A Donation of Mageweave
-
-[50] A Call to Arms: The Plaguelands!
-(leads to Clear the Way)
-
 [50] Assisting Arch Druid Staghelm
 (leads to Un'Goro Soil)
 
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
+
+## Searing Gorge (48-55)
+
+[48] Suntara Stones
+[48] Suntara Stones
+Ironforge: [55] Dwarven Justice
+[52] Release Them
+[55+] Rise, Obsidion!
 
 ## Warrior (50+)
 
@@ -827,16 +940,35 @@ Repeatable Shoulder Enchants
 [52] Good Natured Emma
 {Western Plaguelands}
 
-[55] A Donation of Runecloth
 [60] Additional Runecloth (repeatable)
 
-[55] The New Frontier
-{Darnassus: The New Frontier}
+## Ironforge (50-60)
+
+[52] A Little Slime Goes a Long Way
+[54] A Little Slime Goes a Long Way
+
+[52] Passing the Burden
+  [52] Arcane Runes
+    [52] Return to Tymor
+  [52] An Easy Pickup
+    [52] Signal for Pickup
+    [52] Signal for Pickup
+
+[60] Arrows Are For Sissies [repeatable]
+
+[50] Assisting Arch Druid Staghelm
+(leads to Un'goro Soil)
 
 ## Blackrock Mountain (52+)
 
 [52D] Overmaster Pyron
 {Blackrock Depths: Incendius}
+
+## Western Plaguelands (??)
+
+Stormwind or Ironforge:
+[50] A Call to Arms: The Plaguelands!
+(leads to Clear the Way)
 
 ## Eastern Plaguelands (55-60)
 
@@ -865,6 +997,23 @@ Repeatable Shoulder Enchants
 {Strathomlme: The Restless Souls}
 
 [60pvp] Establishing New Outposts
+
+## Silithus (55-60)
+
+Ironforge: [55] Taking Back Silithus
+[55] Securing the Supply Lines
+[57] Stepping Up Security
+
+## Blackrock Depths (55+)
+
+Ironforge:
+[55] The Smoldering Ruins of Thaurissan
+[55] The Smoldering Ruins of Thaurissan
+Blackrock Depths:
+[59D] Kharan Mighthammer
+[59D] The Bearer of Bad News
+[59D] The Fate of the Kingdom
+[59D] The Princess's Surprise
 
 ## Stormwind 60+
 
@@ -1054,6 +1203,34 @@ Zul'Gurub
 
 Tanaris
 [60] The Hand of Rastakhan
+
+## Earthen (47-50)
+
+Ironforge
+Object: The Discs of Norgannon
+[47] The Platinum Discs
+[47] The Platinum Discs
+[50] Portents of Uldum
+[50] Seeing What Happens
+
+Tanaris
+[50+] The Stone Watcher
+
+Ironforge
+[50+] Return to Ironforge
+[50] A Future Task
+
+## Searing Gorge Key (48)
+
+Searing Gorge
+Drop: Margols' Horn from Margol the Rager in Searing Gorge
+[48] The Horn of the Beast
+
+Loch Modan
+[48] Proof of Deed
+
+Ironforge
+[48+] At Last!
 
 ## Black Dragon Molt (48-58)
 
@@ -1270,6 +1447,17 @@ Blackrock Spire
 ## Tier 0.5
 
 Ironforge
+[58] An Earnest Proposition
+[60] A Supernatural Device
+
+Tanaris
+[60] The Ectoplasmic Distiller
+[60] Hunting for Ectoplasm
+[60] A Portable Power Source
+[60] A Shifty Merchant
+
+Ironforge
+[60] Return to Deliana
 [60] Just Compenstation
 
 Eastern Plaguelands
@@ -1324,6 +1512,44 @@ Blackrock Spire
 
 Blackrock Mountain
 [60] Return to Bodley
+
+Ironforge
+[60] Back to the Beginning
+[60D] Saving the Best for Last
+
+# Reputations
+
+## Stormwind Reputation
+
+[20] A Donation of Wool
+[30] A Donation of Silk
+[45] A Donation of Mageweave
+[55] A Donation of Runecloth
+[55] Additional Runecloth [repeatable]
+
+## Ironforge Reputation
+
+[20] A Donation of Wool
+[30] A Donation of Silk
+[45] A Donation of Mageweave
+[55] A Donation of Runecloth
+[55] Additional Runecloth [repeatable]
+
+## Gnomregan Reputation
+
+[20] A Donation of Wool
+[30] A Donation of Silk
+[45] A Donation of Mageweave
+[55] A Donation of Runecloth
+[55] Additional Runecloth [repeatable]
+
+## Darnassus Reputation
+
+[20] A Donation of Wool
+[30] A Donation of Silk
+[45] A Donation of Mageweave
+[55] A Donation of Runecloth
+[55] Additional Runecloth [repeatable]
 
 ## Argent Dawn
 
@@ -1398,9 +1624,32 @@ Blackrock Mountain
 [60] Superior Armaments of Battle - Exalted Amongst the Dawn
 [60] Epic Armaments of Battle - Exalted Amongst the Dawn
 
----
+## Cenarion Circle
+
+Ironforge
+[55] The New Frontier
+
+Darnassus
+[55] The New Frontier
+[55] Rabine Saturna
+
+Moonglade
+[55] Wasteland
+
+Silithus
+[55] The Spirits of Southwind
+[57] Hive in the Tower
+[57] Umber, Archivist
+
+Moonglade
+[57] Uncovering Past Secrets
+[57] Under the Chitin Was...
 
 # Future Content
+
+## The Darkmoon Faire
+
+[1] The Darkmoon Faire
 
 ## Naxxramas
 
