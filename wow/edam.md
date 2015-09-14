@@ -7,11 +7,6 @@ Cooking Items
 
 Warrior Quests
 
-Stormwind
-Westfall
-Redridge Mountains
-Stranglethorn Vale
-
 Eastern Kingdoms
   Alterac Mountains
   Arathi Highlands
@@ -21,6 +16,7 @@ Eastern Kingdoms
   Burning Steppes
   Deadwind Pass
   Deeprun Tram
+  Dun  Morogh
   Dustkwood
   Eastern Plaguelands
   Elwynn Forst
@@ -28,11 +24,16 @@ Eastern Kingdoms
   Hillsbrad Foothills
   Ironforge
   Loch Modan
+  Redridge Mountains
+  Searing Gorge
+  Stormwind City
+  Stranglethorn Vale
+  Swamp of Sorrows
+  Westfall
+  Western Plaguelands
+  Wetlands
 
 ## To Parse
-
-Eastern Kingdoms
-  Dun Morogh
 
 Cooking Quests
 Fishing Quests
@@ -121,6 +122,52 @@ Fishing Quests
 Drop: ??? (from gnolls)
 [10] The Collector
 [10] Manhunt
+
+## Dun Morogh (5-10)
+
+[5] Supplies to Tannok
+
+[5] Tools for Steelgrill
+
+[6] Ammo for Rumbleshot
+
+[6] Stocking Jetsteam
+[7] Evershine
+[8] A Favor for Evershine
+[8] Return to Bellowfiz
+
+[10] The Lost Pilot
+[11] A Pilot's Revenge
+
+[6] Bitter Rivals
+[7] Distracting Jarven
+[1] Guarded Thunderbrew Barrel
+[7] Return to Marleth
+
+[7] The Grizzled Den
+
+{Senir's Observations}
+[9] Frostmane Hold
+[10] The Reports
+
+[9] Those Blased Troggs!
+
+[10] Opperation Recombobulation
+
+[10] Rejold's New Brew
+  [9] The Perfect Stout
+[10] Shimmer Stout
+[10] Stout to Kadrell
+
+[11] The Public Servant
+
+[12] Tundra MacGrann's Stolen Stash
+
+[12+] Preserving the Herd
+
+NPC: Mountaineer Kadrell in Loch Modan
+[23] Stonegear's Search
+[22] Search for Incendicite
 
 ## Warrior 1-10
 
@@ -513,6 +560,69 @@ Drop: An Old History Book (anywhere in the zone?)
 {Stormwind: Vital Supplies}
 [45] Supplies for Nethergarde
 
+## Wetlands (21-34)
+
+[20] Fiora Longears
+Darkshore: [20] Journey to Astranaar
+
+[21] Daily Delivery
+
+[21] Report to Mountaineer Rockgar
+[21] The Algaz Gauntlet
+
+[21] The Greenwarden
+[21] Tramping Paws
+[23] Fire Taboo
+[26] Blisters on The Land
+
+[22] Claws from the Deep
+[25] Reclaiming Goods
+[25] The Search Continues
+[25] Search More Hovels
+[25] Return the Statuette
+
+[22] Young Crocolisk Skins
+[26] Apprentice's Duties
+
+[24] Digging Through the Ooze
+
+[24] In Search of The Excavation Team
+[24] In Search of The Excavation Team
+
+[24] Ormer's Revenge
+[27] Ormer's Revenge
+[29] Ormer's Revenge
+
+[25] Fall of Dun Modr
+
+[27] The Third Fleet
+[29] The Cursed Crew
+[30] Lifting the Curse
+[30] The Eye of Paleth
+[30] Cleansing the Eye
+
+[28] Uncovering the Past
+
+[28] Report to Captain Stoutfist
+[28] War Banners
+[31] Nek'rosh's Gambit
+[32+] Defeat Nek'rosh
+
+[30] MacKreel's Moonshine
+
+[30+] The Dark Iron War
+{The Stockade: The Fury Runs Deep}
+
+[31+] The Thandol Span
+[31] The Thandol Span
+[31] The Thandol Span
+[31] Plea To The Alliance
+
+[34+] A Grim Task
+
+Stormwind City: [35] James Hyal
+[35] James Hyal
+
 ## Hillsbrad Foothills (30-37)
 
 [30] Down the Coast
@@ -713,6 +823,26 @@ Drop: Grim-Encrusted Ring
 [34] Return of the Ring
 Ironforge: [34] Gnome Improvement
 
+## Swamp of Sorrows (35-40)
+
+[35] Draenethyst Crystals
+
+[37] Encroaching Wildlife
+[35] The Lost Caravan
+[42] Driftwood
+[42] Deliver the Shipment
+
+[38] Galen's Escape
+
+[39] Noboru the Cudgel
+
+[40] The Lost Supplies
+
+Drop: Essence of Erankius (from Shade of Eranikus in Sunken Temple)
+Sunken Temple: [55] The Essence of Eranikus
+[55] The Essence of Eranikus
+[55] In Erankius' Own Words
+
 ## Badlands (35-45)
 
 [35] A Dwarf and His Tools
@@ -773,6 +903,19 @@ Drop: The Black Box (from Zaricotl)
 [40] Barbecued Buzzard Wings
 
 [45+] Fiery Blaze Enchantments
+
+## Thousand Needles (36-44)
+
+[36] Wharfmaster Dizzywig
+[36] Parts for Kravel
+[36] Delivery to the Gnomes
+[36] The Rumormonger
+Swamp of Sorrows: [36] Dream Dust in the Swamp
+[36] Rumors for Kravel
+[43] Back to Booty Bay
+[44] Zanzil's Mixture and a Fool's Stout
+[44] Get the Gnomes Drunk or [44] Get the Goblins Drunk
+[44] Report Back to Fizzlebub
 
 ## Arathi Highlands (35-50)
 
@@ -839,10 +982,6 @@ Professor Phizzlethorpe
 [41] Mazen's Behest
 [41] Mazen's Behest
 
-[43+] In Search of the Temple
-[43] To The Hinterlands
-{The Hinterlands}
-
 [45] Vital Supplies
 {Duskwood}
 
@@ -851,6 +990,43 @@ Professor Phizzlethorpe
 
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
+
+## Sunken Temple (43-50)
+
+Stormwind City:
+[43] In Search of the Temple
+[43] To the Hinterlands
+The Hinterlands:
+[43] Gryphon Master Talonaxe
+[43] Rhapsody Shindigger
+[43] Rhapsody's Kalimdor Kocktail
+[43] Rhapsody's Tale
+Sunken Temple:
+[50] Into The Temple of Atal'Hakkar
+
+## The Hinterlands (45-48)
+
+[45] Troll Necklace Bounty
+[45] Troll Necklace Bounty [repeatable]
+
+[48] Skunk Rock Clean-up
+
+Drop: OOX-09/HL Distress Beacon
+[48] Find OOX-09/HL!
+[48] Rescue OOX-09/HL!
+
+## Zul'Farrak (45-53)
+
+Hinterlands
+[45] Witherbark Cages
+[48] The Altar of Zul
+[47] Thadius Grimshade
+Zul'Farrak
+[47D] Nekrum's Medallion
+Hinterlands
+[47] The Divination
+[47+] Return to the Hunterlands
+[53+] Saving Sharpbeak
 
 ## Searing Gorge (48-55)
 
@@ -934,14 +1110,6 @@ Repeatable Shoulder Enchants
 [55] Libram of Tenacity
 [55] Libram of Voracity
 
-## Stormwind (50-60)
-
-{Western Plaguelands: Better Late Than Never}
-[52] Good Natured Emma
-{Western Plaguelands}
-
-[60] Additional Runecloth (repeatable)
-
 ## Ironforge (50-60)
 
 [52] A Little Slime Goes a Long Way
@@ -968,7 +1136,76 @@ Repeatable Shoulder Enchants
 
 Stormwind or Ironforge:
 [50] A Call to Arms: The Plaguelands!
-(leads to Clear the Way)
+Western Plaguelands:
+[52] Clear the Way
+
+[52] Better Late Than Never
+[52] Better Late Than Never
+Stormwind City: [52] Good Natured Emma
+[52] Good Luck Charm
+[54] Two Halves Become One
+
+{Clear the Way}
+[53] The Scourge Cauldrons
+[53] Target: Felstone Field
+[53] Return to Chillwind Camp
+[55] Target: Dalson's Tears [AD]
+[55] Return to Chillwind Camp [AD]
+[55] Target: Writhing Haunt [AD]
+[55] Return to Chillwind Camp [AD]
+[58] Target: Gahrron's Withering [AD]
+[58] Return to Chillwind Point [AD]
+[58] Mission Accomplished! [AD]
+
+[54] The Wildlife Suffers Too
+[56] The Wildlife Suffers Too
+[56] Glyphed Oaken Branch
+
+[55] A Plague Upon Thee
+[55] A Plague Upon Thee
+[55] A Plague Upon Thee
+
+[56] A Matter of Time
+[56] Counting Out Time
+[56] Counting Out Time [repeatable]
+
+{Clear the Way}
+[56] All Along the Watchtowers
+[60+] Alas, Andorhal [AD]
+
+{All Along the Watchtowers}
+[55] Scholomance
+[57] Skeletal Fragments
+[57] Mold Rhymes With...
+Tanaris: [57] Fire Plume Forged
+[60+] Araj's Scarab
+[60] The Key to Scholomance
+
+[56] Unfinished Business
+[57] Unfinished Business
+[58+] Unfinished Business
+
+[60] Locked Away
+[60] Locked Away
+
+[60] Mrs. Dalson's Diary [repeatable]
+
+{Target: Felstone Field}
+[53] Felstone Field Cauldron [repeatable]
+
+{Target: Dalson's Tear}
+[60] Dalson's Tears Cauldron [repeatable]
+
+{Target: Writhing Haunt}
+[60] Writhing Haunt Cauldron [repeatable]
+
+{Target: Gahrron's Withering}
+[60] Gahrron's Withering Cauldron [repeatable]
+
+Scholomance:
+[60D] Barov Family Fortune
+Western Plaguelands:
+[60+] The Last Barov
 
 ## Eastern Plaguelands (55-60)
 
@@ -1180,28 +1417,21 @@ Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
 
 ## Zul'Gurub (44-60)
 
-Tanaris
+Tanaris:
 [44] Screecher Spirits
-
-Zul'Farrak
+Zul'Farrak:
 [47D] The Prophecy of Mosh'aru
-
-The Hinterlands
+The Hinterlands:
 [50+] The Ancient Egg
-
-Sunken Temple
+Sunken Temple:
 [53D] The God Hakkar
-
-Eastern Plaguelands
+Eastern Plaguelands:
 [58+] The Lost Tablets of Mosh'aru
-
-Blackrock Spire
+Blackrock Spire:
 [58] The Final Tablets
-
-Zul'Gurub
+Zul'Gurub:
 [58] Confront Yeh'kinya
-
-Tanaris
+Tanaris:
 [60] The Hand of Rastakhan
 
 ## Earthen (47-50)
@@ -1362,6 +1592,18 @@ Western Plaguelands
 [60] Find Myranda
 [60] Scarlet Subterfuge
 [60] In Dreams
+
+## Chromatic Armor
+
+Blackrock Spire:
+[60D] The Matron Protectorate
+Winterspring:
+[62] Wrath of the Blue Flight
+Western Plaguelands:
+[60+] Wrath of the Blue Flight
+[62+] Catalogue of the Wayward
+[60+] Breastplate of the Chromatic Flight
+[60+] Legplates of the Chromatic Defier
 
 ## Blightcaller (60)
 
@@ -1614,7 +1856,7 @@ Ironforge
 
 ### Revered
 
-[60] Mantles of the Dawn [repea]
+[60] Mantles of the Dawn [repeatable]
 [60] Superior Armaments of Battle - Revered Amongst the Dawn
 [60] Epic Armaments of Battle - Revered Amongst the Dawn
 
@@ -1658,3 +1900,4 @@ One of:
   [60] The Dread Citadel - Naxxramas [revered]
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
+
