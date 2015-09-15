@@ -305,6 +305,104 @@ Ironforge: [15] Find Bingles
 [42] Uldaman Reagent Run
 [44+] Badlands Reagent Run II
 
+## Darkshore (10-31)
+
+[1??] Onu is meditating
+[1??] Onu is meditating
+
+[10] Buzzbox 827
+[12] Buzzbox 411
+[14] Buzzbox 323
+[16] Buzzbox 525
+
+[12] The Fall of Ameth'Aran
+
+[12] Tools of the Highborne
+
+[12] Bashal'Aran
+[12] Bashal'Aran
+[13] Bashal'Aran
+[13] Bashal'Aran
+
+[13] Washed Ashore
+[14] Washed Ashore
+  [13] Beached Sea Creature
+  [13] Beached Sea Turtle
+  [14] Beached Sea Creature
+  [15] Beached Sea Turtle
+  [15] Beached Sea Turtle
+  [16] Beached Sea Creature
+  [19] Beached Sea Creature
+  [19] Beached Sea Turtle
+  [19] Beached Sea Turtle
+
+[14] The Family and the Fishing Pole
+
+[14] The Red Crystal
+[14] As Water Cascades
+[14] The Fragments Within
+
+[14] Plagued Lands
+[16] Cleansing of the Infected
+[18] Tharnariun's Hope
+
+[14] How Big a Threat?
+[14] How Big a Threat?
+[15] Thundris Windweaver
+[15] The Cliffspring River
+[18] The Blackwood Corrupted
+
+[15] One Shot. One Kill.
+
+[16] For Love Eternal
+
+[17] Deep Ocean, Vast Sea
+
+[17] Fruit of the Sea
+
+[17] Cave Mushrooms
+[17] Onu
+[17] The Master's Glaive
+[17] The Twilight Camp
+[17] Return to Onu
+[20] Mathystra Relics
+
+[18] Therylune's Escape
+
+[18] WANTED: Murkdeep!
+
+[18] The Tower of Althalaxx {Elissa to Balthule}
+[18] The Tower of Althalaxx {Balthule}
+[18] The Tower of Althalaxx {Balthule to Delgren}
+[21] The Tower of Althalaxx {Delgren}
+[24] The Tower of Althalaxx {Delgren} -> {Ashenvale: Supplies to Auberdine}
+[28] The Tower of Althalaxx {Delgren}
+[28] The Tower of Althalaxx part 7
+[31] The Tower of Althalaxx part 8
+[31] The Tower of Althalaxx
+
+[20] The Powers Below
+
+[20] The Sleeper Has Awakened
+
+{Wetlands: Fiora Longears}
+[20] Journey to Astranaar
+
+[20] Gyromast's Retrieval
+[20+] Gyromast's Revenge
+
+[20] A Lost Master
+[20] A Lost Master
+[22] Escape Through Force --or-- [20] Escape Through Stealth
+{Ashenvale: Trek to Ashenvale}
+
+{Darnassus: Trouble in Darkshore?}
+[20] The Absent Minded Prospector
+[20+] The Absent Minded Prospector
+[20] The Absent Minded Prospector
+[20] The Absent Minded Prospector
+[24] The Absent Minded Prospector
+
 ## Deeprun Tram (12)
 
 [12] Deeprun Rat Roundup
