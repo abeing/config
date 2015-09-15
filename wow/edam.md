@@ -1901,3 +1901,71 @@ One of:
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
 
+## Ashenvale
+
+[18] Journey to Stonetalon Peak
+{Stonetalon Peak: Reclaiming the Charred Vale}
+
+{Darkshore: Escape Through Force}
+[19] Trek to Ashenvale
+
+[19] The Zoram Strand
+[21] Pridewings of Stonetalon
+
+[19] Raene's Cleansing {Raene to Teronis' Corpse}
+[21] Raene's Cleansing {Teronis' Corpse to Raene} {2}
+[21] Raene's Cleansing {Raene to Shael'dryn}
+[27] Raene's Cleansing {Shael'dryn}
+[28] Raene's Cleansing {Shael'dryn}
+[28] Raene's Cleansing {Shael'dryn to Hidden Shrine}
+[28] Raene's Cleansing {Hidden Shrine to Shael'dryn}
+[28] Raene's Cleansing {Shael'dryn to Raene}
+[28] Raene's Cleansing {Raene to Krolg}
+[30] Raene's Cleansing {Krolg}
+[30] Raene's Cleansing {Krolg to Raene}
+
+[20] The Ancient Statuette
+[25] Ruuzel
+
+[20] Bathran's Hair
+[20] Orendil's Cure
+[22] Elune's Tear
+[23] The Ruins of Stardust
+[30] Fallen Sky Lake
+
+[21] On Guard in Stonetalon
+[21] On Guard in Stonetalon
+{Stonetalon Peak: A Gnome's Respite}
+
+{Darkshore: The Tower of Althalaxx}
+[24] Supplies to Auberdine
+
+{Raene's Cleansing {2}}
+[24] An Aggressive Defense
+
+[24] Elemental Bracers
+[25] Mage Summoner
+
+[25] Culling the Threat
+
+[29] Kayneth Stillwind
+[29] Forsaken Diseases
+[32] Insane Druids
+
+[30] The Howling Vale
+[30] Velinde Starsong
+[30] Velinde's Effects
+[30] The Barrens Port
+[30] Passage to Booty Bay
+[30] The Caravan Road
+[30] The Carevin Family
+[30] The Scythe of Elune
+[30] Answered Questions
+
+[32] Vile Satyr! Dryads in Danger!
+[32] The Branch of Cenarius
+[32] Satyr Slaying!
+
+[34] Sentinel Basic Care Package
+[44] Sentinel Standard Care Package
+[60] Sentinel Advanced Care Package
