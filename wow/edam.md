@@ -394,6 +394,75 @@ Ironforge
 Stormwind
 [20++] Underground Assault
 
+## Ashenvale (18-32)
+
+[18] Journey to Stonetalon Peak
+{Stonetalon Peak: Reclaiming the Charred Vale}
+
+{Darkshore: Escape Through Force}
+[19] Trek to Ashenvale
+
+[19] The Zoram Strand
+[21] Pridewings of Stonetalon
+
+[19] Raene's Cleansing {Raene to Teronis' Corpse}
+[21] Raene's Cleansing {Teronis' Corpse to Raene} {2}
+[21] Raene's Cleansing {Raene to Shael'dryn}
+[27] Raene's Cleansing {Shael'dryn}
+[28] Raene's Cleansing {Shael'dryn}
+[28] Raene's Cleansing {Shael'dryn to Hidden Shrine}
+[28] Raene's Cleansing {Hidden Shrine to Shael'dryn}
+[28] Raene's Cleansing {Shael'dryn to Raene}
+[28] Raene's Cleansing {Raene to Krolg}
+[30] Raene's Cleansing {Krolg}
+[30] Raene's Cleansing {Krolg to Raene}
+
+[20] The Ancient Statuette
+[25] Ruuzel
+
+[20] Bathran's Hair
+[20] Orendil's Cure
+[22] Elune's Tear
+[23] The Ruins of Stardust
+[30] Fallen Sky Lake
+
+[21] On Guard in Stonetalon
+[21] On Guard in Stonetalon
+{Stonetalon Peak: A Gnome's Respite}
+
+{Darkshore: The Tower of Althalaxx}
+[24] Supplies to Auberdine
+
+{Raene's Cleansing {2}}
+[24] An Aggressive Defense
+
+[24] Elemental Bracers
+[25] Mage Summoner
+
+[25] Culling the Threat
+
+[29] Kayneth Stillwind
+[29] Forsaken Diseases
+[32] Insane Druids
+
+[30] The Howling Vale
+[30] Velinde Starsong
+[30] Velinde's Effects
+[30] The Barrens Port
+[30] Passage to Booty Bay
+[30] The Caravan Road
+[30] The Carevin Family
+[30] The Scythe of Elune
+[30] Answered Questions
+
+[32] Vile Satyr! Dryads in Danger!
+[32] The Branch of Cenarius
+[32] Satyr Slaying!
+
+[34] Sentinel Basic Care Package
+[44] Sentinel Standard Care Package
+[60] Sentinel Advanced Care Package
+
 # Defias Chain (22-31)
 
 Drop: An Unsent Letter (from Edwin VanCleef in The Deadmines)
@@ -1028,6 +1097,39 @@ Hinterlands
 [47+] Return to the Hunterlands
 [53+] Saving Sharpbeak
 
+## Azshara (47-57)
+
+[47] A Land Filled with Hatred
+
+[47] Spiritual Unrest
+
+[48] A Meeting with the Master
+[55] Meeting with the Master [repeatable]
+[55] Return Trip [repeatable]
+
+[52] Stealing Knowledge
+
+{Stealing Knowledge}
+[52] Delivery to Magatha
+[52] Magatha's Payment to Jediga
+
+{Stealing Knowledge}
+[52] Delivery to Jes'rimon
+[52] Jes'rimon's Payment to Jediga
+
+{Stealing Knowledge}
+[52] Delivery to Adron Gant
+[52] Adron's Payment to Jediga
+
+{Stealing Knowledge}
+[52] Delivery to Archmage Xylem
+[52] Xylem's Payment to Jediga
+
+[53] Kim'jael Indeed!
+[53] Kim'jael's "Missing" Equipment
+
+[57] A Crew Under Fire
+
 ## Searing Gorge (48-55)
 
 [48] Suntara Stones
@@ -1593,6 +1695,15 @@ Western Plaguelands
 [60] Scarlet Subterfuge
 [60] In Dreams
 
+## Molten Core (57-60)
+
+[57] Stormers and Rumblers
+[60R] Eye of the Emberseer
+[60R] The Molten Core
+[60] Agent of Hydraxis
+[60R] Hands of the Enemy
+[60] A Hero's Reward
+
 ## Chromatic Armor
 
 Blackrock Spire:
@@ -1893,6 +2004,74 @@ Moonglade
 
 [1] The Darkmoon Faire
 
+## Secepter of the Shifting Sands
+
+### Prologue
+
+[60] What Tomorrow Brings
+[60] Only One May Rise
+  Head of the Broodlord Lashlayer in Blackwing Lair
+[60+] The Path of the Righteous
+  [60] The Hand of the Righteous
+
+{The Path of the Righteous}
+{Brood of Nozdormu neutral}
+[60] Anachronos
+[60] Long Forgotten Memories
+[60] A Pawn on the Eternal Board
+[60] The Charge of the Dragonflights
+
+### Red Shard
+
+[60R] Nefarius's Corruption
+
+### Blue Shard
+
+[60] Azuregos's Magical Ledger
+[60] Translating the Ledger
+
+#### Scrying Goggles
+
+[60] Stewvul, Ex-B.F.F.
+[60R] Scrying Goggles? No Problem!
+
+#### 500 pound chicken
+
+[60] Never Ask Me About My Business
+[60R] The Isle of Dread!
+[60] Dirge's Kickin' Chimaerok Chops
+[60] Return to Narain
+
+#### Draconic For Dummies: Volume III
+
+[60] Draconic for Dummies
+[60] Love Song for Narain
+[60] rAnS0m
+[60+] Decoy!
+[60R] The Only Prescription
+
+#### Maws
+
+[60] The Good News and the Bad News
+[60R] The Wrath of Neptulon
+
+### Green Shard
+{Brood of Nozdormu neutral}
+[60] Eranikus, Tyrant of the Dream
+[60] Tyrande and Remulos
+[60R] The Nightmare's Corruption
+[60R] The Nightmare Manifests
+[60] The Champion Returns
+
+### Epilogue
+
+{The Wrath of Neptulon}
+{Nefarius's Corruption}
+{The Chapion Returns}
+[60]The Might of Kalimdor
+[60] Bang a Gong!
+[60] Treasure of the Timeless One
+
 ## Naxxramas
 
 One of:
@@ -1901,71 +2080,3 @@ One of:
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
 
-## Ashenvale
-
-[18] Journey to Stonetalon Peak
-{Stonetalon Peak: Reclaiming the Charred Vale}
-
-{Darkshore: Escape Through Force}
-[19] Trek to Ashenvale
-
-[19] The Zoram Strand
-[21] Pridewings of Stonetalon
-
-[19] Raene's Cleansing {Raene to Teronis' Corpse}
-[21] Raene's Cleansing {Teronis' Corpse to Raene} {2}
-[21] Raene's Cleansing {Raene to Shael'dryn}
-[27] Raene's Cleansing {Shael'dryn}
-[28] Raene's Cleansing {Shael'dryn}
-[28] Raene's Cleansing {Shael'dryn to Hidden Shrine}
-[28] Raene's Cleansing {Hidden Shrine to Shael'dryn}
-[28] Raene's Cleansing {Shael'dryn to Raene}
-[28] Raene's Cleansing {Raene to Krolg}
-[30] Raene's Cleansing {Krolg}
-[30] Raene's Cleansing {Krolg to Raene}
-
-[20] The Ancient Statuette
-[25] Ruuzel
-
-[20] Bathran's Hair
-[20] Orendil's Cure
-[22] Elune's Tear
-[23] The Ruins of Stardust
-[30] Fallen Sky Lake
-
-[21] On Guard in Stonetalon
-[21] On Guard in Stonetalon
-{Stonetalon Peak: A Gnome's Respite}
-
-{Darkshore: The Tower of Althalaxx}
-[24] Supplies to Auberdine
-
-{Raene's Cleansing {2}}
-[24] An Aggressive Defense
-
-[24] Elemental Bracers
-[25] Mage Summoner
-
-[25] Culling the Threat
-
-[29] Kayneth Stillwind
-[29] Forsaken Diseases
-[32] Insane Druids
-
-[30] The Howling Vale
-[30] Velinde Starsong
-[30] Velinde's Effects
-[30] The Barrens Port
-[30] Passage to Booty Bay
-[30] The Caravan Road
-[30] The Carevin Family
-[30] The Scythe of Elune
-[30] Answered Questions
-
-[32] Vile Satyr! Dryads in Danger!
-[32] The Branch of Cenarius
-[32] Satyr Slaying!
-
-[34] Sentinel Basic Care Package
-[44] Sentinel Standard Care Package
-[60] Sentinel Advanced Care Package
