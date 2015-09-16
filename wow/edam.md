@@ -36,6 +36,7 @@ Kalimdor
   Ashenvale
   Azshara
   Darkshore
+  Desolace
 
 ## To Parse
 
@@ -44,10 +45,11 @@ Fishing Quests
 
 # Quests
 
-## Northshire Abbey (1-5)
+## [1-5] Northshire Abbey
 
 [1] A Threat Within
 [2] Kobold Camp Cleanup
+  [1] Simple Letter
 [3] Investigate Echo Ridge
 [5] Skirmish at Echo Ridge
 [5] Report to Goldshire
@@ -65,7 +67,7 @@ Fishing Quests
 [4] Milly's Harvest
 [4] Grape Manifest
 
-# Stormwind (1-10)
+## [2] Stormwind
 
 [2] Harlan Needs a Resupply
 
@@ -73,7 +75,7 @@ Fishing Quests
 
 [2] Wine Shop Advert
 
-# Elwynn Forest (5-10)
+## [5-11] Elwynn Forest
 
 [1] Give Gerard a Drink
 
@@ -127,7 +129,7 @@ Drop: ??? (from gnolls)
 [10] The Collector
 [10] Manhunt
 
-## Dun Morogh (5-10)
+## [5-12] Dun Morogh
 
 [5] Supplies to Tannok
 
@@ -173,25 +175,17 @@ NPC: Mountaineer Kadrell in Loch Modan
 [23] Stonegear's Search
 [22] Search for Incendicite
 
-## Warrior 1-10
+## [10] Warrior
 
-{Northshire Abbey: Kobold Camp Cleanup}
-[1] Simple Letter
-
-[1] Simple Memorandum (for rep, maybe)
-[1] Simple Rune (for rep, maybe)
-[1] Simple Sigil (for rep, maybe)
-
-Elwynn Forest:
+Elwynn Forest
 [10] A Warrior's Training
 [10] Bartleby the Drunk
 [10] Beat Bartelby
 [10] Bartleby's Mug
-
 [10] Marshal Haggard
 [10] Dead-tooth Jack
 
-# Westfall (10-20)
+## [10-20] Westfall
 
 [10] A Swift Message
 [10] Continue to Stormwind
@@ -241,7 +235,7 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 [16] Captain Sander's Hidden Treasure (Part 3)
 [16] Captain Sander's Hidden Treasure (Part 4)
 
-## Darnassus (10-12)
+## [10-12] Darnassus
 
 Teldrassil
 [11] The Enchanted Glade
@@ -253,16 +247,7 @@ Darnassus
 [12] Tears of the Moon
 [12] Sathrah's Sacrifice
 
-## Stormwind (10-20)
-
-[15] Elmore's Task
-[15] Stormpike's Delivery
-
-[15] Humble Beginnings
-
-[16] Stormwind Library
-
-## Loch Modan (10-22)
+## [10-22] Loch Modan
 
 [10] Honor Students
 [10] Ride to Ironforge
@@ -321,7 +306,7 @@ Ironforge: [15] Find Bingles
 [42] Uldaman Reagent Run
 [44+] Badlands Reagent Run II
 
-## Darkshore (10-31)
+## [10-31] Darkshore
 
 [1??] Onu is meditating
 [1??] Onu is meditating
@@ -421,12 +406,21 @@ Darkshore
 [20] The Absent Minded Prospector
 [24] The Absent Minded Prospector
 
-## Deeprun Tram (12)
+## [12] Deeprun Tram
 
 [12] Deeprun Rat Roundup
 [12] Me Brother, Nipsy
 
-# Redridge Mountains (15-25)
+## [15-16] Stormwind
+
+[15] Elmore's Task
+[15] Stormpike's Delivery
+
+[15] Humble Beginnings
+
+[16] Stormwind Library
+
+## [15-25] Redridge Mountains
 
 [14] Messenger to Stormwind
 [14] Messenger to Stormwind
@@ -489,7 +483,7 @@ Darkshore
 Drop: Glowing Shadowhide Pendant (Shadowhide gnolls in Redridge)
 [23] Theocritus' Retrieval
 
-# The Deadmines (18-22)
+## [18-22] The Deadmines
 
 Stormwind
 [18] Collecting Memories
@@ -510,7 +504,7 @@ Ironforge
 Stormwind
 [20++] Underground Assault
 
-## Ashenvale (18-32)
+## [18-32] Ashenvale
 
 [18] Journey to Stonetalon Peak
 {Stonetalon Peak: Reclaiming the Charred Vale}
@@ -579,7 +573,7 @@ Stormwind
 [44] Sentinel Standard Care Package
 [60] Sentinel Advanced Care Package
 
-# Defias Chain (22-31)
+## [22-31] Defias Chain
 
 Drop: An Unsent Letter (from Edwin VanCleef in The Deadmines)
 [22] The Unsent Letter
@@ -595,7 +589,7 @@ Drop: An Unsent Letter (from Edwin VanCleef in The Deadmines)
 [31] Brotherhood's End
 [31] An Audience with the King
 
-## Warrior 20-30
+## [20-30] Warrior
 
 Wu Shen, Weapon Trainer in Stormwind:
 [20] Yorus Barleybrew
@@ -621,40 +615,7 @@ Wu Shen, Weapon Trainer in Stormwind:
 {Fire Hardened Mail}
 [60] Furen's Armor [uncatagorized]
 
-# Stormwind (20-30)
-
-[24] The Corruption Abroad
-{Blackfathom Deeps: Researching the Corruption}
-
-[24] Speaking of Fortitude
-[24] Brother Paxton
-[24] Ink Supplies
-[24] Rethban Ore
-[24] Return to Kristoff
-
-[28] The Missing Diplomat
-[28] The Missing Diplomat
-[28] The Missing Diplomat
-[30] The Missing Diplomat
-[30] The Missing Diplomat
-[31] The Missing Diplomat
-[31] The Missing Diplomat
-[31] The Missing Diplomat
-[32] The Missing Diplomat
-[33] The Missing Diplomat
-[33] The Missing Diplomat
-[33] The Missing Diplomat
-[33] The Missing Diplomat
-[35] The Missing Diplomat
-[36] The Missing Diplomat
-[38] The Missing Diplomat
-[38] The Missing Diplomat
-
-[30] A Noble Brew
-[30] A Noble Brew
-[30] You Have Served Us Well
-
-# Duskwood (20-35, 44)
+## [20-35] Duskwood
 
 [20] Raven Hill
 [20] Jitters' Growling Gut
@@ -745,7 +706,7 @@ Drop: An Old History Book (anywhere in the zone?)
 {Stormwind: Vital Supplies}
 [45] Supplies for Nethergarde
 
-## Wetlands (21-34)
+## [20-34] Wetlands
 
 [20] Fiora Longears
 Darkshore: [20] Journey to Astranaar
@@ -808,7 +769,40 @@ Darkshore: [20] Journey to Astranaar
 Stormwind City: [35] James Hyal
 [35] James Hyal
 
-## Hillsbrad Foothills (30-37)
+## [24-38] Stormwind
+
+[24] The Corruption Abroad
+{Blackfathom Deeps: Researching the Corruption}
+
+[24] Speaking of Fortitude
+[24] Brother Paxton
+[24] Ink Supplies
+[24] Rethban Ore
+[24] Return to Kristoff
+
+[28] The Missing Diplomat
+[28] The Missing Diplomat
+[28] The Missing Diplomat
+[30] The Missing Diplomat
+[30] The Missing Diplomat
+[31] The Missing Diplomat
+[31] The Missing Diplomat
+[31] The Missing Diplomat
+[32] The Missing Diplomat
+[33] The Missing Diplomat
+[33] The Missing Diplomat
+[33] The Missing Diplomat
+[33] The Missing Diplomat
+[35] The Missing Diplomat
+[36] The Missing Diplomat
+[38] The Missing Diplomat
+[38] The Missing Diplomat
+
+[30] A Noble Brew
+[30] A Noble Brew
+[30] You Have Served Us Well
+
+## [30-37] Hillsbrad Foothills
 
 [30] Down the Coast
 [32] Farren's Proof
@@ -831,7 +825,7 @@ Stormwind City: [35] James Hyal
 
 [34] Costly Menace
 
-## Warrior (30-40)
+## [30-40] Warrior
 
 [30] The Islander
 [30] The Affray
@@ -843,7 +837,7 @@ Stormwind City: [35] James Hyal
 {Cyclonian}
 [37] Essense of the Exile
 
-## Stranglethorn Vale (30-45)
+## [30-45] Stranglethorn Vale
 
 [30] Welcome to the Jungle
 
@@ -947,7 +941,62 @@ Drop: Cortello's Riddle (looted in pirate camps)
 [45] Stranglethorn Fever
 [45] Stranglethorn Fever
 
-## Stormwind (30-40)
+## [31-39] Desolace
+
+[31] Centaur Bounty
+
+Ironforge
+[33] Reclaimers' Business in Desolace
+Desolace
+[33] Reagents for Reclaimers Inc.
+[35] Reagents for Reclaimers Inc.
+[40] Reagents for Reclaimers Inc.
+[40] Reagents for Reclaimers Inc.
+
+[33] Vahlarriel's Search
+[33] Vahlarriel's Search
+[33] Vahlarriel's Search
+[33] Search for Tyranis
+[33] Return to Vahlarriel
+
+[33] Sceptre of Light
+[38] Book of the Ancients
+
+[34] Kodo Roundup
+
+[35] Bodyguard for Hire
+
+[35] Brutal Politics
+[32] Assault on the Kolkar
+[33] Broken Tears
+[35] Gizmo for Warug
+[37] Khan Shaka
+[42+] Khan Hratha
+
+[35] Strange Alliance
+[32] Raid on the Kolkar
+[35] Stealing Supplies
+[37] Ongeku
+[37] Khan Jehn
+[42+] Khan Hratha
+
+[36] Claim Rackmore's Treasure!
+
+[38] Gizelton Caravan
+
+[39] Bone Collector
+
+[39] Get Me Out of Here!
+
+[39] Ghost-o-plasm Round Up
+
+{Reclaimers' Business in Desolace}
+[39] The Karnitol Shipwreck
+[39] The Karnitol Shipwreck
+[39] The Karnitol Shipwreck
+[39] The Karnitol Shipwreck
+
+## [32-40] Stormwind
 
 [32] Malin's Request
 {Arathi Highlands: Worth Its Weight in Gold}
@@ -964,15 +1013,7 @@ Drop: Cortello's Riddle (looted in pirate camps)
 
 [40+] The Perenolde Tiara
 
-## Desolace (33-39)
-
-Ironforge: [33] Reclaimers' Business in Desolace
-[39] The Karnitol Shipwrech
-...
-[33] Reagents for Reclaimers Ince.
-...
-
-## Alterac Mountains (33-40)
+## [33-40] Alterac Mountains
 
 Magistrate Henry Maleb in Southshore
 [33] Syndicate Assassins
@@ -1001,14 +1042,14 @@ Item: The Encorcelled Parchment in a Worn Wooden Chest?
 [40] The Ensorcelled Parchment
 [40] Stormpike's Deciphering
 
-## Gnomeregan (34)
+## [34] Gnomeregan
 
 Drop: Grim-Encrusted Ring
 [34] Grime-Encrusted Ring
 [34] Return of the Ring
 Ironforge: [34] Gnome Improvement
 
-## Swamp of Sorrows (35-40)
+## [35-40] Swamp of Sorrows
 
 [35] Draenethyst Crystals
 
@@ -1028,7 +1069,7 @@ Sunken Temple: [55] The Essence of Eranikus
 [55] The Essence of Eranikus
 [55] In Erankius' Own Words
 
-## Badlands (35-45)
+## [35-45] Badlands
 
 [35] A Dwarf and His Tools
 
@@ -1089,7 +1130,7 @@ Drop: The Black Box (from Zaricotl)
 
 [45+] Fiery Blaze Enchantments
 
-## Thousand Needles (36-44)
+## [36-44] Thousand Needles
 
 [36] Wharfmaster Dizzywig
 [36] Parts for Kravel
@@ -1102,7 +1143,7 @@ Swamp of Sorrows: [36] Dream Dust in the Swamp
 [44] Get the Gnomes Drunk or [44] Get the Goblins Drunk
 [44] Report Back to Fizzlebub
 
-## Arathi Highlands (35-50)
+## [35-50] Arathi Highlands
 
 [29+pvp] Claiming Arathi Basin (repeatable)
 
@@ -1154,7 +1195,16 @@ Professor Phizzlethorpe
 [40] Sunken Treasure
 [44] Death From Below
 
-# Westfall (44+)
+## [39-40] Scarlet Monastery
+
+Desolace
+[39] Brother Anton
+[39] Down the Scarlet Path
+[40] Dwon the Scarlet Path
+Scarlnet Monastery
+[40] In The Name of the Light
+
+## [44] Westfall
 
 [44] Sweet Amber
 [44] Sweet Amber
@@ -1162,7 +1212,7 @@ Professor Phizzlethorpe
 [44] Sweet Amber
 [44] Sweet Amber
 
-# Stormwind (40-50)
+## [40-50] Stormwind
 
 [41] Mazen's Behest
 [41] Mazen's Behest
@@ -1176,7 +1226,7 @@ Professor Phizzlethorpe
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
 
-## Sunken Temple (43-50)
+## [43-50] Sunken Temple
 
 Stormwind City:
 [43] In Search of the Temple
@@ -1189,7 +1239,7 @@ The Hinterlands:
 Sunken Temple:
 [50] Into The Temple of Atal'Hakkar
 
-## The Hinterlands (45-48)
+## [45-48] The Hinterlands
 
 [45] Troll Necklace Bounty
 [45] Troll Necklace Bounty [repeatable]
@@ -1200,7 +1250,7 @@ Drop: OOX-09/HL Distress Beacon
 [48] Find OOX-09/HL!
 [48] Rescue OOX-09/HL!
 
-## Zul'Farrak (45-53)
+## [45-53] Zul'Farrak
 
 Hinterlands
 [45] Witherbark Cages
@@ -1213,7 +1263,7 @@ Hinterlands
 [47+] Return to the Hunterlands
 [53+] Saving Sharpbeak
 
-## Azshara (47-57)
+## [47-57] Azshara
 
 [47] A Land Filled with Hatred
 
@@ -1246,7 +1296,7 @@ Hinterlands
 
 [57] A Crew Under Fire
 
-## Searing Gorge (48-55)
+## [48-55] Searing Gorge
 
 [48] Suntara Stones
 [48] Suntara Stones
@@ -1254,14 +1304,54 @@ Ironforge: [55] Dwarven Justice
 [52] Release Them
 [55+] Rise, Obsidion!
 
-## Warrior (50+)
+## [52] Warrior
 
 [52] A Troubled Spirit
 [52] Warrior Kinship
 [52] War on the Shadowsworn
 [52++] Voodoo Feathers
 
-# Stranglethorn Vale (50+)
+## [50-55] Blasted Lands
+
+[50] A Boar's Vitality
+[50] Spirit of the Boar
+
+[50] The Basilisk's Bite
+[50] Infallible Minds
+
+[50] Snickerfang Jowls
+[50] Rage of Ages
+
+[50] The Decisive Striker
+[50] Salt of the Scorpok
+
+[50] Vulture's Vigor
+[50] Spiritual Domination
+
+[55] To Serve Kum'isha
+[55] Kum'isha's Endeavors
+
+[55] Everything Counts in Large Amounts
+[55] One Draenei's Junk
+
+## [50-56] Burning Steppes
+
+[50] Tablet of the Seven
+
+[52] Extinguish the Firegut
+[53] Gor'tesh the Brute Lord
+[53] Ogre Head On A Stick = Party
+
+[56] FIFTY! YEP!
+
+Repeatable Shoulder Enchants
+[55] Libram of Constitution
+[55] Libram of Resilience
+[55] Libram of Rumination
+[55] Libram of Tenacity
+[55] Libram of Voracity
+
+## [50-60] Stranglethorn Vale
 
 [50] Whiskey Slim's Lost Grog
 
@@ -1288,86 +1378,7 @@ Drop: Arena Master
 [55pvp] Arena Master
 [45] Arena Grandmaster
 
-## Blasted Lands (50-55)
-
-[50] A Boar's Vitality
-[50] Spirit of the Boar
-
-[50] The Basilisk's Bite
-[50] Infallible Minds
-
-[50] Snickerfang Jowls
-[50] Rage of Ages
-
-[50] The Decisive Striker
-[50] Salt of the Scorpok
-
-[50] Vulture's Vigor
-[50] Spiritual Domination
-
-[55] To Serve Kum'isha
-[55] Kum'isha's Endeavors
-
-[55] Everything Counts in Large Amounts
-[55] One Draenei's Junk
-
-## Burning Steppes (50-56)
-
-[50] Tablet of the Seven
-
-[52] Extinguish the Firegut
-[53] Gor'tesh the Brute Lord
-[53] Ogre Head On A Stick = Party
-
-[56] FIFTY! YEP!
-
-Repeatable Shoulder Enchants
-[55] Libram of Constitution
-[55] Libram of Resilience
-[55] Libram of Rumination
-[55] Libram of Tenacity
-[55] Libram of Voracity
-
-## Ironforge (50-60)
-
-[52] A Little Slime Goes a Long Way
-[54] A Little Slime Goes a Long Way
-
-[52] Passing the Burden
-  [52] Arcane Runes
-    [52] Return to Tymor
-  [52] An Easy Pickup
-    [52] Signal for Pickup
-    [52] Signal for Pickup
-
-[60] Arrows Are For Sissies [repeatable]
-
-[50] Assisting Arch Druid Staghelm
-(leads to Un'goro Soil)
-
-## Darnassus (50-60)
-
-Darnassu
-[53] March of the Silithid
-Tanaris
-[53] Bungle in the Jungle
-[54] Pawn Captures Queen
-[54] Calm Before the Storm
-Darnassus
-[54] Calm Before the Storm
-
-[60] Assisting Archdruid Staghelm
-[50] Un'goro Soil
-[50] Morrowgrain Research
-[50] Morrowgrain Research [repeatable]
-[50] Morrowgrain to Darnassus [repeatable]
-
-## Blackrock Mountain (52+)
-
-[52D] Overmaster Pyron
-{Blackrock Depths: Incendius}
-
-## Western Plaguelands (??)
+## [50-60] Western Plaguelands
 
 Stormwind or Ironforge or Darnassus:
 [50] A Call to Arms: The Plaguelands!
@@ -1442,7 +1453,46 @@ Scholomance:
 Western Plaguelands:
 [60+] The Last Barov
 
-## Eastern Plaguelands (55-60)
+## [52-60] Ironforge (50-60)
+
+[52] A Little Slime Goes a Long Way
+[54] A Little Slime Goes a Long Way
+
+[52] Passing the Burden
+  [52] Arcane Runes
+    [52] Return to Tymor
+  [52] An Easy Pickup
+    [52] Signal for Pickup
+    [52] Signal for Pickup
+
+[60] Arrows Are For Sissies [repeatable]
+
+[50] Assisting Arch Druid Staghelm
+(leads to Un'goro Soil)
+
+## [53-60] Darnassus
+
+Darnassu
+[53] March of the Silithid
+Tanaris
+[53] Bungle in the Jungle
+[54] Pawn Captures Queen
+[54] Calm Before the Storm
+Darnassus
+[54] Calm Before the Storm
+
+[60] Assisting Archdruid Staghelm
+[50] Un'goro Soil
+[50] Morrowgrain Research
+[50] Morrowgrain Research [repeatable]
+[50] Morrowgrain to Darnassus [repeatable]
+
+## [52-60] Blackrock Mountain
+
+[52D] Overmaster Pyron
+{Blackrock Depths: Incendius}
+
+## [55-60] Eastern Plaguelands
 
 [10] Augustus' Receipt Book
 
@@ -1470,13 +1520,13 @@ Western Plaguelands:
 
 [60pvp] Establishing New Outposts
 
-## Silithus (55-60)
+## [55-60] Silithus
 
 Ironforge: [55] Taking Back Silithus
 [55] Securing the Supply Lines
 [57] Stepping Up Security
 
-## Blackrock Depths (55+)
+## [55-60] Blackrock Depths
 
 Ironforge:
 [55] The Smoldering Ruins of Thaurissan
@@ -1487,7 +1537,7 @@ Blackrock Depths:
 [59D] The Fate of the Kingdom
 [59D] The Princess's Surprise
 
-## Stormwind 60+
+## [60] Stormwind
 
 Drop: Head of Onyxia (from Onyxia in Onyxia's Lair)
 [60] Victory for the Alliance
