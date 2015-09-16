@@ -825,6 +825,51 @@ Stormwind City: [35] James Hyal
 
 [34] Costly Menace
 
+## [30-38] Dustwallow Marsh
+
+[30] Highperch Venom
+
+[35] Suspicious Hoofprints
+
+[35] They Call Him Smiling Jim
+
+[35] The Orc Report
+[35] Captain Vimes
+
+[35] Soothing Spices
+[35] Jarl Needs Eyes
+[35] Jarl Needs a Blade
+
+[35] The Black Shield
+[35] The Black Shield
+[35] The Black Shield
+
+[36] Hungry!
+
+[37] Lieutenant Paval Reethe
+[37] Questioning Reethe
+
+[37+] Stinky's Escape
+
+[38] Morgan Stern
+[38] Mudrock Soup and Bugs
+[40] ... and Bugs
+
+{... and Bugs}
+{Stinky's Escape}
+[37] Feast at the Blue Recluse
+
+[40] Lieutenant Paval Reethe
+[40] Lieutenant Paval Reethe
+[38] Daelin's Men
+[38] The Deserters
+[38] The Deserters
+
+[38] Vimes's Report
+[38] Vimes's Report
+[60] Oops, We Killed Them Again.
+// Might not exist
+
 ## [30-40] Warrior
 
 [30] The Islander
@@ -2262,3 +2307,4 @@ One of:
   [60] The Dread Citadel - Naxxramas [revered]
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
+
