@@ -32,6 +32,10 @@ Eastern Kingdoms
   Westfall
   Western Plaguelands
   Wetlands
+Kalimdor
+  Ashenvale
+  Azshara
+  Darkshore
 
 ## To Parse
 
@@ -237,6 +241,18 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 [16] Captain Sander's Hidden Treasure (Part 3)
 [16] Captain Sander's Hidden Treasure (Part 4)
 
+## Darnassus (10-12)
+
+Teldrassil
+[11] The Enchanted Glade
+Darnassus
+[11] Teldrasssil
+[11] Grove of the Ancients
+
+[10] Temple of the Moon
+[12] Tears of the Moon
+[12] Sathrah's Sacrifice
+
 ## Stormwind (10-20)
 
 [15] Elmore's Task
@@ -396,7 +412,9 @@ Ironforge: [15] Find Bingles
 [22] Escape Through Force --or-- [20] Escape Through Stealth
 {Ashenvale: Trek to Ashenvale}
 
-{Darnassus: Trouble in Darkshore?}
+Darnassus
+[14] Trouble in Darkshore?
+Darkshore
 [20] The Absent Minded Prospector
 [20+] The Absent Minded Prospector
 [20] The Absent Minded Prospector
@@ -1152,7 +1170,7 @@ Professor Phizzlethorpe
 [45] Vital Supplies
 {Duskwood}
 
-[50] Assisting Arch Druid Staghelm
+[50] Assisting Arch Druid Staghelm [or Darnassus]
 (leads to Un'Goro Soil)
 
 [50] Jonespyre's Request
@@ -1327,6 +1345,23 @@ Repeatable Shoulder Enchants
 [50] Assisting Arch Druid Staghelm
 (leads to Un'goro Soil)
 
+## Darnassus (50-60)
+
+Darnassu
+[53] March of the Silithid
+Tanaris
+[53] Bungle in the Jungle
+[54] Pawn Captures Queen
+[54] Calm Before the Storm
+Darnassus
+[54] Calm Before the Storm
+
+[60] Assisting Archdruid Staghelm
+[50] Un'goro Soil
+[50] Morrowgrain Research
+[50] Morrowgrain Research [repeatable]
+[50] Morrowgrain to Darnassus [repeatable]
+
 ## Blackrock Mountain (52+)
 
 [52D] Overmaster Pyron
@@ -1334,7 +1369,7 @@ Repeatable Shoulder Enchants
 
 ## Western Plaguelands (??)
 
-Stormwind or Ironforge:
+Stormwind or Ironforge or Darnassus:
 [50] A Call to Arms: The Plaguelands!
 Western Plaguelands:
 [52] Clear the Way
@@ -2177,4 +2212,3 @@ One of:
   [60] The Dread Citadel - Naxxramas [revered]
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
-
