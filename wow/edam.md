@@ -38,6 +38,8 @@ Kalimdor
   Darkshore
   Desolace
   Dustwallow Marsh
+  Felwood
+  Feralas (in progress)
 
 ## To Parse
 
@@ -1272,7 +1274,7 @@ Scarlnet Monastery
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
 
-## [43-50] Sunken Temple
+## [43-51] Sunken Temple
 
 Stormwind City:
 [43] In Search of the Temple
@@ -1284,6 +1286,81 @@ The Hinterlands:
 [43] Rhapsody's Tale
 Sunken Temple:
 [50] Into The Temple of Atal'Hakkar
+
+Feralas
+[51] The Sunken Temple
+Tanaris
+[51] The Stone Circle
+Sunken Temple
+Both:
+  [51D] Into the Depths
+  [51D] Secret of the Circle
+
+## [43-52] Feralas
+
+[25] To the Top [repeatable]
+
+[43] The Ruins of Solarsal
+[43] Return to Feathermoon Stronghold
+[43] Against the Hatecrest
+[43] Against the Hatecrest
+[45] Against Lord Shalzaru
+[45] Delivering the Relic
+
+[43] The Missing Courier
+[43] The Missing Courier
+[44] Boat Wreckage
+[44] The Knife Revealed
+[44] Psychometric Reading
+[44] The Woodpaw Gnolls
+[46] The Writhing Deep
+[46] Freed from the Hive
+[46] A Hero's Welcome
+[46] Rise of the Silithid
+
+[44] The High Wilderness
+
+Object: Undelivered Parcel
+[44] Thalanaar Delivery
+
+[45] Find OOX-22/FE!
+[45] Rescue OOX-22/FE!
+
+[46] The Mark of Quality
+[48] Improved Quality
+
+**Sprite Darter Egg**
+[47] Freedom for All Creatures
+[47] Doing Justice
+[47] Doing Justice
+[47] An Orphan Looking for a Home
+[47] A Short Incubation
+[47] The Newest Member of the Family
+[47] Food for Baby
+[48] Becoming a Parent
+
+Drop: Pristine Yeti Hide (from Feralas yetis)
+[48] Pristine Yeti Hide
+
+[48] Zapped Giants
+[55] Again With the Zapped Giants [repeatable]
+
+[48] Fuel for the Zapping
+[60] Refuel for the Zapping [repeatable]
+
+[49] The Giant Guardian
+[49] Wandering Shay [horde maybe?]
+
+[49] In Search of Knowledge
+[47] Feralas: A History
+[48] The Borrower
+[48+] The Super Snapper FX
+[48] Return to Troyas
+[50] The Stave of Equinex
+[50] The Morrow Stone
+
+{Un'goro Crater: The Videre Elixir}
+[52] The Videre Elixir [repeatable]
 
 ## [45-48] The Hinterlands
 
@@ -1499,7 +1576,32 @@ Scholomance:
 Western Plaguelands:
 [60+] The Last Barov
 
-## [52-60] Ironforge (50-60)
+## [51-57] Felwood
+
+[51] Forces of Jaedenar
+[52] Collection of the Corrupt Water
+[52] Seeking Spiritual Aid
+[54] Cleansed Water Returns to Felwood
+[55] Dousing the Flames of Protection
+[58] A Final Blow
+
+[54] The Corruption of the Jadefire
+[54] Further Corruption
+
+[54+] Verifying the Corruption
+
+Drop: Flute of Xavaric (from Xavaric)
+[54] Flute for Xavaric
+[54] Felbound Ancients
+[54] Purified!
+[56] Ancient Spirit
+
+[55] A Strange Red Key
+[55] Rescue from Jaedenar
+[57] Retribution of the Light
+[57] The Remains of Trey Lightforge
+
+## [52-60] Ironforge
 
 [52] A Little Slime Goes a Long Way
 [54] A Little Slime Goes a Long Way
@@ -2208,6 +2310,73 @@ Ironforge
 [60] Superior Armaments of Battle - Exalted Amongst the Dawn
 [60] Epic Armaments of Battle - Exalted Amongst the Dawn
 
+
+## Timbermaw
+
+[48] Timbermaw Ally
+
+[55] Speak to Nafien
+
+[55] Speak to Salfa
+
+{Timbermaw Ally}
+[55] Feathers for Grazle
+
+{Timbermaw Ally}
+[55] Feathers for Nafien
+
+Drop: Deadwood Ritual Totem
+[55] Deadwood Ritual Totem
+
+[56] Beads for Salfa [repeatable]
+
+## Felwood Cenerion Circle
+
+[55] Cleansing Felwood
+[55] Salve via Disenchanting
+[60] Salve via Disenchanting [repeatable]
+[60] Salve via Gathering
+[60] Salve via Gathering [repeatable]
+[55] Salve via Hunting
+[55] Salve via Hunting [repeatable]
+[55] Salve via Mining
+[60] Salve via Mining [repeatable]
+[55] Salve via Mining
+[60] Salve via Mining [repeatable]
+[55] Salve via Skinning
+[60] Salve via Skinning [repeatable]
+[60] Corrupted Night Dragon [repeatable]
+[60] Corrupted Night Dragon [repeatable]
+[60] Corrupted Night Dragon [repeatable]
+[55] Corrupted Night Dragon [repeatable]
+[54] Corrupted Sabers [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[55] Corrupted Whipper Root [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+
 ## Cenarion Circle
 
 Ironforge
@@ -2311,97 +2480,3 @@ One of:
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
 
-## Felwood
-
-[51] Forces of Jaedenar
-[52] Collection of the Corrupt Water
-[52] Seeking Spiritual Aid
-[54] Cleansed Water Returns to Felwood
-[55] Dousing the Flames of Protection
-[58] A Final Blow
-
-[54] The Corruption of the Jadefire
-[54] Further Corruption
-
-[54+] Verifying the Corruption
-
-Drop: Flute of Xavaric (from Xavaric)
-[54] Flute for Xavaric
-[54] Felbound Ancients
-[54] Purified!
-[56] Ancient Spirit
-
-[55] A Strange Red Key
-[55] Rescue from Jaedenar
-[57] Retribution of the Light
-[57] The Remains of Trey Lightforge
-
-## Timbermaw
-
-[48] Timbermaw Ally
-
-[55] Speak to Nafien
-
-[55] Speak to Salfa
-
-{Timbermaw Ally}
-[55] Feathers for Grazle
-
-{Timbermaw Ally}
-[55] Feathers for Nafien
-
-Drop: Deadwood Ritual Totem
-[55] Deadwood Ritual Totem
-
-[56] Beads for Salfa [repeatable]
-
-## Felwood Cenerion Circle
-
-[55] Cleansing Felwood
-[55] Salve via Disenchanting
-[60] Salve via Disenchanting [repeatable]
-[60] Salve via Gathering
-[60] Salve via Gathering [repeatable]
-[55] Salve via Hunting
-[55] Salve via Hunting [repeatable]
-[55] Salve via Mining
-[60] Salve via Mining [repeatable]
-[55] Salve via Mining
-[60] Salve via Mining [repeatable]
-[55] Salve via Skinning
-[60] Salve via Skinning [repeatable]
-[60] Corrupted Night Dragon [repeatable]
-[60] Corrupted Night Dragon [repeatable]
-[60] Corrupted Night Dragon [repeatable]
-[55] Corrupted Night Dragon [repeatable]
-[54] Corrupted Sabers [repeatable]
-[50] Corrupted Songflower [repeatable]
-[50] Corrupted Songflower [repeatable]
-[50] Corrupted Songflower [repeatable]
-[50] Corrupted Songflower [repeatable]
-[55] Corrupted Songflower [repeatable]
-[55] Corrupted Songflower [repeatable]
-[55] Corrupted Songflower [repeatable]
-[55] Corrupted Songflower [repeatable]
-[55] Corrupted Songflower [repeatable]
-[60] Corrupted Whipper Root [repeatable]
-[60] Corrupted Whipper Root [repeatable]
-[60] Corrupted Whipper Root [repeatable]
-[60] Corrupted Whipper Root [repeatable]
-[60] Corrupted Whipper Root [repeatable]
-[55] Corrupted Whipper Root [repeatable]
-[55] Corrupted Windblossom [repeatable]
-[55] Corrupted Windblossom [repeatable]
-[55] Corrupted Windblossom [repeatable]
-[55] Corrupted Windblossom [repeatable]
-[55] Corrupted Windblossom [repeatable]
-[60] Corrupted Windblossom [repeatable]
-[60] Corrupted Windblossom [repeatable]
-[60] Corrupted Windblossom [repeatable]
-[60] Corrupted Windblossom [repeatable]
-[60] Corrupted Windblossom [repeatable]
-
-
-
-
-[56] To Winterspring!
