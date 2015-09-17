@@ -37,6 +37,7 @@ Kalimdor
   Azshara
   Darkshore
   Desolace
+  Dustwallow Marsh
 
 ## To Parse
 
@@ -1811,9 +1812,11 @@ Burning Steppes
 
 ## Fragments of the Past (56-57)
 
-Felwood [56] To Winterspring!
+Felwood
+[56] To Winterspring!
 -or-
-Darnassus [56] Starfall
+Darnassus
+[56] Starfall
 
 Winterspring
 [56] The Ruins of Kel'Theril
@@ -2308,3 +2311,97 @@ One of:
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
 
+## Felwood
+
+[51] Forces of Jaedenar
+[52] Collection of the Corrupt Water
+[52] Seeking Spiritual Aid
+[54] Cleansed Water Returns to Felwood
+[55] Dousing the Flames of Protection
+[58] A Final Blow
+
+[54] The Corruption of the Jadefire
+[54] Further Corruption
+
+[54+] Verifying the Corruption
+
+Drop: Flute of Xavaric (from Xavaric)
+[54] Flute for Xavaric
+[54] Felbound Ancients
+[54] Purified!
+[56] Ancient Spirit
+
+[55] A Strange Red Key
+[55] Rescue from Jaedenar
+[57] Retribution of the Light
+[57] The Remains of Trey Lightforge
+
+## Timbermaw
+
+[48] Timbermaw Ally
+
+[55] Speak to Nafien
+
+[55] Speak to Salfa
+
+{Timbermaw Ally}
+[55] Feathers for Grazle
+
+{Timbermaw Ally}
+[55] Feathers for Nafien
+
+Drop: Deadwood Ritual Totem
+[55] Deadwood Ritual Totem
+
+[56] Beads for Salfa [repeatable]
+
+## Felwood Cenerion Circle
+
+[55] Cleansing Felwood
+[55] Salve via Disenchanting
+[60] Salve via Disenchanting [repeatable]
+[60] Salve via Gathering
+[60] Salve via Gathering [repeatable]
+[55] Salve via Hunting
+[55] Salve via Hunting [repeatable]
+[55] Salve via Mining
+[60] Salve via Mining [repeatable]
+[55] Salve via Mining
+[60] Salve via Mining [repeatable]
+[55] Salve via Skinning
+[60] Salve via Skinning [repeatable]
+[60] Corrupted Night Dragon [repeatable]
+[60] Corrupted Night Dragon [repeatable]
+[60] Corrupted Night Dragon [repeatable]
+[55] Corrupted Night Dragon [repeatable]
+[54] Corrupted Sabers [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[50] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[55] Corrupted Songflower [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[60] Corrupted Whipper Root [repeatable]
+[55] Corrupted Whipper Root [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[55] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+[60] Corrupted Windblossom [repeatable]
+
+
+
+
+[56] To Winterspring!
