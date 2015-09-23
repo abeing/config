@@ -1,50 +1,18 @@
 # List Building
 
-## Parsed
-
-Alchemy Items
-Cooking Items
-
-Warrior Quests
-
-Eastern Kingdoms
-  Alterac Mountains
-  Arathi Highlands
-  Badlands
-  Blackrock Mountain
-  Blasted Lands
-  Burning Steppes
-  Deadwind Pass
-  Deeprun Tram
-  Dun  Morogh
-  Dustkwood
-  Eastern Plaguelands
-  Elwynn Forst
-  Northshire Abbey
-  Hillsbrad Foothills
-  Ironforge
-  Loch Modan
-  Redridge Mountains
-  Searing Gorge
-  Stormwind City
-  Stranglethorn Vale
-  Swamp of Sorrows
-  Westfall
-  Western Plaguelands
-  Wetlands
+DONE Alchemy Items
+DONE Cooking Items
+DONE warrior Quests
+DONE Eastern Kingdoms
 Kalimdor
-  Ashenvale
-  Azshara
-  Darkshore
-  Desolace
-  Dustwallow Marsh
-  Felwood
-  Feralas
-  Moonglade
-  Silithus
-
-## To Parse
-
+  Teldrassil
+  The Barrens
+  Thousand Needles
+  Un'Goro Crater
+  Winterspring
+Dungeons
+Raids?
+Profession Quests
 Cooking Quests
 Fishing Quests
 
@@ -1368,9 +1336,6 @@ Both:
 Object: Undelivered Parcel
 [44] Thalanaar Delivery
 
-[45] Find OOX-22/FE!
-[45] Rescue OOX-22/FE!
-
 [46] The Mark of Quality
 [48] Improved Quality
 
@@ -1407,16 +1372,73 @@ Drop: Pristine Yeti Hide (from Feralas yetis)
 {Un'goro Crater: The Videre Elixir}
 [52] The Videre Elixir [repeatable]
 
+## [43-54] Tanaris
+
+[43] Wastewander Justice
+[44] More Wastewander Justice
+
+[44] Water Pouch Bounty
+[44] Water Pouch Bounty [repeatable]
+
+[45] Pirate Hates Ahoy!
+
+[45] Southsea Shakedown
+
+[45] WANTED: Andre Firebeard
+
+[45] Stoley's Debt
+[45] Stoley's Shipment
+[45] Deliver to MacKinley
+
+Drop: Ship Schedule
+[45] Ship Schedules
+
+[46] WANTED: Caliph Scorpidsting
+
+[46] Gadgetzan Water Survey
+[47] Noxious Lair Investigation
+[48] The Scrimshank Redemption
+[48] Insect Part Analysis
+[48] Insect Part Analysis
+[49] Rise of the Silithid
+
+[47] The Super Egg-O-Matic
+[60] The Super Egg-O-Matic [repeatable]
+[47] A Bad Egg [repeatable]
+[60] A Fine Egg [repeatable]
+[60] An Ordinary Egg [repeatable]
+[60] An Extraordinary Egg [repeatable]
+
+[48] Gahz'ridian
+
+[49] Handle With Care
+
+[49] The Dunemaul Compound
+
+[49] The Thirsty Goblin
+[49] In Good Taste
+[49] Sprinkle's Secret Ingredient
+[49] Delivery for Marin
+[49] Noggenfogger Elixir
+
+[50] Thistleshrub Valley
+
+[50] Tooga's Quest
+
+Darnassus: [53] March of the Silithid
+[53] Bungle in the Jungle
+[54] Pawn Captures Queen
+[54] Calm Before the Storm
+Darnassus: [54] Calm Before the Storm
+
+[54] Super Sticky
+
 ## [45-48] The Hinterlands
 
 [45] Troll Necklace Bounty
 [45] Troll Necklace Bounty [repeatable]
 
 [48] Skunk Rock Clean-up
-
-Drop: OOX-09/HL Distress Beacon
-[48] Find OOX-09/HL!
-[48] Rescue OOX-09/HL!
 
 ## [45-53] Zul'Farrak
 
@@ -1463,6 +1485,26 @@ Hinterlands
 [53] Kim'jael's "Missing" Equipment
 
 [57] A Crew Under Fire
+
+## [48] Chicken
+
+Feralas
+Drop: OOX-22/FE Distress Beacon
+[45] Find OOX-22/FE!
+[45] Rescue OOX-22/FE!
+
+Tanaris
+Drop: OOX-17/TN Distress Beacon
+[48] Find OOX-17/TN!
+[48] Rescue OOX-17/TN!
+
+Hinterlands
+Drop: OOX-09/HL Distress Beacon
+[48] Find OOX-09/HL!
+[48] Rescue OOX-09/HL!
+
+Booty Bay
+[50] An OOX of Your Own
 
 ## [48-55] Searing Gorge
 
@@ -1663,23 +1705,6 @@ Drop: Flute of Xavaric (from Xavaric)
 [50] Assisting Arch Druid Staghelm
 (leads to Un'goro Soil)
 
-## [53-60] Darnassus
-
-Darnassu
-[53] March of the Silithid
-Tanaris
-[53] Bungle in the Jungle
-[54] Pawn Captures Queen
-[54] Calm Before the Storm
-Darnassus
-[54] Calm Before the Storm
-
-[60] Assisting Archdruid Staghelm
-[50] Un'goro Soil
-[50] Morrowgrain Research
-[50] Morrowgrain Research [repeatable]
-[50] Morrowgrain to Darnassus [repeatable]
-
 ## [52-60] Blackrock Mountain
 
 [52D] Overmaster Pyron
@@ -1723,6 +1748,14 @@ Blackrock Depths:
 [59D] The Bearer of Bad News
 [59D] The Fate of the Kingdom
 [59D] The Princess's Surprise
+
+## [60] Darnassus
+
+[60] Assisting Archdruid Staghelm
+[50] Un'goro Soil
+[50] Morrowgrain Research
+[50] Morrowgrain Research [repeatable]
+[50] Morrowgrain to Darnassus [repeatable]
 
 ## [60] Stormwind
 
@@ -2244,6 +2277,12 @@ Ironforge
 
 # Reputations
 
+## Steamwheedle Cartel
+
+Tanaris:
+Lower than Neutral:
+[1] War at Sea [repeatable]
+
 ## Stormwind Reputation
 
 [20] A Donation of Wool
@@ -2544,6 +2583,31 @@ Drop: Brann Bronzebeard's Lost Letter (from bugs)
 [60] Field Duty Papers [repeatable]
 
 [60R] The Perfect Poison
+
+## Brood of Noozdormu
+
+[60] The Path of the Conqueror [neutral]
+[60] The Path of the Conqueror [friendly]
+[60] The Path of the Conqueror [honored]
+[60] The Path of the Conqueror [revered]
+[60] The Qiraji Conqueror [exalted]
+[60] The Changing of Paths - Conqueror No More [exalted]
+
+[60] The Path of the Invoker [neutral]
+[60] The Path of the Invoker [friendly]
+[60] The Path of the Invoker [honored]
+[60] The Path of the Invoker [revered]
+[60] The Grand Invoker [exalted]
+[60] The Changing of Paths - Invoker No More [exalted]
+
+[60] The Path of the Protector [neutral]
+[60] The Path of the Protector [friendly]
+[60] The Path of the Protector [honored]
+[60] The Path of the Protector [revered]
+
+[60] The Changing of Paths - Protector No More [exalted]
+
+
 
 # Future Content
 
