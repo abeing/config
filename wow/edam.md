@@ -39,7 +39,9 @@ Kalimdor
   Desolace
   Dustwallow Marsh
   Felwood
-  Feralas (in progress)
+  Feralas
+  Moonglade
+  Silithus
 
 ## To Parse
 
@@ -771,6 +773,49 @@ Darkshore: [20] Journey to Astranaar
 
 Stormwind City: [35] James Hyal
 [35] James Hyal
+
+## [21-28] Stonetalon Mountains
+
+{Ashenvale: On Guard in Stonetalon}
+[21] A Gnome's Respite
+[21] An Old Colleague
+[21] Ineptitude + Chemicals = Fun
+[21] Ineptitude + Chemicals = Fun
+
+{A Gnome's Repsite}
+[21] A Scroll from Mauren
+[21] Devils in Westfall
+[21] Special Delivery for Gaxim
+
+Barrens: [21] Ziz Fizziks
+[21] Super Reaper 6000
+[21] Further Instructions
+[27] Further Instructions
+[27] Gerenzo Wrenchwhistle
+
+{Ineptitude + Chemicals = Fun}
+[22] Covert Ops - Alpha
+
+{Ineptitude + Chemicals = Fun}
+{Special Delivery for Gaxim}
+[22] Covert Ops - Beta
+
+[22] Gerenzo's Orders
+[22] Gerenzo's Orders
+
+{Ashenvale: Journey to Stonetalon Peak}
+[27] Reclaiming the Charred Vale
+[27] Reclaiming the Charred Vale
+
+{Covert Ops - Alpha}
+{Covert Ops - Beta}
+[22] Kaela's Update
+  [26] Enraged Spirits {and}
+  [28] Wounded Ancients
+[28] Update for Sentinel Thenysil
+[28] Reception from Tyrande
+
+[26] Retrieval for Mauren
 
 ## [24-38] Stormwind
 
@@ -1668,12 +1713,6 @@ Darnassus
 
 [60pvp] Establishing New Outposts
 
-## [55-60] Silithus
-
-Ironforge: [55] Taking Back Silithus
-[55] Securing the Supply Lines
-[57] Stepping Up Security
-
 ## [55-60] Blackrock Depths
 
 Ironforge:
@@ -2381,22 +2420,130 @@ Drop: Deadwood Ritual Totem
 
 Ironforge
 [55] The New Frontier
-
 Darnassus
 [55] The New Frontier
 [55] Rabine Saturna
-
 Moonglade
 [55] Wasteland
-
 Silithus
 [55] The Spirits of Southwind
 [57] Hive in the Tower
 [57] Umber, Archivist
-
 Moonglade
 [57] Uncovering Past Secrets
 [57] Under the Chitin Was...
+
+Moonglade
+[60] A Reliquary of Purity
+[60D] Shards of the Felvine
+
+[60+] Abyssal Contacts
+[60+] Abyssal Crests [repeatable]
+
+[60] Secret Communication
+[60] Encrypted Twilight Texts [repeatable]
+
+Friendly
+[60+] Aurel Goldleaf
+[60+] Dukes of the Council
+  [60] Medallion of Station [repeatable]
+[60+] Bor Wildmane [friendly]
+[60+] Signet of the Dukes [friendly]
+Honored
+[60+] Abyssal Signets [repeatable]
+
+Honored
+[60] A Humble Offering
+
+Revered
+[60] Goldleaf's Discovery
+[60+] Lords of the Council
+  [60] Twilight Ring of Lordship [repeatable]
+[60R] Bor Wishes to Speak
+[60R] Scepter of the Council
+[60R] Abyssal Scepters [repeatable]
+
+[60] Allegiance to Cenarion Circle [repeatable]
+
+[55] Deadly Desert Venom
+[57] Noggle's Last Hope
+[57] Noggle's Lost Satchel
+
+[58] The Twilight Mystery
+[59] The Deserter
+[60] The Twilight Lexicon
+[59] True Believers
+  [60] A Terrible Purpose
+[59] Still Believing
+
+[59+] Wanted - Deathclasp, Terror of the Sands
+
+[60+] Dearest Natalia
+  [60+] Into The Maw of Madness {and}
+  [60+] Breaking the Code {and}
+  [60+] Glyph Chasing
+[60+] Unraveling the Mystery
+[60+] The Calling
+[60R] Armaments of War [repeatable]
+
+Logistics Task:
+   I: [60] Desert Survival Kits [repeatable]
+  II: [60] Boots for the Guard [repeatable]
+ III: [60] Grinding Stones for the Guard [repeatable]
+  IV: [60] The Ironforge Brigade Needs Explosives! [repeatable]
+   V: [60] Scrying Materials [repeatable]
+  VI: [60] Arms for the Field [repeatable]
+ VII: [60] Armor Kits for the Field [repeatable]
+VIII: [60] Uniform Supplies
+  IX: [60] Extraordinary Materials [repeatable]
+   X: [60] Bandages for the Field [repeatable]
+  XI: [60+] The Ultimate Deception [repeatable]
+
+Tactical Task:
+   I: [60+] Azure Templar [repeatable]
+  II: [60+] Crimson Templar [repeatable]
+ III: [60+] Earthen Templar [repeatable]
+  IV: [60+] Hoary Templar [repeatable]
+   V: [60+] The Four Dukes [repeatable]
+  VI: [60+] Hive'Zora Scout Report [repeatable]
+ VII: [60+] Hive'Regal Scout Report [repeatable]
+VIII: [60+] Hive'Ashi Scout Report [repeatable]
+  IX: [60+] Twilight Marauders [repeatable]
+   X: [60+] Twilight Battle Orders [repeatable]
+
+Combat Task Briefing:
+   I: [60+] Target: Hive'Ashi Defenders [repeatable]
+  II: [60+] Target: Hive'Ashi Sandstalkers [repeatable]
+ III: [60+] Target: Hive'Ashi Workers [repeatable]
+  IV: [60+] Target: Hive'Zora Reavers [repeatable]
+   V: [60+] Target: Hive'Zora Hive Sisters [repeatable]
+  VI: [60+] Target: Hive'Zora Waywatchers [repeatable]
+ VII: [60+] Target: Hive'Zora Tunnelers [repeatable]
+VIII: [60+] Target: Hive'Regal Ambushers [repeatable]
+  IX: [60+] Target: Hive'Regal Spitfires [repeatable]
+   X: [60+] Target: Hive'Regal Slavemakers [repeatable]
+  XI: [60+] Target: Hive'Regal Burrowers [repeatable]
+ XII: [60+] Target: Hive'Ashi Stingers [repeatable]
+
+[60] Cenarion Battlegear
+[60] Stalwart's Battlegear [revered]
+[60] Volunteer's Battlegear [friendly]
+[60] Veteran's Battlegear [honored]
+[60] Champion's Battlegear [exalted]
+
+Drop: Brann Bronzebeard's Lost Letter (from bugs)
+[60+] Brann Bronzebeard's Lost Letter
+
+[60] Twilight Geolords
+[60] Vyral the Vile
+
+[60] Report to Marshal Bluewall
+[60PvP] Scouring the Desert
+
+[60+] Field Duty [repeatable]
+[60] Field Duty Papers [repeatable]
+
+[60R] The Perfect Poison
 
 # Future Content
 
@@ -2472,6 +2619,12 @@ Moonglade
 [60] Bang a Gong!
 [60] Treasure of the Timeless One
 
+## Ahn'Qiraj Event
+
+[60] Secrets of the Colossus - Ashi
+[60] Secrets of the Colossus - Regal
+[60] Secrets of the Colossus - Zora
+
 ## Naxxramas
 
 One of:
@@ -2479,4 +2632,3 @@ One of:
   [60] The Dread Citadel - Naxxramas [revered]
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
-
