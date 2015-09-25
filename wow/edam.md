@@ -148,6 +148,62 @@ NPC: Mountaineer Kadrell in Loch Modan
 [23] Stonegear's Search
 [22] Search for Incendicite
 
+## [5-12] Teldrassil
+
+[5] Dolanaar Delivery
+
+[5] Zenn's Bidding
+[7] Seek Redemption!
+
+[5] Denalan's Earth
+[7] Timberling Seeds
+[7] Rellian Greenspyre
+[9] Tumors
+[9] Return to Denalan
+[9+] Oakenscowl
+
+Shadowglen
+[5] Tenaron's Summons
+[5] Crown of the Earth
+[5] Crown of the Earth
+Teldrassil
+[5] Crown of the Earth
+[9] Crown of the Earth
+[11] Crown of the Earth
+[11] Crown of the Earth
+
+[6] The Emerald Dreamcatcher
+[8] Ferocitas the Dream Eater
+
+[6] A Troubleing Breeze
+[6] Gnarlpine Corruption
+[9] The Relics of Wakening
+[12] Ursal the Mauler
+
+[7] Timberling Sprouts
+
+[7] Twisted Hatred
+
+[8] The Road to Darnassus
+
+[8] The Sleeping Druid
+[10] Druid of the Claw
+
+[10] The Glowing Fruit
+
+[10] The Shimmering Frond
+[10] The Sprouted Fronds
+
+[11] The Enchanted Glade
+[11] Teldrassil
+Darnassus
+[11] Grove of the Ancients
+
+[12] Mist
+
+[12] The Moss-twined Heart
+[12] Planting the Heart
+
 ## [10] Warrior
 
 Elwynn Forest
@@ -209,12 +265,6 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 [16] Captain Sander's Hidden Treasure (Part 4)
 
 ## [10-12] Darnassus
-
-Teldrassil
-[11] The Enchanted Glade
-Darnassus
-[11] Teldrasssil
-[11] Grove of the Ancients
 
 [10] Temple of the Moon
 [12] Tears of the Moon
@@ -2696,3 +2746,4 @@ One of:
   [60] The Dread Citadel - Naxxramas [revered]
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
+
