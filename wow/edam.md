@@ -5,8 +5,6 @@ DONE Cooking Items
 DONE warrior Quests
 DONE Eastern Kingdoms
 Kalimdor
-  Teldrassil
-  The Barrens
   Thousand Needles
   Un'Goro Crater
   Winterspring
@@ -433,6 +431,27 @@ Darkshore
 
 [12] Deeprun Rat Roundup
 [12] Me Brother, Nipsy
+
+## [14-20] The Barrens
+
+[14] Samophlange
+[14] Samophlange
+[14] Samophlange
+[16] Samophlange
+
+[14] Southsea Freebooters
+[14] The Missing Shipment
+[14] The Missing Shipment
+[16] Stolen Booty
+
+[16] WANTED: Baron Longshore
+
+[18] Minder's Fortune
+
+[18] Raptor Horns
+[18] Smart Drinks
+
+[20] Deepmoss Apider Eggs
 
 ## [15-16] Stormwind
 
@@ -867,6 +886,14 @@ Barrens: [21] Ziz Fizziks
 [30] A Noble Brew
 [30] A Noble Brew
 [30] You Have Served Us Well
+
+## [25-26] Wailing Caverns
+
+Wailing Caverns
+Drop: Glowing Shard
+[26] The Glowing Shard
+The Barrens
+[25] In Nightmares
 
 ## [30-37] Hillsbrad Foothills
 
@@ -2332,6 +2359,10 @@ Ironforge
 Tanaris:
 Lower than Neutral:
 [1] War at Sea [repeatable]
+
+The Barrens:
+Lower than Neutral:
+[1] Mending Old Wounds [repeatable]
 
 ## Stormwind Reputation
 
