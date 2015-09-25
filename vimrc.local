@@ -100,8 +100,8 @@ set expandtab
 set smarttab
 
 " 1 tab = 2 spaces.
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 " Indent when writing new lines, smartly and automatically.
 set autoindent
