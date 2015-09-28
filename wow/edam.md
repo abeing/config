@@ -5,7 +5,6 @@ DONE Cooking Items
 DONE warrior Quests
 DONE Eastern Kingdoms
 Kalimdor
-  Thousand Needles
   Un'Goro Crater
   Winterspring
 Dungeons
