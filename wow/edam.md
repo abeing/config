@@ -975,6 +975,50 @@ The Barrens
 {Cyclonian}
 [37] Essense of the Exile
 
+## [30-44] Thousand Needles
+
+[30] The Brassbolts Brothers
+
+[30] Salt Flat Venom
+
+[30] Hardened Shells
+[35+] Encrusted Tail Fins
+
+[30] Load Lightening
+[37] Goblin Sponsorship
+[37] Goblin Sponsorship
+[37] Goblin Sponsorship
+[37] Goblin Sponsorship
+[37] Goblin Sponsorship
+[37] The Eighteenth Pilot
+[41] Razzeric's Tweaking
+[41] Safety First
+[41] Safety First
+
+[31] Hemet Nesingwary
+
+[31] Rocket Car Parts
+
+[33] A Bump in the Road
+
+[35] Martek the Exiled
+[39] Indurium
+[38] News for Fizzle
+[41] Keeping Pace
+[41] Rizzle's Schematics {and} [41] Zamek's Distraction
+[42] Indurium  Ore [repeatable]
+
+[36] Wharfmaster Dizzywig
+[36] Parts for Kravel
+[36] Delivery to the Gnomes
+[36] The Rumormonger
+Swamp of Sorrows: [36] Dream Dust in the Swamp
+[36] Rumors for Kravel
+[43] Back to Booty Bay
+[44] Zanzil's Mixture and a Fool's Stout
+[44] Get the Gnomes Drunk or [44] Get the Goblins Drunk
+[44] Report Back to Fizzlebub
+
 ## [30-45] Stranglethorn Vale
 
 [30] Welcome to the Jungle
@@ -1187,6 +1231,14 @@ Drop: Grim-Encrusted Ring
 [34] Return of the Ring
 Ironforge: [34] Gnome Improvement
 
+## [34] Razorfen Kraul
+
+Thousand Needles
+Item: Henrig Lonebrow's Journal
+[34+] Lonebrow's Journal
+Razorfen Kraul
+[34D] The Crone of the Kraul
+
 ## [35-40] Swamp of Sorrows
 
 [35] Draenethyst Crystals
@@ -1267,19 +1319,6 @@ Drop: The Black Box (from Zaricotl)
 [40] Barbecued Buzzard Wings
 
 [45+] Fiery Blaze Enchantments
-
-## [36-44] Thousand Needles
-
-[36] Wharfmaster Dizzywig
-[36] Parts for Kravel
-[36] Delivery to the Gnomes
-[36] The Rumormonger
-Swamp of Sorrows: [36] Dream Dust in the Swamp
-[36] Rumors for Kravel
-[43] Back to Booty Bay
-[44] Zanzil's Mixture and a Fool's Stout
-[44] Get the Gnomes Drunk or [44] Get the Goblins Drunk
-[44] Report Back to Fizzlebub
 
 ## [35-50] Arathi Highlands
 
@@ -1529,6 +1568,11 @@ Hinterlands
 [47] The Divination
 [47+] Return to the Hunterlands
 [53+] Saving Sharpbeak
+
+## [46-50] Zul'Farrak
+
+[46D] The Brassbolts Brothers
+[50D] Gahz'rilla
 
 ## [47-57] Azshara
 
