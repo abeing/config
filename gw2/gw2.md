@@ -1,5 +1,106 @@
 # While Playing
 
+## Level to 80
+
+- Complete level 60 story
+
+
+## Exotic Dungeon Gear
+
+0/1 Berserker's Draconic Helm
+  0/1 Orichalcum Helmet Casing
+    0/1 Orichalcum Ingot
+      0/2 Orichalcum Ore
+  0/1 Orichalcum Helmet Lining
+    0/2 Bolt of Gossamer
+      0/4 Gossamer Scrap (2)
+    0/1 Spool of Gossamer Thread
+  0/1 Berserker's Intricate Gossamer Insignia
+    0/5 Glob of Ectoplasm
+    0/5 Bolt of Gossamer
+      0/10 Gossamer Scrap
+    0/20 Spool of Gossamer Thread
+    0/5 Vial of Powerful Blood
+0/1 Berserker's Draconic Pauldrons
+  0/1 Orichalcum Pauldron Casing
+    0/2 Orichalcum Ingot
+      0/4 Oricalcum Ore
+  0/1 Orichalcum Pauldron Lining
+    0/1 Bolt of Gossamer
+      0/2 Gossamer Scrap
+    0/1 Spool of Gossamer Thread
+  0/1 Berserker's Intricate Gossamer Insignia
+    0/5 Glob of Ectoplasm
+    0/5 Bolt of Gossamer
+      0/10 Gossamer Scrap
+    0/20 Spool of Gossamer Thread
+    0/5 Vial of Powerful Blood
+0/1 Berserker's Draconic Coat
+  0/1 Orichalcum Chestplate Panel
+    0/5 Orichalcum Ingot
+      0/10 Orichalcum Ingot
+  0/1 Orichalcum Chestplate Padding
+    0/1 Bolt of Gossamer
+      0/2 Gossamer Scrap
+    0/3 Spool of Gossamer Thread
+  0/1 Berserker's Intricate Gossamer Insignia
+    0/5 Glob of Ectoplasm
+    0/5 Bolt of Gossamer
+      0/10 Gossamer Scrap
+    0/20 Spool of Gossamer Thread
+    0/5 Vial of Powerful Blood
+0/1 Berserker's Draconic Gauntlets
+  0/1 Orichalcum Gauntlet Plates
+    0/2 Orichalcum Ingot
+      0/4 Orichalcum Ore
+  0/1 Orichalcum Gauntlet Lining
+    0/1 Bolt of Gossamer
+      0/2 Gossamer Scrap
+    0/1 Spool of Gossamer Thread
+  0/1 Berserker's Intricate Gossamer Insignia
+    0/5 Glob of Ectoplasm
+    0/5 Bolt of Gossamer
+      0/10 Gossamer Scrap
+    0/20 Spool of Gossamer Thread
+    0/5 Vial of Powerful Blood
+0/1 Berserker's Draconic Legs
+  0/1 Orichalcum Legging Panel
+    0/4 Orichalcum Ingot
+      0/8 Orichaclum Ore
+  0/1 Orichalcum Legging Lining
+    0/1 Bolt of Gossamer
+      0/2 Gossamer Scrap
+    0/3 Spool of Gossamer Thread
+  0/1 Berserker's Intricate Gossamer Insignia
+    0/5 Glob of Ectoplasm
+    0/5 Bolt of Gossamer
+      0/10 Gossamer Scrap
+    0/20 Spool of Gossamer Thread
+    0/5 Vial of Powerful Blood
+0/1 Berserker's Draconic Boots
+  0/1 Orichalcum Boot Casing
+    0/2 Orichalcum Ingot
+      0/4 Orichalcum Ore
+  0/1 Orichalcum Boot Lining
+    0/1 Bolt of Gossamer
+      0/2 Scrap of Gossamer
+    0/1 Spool of Gossamer Thread
+  0/1 Berserker's Intricate Gossamer Insignia
+    0/5 Glob of Ectoplasm
+    0/5 Bolt of Gossamer
+      0/10 Gossamer Scrap
+    0/20 Spool of Gossamer Thread
+    0/5 Vial of Powerful Blood
+
+## WvW Gear
+
+Draconic Helm
+Draconic Pauldrons
+Draconic Coat
+Draconic Gauntlets
+Draconic Legs
+Draconic Boots
+
 ## Explore the World
 
 For Gift of Exploration for Twilight
@@ -63,7 +164,8 @@ Buy Obsidian Shards
 
 ## Spirit Shards
 
-200 to buy Bloodstone Shards for Gift of Mastery for Twilight
+0/200 to buy Bloodstone Shard for Gift of Mastery for Twilight
+0/200 to buy Bloodstone Shard for Gift of Mastery for Sunrise
 Buy Philosopher's Stones for Mystic Clovers
 
 ## Mystic Coins
@@ -74,8 +176,8 @@ Use for Mystic Clovers
 
 ## Gift of Metal
 
-0/1 for Twilight
-0/1 for Sunrise
+0/1 for Gift of Twilight
+0/1 for Gift of Sunrise
 
 Weaponsmith:
   0/250 Platinum Ingot [Jeweler]
@@ -85,7 +187,7 @@ Weaponsmith:
 
 ## 0/1 Gift of Light
 
-0/1 for Sunrise
+0/1 for Gift of Sunrise
 
 Armorsmith:
   0/1 Gift of Ascalon [500 Ascalon Tear]
@@ -95,7 +197,7 @@ Armorsmith:
 
 ## 0/1 Gift of Darkness
 
-0/1 for Twilight
+0/1 for Gift of Twilight
 
 Armorsmith:
   0/1 Gift of Ascalon [500 Ascalon Tear]
@@ -113,6 +215,16 @@ Mystic Forge:
   0/100 Icy Runestone [1 gold each]
   0/1 Superior Sigil of Blood ??
 
+## Gift of Sunrise
+
+0/1 for Sunrise
+
+Mystic Forge:
+  0/1 Gift of Metal [weaponsmith]
+  0/1 Gift of Light [armorsmith]
+  0/100 Icy Runestone [1 gold each]
+  0/1 Superior Sigil of Strength
+
 ## Gift of Mastery
 
 0/1 for Twilight
@@ -126,8 +238,8 @@ Mystic Forge:
 
 ## Mystic Clover
 
-0/77 for Twilight
-0/77 for Sunrise
+0/77 for Gift of Fortune for Twilight
+0/77 for Gift of Fortune for Sunrise
 
 Mystic Forge:
   0/1 Obsidian Shard
@@ -137,8 +249,8 @@ Mystic Forge:
 
 ## 0/2 Gift of Magic
 
-0/1 for Twilight
-0/1 for Sunrise
+0/1 for Gift of Fortune for Twilight
+0/1 for Gift of Fortune for Sunrise
 
 Mystic Forge:
   0/250 Vial of Powerful Blood [drop]
@@ -148,8 +260,8 @@ Mystic Forge:
 
 ## 0/2 Gift of Might
 
-0/1 for Twilight
-0/1 for Sunrise
+0/1 for Gift of Fortune for Twilight
+0/1 for Gift of Fortune for Sunrise
 
 Mystic Forge:
   0/250 Vicious Fang [drop]
