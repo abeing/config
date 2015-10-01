@@ -1,42 +1,163 @@
-# While Playing
+# Level Bjorn Einarsson
 
-## Characters
+## Training Order
 
-Bjorn Einarsson - Norn - Warrior
-  Armorsmith, Weaponsmith
-Audelyn Xiao - Human - Elementalist
-  Tailor, Artificer
-Yonir Yvy - Silvari - Ranger
-  Huntsman, Leatherworker
-Quine Quant - Asura - Engineer
-  Jeweler, Chef
-Bogrum gro-Bolak - Charr - Necromancer?
+Healing Signet
+"For Great Justice"
+Signet of Fury
+Signet of Rage
+Endure Pain
+Balanced Stance
+Banner of Strength
+Banner of Discipline
+Battle Standard
 
-## Level to 80
+Defense (to 8)
+Tactics (to 9)
+Strength (to 7)
+Discipline (to 9)
+Arms (to 8)
 
-- Complete level 10 story
-- Complete level 20 story
-- Complete level 30 story
-- Complete level 40 story
-- Complete level 50 story
-- Complete level 60 story
-- Complete level 70 story
-- Complete level 80 story
+## Crafting Order
 
-## Complete Story Dungeons
+### Refine Ore and Cloth
 
-- Caudecus's Manor
-- Twilight Arbor
-- Sorrow's Embrace
+47 Bronze Ingots
+  16 Chain Set
+  16 Chain Set 2 (for skillups)
+  10 Box
+  05 Backpack
+26 Bolts of Jute
+  07 Chain Set
+  07 Chain Set 2 (for skillups)
+  06 Insignia for Set 1
+  06 Insignia for Set 2
 
-## Chain Armor
-Chain Helm
-Chain Pauldrons
-Chain Coat
-Chain Gauntlets
-Chain Legs
-Chain Boots
+### Make a backpack
 
+Armorsmithing 0:
+  0/1 Crafter's Backpack Frame
+  0/1 Simple Armorsmith's Tools
+    0/5 Bronze Ingot
+
+### Make Bronze Box [Armorsmith 0]
+
+8 Slot Reinforced Bronze Box (Armorsmith 0)
+  0/10 Bronze Ingot
+
+### Make Chain Armor [Armorsmithing 0-75]
+
+0/1 Chain Helm
+0/1 Chain Pauldrons
+0/1 Chain Coat
+0/1 Chain Gauntlets
+0/1 Chain Legs
+0/1 Chain Boots
+
+### Level Armorsmithing [0-75]
+
+Gauntlet (2 ore, 1 cloth, cost=4)
+0                     Malign  Mighty                      Vital  (Fine)
+25  Giver's  Healing                  Precise  Resilient         (Fine)
+50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork)
+
+Boots (2 ore, 1 cloth, cost=4)
+0                     Malign  Mighty                      Vital  (Fine 10)
+25  Giver's  Healing                  Precise  Resilient         (Fine 15)
+50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
+
+Pauldron (2 ore, 1 cloth, cost=4)
+50  Giver's  Healing  Malign  Mighty  Precise  Resilient  Vital  (Fine 20)
+50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
+
+Helm (1 ore, 2 cloth, cost=5)
+Legs (4 ore, 1 cloth, cost=6)
+Coat (5 ore, 1 cloth, cost=7)
+
+### Make 10 Slot Iron Box [Armorsmith 75]
+
+0/1 Minor Rune of Holding
+0/10 Iron Ingot
+
+## Make a sturdy backpack [Level 15, Armorsmith 75]
+
+Armorsmithing 75:
+  0/1 Simple Armorsmith's Backpack
+  0/1 Sturdy Armorsmith's Tools
+    0/5 Iron Ingot
+
+## Make 12 Slot Steel Box [Armorsmith 150]
+
+12 Slot Steel Box (Armorsmith 150):
+  0/1 Rune of Holding
+  0/10 Steel Ingot
+
+## Make a practical backpack [Level 30, Armorsmith 150]
+
+Armorsmith 150:
+  0/1 Sturdy Armorsmith's Backpack
+  0/1 Practical Armorsmith's Tools
+    0/5 Steel Ingot
+
+## Make 15 Slot Darksteel Boxes [Armorsmith 225]
+
+15 Slot Darksteel Box (Armorsmith 225):
+  0/1 Major Rune of Holding
+  0/10 Darksteel Ingot
+
+## Make an Intricate Armorsmith's Backpack [Level 45, Armorsmith 275]
+
+Intricate Armorsmith's Backpack (Armorsmith 275):
+  0/1 Practical Armorsmith's Backpack
+  0/1 Intricate Armorsmith's Tools
+    0/5 Darksteel Ingot
+
+## Make 18 Slot Mithril Boxes [Armorsmith 300]
+
+18 Slot Mithril Box (Armorsmith 300):
+  0/1 Greater Rune of Holding
+  0/10 Mithril Ingot
+
+## Make an Ornate Armorsmith's Backpack [Level 60, Armorsmith 300]
+
+Armorsmith 300:
+  0/1 Intricate Armorsmith's Backpack
+  0/1 Ornate Armorsmith's Tools
+    0/5 Mithril Ingot
+  0/1 Glob of Ectoplasm
+
+## Make 20 Slot Orichalcum Boxes [Armorsmith 400]
+
+20 Slot Orichalcum Box [Armorsmith 400]:
+  0/1 Superior Rune of Holding
+  0/10 Orichalcum Ingot
+
+## Make an Elegant Armorsmith's Backpack [Level 78, Armorsmith 400]
+
+Armorsmith 400:
+  0/1 Ornate Armorsmith's Backpack
+  0/1 Elegant Armorsmith's Tools
+    0/5 Orichalcum Ingot
+  0/3 Glob of Ectoplasm
+
+## Questing
+
+- 10: Story: Forging a Legend
+- 20: Story: Everyone Makes Mistakes
+- 30: Story: Death from Below
+- 30: Dungeon: Ascalon Catacombs
+- 40: Story: A Fragile Peace (join the Vigil)
+- 40: Dungeon: Caudecus's Manor
+- 50: Untamed Wilds (help the ogres)
+- 50: Dungeon: Twilight Arbor
+- 60: The Battle of Claw Island (recruit Fibharr)
+- 60: Dungeon: Sorrow's Embrace
+- 70: Forging the Pact
+- 70: Dungeon: Citadel of Flame
+- 76: Dungeon: Honor of the Waves
+- 78: Dungeon: Crucible of Eternity
+- 80: Marching Orders
+- 80: Dungeon: The Ruined City of Arah
 
 ## Exotic Dungeon Gear
 
