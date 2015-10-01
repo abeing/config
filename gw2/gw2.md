@@ -1,8 +1,41 @@
 # While Playing
 
+## Characters
+
+Bjorn Einarsson - Norn - Warrior
+  Armorsmith, Weaponsmith
+Audelyn Xiao - Human - Elementalist
+  Tailor, Artificer
+Yonir Yvy - Silvari - Ranger
+  Huntsman, Leatherworker
+Quine Quant - Asura - Engineer
+  Jeweler, Chef
+Bogrum gro-Bolak - Charr - Necromancer?
+
 ## Level to 80
 
+- Complete level 10 story
+- Complete level 20 story
+- Complete level 30 story
+- Complete level 40 story
+- Complete level 50 story
 - Complete level 60 story
+- Complete level 70 story
+- Complete level 80 story
+
+## Complete Story Dungeons
+
+- Caudecus's Manor
+- Twilight Arbor
+- Sorrow's Embrace
+
+## Chain Armor
+Chain Helm
+Chain Pauldrons
+Chain Coat
+Chain Gauntlets
+Chain Legs
+Chain Boots
 
 
 ## Exotic Dungeon Gear
