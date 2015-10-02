@@ -2,15 +2,13 @@
 
 ## Training Order
 
-Healing Signet
-"For Great Justice"
-Signet of Fury
-Signet of Rage
-Endure Pain
-Balanced Stance
-Banner of Strength
-Banner of Discipline
-Battle Standard
+Signet Training
+  Signet of Rage 9
+
+Banner Training
+  (Banner of Tactics) 4
+  Banner of Discipline ?
+  Battle Standard?
 
 Defense (to 8)
 Tactics (to 9)
@@ -22,47 +20,35 @@ Arms (to 8)
 
 ### Refine Ore and Cloth
 
-47 Bronze Ingots
+50/47 Bronze Ingots
   16 Chain Set
   16 Chain Set 2 (for skillups)
-  10 Box
-  05 Backpack
-26 Bolts of Jute
+  10 Box DONE
+  05 Backpack DONE
+09/26 Bolts of Jute
   07 Chain Set
   07 Chain Set 2 (for skillups)
   06 Insignia for Set 1
   06 Insignia for Set 2
 
-### Make a backpack
-
-Armorsmithing 0:
-  0/1 Crafter's Backpack Frame
-  0/1 Simple Armorsmith's Tools
-    0/5 Bronze Ingot
-
-### Make Bronze Box [Armorsmith 0]
-
-8 Slot Reinforced Bronze Box (Armorsmith 0)
-  0/10 Bronze Ingot
-
 ### Make Chain Armor [Armorsmithing 0-75]
 
 0/1 Chain Helm
 0/1 Chain Pauldrons
-0/1 Chain Coat
-0/1 Chain Gauntlets
-0/1 Chain Legs
-0/1 Chain Boots
+1/1 Chain Coat
+1/1 Chain Gauntlets
+1/1 Chain Legs
+1/1 Chain Boots
 
 ### Level Armorsmithing [0-75]
 
 Gauntlet (2 ore, 1 cloth, cost=4)
-0                     Malign  Mighty                      Vital  (Fine)
+0                     Malign  ------                      Vital  (Fine)
 25  Giver's  Healing                  Precise  Resilient         (Fine)
 50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork)
 
 Boots (2 ore, 1 cloth, cost=4)
-0                     Malign  Mighty                      Vital  (Fine 10)
+0                     Malign  ------                      Vital  (Fine 10)
 25  Giver's  Healing                  Precise  Resilient         (Fine 15)
 50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
 
@@ -72,7 +58,9 @@ Pauldron (2 ore, 1 cloth, cost=4)
 
 Helm (1 ore, 2 cloth, cost=5)
 Legs (4 ore, 1 cloth, cost=6)
+  Done: Mighty
 Coat (5 ore, 1 cloth, cost=7)
+  Done: Mighty
 
 ### Make 10 Slot Iron Box [Armorsmith 75]
 
@@ -142,7 +130,6 @@ Armorsmith 400:
 
 ## Questing
 
-- 10: Story: Forging a Legend
 - 20: Story: Everyone Makes Mistakes
 - 30: Story: Death from Below
 - 30: Dungeon: Ascalon Catacombs
