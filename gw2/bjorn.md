@@ -31,48 +31,99 @@ Arms (to 8)
   06 Insignia for Set 1
   06 Insignia for Set 2
 
+For 0-72, roughly:
+  288 Bronze Ore
+  72 Jute Scraps
+
 ### Make Chain Armor [Armorsmithing 0-75]
 
-0/1 Chain Helm
-0/1 Chain Pauldrons
-1/1 Chain Coat
-1/1 Chain Gauntlets
-1/1 Chain Legs
-1/1 Chain Boots
+Chain Helm
+Chain Pauldrons
 
 ### Level Armorsmithing [0-75]
 
-Gauntlet (2 ore, 1 cloth, cost=4)
+Gauntlet (2 ingot, 1 bolt, cost=4)
 0                     Malign  ------                      Vital  (Fine)
 25  Giver's  Healing                  Precise  Resilient         (Fine)
 50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork)
 
-Boots (2 ore, 1 cloth, cost=4)
+Boots (2 ingot, 1 bolt, cost=4)
 0                     Malign  ------                      Vital  (Fine 10)
 25  Giver's  Healing                  Precise  Resilient         (Fine 15)
 50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
 
-Pauldron (2 ore, 1 cloth, cost=4)
+Pauldron (2 ingot, 1 bolt, cost=4)
 50  Giver's  Healing  Malign  Mighty  Precise  Resilient  Vital  (Fine 20)
 50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
 
-Helm (1 ore, 2 cloth, cost=5)
-Legs (4 ore, 1 cloth, cost=6)
+Helm (1 ingot, 2 bolt, cost=5)
+Legs (4 ingot, 1 bolt, cost=6)
   Done: Mighty
-Coat (5 ore, 1 cloth, cost=7)
+Coat (5 ingot, 1 bolt, cost=7)
   Done: Mighty
+
+### Refine Iron Ore and Cloth
+
+0/47 Iron Ingot
+  10 Box
+  5 Backpack
+  16 Set 1
+  16 Set 2
+0/26 Bolts of Wool
+  13 Set 1
+  13 Set 2
 
 ### Make 10 Slot Iron Box [Armorsmith 75]
 
 0/1 Minor Rune of Holding
 0/10 Iron Ingot
 
-## Make a sturdy backpack [Level 15, Armorsmith 75]
+### Make a sturdy backpack [Level 15, Armorsmith 75]
 
-Armorsmithing 75:
-  0/1 Simple Armorsmith's Backpack
-  0/1 Sturdy Armorsmith's Tools
-    0/5 Iron Ingot
+1/1 Simple Armorsmith's Backpack
+0/1 Sturdy Armorsmith's Tools
+  0/5 Iron Ingot
+
+### Make Scale Armor
+
+Scale Helm
+Scale Pauldrons
+Scale Coat
+Scale Gauntlets
+Scale Legs
+Scale Boots
+
+### Level Armorsmith [75-150]
+
+Boots (2 ingot, 1 bolt, cost=4)
+75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
+100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
+125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+
+Gauntlets (2 ingot, 1 bolt, cost=4)
+75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
+100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
+125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+
+Pauldron (2 ingot, 1 bolt, cost=4)
+75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
+100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
+125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+
+Helm (1 ingot, 2 bolt, cost=5)
+75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
+100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
+125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+
+Legs (4 ingot, 1 bolt, cost=6)
+75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
+100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
+125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+
+Coat (5 ingot, 1 bolt, cost=7)
+75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
+100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
+125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 ## Make 12 Slot Steel Box [Armorsmith 150]
 
