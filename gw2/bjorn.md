@@ -1,203 +1,245 @@
 # Level Bjorn Einarsson
 
-## Training Order
+- Level to 60
+- Complete peronsal story chapter The Battle of Claw Island
+  Recruit Fibharr.
+- Run Sorrow's Embrace dungeon story mode
+- Level to 70
+- Complete personal story chapter Forging the Pact
+- Run Citadel of Flame dungeon story mode
+- Level to 76
+- Run Honor of the Waves dungeon story mode
+- Level to 78
+- Run Crucible of Eternity dungeon story mode
+- Level to 80
+- Complete Marching Orders personal story chapter
+- Run The Ruined City of Arah dungeon story mode
 
-Signet Training
-  Signet of Rage 9
+# Training for all builds
 
-Banner Training
-  (Banner of Tactics) 4
-  Banner of Discipline ?
-  Battle Standard?
+- Defense to 8
+- Tactics to 9
+- Strength to 7
+- Discipline to 9
+- Arms to 8
+- Buy every other skill
 
-Defense (to 8)
-Tactics (to 9)
-Strength (to 7)
-Discipline (to 9)
-Arms (to 8)
+# Level Armorsmithing
 
-## Crafting Order
+- Verify I have made all the scale armor
+  - Scale Helm
+  - Scale Pauldrons
+  - Scale Coat
+  - Scale Gauntlets
+  - Scale Legs
+  - Scale Boots
+- Level Armorsmithing to 150
+- Make 12 Slot Steel Box [Armorsmith 150]
+  - 0/1 Rune of Holding
+  - 0/10 Steel Ingot
+- Make a practical backpack [Level 30, Armorsmith 150]
+  - 0/1 Sturdy Armorsmith's Backpack
+  - 0/1 Practical Armorsmith's Tools
+    - 0/5 Steel Ingot
+- Level Armorsmithing to 225
+- Make 15 Slot Darksteel Boxes [Armorsmith 225]
+  - 0/1 Major Rune of Holding
+  - 0/10 Darksteel Ingot
+- Level Armorsmithing to 275
+- Make an Intricate Armorsmith's Backpack [Level 45, Armorsmith 275]
+  - 0/1 Practical Armorsmith's Backpack
+  - 0/1 Intricate Armorsmith's Tools
+    - 0/5 Darksteel Ingot
+- Level Armorsmithing to 300
+- Make 18 Slot Mithril Boxes [Armorsmith 300]
+  - 0/1 Greater Rune of Holding
+  - 0/10 Mithril Ingot
+- Make an Ornate Armorsmith's Backpack [Level 60, Armorsmith 300]
+  - 0/1 Intricate Armorsmith's Backpack
+  - 0/1 Ornate Armorsmith's Tools
+    - 0/5 Mithril Ingot
+  - 0/1 Glob of Ectoplasm
+- Level Armorsmithing to 400
+- Make 20 Slot Orichalcum Boxes [Armorsmith 400]
+  - 0/1 Superior Rune of Holding
+  - 0/10 Orichalcum Ingot
+- Make an Elegant Armorsmith's Backpack [Level 78, Armorsmith 400]
+  - 0/1 Ornate Armorsmith's Backpack
+  - 0/1 Elegant Armorsmith's Tools
+    - 0/5 Orichalcum Ingot
+  - 0/3 Glob of Ectoplasm
 
-### Refine Ore and Cloth
+# Goal: Combat Generalist
 
-50/47 Bronze Ingots
-  16 Chain Set
-  16 Chain Set 2 (for skillups)
-  10 Box DONE
-  05 Backpack DONE
-09/26 Bolts of Jute
-  07 Chain Set
-  07 Chain Set 2 (for skillups)
-  06 Insignia for Set 1
-  06 Insignia for Set 2
+The combat generalist wants to experience all the content that the game has to
+offer. They probably don’t have time to absolutely maximize their effectiveness
+in every area, but they want a good shot at everything.
 
-For 0-72, roughly:
-  288 Bronze Ore
-  72 Jute Scraps
+If this sounds fun, you’ll probably want to work towards multiple gear sets for
+different play types.  You’ll be using the following guides:
 
-### Make Chain Armor [Armorsmithing 0-75]
+- The quest for exotic equipment
+- The quest for a legendary weapon
+- The quest for Dungeon Mastery and Fractals (to practice your skills in speed
+  clearing dungeons)
+- The quest for meta-events (to practice your skills in an open world setting)
+- The quest for WvW Mastery (to practice your skills in an open-world PvP
+  setting)
+- The quest for sPvP Mastery (to practice your skills in an arena setting)
+- The quest for the world bosses (to practice your skills against the most
+  difficult PvE in the game)
 
-Chain Helm
-Chain Pauldrons
+# Goal: Exploration
 
-### Level Armorsmithing [0-75]
+The explorer loves seeing what’s around the corner - getting to the top of the
+mountain, discovering that secret base inside the cave with the lore biscuit
+that no one will see except for them.
 
-Gauntlet (2 ingot, 1 bolt, cost=4)
-0                     Malign  ------                      Vital  (Fine)
-25  Giver's  Healing                  Precise  Resilient         (Fine)
-50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork)
+If you’re an explorer, you’re in for a treat, but first you'll need to prepare
+yourself for the rigors of the wilderness:
 
-Boots (2 ingot, 1 bolt, cost=4)
-0                     Malign  ------                      Vital  (Fine 10)
-25  Giver's  Healing                  Precise  Resilient         (Fine 15)
-50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
+* The quest for exotic equipment
 
-Pauldron (2 ingot, 1 bolt, cost=4)
-50  Giver's  Healing  Malign  Mighty  Precise  Resilient  Vital  (Fine 20)
-50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
+Then enjoy the world of Tyria!
 
-Helm (1 ingot, 2 bolt, cost=5)
-Legs (4 ingot, 1 bolt, cost=6)
-  Done: Mighty
-Coat (5 ingot, 1 bolt, cost=7)
-  Done: Mighty
+* The quest for jumping puzzles
+* The quest for map completion
+* The quest for mini dungeons
+* The quest for the living story
+* The quest for meta-events (and world bosses)
 
-### Refine Iron Ore and Cloth
+# Goal: Living the Story
 
-0/47 Iron Ingot
-  10 Box
-  5 Backpack
-  16 Set 1
-  16 Set 2
-0/26 Bolts of Wool
-  13 Set 1
-  13 Set 2
+The story enthusiast is kept interested by a compelling story that motivates
+their adventures. The flavor and lore of Tyria and its people only adds to the
+intrigue.
 
-### Make 10 Slot Iron Box [Armorsmith 75]
+First, get yourself geared up so you don’t die on the way!
 
-0/1 Minor Rune of Holding
-0/10 Iron Ingot
+* The quest for exotic equipment
 
-### Make a sturdy backpack [Level 15, Armorsmith 75]
+Then try these quests to get straight to the story:
 
-1/1 Simple Armorsmith's Backpack
-0/1 Sturdy Armorsmith's Tools
-  0/5 Iron Ingot
+* The quest for the living story
+* The quest for map completion
+* The quest for dungeon mastery and Fractals of the Mists
+* The quest for mini dungeons
+* The quest for meta-events
 
-### Make Scale Armor
+# The Quest for Exotic Equipment
 
-Scale Helm
-Scale Pauldrons
-Scale Coat
-Scale Gauntlets
-Scale Legs
-Scale Boots
+_You’ll need exotic armor to contribute at your maximum potential in all types
+of content._
 
-### Level Armorsmith [75-150]
+The quests in this guide will be way more fun if you’re properly geared. You’ll
+have that fuzzy feeling that you’re contributing to the team, and that alive
+feeling from not dying all the time.
 
-Boots (2 ingot, 1 bolt, cost=4)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
-125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+However, this is not a gearing guide.  There are plenty of existing gearing
+guides that go into great detail on how to pick the best builds and put them
+together in the most cost-efficient way. You can find many of them here:
 
-Gauntlets (2 ingot, 1 bolt, cost=4)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
-125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+http://www.reddit.com/r/Guildwars2/wiki/guides
 
-Pauldron (2 ingot, 1 bolt, cost=4)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
-125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+## Quest Log
 
-Helm (1 ingot, 2 bolt, cost=5)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
-125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+- ~~Decide on your first build~~
+- **Get an exotic set of level 80 armor**
+- Get an exotic set of level 80 accessories
+- Get a level 80 exotic weapon of each type that your class can equip
+- Equip all of your weapons with superior sigils
+- Equip all of your armor with superior runes (matching set recommended!)
 
-Legs (4 ingot, 1 bolt, cost=6)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
-125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+##Tips
 
-Coat (5 ingot, 1 bolt, cost=7)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
-125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
+1. Decide what kind of build you want to play (see the first section of this
+guide, and remember that http://www.metabattle.com is a great resource!)
 
-## Make 12 Slot Steel Box [Armorsmith 150]
+  If you want to play multiple builds, your quest just got more expensive, but
+  at least people will stand in awe as you rip off your Berserker armor to
+  reveal the Power/Toughness/Vitality set within as you charge towards Tequatl.
+  Tip: If you want a surefire and efficient path through the exotic gearing
+  process, check out No-Nonsense Guide to Gearing Up at Level 80.
 
-12 Slot Steel Box (Armorsmith 150):
-  0/1 Rune of Holding
-  0/10 Steel Ingot
+  Note: Runes for armor and sigils for weapon are crucial to completing your
+  gear. Rune sets can add up to 300 stat points to your character (more than one
+  exotic chestpiece) but may include other bonuses, while sigils help to give
+  your weapons an added punch. Having a set of 6 matching runes provides a much
+  larger bonus than a mixed set. Look for runes
+  (http://wiki.guildwars2.com/wiki/Rune) and sigils
+  (http://wiki.guildwars2.com/wiki/Sigil) that complement your build, keeping in
+  mind what you can afford. Some sets may actually cost more than your entire
+  armor set, but there are many cheap ones that will provide adequate bonuses.
 
-## Make a practical backpack [Level 30, Armorsmith 150]
+2. Get the gear you want using one of the following methods. Some gear will come
+  with runes and sigils included. Take the price of the runes and the sigils you
+  need into account when deciding the most cost-effective way to get your gear.
 
-Armorsmith 150:
-  0/1 Sturdy Armorsmith's Backpack
-  0/1 Practical Armorsmith's Tools
-    0/5 Steel Ingot
+  * Purchase with gold
+  
+  Buying gear with gold is a great option if you just want the freedom to play
+  the content you want to play.  Almost everything in the game earns you gold -
+  even reward tracks in sPvP.  Check out the gold guides above for more
+  information.
 
-## Make 15 Slot Darksteel Boxes [Armorsmith 225]
+  * Purchase with karma
 
-15 Slot Darksteel Box (Armorsmith 225):
-  0/1 Major Rune of Holding
-  0/10 Darksteel Ingot
+  Buying gear with karma* is an option for certain sets.The karma vendors at the
+  temples in Orr sell some gear sets.See the wiki for more information.If you
+  want them, you’ll need to gather a group in Orr to take the temple that you
+  want, and buy your hard earned armor!
+  
+  * Craft it
 
-## Make an Intricate Armorsmith's Backpack [Level 45, Armorsmith 275]
+  Crafting it is an option at crafting level 400 for all professions except
+  Chef. At this point, you can make exotic gear, and you probably have a lot of
+  materials lying around from your travels. Crafting yourself a set might not be
+  as expensive as you think. Here’s a great resource for leveling crafting
+  efficiently: http://www.gw2crafts.net/
 
-Intricate Armorsmith's Backpack (Armorsmith 275):
-  0/1 Practical Armorsmith's Backpack
-  0/1 Intricate Armorsmith's Tools
-    0/5 Darksteel Ingot
+  * Earn it by running dungeons
 
-## Make 18 Slot Mithril Boxes [Armorsmith 300]
+  Buying gear with dungeon tokens will make a lot of sense to veteran MMO
+  players.Each dungeon drops a different token that can be used to buy dungeon
+  specific armor (with special skin and stat combinations).Running these
+  dungeons repeatedly and farming the tokens can be a great way to get the armor
+  you want while earning some gold on the side!There is a bit of a 'chicken and
+  the egg' problem though – to run dungeons effectively, after all, you do need
+  good gear – but there are plenty of friendly groups who will be willing to run
+  dungeons with you even if you don’t have optimal gear.That’s one great thing
+  about having a guild!
 
-18 Slot Mithril Box (Armorsmith 300):
-  0/1 Greater Rune of Holding
-  0/10 Mithril Ingot
+  * Purchase with guild commendations
 
-## Make an Ornate Armorsmith's Backpack [Level 60, Armorsmith 300]
+  Buying gear with guild commendations is useful for berserker weapons and
+  certain armor slots. You may purchase exotic backpieces, exotic weapons, or
+  profession gear boxes with a mix of gold and guild commendations (earned by
+  completing guild missions with your - you guessed it - guild).Just keep in
+  mind that guild commendations are limited in supply and can buy other stuff
+  too, so think before you spend them. Generally speaking, guild commendations
+  should be saved up to buy ascended trinkets due to the limited number you can
+  obtain per week, so use them sparingly.
 
-Armorsmith 300:
-  0/1 Intricate Armorsmith's Backpack
-  0/1 Ornate Armorsmith's Tools
-    0/5 Mithril Ingot
-  0/1 Glob of Ectoplasm
+  * Buying gear with badges of honor
 
-## Make 20 Slot Orichalcum Boxes [Armorsmith 400]
+  Buying gear with badges of honor* from World vs. World. If you have an
+  abundance of badges and a little bit of gold, Weapon Master and Armor Master
+  NPCs in the Eternal Battlegrounds and Borderland maps have exotic level 80
+  gear with most stat types available. However, these items cannot be forged or
+  salvaged, so purchase with care.
 
-20 Slot Orichalcum Box [Armorsmith 400]:
-  0/1 Superior Rune of Holding
-  0/10 Orichalcum Ingot
+  * Pray to the RNG gods for drops from mobs, armor boxes, or the mystic forge
 
-## Make an Elegant Armorsmith's Backpack [Level 78, Armorsmith 400]
+  Finally, exotic gear does drop randomly from mobs, and you can buy random
+  armor boxes from vendors like the Laurel vendor (for daily achievements).But
+  this can be a slow and indirect method, unless you really just don’t want to
+  bother with the above methods, or you’re feeling lucky.And, if you’re feeling
+  really lucky, you have a chance of making an exotic in the mystic forge by
+  tossing in four of your old rares.(But it’s probably a better idea just to
+  sell them and use the money to buy what you really want.)
 
-Armorsmith 400:
-  0/1 Ornate Armorsmith's Backpack
-  0/1 Elegant Armorsmith's Tools
-    0/5 Orichalcum Ingot
-  0/3 Glob of Ectoplasm
 
-## Questing
-
-- 20: Story: Everyone Makes Mistakes
-- 30: Story: Death from Below
-- 30: Dungeon: Ascalon Catacombs
-- 40: Story: A Fragile Peace (join the Vigil)
-- 40: Dungeon: Caudecus's Manor
-- 50: Untamed Wilds (help the ogres)
-- 50: Dungeon: Twilight Arbor
-- 60: The Battle of Claw Island (recruit Fibharr)
-- 60: Dungeon: Sorrow's Embrace
-- 70: Forging the Pact
-- 70: Dungeon: Citadel of Flame
-- 76: Dungeon: Honor of the Waves
-- 78: Dungeon: Crucible of Eternity
-- 80: Marching Orders
-- 80: Dungeon: The Ruined City of Arah
-
-## Exotic Dungeon Gear
+# Stuff
 
 0/1 Berserker's Draconic Helm
   0/1 Orichalcum Helmet Casing
