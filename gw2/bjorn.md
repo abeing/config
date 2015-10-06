@@ -16,35 +16,13 @@ Level Bjorn Einarsson
 - Complete Marching Orders personal story chapter
 - Run The Ruined City of Arah dungeon story mode
 
+<<<<<<< HEAD
 Warrior Training
 ================
 
 - Train for WvW
-  + Defense to `Cleansing Ire` (8)
-    * ~~Thick Skin~~
-    * ~~Shield Master~~
-    * ~~Dogged March~~
-    * ~~Cull the Weak~~
-    * ~~Adrenal Health~~
-    * ~~Defy Pain~~
-    * ~~Armored Attack~~
-    * ~~Sundering Mace~~
-    * ~~Spiked Armor~~
-    * ~~Last Stand~~
-    * ~~Cleansing Ire~~
-  + Tactics to `Phalanx Strength` (9)
-    * ~~Determined Revival~~
-    * ~~Leg Specialist~~
-    * ~~Quick Breathing~~
-    * ~~Empowered~~
-    * ~~Reviver's Might~~
-    * ~~Shrug It Off~~
-    * ~~Burning Arrows~~
-    * ~~Empower Allies~~
-    * ~~Inspiring Presence~~
-    * ~~Powerful Synergy~~
-    * ~~Vigorous Shouts~~
-    * ~~Phalanx Strength~~
+  + ~~Defense to `Cleansing Ire` (8)~~
+  + ~~Tactics to `Phalanx Strength` (9)~~
   + Discipline to `Burst Mastery` (9)
     * Versatile Rage
     * Crack Shot
@@ -60,17 +38,7 @@ Warrior Training
     * Burst Mastery
 
 - Train for Dungeons
-  + Strength to `Berserker's Power` (7)
-    * Reckless Dodge
-    * Death from Above
-    * Restorative Strength
-    * Peak Performance
-    * Building Momentum
-    * Body Flow
-    * Forceful Greatsword
-    * Great Fortitude
-    * Stick and Move
-    * Berserker's Power
+  + ~~Strength to `Berserker's Power` (7)~~
   + Arms to `Furious` (8)
     * Precise Strikes
     * Berserker's Fury
@@ -96,21 +64,17 @@ Warrior Training
 
 # Level Armorsmithing
 
-- Verify I have made all the scale armor
-  - Scale Helm
-  - Scale Pauldrons
-  - Scale Coat
-  - Scale Gauntlets
-  - Scale Legs
-  - Scale Boots
-- Level Armorsmithing to 150
-- Make 12 Slot Steel Box [Armorsmith 150]
-  - 0/1 Rune of Holding
-  - 0/10 Steel Ingot
-- Make a practical backpack [Level 30, Armorsmith 150]
-  - 0/1 Sturdy Armorsmith's Backpack
-  - 0/1 Practical Armorsmith's Tools
-    - 0/5 Steel Ingot
+- ~~Verify I have made all the scale armor~~
+- ~~Level Armorsmithing to 150~~
+- ~~Make 12 Slot Steel Box~~
+- ~~Make a practical backpack~~
+- Make Steel Armor Set
+  - ~~Boots~~
+  - Chest
+  - ~~Gauntlet~~
+  - ~~Helmet~~
+  - ~~Legging~~
+  - Pauldron
 - Level Armorsmithing to 225
 - Make 15 Slot Darksteel Boxes [Armorsmith 225]
   - 0/1 Major Rune of Holding
