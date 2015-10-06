@@ -1,6 +1,6 @@
 # Level Bjorn Einarsson
 
-- Level to 60
+- ~~Level to 60~~
 - Complete peronsal story chapter The Battle of Claw Island
   Recruit Fibharr.
 - Run Sorrow's Embrace dungeon story mode
@@ -17,30 +17,26 @@
 
 # Training for all builds
 
-- Defense to 8
-- Tactics to 9
-- Strength to 7
+- ~~Defense to 8~~
+- ~~Tactics to 9~~
+- ~~Strength to 7~~
 - Discipline to 9
 - Arms to 8
 - Buy every other skill
 
 # Level Armorsmithing
 
-- Verify I have made all the scale armor
-  - Scale Helm
-  - Scale Pauldrons
-  - Scale Coat
-  - Scale Gauntlets
-  - Scale Legs
-  - Scale Boots
-- Level Armorsmithing to 150
-- Make 12 Slot Steel Box [Armorsmith 150]
-  - 0/1 Rune of Holding
-  - 0/10 Steel Ingot
-- Make a practical backpack [Level 30, Armorsmith 150]
-  - 0/1 Sturdy Armorsmith's Backpack
-  - 0/1 Practical Armorsmith's Tools
-    - 0/5 Steel Ingot
+- ~~Verify I have made all the scale armor~~
+- ~~Level Armorsmithing to 150~~
+- ~~Make 12 Slot Steel Box~~
+- ~~Make a practical backpack~~
+- Make Steel Armor Set
+  - ~~Boots~~
+  - Chest
+  - ~~Gauntlet~~
+  - ~~Helmet~~
+  - ~~Legging~~
+  - Pauldron
 - Level Armorsmithing to 225
 - Make 15 Slot Darksteel Boxes [Armorsmith 225]
   - 0/1 Major Rune of Holding
