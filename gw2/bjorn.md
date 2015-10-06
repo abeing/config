@@ -2,127 +2,42 @@
 
 ## Training Order
 
-Signet Training
-  Signet of Rage 9
-
-Banner Training
-  (Banner of Tactics) 4
-  Banner of Discipline ?
-  Battle Standard?
-
-Defense (to 8)
-Tactics (to 9)
 Strength (to 7)
 Discipline (to 9)
 Arms (to 8)
 
+## Questing
+
+- 50-60: Iron Marches or Timberline Falls
+- 60: The Battle of Claw Island (recruit Fibharr)
+- 60: Dungeon: Sorrow's Embrace
+- 70: Forging the Pact
+- 70: Dungeon: Citadel of Flame
+- 76: Dungeon: Honor of the Waves
+- 78: Dungeon: Crucible of Eternity
+- 80: Marching Orders
+- 80: Dungeon: The Ruined City of Arah
+
 ## Crafting Order
-
-### Refine Ore and Cloth
-
-50/47 Bronze Ingots
-  16 Chain Set
-  16 Chain Set 2 (for skillups)
-  10 Box DONE
-  05 Backpack DONE
-09/26 Bolts of Jute
-  07 Chain Set
-  07 Chain Set 2 (for skillups)
-  06 Insignia for Set 1
-  06 Insignia for Set 2
-
-For 0-72, roughly:
-  288 Bronze Ore
-  72 Jute Scraps
-
-### Make Chain Armor [Armorsmithing 0-75]
-
-Chain Helm
-Chain Pauldrons
-
-### Level Armorsmithing [0-75]
-
-Gauntlet (2 ingot, 1 bolt, cost=4)
-0                     Malign  ------                      Vital  (Fine)
-25  Giver's  Healing                  Precise  Resilient         (Fine)
-50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork)
-
-Boots (2 ingot, 1 bolt, cost=4)
-0                     Malign  ------                      Vital  (Fine 10)
-25  Giver's  Healing                  Precise  Resilient         (Fine 15)
-50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
-
-Pauldron (2 ingot, 1 bolt, cost=4)
-50  Giver's  Healing  Malign  Mighty  Precise  Resilient  Vital  (Fine 20)
-50           Healing  Malign  Mighty  Precise  Resilient  Vital  (Masterwork 20)
-
-Helm (1 ingot, 2 bolt, cost=5)
-Legs (4 ingot, 1 bolt, cost=6)
-  Done: Mighty
-Coat (5 ingot, 1 bolt, cost=7)
-  Done: Mighty
-
-### Refine Iron Ore and Cloth
-
-0/47 Iron Ingot
-  10 Box
-  5 Backpack
-  16 Set 1
-  16 Set 2
-0/26 Bolts of Wool
-  13 Set 1
-  13 Set 2
-
-### Make 10 Slot Iron Box [Armorsmith 75]
-
-0/1 Minor Rune of Holding
-0/10 Iron Ingot
-
-### Make a sturdy backpack [Level 15, Armorsmith 75]
-
-1/1 Simple Armorsmith's Backpack
-0/1 Sturdy Armorsmith's Tools
-  0/5 Iron Ingot
-
-### Make Scale Armor
-
-Scale Helm
-Scale Pauldrons
-Scale Coat
-Scale Gauntlets
-Scale Legs
-Scale Boots
 
 ### Level Armorsmith [75-150]
 
 Boots (2 ingot, 1 bolt, cost=4)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
 125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 Gauntlets (2 ingot, 1 bolt, cost=4)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
 125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 Pauldron (2 ingot, 1 bolt, cost=4)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
 125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 Helm (1 ingot, 2 bolt, cost=5)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
 125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 Legs (4 ingot, 1 bolt, cost=6)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
 125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 Coat (5 ingot, 1 bolt, cost=7)
-75   Giver's                 Hunter's  Ravaging                        Vigorous  (Fine 25)
-100           Hearty  Honed                      Rejuvinating  Strong            (Fine 30)
 125           Hearty  Honed  Hunter's  Ravaging  Rejuvinating  Strong  Vigorous  (Masterwork 35)
 
 ## Make 12 Slot Steel Box [Armorsmith 150]
@@ -178,24 +93,6 @@ Armorsmith 400:
   0/1 Elegant Armorsmith's Tools
     0/5 Orichalcum Ingot
   0/3 Glob of Ectoplasm
-
-## Questing
-
-- 20: Story: Everyone Makes Mistakes
-- 30: Story: Death from Below
-- 30: Dungeon: Ascalon Catacombs
-- 40: Story: A Fragile Peace (join the Vigil)
-- 40: Dungeon: Caudecus's Manor
-- 50: Untamed Wilds (help the ogres)
-- 50: Dungeon: Twilight Arbor
-- 60: The Battle of Claw Island (recruit Fibharr)
-- 60: Dungeon: Sorrow's Embrace
-- 70: Forging the Pact
-- 70: Dungeon: Citadel of Flame
-- 76: Dungeon: Honor of the Waves
-- 78: Dungeon: Crucible of Eternity
-- 80: Marching Orders
-- 80: Dungeon: The Ruined City of Arah
 
 ## Exotic Dungeon Gear
 
