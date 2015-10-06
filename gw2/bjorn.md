@@ -1,3 +1,11 @@
+Short Term
+==========
+
+- Mail boxes to Tunna
+- Do Tuesday dailies
+- Finish my personal story
+- Help Tunna with her personal story
+
 Level Bjorn Einarsson
 =====================
 
@@ -16,7 +24,6 @@ Level Bjorn Einarsson
 - Complete Marching Orders personal story chapter
 - Run The Ruined City of Arah dungeon story mode
 
-<<<<<<< HEAD
 Warrior Training
 ================
 
@@ -51,7 +58,7 @@ Warrior Training
     * Bloodlust
     * Burst Percision
     * Furious
-  + Tactics to `Phalanx Strength` (9)
+  + ~~Tactics to `Phalanx Strength` (9)~~
   
 - Finish all other training
   + Finish Strength
@@ -103,27 +110,8 @@ Warrior Training
     - 0/5 Orichalcum Ingot
   - 0/3 Glob of Ectoplasm
 
-# Goal: Combat Generalist
-
-The combat generalist wants to experience all the content that the game has to
-offer. They probably don’t have time to absolutely maximize their effectiveness
-in every area, but they want a good shot at everything.
-
-If this sounds fun, you’ll probably want to work towards multiple gear sets for
-different play types.  You’ll be using the following guides:
-
-- The quest for exotic equipment
-- The quest for a legendary weapon
-- The quest for Dungeon Mastery and Fractals (to practice your skills in speed
-  clearing dungeons)
-- The quest for meta-events (to practice your skills in an open world setting)
-- The quest for WvW Mastery (to practice your skills in an open-world PvP
-  setting)
-- The quest for sPvP Mastery (to practice your skills in an arena setting)
-- The quest for the world bosses (to practice your skills against the most
-  difficult PvE in the game)
-
-# Goal: Exploration
+Goal: Exploration
+=================
 
 The explorer loves seeing what’s around the corner - getting to the top of the
 mountain, discovering that secret base inside the cave with the lore biscuit
@@ -136,13 +124,14 @@ yourself for the rigors of the wilderness:
 
 Then enjoy the world of Tyria!
 
-* The quest for jumping puzzles
-* The quest for map completion
-* The quest for mini dungeons
-* The quest for the living story
-* The quest for meta-events (and world bosses)
+- The quest for map completion
+- The quest for the living story
+- The quest for mini dungeons
+- The quest for meta-events (and world bosses)
+- _Optional: The quest for jumping puzzles_
 
-# Goal: Living the Story
+Goal: Living the Story
+======================
 
 The story enthusiast is kept interested by a compelling story that motivates
 their adventures. The flavor and lore of Tyria and its people only adds to the
@@ -150,17 +139,18 @@ intrigue.
 
 First, get yourself geared up so you don’t die on the way!
 
-* The quest for exotic equipment
+- The quest for exotic equipment
 
 Then try these quests to get straight to the story:
 
-* The quest for the living story
-* The quest for map completion
-* The quest for dungeon mastery and Fractals of the Mists
-* The quest for mini dungeons
-* The quest for meta-events
+- The quest for map completion
+- The quest for the living story
+- The quest for mini dungeons
+- The quest for meta-events
+- The quest for dungeon mastery and Fractals of the Mists
 
-# The Quest for Exotic Equipment
+The Quest for Exotic Equipment
+==============================
 
 _You’ll need exotic armor to contribute at your maximum potential in all types
 of content._
@@ -184,7 +174,7 @@ http://www.reddit.com/r/Guildwars2/wiki/guides
 - Equip all of your weapons with superior sigils
 - Equip all of your armor with superior runes (matching set recommended!)
 
-##Tips
+## Tips
 
 1. Decide what kind of build you want to play (see the first section of this
 guide, and remember that http://www.metabattle.com is a great resource!)
@@ -219,7 +209,7 @@ guide, and remember that http://www.metabattle.com is a great resource!)
   * Purchase with karma
 
   Buying gear with karma* is an option for certain sets.The karma vendors at the
-  temples in Orr sell some gear sets.See the wiki for more information.If you
+  temples in Orr sell some gear sets. See the wiki for more information. If you
   want them, you’ll need to gather a group in Orr to take the temple that you
   want, and buy your hard earned armor!
   
@@ -248,7 +238,7 @@ guide, and remember that http://www.metabattle.com is a great resource!)
   Buying gear with guild commendations is useful for berserker weapons and
   certain armor slots. You may purchase exotic backpieces, exotic weapons, or
   profession gear boxes with a mix of gold and guild commendations (earned by
-  completing guild missions with your - you guessed it - guild).Just keep in
+  completing guild missions with your - you guessed it - guild). Just keep in
   mind that guild commendations are limited in supply and can buy other stuff
   too, so think before you spend them. Generally speaking, guild commendations
   should be saved up to buy ascended trinkets due to the limited number you can
@@ -272,107 +262,284 @@ guide, and remember that http://www.metabattle.com is a great resource!)
   tossing in four of your old rares.(But it’s probably a better idea just to
   sell them and use the money to buy what you really want.)
 
+## Berkserer Dungeon Set
 
-# Stuff
+- 0/1 Berserker's Draconic Helm
+  - 0/1 Orichalcum Helmet Casing
+    - 0/1 Orichalcum Ingot
+      - 0/2 Orichalcum Ore
+  - 0/1 Orichalcum Helmet Lining
+    - 0/2 Bolt of Gossamer
+      - 0/4 Gossamer Scrap (2)
+    - 0/1 Spool of Gossamer Thread
+  - 0/1 Berserker's Intricate Gossamer Insignia
+    - 0/5 Glob of Ectoplasm
+    - 0/5 Bolt of Gossamer
+      - 0/10 Gossamer Scrap
+    - 0/20 Spool of Gossamer Thread
+    - 0/5 Vial of Powerful Blood
 
-0/1 Berserker's Draconic Helm
-  0/1 Orichalcum Helmet Casing
-    0/1 Orichalcum Ingot
-      0/2 Orichalcum Ore
-  0/1 Orichalcum Helmet Lining
-    0/2 Bolt of Gossamer
-      0/4 Gossamer Scrap (2)
-    0/1 Spool of Gossamer Thread
-  0/1 Berserker's Intricate Gossamer Insignia
-    0/5 Glob of Ectoplasm
-    0/5 Bolt of Gossamer
-      0/10 Gossamer Scrap
-    0/20 Spool of Gossamer Thread
-    0/5 Vial of Powerful Blood
-0/1 Berserker's Draconic Pauldrons
-  0/1 Orichalcum Pauldron Casing
-    0/2 Orichalcum Ingot
-      0/4 Oricalcum Ore
-  0/1 Orichalcum Pauldron Lining
-    0/1 Bolt of Gossamer
-      0/2 Gossamer Scrap
-    0/1 Spool of Gossamer Thread
-  0/1 Berserker's Intricate Gossamer Insignia
-    0/5 Glob of Ectoplasm
-    0/5 Bolt of Gossamer
-      0/10 Gossamer Scrap
-    0/20 Spool of Gossamer Thread
-    0/5 Vial of Powerful Blood
-0/1 Berserker's Draconic Coat
-  0/1 Orichalcum Chestplate Panel
-    0/5 Orichalcum Ingot
-      0/10 Orichalcum Ingot
-  0/1 Orichalcum Chestplate Padding
-    0/1 Bolt of Gossamer
-      0/2 Gossamer Scrap
-    0/3 Spool of Gossamer Thread
-  0/1 Berserker's Intricate Gossamer Insignia
-    0/5 Glob of Ectoplasm
-    0/5 Bolt of Gossamer
-      0/10 Gossamer Scrap
-    0/20 Spool of Gossamer Thread
-    0/5 Vial of Powerful Blood
-0/1 Berserker's Draconic Gauntlets
-  0/1 Orichalcum Gauntlet Plates
-    0/2 Orichalcum Ingot
-      0/4 Orichalcum Ore
-  0/1 Orichalcum Gauntlet Lining
-    0/1 Bolt of Gossamer
-      0/2 Gossamer Scrap
-    0/1 Spool of Gossamer Thread
-  0/1 Berserker's Intricate Gossamer Insignia
-    0/5 Glob of Ectoplasm
-    0/5 Bolt of Gossamer
-      0/10 Gossamer Scrap
-    0/20 Spool of Gossamer Thread
-    0/5 Vial of Powerful Blood
-0/1 Berserker's Draconic Legs
-  0/1 Orichalcum Legging Panel
-    0/4 Orichalcum Ingot
-      0/8 Orichaclum Ore
-  0/1 Orichalcum Legging Lining
-    0/1 Bolt of Gossamer
-      0/2 Gossamer Scrap
-    0/3 Spool of Gossamer Thread
-  0/1 Berserker's Intricate Gossamer Insignia
-    0/5 Glob of Ectoplasm
-    0/5 Bolt of Gossamer
-      0/10 Gossamer Scrap
-    0/20 Spool of Gossamer Thread
-    0/5 Vial of Powerful Blood
-0/1 Berserker's Draconic Boots
-  0/1 Orichalcum Boot Casing
-    0/2 Orichalcum Ingot
-      0/4 Orichalcum Ore
-  0/1 Orichalcum Boot Lining
-    0/1 Bolt of Gossamer
-      0/2 Scrap of Gossamer
-    0/1 Spool of Gossamer Thread
-  0/1 Berserker's Intricate Gossamer Insignia
-    0/5 Glob of Ectoplasm
-    0/5 Bolt of Gossamer
-      0/10 Gossamer Scrap
-    0/20 Spool of Gossamer Thread
-    0/5 Vial of Powerful Blood
+- 0/1 Berserker's Draconic Pauldrons
+  - 0/1 Orichalcum Pauldron Casing
+    - 0/2 Orichalcum Ingot
+      - 0/4 Oricalcum Ore
+  - 0/1 Orichalcum Pauldron Lining
+    - 0/1 Bolt of Gossamer
+      - 0/2 Gossamer Scrap
+    - 0/1 Spool of Gossamer Thread
+  - 0/1 Berserker's Intricate Gossamer Insignia
+    - 0/5 Glob of Ectoplasm
+    - 0/5 Bolt of Gossamer
+      - 0/10 Gossamer Scrap
+    - 0/20 Spool of Gossamer Thread
+    - 0/5 Vial of Powerful Blood
+
+- 0/1 Berserker's Draconic Coat
+  - 0/1 Orichalcum Chestplate Panel
+    - 0/5 Orichalcum Ingot
+      - 0/10 Orichalcum Ingot
+  - 0/1 Orichalcum Chestplate Padding
+    - 0/1 Bolt of Gossamer
+      - 0/2 Gossamer Scrap
+    - 0/3 Spool of Gossamer Thread
+  - 0/1 Berserker's Intricate Gossamer Insignia
+    - 0/5 Glob of Ectoplasm
+    - 0/5 Bolt of Gossamer
+      - 0/10 Gossamer Scrap
+    - 0/20 Spool of Gossamer Thread
+    - 0/5 Vial of Powerful Blood
+
+- 0/1 Berserker's Draconic Gauntlets
+  - 0/1 Orichalcum Gauntlet Plates
+    - 0/2 Orichalcum Ingot
+      - 0/4 Orichalcum Ore
+  - 0/1 Orichalcum Gauntlet Lining
+    - 0/1 Bolt of Gossamer
+      - 0/2 Gossamer Scrap
+    - 0/1 Spool of Gossamer Thread
+  - 0/1 Berserker's Intricate Gossamer Insignia
+    - 0/5 Glob of Ectoplasm
+    - 0/5 Bolt of Gossamer
+      - 0/10 Gossamer Scrap
+    - 0/20 Spool of Gossamer Thread
+    - 0/5 Vial of Powerful Blood
+
+- 0/1 Berserker's Draconic Legs
+  - 0/1 Orichalcum Legging Panel
+    - 0/4 Orichalcum Ingot
+      - 0/8 Orichaclum Ore
+  - 0/1 Orichalcum Legging Lining
+    - 0/1 Bolt of Gossamer
+      - 0/2 Gossamer Scrap
+    - 0/3 Spool of Gossamer Thread
+  - 0/1 Berserker's Intricate Gossamer Insignia
+    - 0/5 Glob of Ectoplasm
+    - 0/5 Bolt of Gossamer
+      - 0/10 Gossamer Scrap
+    - 0/20 Spool of Gossamer Thread
+    - 0/5 Vial of Powerful Blood
+
+- 0/1 Berserker's Draconic Boots
+  - 0/1 Orichalcum Boot Casing
+    - 0/2 Orichalcum Ingot
+      - 0/4 Orichalcum Ore
+  - 0/1 Orichalcum Boot Lining
+    - 0/1 Bolt of Gossamer
+      - 0/2 Scrap of Gossamer
+    - 0/1 Spool of Gossamer Thread
+  - 0/1 Berserker's Intricate Gossamer Insignia
+    - 0/5 Glob of Ectoplasm
+    - 0/5 Bolt of Gossamer
+      - 0/10 Gossamer Scrap
+    - 0/20 Spool of Gossamer Thread
+    - 0/5 Vial of Powerful Blood
 
 ## WvW Gear
 
-Draconic Helm
-Draconic Pauldrons
-Draconic Coat
-Draconic Gauntlets
-Draconic Legs
-Draconic Boots
+- Draconic Helm
+- Draconic Pauldrons
+- Draconic Coat
+- Draconic Gauntlets
+- Draconic Legs
+- Draconic Boots
 
-## Explore the World
+The Quest for Map Completion
+============================
 
-For Gift of Exploration for Twilight
-For Gift of Exploration for Sunrise
+__To see every corner of the game’s stunning artwork, and to get a gold star by
+your name.  (Literally.)__
+
+Now for the twist. You’ve been doing the quest for map completion all along. You
+probably completed quite a few hearts, vistas, and other map activities while
+you were leveling. When you open the map, you’ll see a percentage completion for
+the map you’re currently on, and the percentage completion for all of the maps.
+I think you know what you have to do.
+
+## Quest Log
+- ~~Reach 25% completion~~
+- Reach 50% completion
+- Reach 75% completion
+- Reach 100% completion
+- Complete all vistas, skill challenges, and points of interest in Southsun Cove
+- Complete all vistas, skill challenges, and points of interest in Dry Top
+- Complete all vistas, skill challenges, and points of interest in the Silverwastes
+
+## Goal
+
+- `Gift of Exploration` for `Twilight`
+- `Gift of Exploration` for `Sunrise`
+
+## Tips
+
+Map completion is straightforward, but it can be made more interesting with
+these weird tricks:
+
+- **Hearts go faster when there are events nearby.** Personally, I try to avoid
+  doing a heart by itself. I follow events around the map, and many hearts
+  naturally take care of themselves.  It’s more fun that way, and if you plan
+  your route, it can be faster too.
+- **Mouse over the name of the map** on the world map to see exactly what you
+  still need to do.
+- **Talk to the heart NPCs.** Heart NPCs often provide context for an area and
+  explain why you’re doing what you’re doing. Plus, after you finish a heart
+  they turn into merchants that often sell unique items.
+- **Look up.** Not just for vistas, which are often on cliffs, but to enjoy the
+  beautiful scenery as you complete the map. Increasing your FOV in camera
+  settings helps with this.
+- Some people really enjoy speed running. There are documented paths for the
+  most efficient map completion paths. It’s not something I recommend on a first
+  character since you’d be blowing through so much of the game’s content so
+  quickly, but it’s an option if it appeals to you. Check out
+  [this thread](https://www.reddit.com/r/Guildwars2/comments/2twe8d/100_world_completion_no_deaths_in_less_then_30/)
+  if it sounds interesting, and check out this website for efficient
+  pre-determined routes of each map:
+  [Map completion routes](http://darkronins.shivtr.com/forum_threads/1456052)
+
+Tip: Not all maps count for map completion. Most of the newer maps, such as Dry
+Top and Southsun Cove don’t have any hearts at all, and don’t show a map
+completion percentage. That doesn’t mean they’re not worth exploring--these maps
+are some of the most compelling content in the game, with map-wide dynamic
+events culminating in big rewards and big bosses.
+
+Tip: When you’ve completed the map, you probably still haven’t seen everything.
+Check out the quest for mini dungeons and the quest for jumping puzzles for some
+awesome hidden content.
+
+The Quest for Mini Dungeons
+===========================
+_To find secret areas that aren’t included in Map Completion. (Yes, not
+everything of interest is on the map!)_
+
+Quick quiz: How many dungeons are in Guild Wars 2? Seven? Eight? Twenty six!?
+Depends on how mini you like your dungeons.
+
+Mini dungeons are explorable areas that are hidden in the open world. There are
+puzzles and challenging enemies, and some pretty neat sights and lore. They’re
+not going to drop a big chest of gold at the end like a normal, instanced
+dungeon, but they do tend to give Explorer achievements.
+
+They’re not marked on the map, and require careful exploration to find. They may
+be opened by events, or you may be able to walk right in. Keep your eyes peeled
+while you explore the map, and when in doubt, use the tips below!
+
+## Quest Log
+
+- Find at least one mini dungeon without consulting the wiki
+- Complete the flame temple tombs mini dungeon
+- Complete all mini dungeon Explorer achievements
+
+## Mini Dungeons
+
+- Ascalon
+  + Diessa Plateau
+    * Flame Temple Tombs (no achievement)
+  + Fireheart Rise
+    * Rebel's Seclusion
+    * Vexa's Lab
+  + Plains of Ashford
+    * Human's Lament
+- Kryta
+  + Gendarran Fields
+    * Provernic Crypt (no achievement)
+  + Kessex Hills
+    * Goff's Loot (might have this one)
+  + Queensdale
+    * Bad Neighborhood
+- Maguuma Jungle
+  + Caledon Forst
+    * Don't Touch the Shin
+    * Tears of Itlaocol
+  + Metrica Province
+    * Old Oola Lab (no achievement; I have the key)
+  + Sparkfly Fen
+    * Verarium Delves (no chievement; northwest)
+- Ruins of Orr
+  + Cursed Shore
+    * Grounded
+    * Forgotten Stream
+  + Streams of Devastation
+    * Ships of Sorrows
+    * The Long Way Around
+- Shiverpeak Mountains
+  + Dredgehaunt Cliffs
+    * Forsaken Fortune
+  + Frostgorge Sound
+    * Magellan's Memento
+  + Lornar's Pass
+    * Windy Cave Treasure (I've seen this)
+
+## Tips
+
+- Check the wiki for a list of all of the mini dungeons in the game:
+  http://wiki.guildwars2.com/wiki/Mini-dungeon
+- I recommend starting with the Flame Temple Tombs. It’s a pretty interesting
+  adventure, and though there’s no achievement, I certainly found it rewarding
+  to make it to the end.
+- Many of the mini dungeons have achievements for you if you make it to the end.
+  Good luck!
+
+The Quest for the Living Story
+==============================
+
+_To enjoy a good story. To gain a deeper understanding of the world around you,
+and context for why the world is like it is. To earn some unique rewards._
+
+There’s a rich history behind what you see in Tyria, and it’s constantly
+changing as the game is updated and new maps, events, and quests are added.
+There’s plenty of story to catch up on right now, and when you’re done, you can
+speculate with the rest of us on what’s coming up next!
+
+Up until now, ArenaNet has added story in the form of “Living Story Seasons”, in
+which new story is added roughly every two weeks. The first season was very
+temporary--the world changed rapidly and events came and went. It was very
+exciting if you were there, but hard to explain if you weren’t. Luckily, there
+are some videos to catch you up in the quest log below, and we can all hope that
+it will one day return to the game.
+
+Season 2, on the other hand, will be available forever. If you logged on during
+the initial release of each chapter, you received permanent access for free;
+otherwise, it will cost you 200 gems per chapter (or the equivalent in gold).
+The Season 2 story quests are the best in the game and will set you up for the
+upcoming Heart of Thorns expansion, so don’t miss them!
+
+## Quest Log
+- Complete your personal story
+- Watch this short overview of season one https://www.youtube.com/watch?v=ckEsGyYHRFY
+- For more depth, watch these two videos by the venerable Wooden Potatoes on the
+  first half of season one
+  - https://www.youtube.com/watch?v=MSicD-CA4lM
+  - https://www.youtube.com/watch?v=-EsWtkj6f2k
+- _Optional: Read this synopsis on the wiki for more season one details
+  + http://wiki.guildwars2.com/wiki/Living_World_season_1
+- Unlock each episode of season 2
+- Complete season 2
+
+Tip: All season two episodes have difficult achievements that give you more
+challenging objectives than simply finishing the story. Since these achievements
+are not directly relevant to the story, we’ve put them in The Quest for
+Achievements and Collections.
+
+---
 
 ## Acquire Dusk
 
