@@ -1,8 +1,9 @@
-# Level Bjorn Einarsson
+Level Bjorn Einarsson
+=====================
 
-- Level to 60
-- Complete peronsal story chapter The Battle of Claw Island
-  Recruit Fibharr.
+- ~~Level to 60~~
+- Complete personal story chapter **The Battle of Claw Island**
+  - Choose to recruit Fibharr
 - Run Sorrow's Embrace dungeon story mode
 - Level to 70
 - Complete personal story chapter Forging the Pact
@@ -15,14 +16,83 @@
 - Complete Marching Orders personal story chapter
 - Run The Ruined City of Arah dungeon story mode
 
-# Training for all builds
+Warrior Training
+================
 
-- Defense to 8
-- Tactics to 9
-- Strength to 7
-- Discipline to 9
-- Arms to 8
-- Buy every other skill
+- Train for WvW
+  + Defense to `Cleansing Ire` (8)
+    * ~~Thick Skin~~
+    * ~~Shield Master~~
+    * ~~Dogged March~~
+    * ~~Cull the Weak~~
+    * ~~Adrenal Health~~
+    * ~~Defy Pain~~
+    * ~~Armored Attack~~
+    * ~~Sundering Mace~~
+    * ~~Spiked Armor~~
+    * ~~Last Stand~~
+    * ~~Cleansing Ire~~
+  + Tactics to `Phalanx Strength` (9)
+    * ~~Determined Revival~~
+    * ~~Leg Specialist~~
+    * ~~Quick Breathing~~
+    * ~~Empowered~~
+    * ~~Reviver's Might~~
+    * ~~Shrug It Off~~
+    * ~~Burning Arrows~~
+    * ~~Empower Allies~~
+    * ~~Inspiring Presence~~
+    * ~~Powerful Synergy~~
+    * ~~Vigorous Shouts~~
+    * ~~Phalanx Strength~~
+  + Discipline to `Burst Mastery` (9)
+    * Versatile Rage
+    * Crack Shot
+    * Warrior's Sprint
+    * Vengeful Return
+    * Fast Hands
+    * Inspiring Battle Standard
+    * Destruction of the Empowered
+    * Brawler's Recovery
+    * Versatile Power
+    * Merciless Hammer
+    * Heightened Focus
+    * Burst Mastery
+
+- Train for Dungeons
+  + Strength to `Berserker's Power` (7)
+    * Reckless Dodge
+    * Death from Above
+    * Restorative Strength
+    * Peak Performance
+    * Building Momentum
+    * Body Flow
+    * Forceful Greatsword
+    * Great Fortitude
+    * Stick and Move
+    * Berserker's Power
+  + Arms to `Furious` (8)
+    * Precise Strikes
+    * Berserker's Fury
+    * Signet Mastery
+    * Opportunist
+    * Rending Strikes
+    * Unsuspecting Foe
+    * Deep Strike
+    * Blademaster
+    * Bloodlust
+    * Burst Percision
+    * Furious
+  + Tactics to `Phalanx Strength` (9)
+  
+- Finish all other training
+  + Finish Strength
+    * Distracting Strikes
+    * Axe Mastery
+  + Finish Arms
+    * Dual Wielding
+  + Finish Defense
+    * Rousing Resilience
 
 # Level Armorsmithing
 
@@ -98,7 +168,7 @@ that no one will see except for them.
 If you’re an explorer, you’re in for a treat, but first you'll need to prepare
 yourself for the rigors of the wilderness:
 
-* The quest for exotic equipment
+- The quest for exotic equipment.
 
 Then enjoy the world of Tyria!
 
