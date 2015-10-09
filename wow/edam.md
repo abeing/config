@@ -4,10 +4,27 @@ DONE Alchemy Items
 DONE Cooking Items
 DONE warrior Quests
 DONE Eastern Kingdoms
-Kalimdor
-  Un'Goro Crater
-  Winterspring
+DONE Kalimdor
 Dungeons
+  Blackfathom Deeps
+  Blackrock Depts
+  Blackrock Spire
+  Dire Maul
+  Gnomeregan
+  Maraudon
+  Ragefire Chasm
+  Razorfen Downs
+  Razorfen Kraul
+  Scarlet Monastery
+  Scholomance
+  Shadowfang Keep
+  Stratholme
+  Sunken Temple
+  The Deadmines
+  The Stockade
+  Uldaman
+  Wailing Caverns
+  Zul'Farak
 Raids?
 Profession Quests
 Cooking Quests
@@ -1424,6 +1441,14 @@ Both:
   [51D] Into the Depths
   [51D] Secret of the Circle
 
+Un'Goro Crater
+[52] Muigin and Larion
+[52] A Visit to Gregan
+Sunken Temple
+[52D] Haze of Evil
+Un'Goro Crater
+[60] Bloodpetal Sprouts
+
 ## [43-52] Feralas
 
 [25] To the Top [repeatable]
@@ -1634,12 +1659,70 @@ Ironforge: [55] Dwarven Justice
 [52] Release Them
 [55+] Rise, Obsidion!
 
-## [52] Warrior
+## [50-55] Un'Goro Crater
 
-[52] A Troubled Spirit
-[52] Warrior Kinship
-[52] War on the Shadowsworn
-[52++] Voodoo Feathers
+Drop: A Mangled Journal
+[50] Williden's Journal
+
+[51] Roll the Bones
+
+[51] Shizzle's Flyer
+
+[52] Alien Ecology
+
+**Linken Quest**
+[52] It's a Secret to Everybody
+[52] It's a Secret to Everybody
+[52] It's a Secret to Everybody
+[52] The Videre Elixir
+[52] Meet at the Grave
+[52] A Grave Situation
+[52] Linken's Sword
+[52] A Gnome's Assistance
+[54] Linken's Memory
+[55] Silver Heart
+[54] Aquementas
+[54] Linken's Adventure
+[56+] It's Dangerous to Go Alone
+
+[53] Expedition Salvation
+
+[53] Chasing A-Me 01
+[53] Chasing A-Me 01
+[53] Chasing A-Me 01
+
+[53] Crystals of Power
+  [53] The Western Pylon
+  [53] The Northern Pylon
+  [53] The Eastern Pylon
+[53] Making Sense of It
+[53] Crystal Charge [repeatable]
+[53] Crystal Force [repeatable]
+[53] Crystal Restore [repeatable]
+[53] Crystal Spire [repeatable]
+[53] Crystal Ward [repeatable]
+[53] Crystal Yield [repeatable]
+
+[53] The Scent of Lar'korwi
+[53] The Fare of Lar'korwi
+[56] The Bait for Lar'korwi
+
+[55] Beware of Pterrodax
+
+[55] Dadanga is Hungry! [repeatable]
+
+[55] Volcanic Activity
+
+[55] Lost!
+[55] A Little Help From My Friends
+
+[55] The Apes of Un'Goro
+[55] The Mighty U'cha
+
+[55] Finding the Source
+[55] The New Springs
+Winterspring
+[55] Strange Sources
 
 ## [50-55] Blasted Lands
 
@@ -1808,6 +1891,60 @@ Drop: Flute of Xavaric (from Xavaric)
 [57] Retribution of the Light
 [57] The Remains of Trey Lightforge
 
+## [52] Warrior
+
+[52] A Troubled Spirit
+[52] Warrior Kinship
+[52] War on the Shadowsworn
+[52++] Voodoo Feathers
+
+## [52-60] Winterspring
+
+[52] Duke Nicholas Zverenhoff
+
+[52] The Everlook Report
+
+Teldrassil (Village Docks)
+[55] Moontouched Wildkin
+[57] Find Ranshalla
+Winterspring
+[59] Guardians of the Altar
+[57] Wildkin of Elune
+
+Drop: Winterfall Ritual Totem (from ursa)
+[56] Winterfall Ritual Totem
+
+[56] Trouble in Winterspring!
+[56] Threat of the Winterfall
+
+Drop: Empty Firewater Flask (from ursa)
+[56] Winterfall Firewater
+[56] Falling to Corruption
+[56] Mystery Goo
+[56] Toxic Horrors
+[57] Winterfall Runners
+[59+] High Chief Winterfall
+Drop: High Chief
+[59] The Final Piece
+[59] Words of the High Chief
+
+[56] Are We There, Yeti?
+[58] Are We There, Yeti?
+[58] Are We There, Yeti?
+[60] A Yeti of Your Own
+
+[59] Enraged Wildkin
+[59] Enraged Wildkin
+[59] Enraged Wildkin
+[59] Enraged Wildkin
+
+[60] Winderfall Intrusion
+
+**Winterspring Trainers**
+[60] Frostsaber Provisions [repeatable]
+Honored
+[60+] Rampaging Giants [repeatable]
+
 ## [52-60] Ironforge
 
 [52] A Little Slime Goes a Long Way
@@ -1887,6 +2024,20 @@ Drop: Head of Onyxia (from Onyxia in Onyxia's Lair)
 Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
 [60] The Lord of Blackrock
 [60] The Lord of Blackrock
+
+## [60] Blackrock Spire
+
+Winterspring
+[60] Lorax's Tale
+Blackrock Spire
+[60D] The Demon Forge
+
+Blackrock Spire
+[60] Finkle Einhorn, At Your Service!
+Winterspring
+[60+] Breastplate of Bloodthirst
+[60+] Cap of the Scarlet Savant
+[62+] Leggings of Arcana
 
 # Alchemy
 
