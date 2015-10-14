@@ -318,10 +318,6 @@ Ironforge: [15] Find Bingles
 
 [22+] WANTED: Chok'sul
 
-[39] Badlands Reagent Run
-[42] Uldaman Reagent Run
-[44+] Badlands Reagent Run II
-
 ## [10-31] Darkshore
 
 [1??] Onu is meditating
@@ -1336,17 +1332,6 @@ Stormwind, Archbishop Benedictus
 
 [35] A Dwarf and His Tools
 
-Object: Crumpled Map
-[35] A Sign of Hope
-{Uldaman: A Sign of Hope}
-{Uldaman: Amulet of Secrets}
-[40] Prospect of Faith
-[40] Prospect of Faith
-[40] Passing Word of a Threat
-[40] Passing Word of a Threat
-[44+] An Ambassador of Evil
-{Uldaman: The Lost Tablet of Will}
-
 [37] Study of the Elements: Rock
 [39] Study of the Elements: Rock
 [42] Study of the Elements: Rock
@@ -1357,11 +1342,6 @@ Object: Crumpled Map
 
 [37+] Pearl Diving
 
-{Ironforge: Ironband Wants You!}
-[38] Find Agmond
-[42] Murdaloc
-{Uldaman: Agmond's Fate}
-
 [38] Mirages
 [40] Scrounging {and}
 [43] Tremors of the Earth
@@ -1370,11 +1350,6 @@ Object: Crumpled Map
 
 Drop: The Black Box (from Zaricotl)
 [40] The Black Box
-
-{Uldaman: Solution to Doom}
-[40] To Ironforge for Yagyin's Digest
-[44+] The Star, the Hand and the Heart
-[40] Forbidden Knowledge
 
 {Theldurin the Lost}
 [41] The Lost Fragments
@@ -1444,6 +1419,78 @@ Professor Phizzlethorpe
 [40] Sunken Treasure
 [40] Sunken Treasure
 [44] Death From Below
+
+## [37-47] Uldaman
+
+Ironforge, Prospector Stormpike
+[37] Ironband Wants You!}
+Badlands
+[38] Find Agmond
+[42] Murdaloc
+Uldaman
+[38] Agmond's Fate
+
+Badlands
+Object: Crumpled Map
+[35] A Sign of Hope
+Uldaman
+[35D] A Sign of Hope
+[40D] Amulet of Secrets
+Badlands
+[40] Prospect of Faith
+[40] Prospect of Faith
+[40] Passing Word of a Threat
+[40] Passing Word of a Threat
+[44+] An Ambassador of Evil
+Uldaman
+[45D] The Lost Tablet of Will
+
+Badlands, Rigglefuzz
+[36] Power Stones
+
+Loch Modan, Ghak Healtouch
+[39] Badlands Reagent Run
+Uldaman
+[42] Uldaman Reagent Run
+Badlands
+[44+] Badlands Reagent Run II {with Uldaman Reagent Run}
+
+Ironforge, Prospector Stormpike
+[40D] The Lost Dwarves
+[40D] The Hidden Chamber
+
+Uldaman
+[40] Solution to Doom
+Badlands
+[40] To Ironforge for Yagyin's Digest
+[44+] The Star, the Hand and the Heart
+[40] Forbidden Knowledge
+
+Drop: Shattered Necklace
+[41D] The Shattered Necklace
+[41D] Lore for a Price
+[42D] Back to Uldaman
+[43D] Find the Gems
+[44D] Restoring the Necklace
+[44D] Restoring the Necklace
+
+Ironforge, Talvash del Kissel
+[42] Replacement Phial
+
+Ironforge, Krom Stoutarm
+[43] Reclaimed Treasures
+
+Uldaman
+Object: The Discs of Norgannon
+[47D] The Platinum Discs
+[47] The Platinum Discs
+[50] Portents of Uldum
+[50] Seeing What Happens
+Tanaris
+[50+] The Stone Watcher
+Ironforge
+[50+] Return to Ironforge
+[50] A Future Task
 
 ## [38-40] Scarlet Monastery
 
@@ -2423,22 +2470,6 @@ Zul'Gurub:
 [58] Confront Yeh'kinya
 Tanaris:
 [60] The Hand of Rastakhan
-
-## Earthen (47-50)
-
-Ironforge
-Object: The Discs of Norgannon
-[47] The Platinum Discs
-[47] The Platinum Discs
-[50] Portents of Uldum
-[50] Seeing What Happens
-
-Tanaris
-[50+] The Stone Watcher
-
-Ironforge
-[50+] Return to Ironforge
-[50] A Future Task
 
 ## Searing Gorge Key (48)
 
