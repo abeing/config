@@ -1,10 +1,6 @@
 # List Building
 
 Dungeons
-  Scarlet Monastery
-  Scholomance
-  Shadowfang Keep
-  Stratholme
   Sunken Temple
   The Deadmines
   The Stockade
@@ -1438,7 +1434,10 @@ Professor Phizzlethorpe
 [40] Sunken Treasure
 [44] Death From Below
 
-## [39-40] Scarlet Monastery
+## [38-40] Scarlet Monastery
+
+Ironforge
+[38D] Mythology of the Titans
 
 Desolace
 [39] Brother Anton
@@ -2144,24 +2143,12 @@ Librams [repeatable?]:
   [60D] Libram of Protection
   [60D] Libram of Repidity
 
-## [60] Darnassus
+## [58] Scholomance
 
-[60] Assisting Archdruid Staghelm
-[50] Un'goro Soil
-[50] Morrowgrain Research
-[50] Morrowgrain Research [repeatable]
-[50] Morrowgrain to Darnassus [repeatable]
-
-## [60] Stormwind
-
-Drop: Head of Onyxia (from Onyxia in Onyxia's Lair)
-[60] Victory for the Alliance
-[60] Celebrating Good Times
-[60] The Journey Has Just Begun
-
-Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
-[60] The Lord of Blackrock
-[60] The Lord of Blackrock
+Western Plaguelands
+[58D] Plagued Hatchlings
+Drop: Healthy Dragon Scale
+[58D] Healthy Dragon Scale
 
 ## [59-60] Blackrock Spire
 
@@ -2211,6 +2198,40 @@ Winterspring
 _Blackwing Lair Attunement_
 Drop: Blackhand's Command from Scarshield Quartermaster
 [60D] Blackhand's Command
+
+## [60] Darnassus
+
+[60] Assisting Archdruid Staghelm
+[50] Un'goro Soil
+[50] Morrowgrain Research
+[50] Morrowgrain Research [repeatable]
+[50] Morrowgrain to Darnassus [repeatable]
+
+## [60] Stormwind
+
+Drop: Head of Onyxia (from Onyxia in Onyxia's Lair)
+[60] Victory for the Alliance
+[60] Celebrating Good Times
+[60] The Journey Has Just Begun
+
+Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
+[60] The Lord of Blackrock
+[60] The Lord of Blackrock
+
+## [60] Stratholme
+
+[60D] The Medallion of Faith
+[60D] Aurius' Reckoning
+
+Eastern Plaguelands, Leonid Barthalomew the Revered
+[60D] House of the Holy
+
+Eastern Plaguelands, Betina Bigglezink
+[60D] The Flesh Does Not Lie
+[60D] The Active Agent
+
+Eastern Plaguelands, Smokey LaRue
+[60D] The Great Fras Siabi
 
 # Alchemy
 
