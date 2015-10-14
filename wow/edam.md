@@ -1,14 +1,6 @@
 # List Building
 
-DONE Alchemy Items
-DONE Cooking Items
-DONE warrior Quests
-DONE Eastern Kingdoms
-DONE Kalimdor
 Dungeons
-  Blackfathom Deeps
-  Blackrock Depts
-  Blackrock Spire
   Dire Maul
   Gnomeregan
   Maraudon
@@ -870,10 +862,23 @@ Barrens: [21] Ziz Fizziks
 
 [26] Retrieval for Mauren
 
-## [24-38] Stormwind
+## [24-25] Blackfathom Deeps
 
+Darnassus
+[24D] In Search of Thaelrid
+[27D] Blackfathom Villainy
+
+Gerrid Bonegrip in the Forlorn Cavern in Ironforge
+[23D] Knowledge in the Deeps
+
+Argos Nightwhisper in The Park in Stormwind
 [24] The Corruption Abroad
-{Blackfathom Deeps: Researching the Corruption}
+[24D] Researching the Corruption
+
+Darnassus
+[25D] Twilight Falls
+
+## [24-38] Stormwind
 
 [24] Speaking of Fortitude
 [24] Brother Paxton
@@ -1962,10 +1967,47 @@ Honored
 [50] Assisting Arch Druid Staghelm
 (leads to Un'goro Soil)
 
-## [52-60] Blackrock Mountain
+## [52-58] Blackrock Depths
 
+[1D] Rocknot's Ale [repeatable]
+
+Blackrock Mountain
 [52D] Overmaster Pyron
-{Blackrock Depths: Incendius}
+Blackrock Depths
+[56D] Incendius
+
+[52D] Dark Iron Legacy
+[52D] Dark Iron Legacy
+
+Yorba Screwspigot in Steamwheedle Port in Tanaris
+[53D] Yuka Screwspigot
+[53D] Ribbly Screwspigot
+
+Mistress Nagmara in Blackrock Depths
+[54D] The Love Potion
+
+Maxwort Uberglint in Burning Steppes (N)
+[55D] The Heart of the Mountain
+
+(Mining quest for Dark Iron smelting)
+[55D] The Spectral Chalice
+
+Enohar Thunderbrew in Netherguarde in Blasted Lands
+[55D] Ragnar Thunderbrew
+[55D] Hurley Blackbreath
+
+Ironforge:
+[55] The Smoldering Ruins of Thaurissan
+[55] The Smoldering Ruins of Thaurissan
+Blackrock Depths:
+[59D] Kharan Mighthammer
+[59D] Kharan's Tale
+[59D] The Bearer of Bad News
+[59D] The Fate of the Kingdom
+[59D] The Princess's Surprise
+
+Oralius in Burning Steppens (S)
+[58D] The Good Stuff
 
 ## [55-60] Eastern Plaguelands
 
@@ -1995,17 +2037,6 @@ Honored
 
 [60pvp] Establishing New Outposts
 
-## [55-60] Blackrock Depths
-
-Ironforge:
-[55] The Smoldering Ruins of Thaurissan
-[55] The Smoldering Ruins of Thaurissan
-Blackrock Depths:
-[59D] Kharan Mighthammer
-[59D] The Bearer of Bad News
-[59D] The Fate of the Kingdom
-[59D] The Princess's Surprise
-
 ## [60] Darnassus
 
 [60] Assisting Archdruid Staghelm
@@ -2025,12 +2056,43 @@ Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
 [60] The Lord of Blackrock
 [60] The Lord of Blackrock
 
-## [60] Blackrock Spire
+## [59-60] Blackrock Spire
+
+Kilber in Burning Steppeds (N)
+[59D] Kibler's Exotic Pets
+
+Kibler in Burning Steppes (N)
+[59D] En-Ay-Es-Tee-Why
+
+Helendis Riverhorn in Burning Steppes (S)
+[59D] Put Her Down
+
+(Might not be in the game)
+[59D] Bijou's Belongings
+[59D] Message to Maxwell
+[60D] Maxwell's Mission
+
+Ragged John in Burning Steppes (N)
+[60D] Mother's Milk
+
+[60D] Urok Doomhowl
+
+[60D] Seal of Ascension
+[60D] Seal of Ascension
 
 Winterspring
 [60] Lorax's Tale
 Blackrock Spire
 [60D] The Demon Forge
+
+Drop: General Drakkisath's Command form Overlord Wyrmthalak
+[60D] General Drakkisath's Command
+[60R] General Drakkisath's Demise
+
+Count Remington Ridgewell in Stormwind Castle
+[60R] Mayara Brightwing
+[60R] Doomrigger's Clasp
+[60] Delivery to Ridgewell
 
 Blackrock Spire
 [60] Finkle Einhorn, At Your Service!
@@ -2038,6 +2100,10 @@ Winterspring
 [60+] Breastplate of Bloodthirst
 [60+] Cap of the Scarlet Savant
 [62+] Leggings of Arcana
+
+_Blackwing Lair Attunement_
+Drop: Blackhand's Command from Scarshield Quartermaster
+[60D] Blackhand's Command
 
 # Alchemy
 
@@ -2663,7 +2729,6 @@ Lower than Neutral:
 [60] Superior Armaments of Battle - Exalted Amongst the Dawn
 [60] Epic Armaments of Battle - Exalted Amongst the Dawn
 
-
 ## Timbermaw
 
 [48] Timbermaw Ally
@@ -2858,6 +2923,11 @@ Drop: Brann Bronzebeard's Lost Letter (from bugs)
 [60] Field Duty Papers [repeatable]
 
 [60R] The Perfect Poison
+
+## Thorium Brotherhood
+
+Sulforon Ingots
+[60D] A Binding Contract
 
 ## Brood of Noozdormu
 
