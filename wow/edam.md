@@ -1,9 +1,6 @@
 # List Building
 
 Dungeons
-  Sunken Temple
-  The Deadmines
-  The Stockade
   Uldaman
   Wailing Caverns
   Zul'Farak
@@ -615,10 +612,13 @@ Stormwind
 
 ## [22-31] Defias Chain
 
+Deadmines
 Drop: An Unsent Letter (from Edwin VanCleef in The Deadmines)
 [22] The Unsent Letter
 [22] Bazil Thredd
-{Dungeon} [29++] The Stockade Riots
+The Stockade
+[29D] The Stockade Riots
+Stormwind
 [29] The Curious Visitor
 [29] Shadow of the Past
 [31] Look to an Old Friend
@@ -796,9 +796,6 @@ Darkshore: [20] Journey to Astranaar
 
 [30] MacKreel's Moonshine
 
-[30+] The Dark Iron War
-{The Stockade: The Fury Runs Deep}
-
 [31+] The Thandol Span
 [31] The Thandol Span
 [31] The Thandol Span
@@ -905,6 +902,25 @@ Drop: Glowing Shard
 [26] The Glowing Shard
 The Barrens
 [25] In Nightmares
+
+## [25-30] The Stockade
+
+Redridge Mountains, Guard Berton
+[25D] What Comes Around...
+
+Duskwood, Councilman Millstipe
+[26D] Crime and Punishment
+
+Stormwind City, Warden Thelwater
+[26D] Quell The Uprising
+
+Stormwind City, Nikova Raskol
+[26D] The Color of Blood
+
+Wetlands
+[30+] The Dark Iron War
+The Stockade
+[27D] The Fury Runs Deep
 
 ## [26-34] Razorfen Kraul
 
@@ -1304,11 +1320,6 @@ Item: The Encorcelled Parchment in a Worn Wooden Chest?
 
 [40] The Lost Supplies
 
-Drop: Essence of Erankius (from Shade of Eranikus in Sunken Temple)
-Sunken Temple: [55] The Essence of Eranikus
-[55] The Essence of Eranikus
-[55] In Erankius' Own Words
-
 ## [35-42] Razorfen Downs
 
 Thousand Needles, Myriam Moonsinger
@@ -1494,36 +1505,6 @@ Zaetar's Spirit
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
 
-## [43-51] Sunken Temple
-
-Stormwind City:
-[43] In Search of the Temple
-[43] To the Hinterlands
-The Hinterlands:
-[43] Gryphon Master Talonaxe
-[43] Rhapsody Shindigger
-[43] Rhapsody's Kalimdor Kocktail
-[43] Rhapsody's Tale
-Sunken Temple:
-[50] Into The Temple of Atal'Hakkar
-
-Feralas
-[51] The Sunken Temple
-Tanaris
-[51] The Stone Circle
-Sunken Temple
-Both:
-  [51D] Into the Depths
-  [51D] Secret of the Circle
-
-Un'Goro Crater
-[52] Muigin and Larion
-[52] A Visit to Gregan
-Sunken Temple
-[52D] Haze of Evil
-Un'Goro Crater
-[60] Bloodpetal Sprouts
-
 ## [43-52] Feralas
 
 [25] To the Top [repeatable]
@@ -1647,6 +1628,45 @@ Darnassus: [53] March of the Silithid
 Darnassus: [54] Calm Before the Storm
 
 [54] Super Sticky
+
+## [43-55] Sunken Temple
+
+Stormwind City:
+[43] In Search of the Temple
+[43] To the Hinterlands
+The Hinterlands:
+[43] Gryphon Master Talonaxe
+[43] Rhapsody Shindigger
+[43] Rhapsody's Kalimdor Kocktail
+[43] Rhapsody's Tale
+Sunken Temple:
+[50] Into The Temple of Atal'Hakkar
+
+Feralas
+[51] The Sunken Temple
+Tanaris
+[51] The Stone Circle
+Sunken Temple
+Both:
+  [51D] Into the Depths
+  [51D] Secret of the Circle
+
+Un'Goro Crater
+[52] Muigin and Larion
+[52] A Visit to Gregan
+Sunken Temple
+[52D] Haze of Evil
+Un'Goro Crater
+[60] Bloodpetal Sprouts
+
+Hinterlands, Atal'ai Exile
+[53D] Jammal'an the Prophet
+
+Drop: Essence of Erankius (from Shade of Eranikus in Sunken Temple)
+[55] The Essence of Eranikus
+Swamp of Sorrows
+[55] The Essence of Eranikus
+[55] In Erankius' Own Words
 
 ## [45-48] The Hinterlands
 
