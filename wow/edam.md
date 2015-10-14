@@ -1,10 +1,6 @@
 # List Building
 
 Dungeons
-  Maraudon
-  Ragefire Chasm
-  Razorfen Downs
-  Razorfen Kraul
   Scarlet Monastery
   Scholomance
   Shadowfang Keep
@@ -914,6 +910,23 @@ Drop: Glowing Shard
 The Barrens
 [25] In Nightmares
 
+## [26-34] Razorfen Kraul
+
+The Barrens, Melbok Mizzyrix
+[26D] Blueleaf Tubers
+
+Razorfen Kraul, Heralath Fallowbrook
+[30D] Mortality Wanes
+
+Razorfen Kraul, Willix the Importer
+[30D] Willix the Importer
+
+Thousand Needles
+Item: Henrig Lonebrow's Journal
+[34+] Lonebrow's Journal
+Razorfen Kraul
+[34D] The Crone of the Kraul
+
 ## [26-35] Gnomeregan
 
 Stormwind City, Brother Sarno in the Cathedral
@@ -1280,14 +1293,6 @@ Item: The Encorcelled Parchment in a Worn Wooden Chest?
 [40] The Ensorcelled Parchment
 [40] Stormpike's Deciphering
 
-## [34] Razorfen Kraul
-
-Thousand Needles
-Item: Henrig Lonebrow's Journal
-[34+] Lonebrow's Journal
-Razorfen Kraul
-[34D] The Crone of the Kraul
-
 ## [35-40] Swamp of Sorrows
 
 [35] Draenethyst Crystals
@@ -1307,6 +1312,18 @@ Drop: Essence of Erankius (from Shade of Eranikus in Sunken Temple)
 Sunken Temple: [55] The Essence of Eranikus
 [55] The Essence of Eranikus
 [55] In Erankius' Own Words
+
+## [35-42] Razorfen Downs
+
+Thousand Needles, Myriam Moonsinger
+[35D] A Host of Evil
+
+Razorfen Downs
+[37D] Scourge of the Downs
+[37D] Extinguishing the Idol
+
+Stormwind, Archbishop Benedictus
+[42D] Bring the Light
 
 ## [35-45] Badlands
 
@@ -1429,6 +1446,32 @@ Desolace
 [40] Dwon the Scarlet Path
 Scarlnet Monastery
 [40] In The Name of the Light
+
+## [42-51] Maraudon
+
+Dustwallow Marsh, Archmage Thervosh in Theramore
+[42D] Shadowshard Fragments
+
+Stonetalon Moutnains, Talendris
+[47D] Vyletongue Corruption
+
+Desolace, Willow
+[47D] Twisted Evils
+
+Desolace, Centaur Pariah
+[48D] The Pariah's Instructions
+
+Desolace, Kavindra
+[49D] Legends of Maraudon
+
+Celebras the Redeemed
+[49D] The Scepter of Celebras
+
+Stonetalon Mountains
+[51D] Corruption of Earth and Seed
+
+Zaetar's Spirit
+[51D] Seed of Life
 
 ## [44] Westfall
 
