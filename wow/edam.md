@@ -1,9 +1,5 @@
 # List Building
 
-Dungeons
-  Uldaman
-  Wailing Caverns
-  Zul'Farak
 Raids?
 Profession Quests
 Cooking Quests
@@ -439,9 +435,6 @@ Darkshore
 
 [18] Minder's Fortune
 
-[18] Raptor Horns
-[18] Smart Drinks
-
 [20] Deepmoss Apider Eggs
 
 ## [15-16] Stormwind
@@ -536,6 +529,25 @@ Ironforge
 [15] Speak with Shoni
 Stormwind
 [20++] Underground Assault
+
+## [18-25] Wailing Caverns
+
+The Barrens, Cran eOperator Bigglefuzz
+[18] Trouble at the Docks
+
+The Barrens, Bebok Mizzyrix
+[18] Raptor Horns
+Wailing Caverns
+[18D] Smart Drinks
+
+The Barrens, Ebru
+[21D] Deviate Eradication
+
+Wailing Caverns
+Drop: Glowing Shard
+[26] The Glowing Shard
+The Barrens
+[25] In Nightmares
 
 ## [18-32] Ashenvale
 
@@ -890,14 +902,6 @@ Darnassus
 [30] A Noble Brew
 [30] A Noble Brew
 [30] You Have Served Us Well
-
-## [25-26] Wailing Caverns
-
-Wailing Caverns
-Drop: Glowing Shard
-[26] The Glowing Shard
-The Barrens
-[25] In Nightmares
 
 ## [25-30] The Stockade
 
@@ -1722,7 +1726,19 @@ Swamp of Sorrows
 
 [48] Skunk Rock Clean-up
 
-## [45-53] Zul'Farrak
+## [45-50] Zul'Farrak
+
+Tanaris, Trenton Lighthammer
+[45D] Troll Temper
+
+Stranglethorn Vale, Krazek
+[45D] Tran'rek
+[45D] Scarab Shells
+
+Ironforge, Bink
+Stormwind City, Jennea Cannon
+[46D] Tabetha's Task
+[46D] Tiara of the Deep
 
 Hinterlands
 [45] Witherbark Cages
@@ -1735,10 +1751,11 @@ Hinterlands
 [47+] Return to the Hunterlands
 [53+] Saving Sharpbeak
 
-## [46-50] Zul'Farrak
-
 [46D] The Brassbolts Brothers
 [50D] Gahz'rilla
+
+Tanaris, Chief Engineer Bilgewhizzle
+[47D] Divino-matic Rod
 
 ## [47-57] Azshara
 
