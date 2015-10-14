@@ -2037,6 +2037,42 @@ Oralius in Burning Steppens (S)
 
 [60pvp] Establishing New Outposts
 
+## [57-60] Dire Maul
+
+Courier Hammerfall in Ironforge
+[57D] Feathermoon Stronghold
+[57D] Lethtendris's Web
+
+[58D] Pusillin and the Elder Azj'Tordin
+
+[60D] The Gordok Taste Test
+
+[60D] A Broken Trap
+
+[60D] Arcane Refreshment {Mage?}
+
+Drop: Codex of Defense
+[60D] Codex of Defense
+
+[60D] Elven Legends
+
+[60D] Free Knot!
+[60D] Free Knot! [repeatable]
+
+[60D] The Gordok Ogre Suit
+[60D] The Gordok Ogre Suit [repeatable]
+
+[60D] The Madness Within
+[60D] The Treasure of the Shen'dralar
+
+[60D] Unfinished Gordok Business
+[60D] Unfinished Gordok Business {same quest?}
+
+Librams [repeatable?]:
+  [60D] Libram of Focus
+  [60D] Libram of Protection
+  [60D] Libram of Repidity
+
 ## [60] Darnassus
 
 [60] Assisting Archdruid Staghelm
@@ -2539,6 +2575,14 @@ Stormwind
 Blackrock Spire
 [60R] Drakefire Amulet
 
+## [60] Quel'Serrar
+
+Drop: Foror's Compendium of Dragon Slaying {Warrior, Paladin}
+[60D] Foror's Compendium
+[60D] The Forging of Quel'Serrar
+Onyxia's Lair
+[60R] The Forging of Quel'Serrar
+
 ## Tier 0.5
 
 Ironforge
@@ -2567,7 +2611,7 @@ Eastern Plaguelands
 
 Dire Maul
 [60D] Anthion's Old Friend
-[60D] Falrin Treeshaper
+[60D] Falrin's Vendetta
 [60D] The Instigator's Enchantment
 
 Blackrock Depths
