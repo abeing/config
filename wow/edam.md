@@ -1,8 +1,6 @@
 # List Building
 
 Dungeons
-  Dire Maul
-  Gnomeregan
   Maraudon
   Ragefire Chasm
   Razorfen Downs
@@ -916,6 +914,43 @@ Drop: Glowing Shard
 The Barrens
 [25] In Nightmares
 
+## [26-35] Gnomeregan
+
+Stormwind City, Brother Sarno in the Cathedral
+[26D] Tinkmaster Overspark
+[26D] Save Techbot's Brain!
+
+Ironforge, Gnoarn
+[27D] The Day AFter
+[27D] Gnogaine
+[30D] The Only Cure is More Green Glow
+
+Stonetalon Mountains, Gaxim Rustfizzle
+[28D] Castpipe's Task
+[30D] Data Rescue
+
+[30D] A Fine Mess
+
+Stormwind, Shoni the Shilent
+[30D] Gyrodrillmatic Excavationators
+
+Teldrassil, Mathiel
+[30D] Klockmort's Essentials
+[30D] Essential Artificials
+
+[30D] The Sparklematic 5200!
+[30D] The Sparklematic 5200!
+[30D] More Sparklematic Action [repeatable]
+
+Drop: Grim-Encrusted Ring
+[34D] Grime-Encrusted Ring
+[34D] Return of the Ring
+Ironforge
+[34] Gnome Improvement
+
+Ironforge, High Tinker Mekkatorque
+[35D] The Grand Betrayal
+
 ## [30-37] Hillsbrad Foothills
 
 [30] Down the Coast
@@ -1244,13 +1279,6 @@ Item: Syndicate Documents
 Item: The Encorcelled Parchment in a Worn Wooden Chest?
 [40] The Ensorcelled Parchment
 [40] Stormpike's Deciphering
-
-## [34] Gnomeregan
-
-Drop: Grim-Encrusted Ring
-[34] Grime-Encrusted Ring
-[34] Return of the Ring
-Ironforge: [34] Gnome Improvement
 
 ## [34] Razorfen Kraul
 
