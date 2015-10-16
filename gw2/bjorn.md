@@ -1,11 +1,3 @@
-Short Term
-==========
-
-- Mail boxes to Tunna
-- Do Tuesday dailies
-- Finish my personal story
-- Help Tunna with her personal story
-
 Level Bjorn Einarsson
 =====================
 
@@ -27,45 +19,7 @@ Level Bjorn Einarsson
 Warrior Training
 ================
 
-- Train for WvW
-  + ~~Defense to `Cleansing Ire` (8)~~
-  + ~~Tactics to `Phalanx Strength` (9)~~
-  + Discipline to `Burst Mastery` (9)
-    * Versatile Rage
-    * Crack Shot
-    * Warrior's Sprint
-    * Vengeful Return
-    * Fast Hands
-    * Inspiring Battle Standard
-    * Destruction of the Empowered
-    * Brawler's Recovery
-    * Versatile Power
-    * Merciless Hammer
-    * Heightened Focus
-    * Burst Mastery
-
-- Train for Dungeons
-  + ~~Strength to `Berserker's Power` (7)~~
-  + Arms to `Furious` (8)
-    * Precise Strikes
-    * Berserker's Fury
-    * Signet Mastery
-    * Opportunist
-    * Rending Strikes
-    * Unsuspecting Foe
-    * Deep Strike
-    * Blademaster
-    * Bloodlust
-    * Burst Percision
-    * Furious
-  + ~~Tactics to `Phalanx Strength` (9)~~
-  
 - Finish all other training
-  + Finish Strength
-    * Distracting Strikes
-    * Axe Mastery
-  + Finish Arms
-    * Dual Wielding
   + Finish Defense
     * Rousing Resilience
 
