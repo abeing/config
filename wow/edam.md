@@ -1,30 +1,5 @@
 # List Building
 
-DONE Alchemy Items
-DONE Cooking Items
-DONE warrior Quests
-DONE Eastern Kingdoms
-DONE Kalimdor
-Dungeons
-  Blackfathom Deeps
-  Blackrock Depts
-  Blackrock Spire
-  Dire Maul
-  Gnomeregan
-  Maraudon
-  Ragefire Chasm
-  Razorfen Downs
-  Razorfen Kraul
-  Scarlet Monastery
-  Scholomance
-  Shadowfang Keep
-  Stratholme
-  Sunken Temple
-  The Deadmines
-  The Stockade
-  Uldaman
-  Wailing Caverns
-  Zul'Farak
 Raids?
 Profession Quests
 Cooking Quests
@@ -265,10 +240,6 @@ Ironforge: [15] Find Bingles
 
 [22+] WANTED: Chok'sul
 
-[39] Badlands Reagent Run
-[42] Uldaman Reagent Run
-[44+] Badlands Reagent Run II
-
 ## [10-31] Darkshore
 
 [1??] Onu is meditating
@@ -390,9 +361,6 @@ Darkshore
 
 [18] Minder's Fortune
 
-[18] Raptor Horns
-[18] Smart Drinks
-
 [20] Deepmoss Apider Eggs
 
 ## [15-16] Stormwind
@@ -488,6 +456,25 @@ Ironforge
 Stormwind
 [20++] Underground Assault
 
+## [18-25] Wailing Caverns
+
+The Barrens, Cran eOperator Bigglefuzz
+[18] Trouble at the Docks
+
+The Barrens, Bebok Mizzyrix
+[18] Raptor Horns
+Wailing Caverns
+[18D] Smart Drinks
+
+The Barrens, Ebru
+[21D] Deviate Eradication
+
+Wailing Caverns
+Drop: Glowing Shard
+[26] The Glowing Shard
+The Barrens
+[25] In Nightmares
+
 ## [18-32] Ashenvale
 
 [18] Journey to Stonetalon Peak
@@ -559,10 +546,13 @@ Stormwind
 
 ## [22-31] Defias Chain
 
+Deadmines
 Drop: An Unsent Letter (from Edwin VanCleef in The Deadmines)
 [22] The Unsent Letter
 [22] Bazil Thredd
-{Dungeon} [29++] The Stockade Riots
+The Stockade
+[29D] The Stockade Riots
+Stormwind
 [29] The Curious Visitor
 [29] Shadow of the Past
 [31] Look to an Old Friend
@@ -740,9 +730,6 @@ Darkshore: [20] Journey to Astranaar
 
 [30] MacKreel's Moonshine
 
-[30+] The Dark Iron War
-{The Stockade: The Fury Runs Deep}
-
 [31+] The Thandol Span
 [31] The Thandol Span
 [31] The Thandol Span
@@ -796,10 +783,23 @@ Barrens: [21] Ziz Fizziks
 
 [26] Retrieval for Mauren
 
-## [24-38] Stormwind
+## [24-25] Blackfathom Deeps
 
+Darnassus
+[24D] In Search of Thaelrid
+[27D] Blackfathom Villainy
+
+Gerrid Bonegrip in the Forlorn Cavern in Ironforge
+[23D] Knowledge in the Deeps
+
+Argos Nightwhisper in The Park in Stormwind
 [24] The Corruption Abroad
-{Blackfathom Deeps: Researching the Corruption}
+[24D] Researching the Corruption
+
+Darnassus
+[25D] Twilight Falls
+
+## [24-38] Stormwind
 
 [24] Speaking of Fortitude
 [24] Brother Paxton
@@ -829,13 +829,78 @@ Barrens: [21] Ziz Fizziks
 [30] A Noble Brew
 [30] You Have Served Us Well
 
-## [25-26] Wailing Caverns
+## [25-30] The Stockade
 
-Wailing Caverns
-Drop: Glowing Shard
-[26] The Glowing Shard
-The Barrens
-[25] In Nightmares
+Redridge Mountains, Guard Berton
+[25D] What Comes Around...
+
+Duskwood, Councilman Millstipe
+[26D] Crime and Punishment
+
+Stormwind City, Warden Thelwater
+[26D] Quell The Uprising
+
+Stormwind City, Nikova Raskol
+[26D] The Color of Blood
+
+Wetlands
+[30+] The Dark Iron War
+The Stockade
+[27D] The Fury Runs Deep
+
+## [26-34] Razorfen Kraul
+
+The Barrens, Melbok Mizzyrix
+[26D] Blueleaf Tubers
+
+Razorfen Kraul, Heralath Fallowbrook
+[30D] Mortality Wanes
+
+Razorfen Kraul, Willix the Importer
+[30D] Willix the Importer
+
+Thousand Needles
+Item: Henrig Lonebrow's Journal
+[34+] Lonebrow's Journal
+Razorfen Kraul
+[34D] The Crone of the Kraul
+
+## [26-35] Gnomeregan
+
+Stormwind City, Brother Sarno in the Cathedral
+[26D] Tinkmaster Overspark
+[26D] Save Techbot's Brain!
+
+Ironforge, Gnoarn
+[27D] The Day AFter
+[27D] Gnogaine
+[30D] The Only Cure is More Green Glow
+
+Stonetalon Mountains, Gaxim Rustfizzle
+[28D] Castpipe's Task
+[30D] Data Rescue
+
+[30D] A Fine Mess
+
+Stormwind, Shoni the Shilent
+[30D] Gyrodrillmatic Excavationators
+
+Teldrassil, Mathiel
+[30D] Klockmort's Essentials
+[30D] Essential Artificials
+
+[30D] The Sparklematic 5200!
+[30D] The Sparklematic 5200!
+[30D] More Sparklematic Action [repeatable]
+
+Drop: Grim-Encrusted Ring
+[34D] Grime-Encrusted Ring
+[34D] Return of the Ring
+Ironforge
+[34] Gnome Improvement
+
+Ironforge, High Tinker Mekkatorque
+[35D] The Grand Betrayal
 
 ## [30-37] Hillsbrad Foothills
 
@@ -1166,21 +1231,6 @@ Item: The Encorcelled Parchment in a Worn Wooden Chest?
 [40] The Ensorcelled Parchment
 [40] Stormpike's Deciphering
 
-## [34] Gnomeregan
-
-Drop: Grim-Encrusted Ring
-[34] Grime-Encrusted Ring
-[34] Return of the Ring
-Ironforge: [34] Gnome Improvement
-
-## [34] Razorfen Kraul
-
-Thousand Needles
-Item: Henrig Lonebrow's Journal
-[34+] Lonebrow's Journal
-Razorfen Kraul
-[34D] The Crone of the Kraul
-
 ## [35-40] Swamp of Sorrows
 
 [35] Draenethyst Crystals
@@ -1196,25 +1246,21 @@ Razorfen Kraul
 
 [40] The Lost Supplies
 
-Drop: Essence of Erankius (from Shade of Eranikus in Sunken Temple)
-Sunken Temple: [55] The Essence of Eranikus
-[55] The Essence of Eranikus
-[55] In Erankius' Own Words
+## [35-42] Razorfen Downs
+
+Thousand Needles, Myriam Moonsinger
+[35D] A Host of Evil
+
+Razorfen Downs
+[37D] Scourge of the Downs
+[37D] Extinguishing the Idol
+
+Stormwind, Archbishop Benedictus
+[42D] Bring the Light
 
 ## [35-45] Badlands
 
 [35] A Dwarf and His Tools
-
-Object: Crumpled Map
-[35] A Sign of Hope
-{Uldaman: A Sign of Hope}
-{Uldaman: Amulet of Secrets}
-[40] Prospect of Faith
-[40] Prospect of Faith
-[40] Passing Word of a Threat
-[40] Passing Word of a Threat
-[44+] An Ambassador of Evil
-{Uldaman: The Lost Tablet of Will}
 
 [37] Study of the Elements: Rock
 [39] Study of the Elements: Rock
@@ -1226,11 +1272,6 @@ Object: Crumpled Map
 
 [37+] Pearl Diving
 
-{Ironforge: Ironband Wants You!}
-[38] Find Agmond
-[42] Murdaloc
-{Uldaman: Agmond's Fate}
-
 [38] Mirages
 [40] Scrounging {and}
 [43] Tremors of the Earth
@@ -1239,11 +1280,6 @@ Object: Crumpled Map
 
 Drop: The Black Box (from Zaricotl)
 [40] The Black Box
-
-{Uldaman: Solution to Doom}
-[40] To Ironforge for Yagyin's Digest
-[44+] The Star, the Hand and the Heart
-[40] Forbidden Knowledge
 
 {Theldurin the Lost}
 [41] The Lost Fragments
@@ -1314,7 +1350,82 @@ Professor Phizzlethorpe
 [40] Sunken Treasure
 [44] Death From Below
 
-## [39-40] Scarlet Monastery
+## [37-47] Uldaman
+
+Ironforge, Prospector Stormpike
+[37] Ironband Wants You!}
+Badlands
+[38] Find Agmond
+[42] Murdaloc
+Uldaman
+[38] Agmond's Fate
+
+Badlands
+Object: Crumpled Map
+[35] A Sign of Hope
+Uldaman
+[35D] A Sign of Hope
+[40D] Amulet of Secrets
+Badlands
+[40] Prospect of Faith
+[40] Prospect of Faith
+[40] Passing Word of a Threat
+[40] Passing Word of a Threat
+[44+] An Ambassador of Evil
+Uldaman
+[45D] The Lost Tablet of Will
+
+Badlands, Rigglefuzz
+[36] Power Stones
+
+Loch Modan, Ghak Healtouch
+[39] Badlands Reagent Run
+Uldaman
+[42] Uldaman Reagent Run
+Badlands
+[44+] Badlands Reagent Run II {with Uldaman Reagent Run}
+
+Ironforge, Prospector Stormpike
+[40D] The Lost Dwarves
+[40D] The Hidden Chamber
+
+Uldaman
+[40] Solution to Doom
+Badlands
+[40] To Ironforge for Yagyin's Digest
+[44+] The Star, the Hand and the Heart
+[40] Forbidden Knowledge
+
+Drop: Shattered Necklace
+[41D] The Shattered Necklace
+[41D] Lore for a Price
+[42D] Back to Uldaman
+[43D] Find the Gems
+[44D] Restoring the Necklace
+[44D] Restoring the Necklace
+
+Ironforge, Talvash del Kissel
+[42] Replacement Phial
+
+Ironforge, Krom Stoutarm
+[43] Reclaimed Treasures
+
+Uldaman
+Object: The Discs of Norgannon
+[47D] The Platinum Discs
+[47] The Platinum Discs
+[50] Portents of Uldum
+[50] Seeing What Happens
+Tanaris
+[50+] The Stone Watcher
+Ironforge
+[50+] Return to Ironforge
+[50] A Future Task
+
+## [38-40] Scarlet Monastery
+
+Ironforge
+[38D] Mythology of the Titans
 
 Desolace
 [39] Brother Anton
@@ -1322,6 +1433,32 @@ Desolace
 [40] Dwon the Scarlet Path
 Scarlnet Monastery
 [40] In The Name of the Light
+
+## [42-51] Maraudon
+
+Dustwallow Marsh, Archmage Thervosh in Theramore
+[42D] Shadowshard Fragments
+
+Stonetalon Moutnains, Talendris
+[47D] Vyletongue Corruption
+
+Desolace, Willow
+[47D] Twisted Evils
+
+Desolace, Centaur Pariah
+[48D] The Pariah's Instructions
+
+Desolace, Kavindra
+[49D] Legends of Maraudon
+
+Celebras the Redeemed
+[49D] The Scepter of Celebras
+
+Stonetalon Mountains
+[51D] Corruption of Earth and Seed
+
+Zaetar's Spirit
+[51D] Seed of Life
 
 ## [44] Westfall
 
@@ -1344,36 +1481,6 @@ Scarlnet Monastery
 
 [50] Jonespyre's Request
 {The Mystery of Morrowgrain}
-
-## [43-51] Sunken Temple
-
-Stormwind City:
-[43] In Search of the Temple
-[43] To the Hinterlands
-The Hinterlands:
-[43] Gryphon Master Talonaxe
-[43] Rhapsody Shindigger
-[43] Rhapsody's Kalimdor Kocktail
-[43] Rhapsody's Tale
-Sunken Temple:
-[50] Into The Temple of Atal'Hakkar
-
-Feralas
-[51] The Sunken Temple
-Tanaris
-[51] The Stone Circle
-Sunken Temple
-Both:
-  [51D] Into the Depths
-  [51D] Secret of the Circle
-
-Un'Goro Crater
-[52] Muigin and Larion
-[52] A Visit to Gregan
-Sunken Temple
-[52D] Haze of Evil
-Un'Goro Crater
-[60] Bloodpetal Sprouts
 
 ## [43-52] Feralas
 
@@ -1499,6 +1606,45 @@ Darnassus: [54] Calm Before the Storm
 
 [54] Super Sticky
 
+## [43-55] Sunken Temple
+
+Stormwind City:
+[43] In Search of the Temple
+[43] To the Hinterlands
+The Hinterlands:
+[43] Gryphon Master Talonaxe
+[43] Rhapsody Shindigger
+[43] Rhapsody's Kalimdor Kocktail
+[43] Rhapsody's Tale
+Sunken Temple:
+[50] Into The Temple of Atal'Hakkar
+
+Feralas
+[51] The Sunken Temple
+Tanaris
+[51] The Stone Circle
+Sunken Temple
+Both:
+  [51D] Into the Depths
+  [51D] Secret of the Circle
+
+Un'Goro Crater
+[52] Muigin and Larion
+[52] A Visit to Gregan
+Sunken Temple
+[52D] Haze of Evil
+Un'Goro Crater
+[60] Bloodpetal Sprouts
+
+Hinterlands, Atal'ai Exile
+[53D] Jammal'an the Prophet
+
+Drop: Essence of Erankius (from Shade of Eranikus in Sunken Temple)
+[55] The Essence of Eranikus
+Swamp of Sorrows
+[55] The Essence of Eranikus
+[55] In Erankius' Own Words
+
 ## [45-48] The Hinterlands
 
 [45] Troll Necklace Bounty
@@ -1506,7 +1652,19 @@ Darnassus: [54] Calm Before the Storm
 
 [48] Skunk Rock Clean-up
 
-## [45-53] Zul'Farrak
+## [45-50] Zul'Farrak
+
+Tanaris, Trenton Lighthammer
+[45D] Troll Temper
+
+Stranglethorn Vale, Krazek
+[45D] Tran'rek
+[45D] Scarab Shells
+
+Ironforge, Bink
+Stormwind City, Jennea Cannon
+[46D] Tabetha's Task
+[46D] Tiara of the Deep
 
 Hinterlands
 [45] Witherbark Cages
@@ -1519,10 +1677,11 @@ Hinterlands
 [47+] Return to the Hunterlands
 [53+] Saving Sharpbeak
 
-## [46-50] Zul'Farrak
-
 [46D] The Brassbolts Brothers
 [50D] Gahz'rilla
+
+Tanaris, Chief Engineer Bilgewhizzle
+[47D] Divino-matic Rod
 
 ## [47-57] Azshara
 
@@ -1888,10 +2047,47 @@ Honored
 [50] Assisting Arch Druid Staghelm
 (leads to Un'goro Soil)
 
-## [52-60] Blackrock Mountain
+## [52-58] Blackrock Depths
 
+[1D] Rocknot's Ale [repeatable]
+
+Blackrock Mountain
 [52D] Overmaster Pyron
-{Blackrock Depths: Incendius}
+Blackrock Depths
+[56D] Incendius
+
+[52D] Dark Iron Legacy
+[52D] Dark Iron Legacy
+
+Yorba Screwspigot in Steamwheedle Port in Tanaris
+[53D] Yuka Screwspigot
+[53D] Ribbly Screwspigot
+
+Mistress Nagmara in Blackrock Depths
+[54D] The Love Potion
+
+Maxwort Uberglint in Burning Steppes (N)
+[55D] The Heart of the Mountain
+
+(Mining quest for Dark Iron smelting)
+[55D] The Spectral Chalice
+
+Enohar Thunderbrew in Netherguarde in Blasted Lands
+[55D] Ragnar Thunderbrew
+[55D] Hurley Blackbreath
+
+Ironforge:
+[55] The Smoldering Ruins of Thaurissan
+[55] The Smoldering Ruins of Thaurissan
+Blackrock Depths:
+[59D] Kharan Mighthammer
+[59D] Kharan's Tale
+[59D] The Bearer of Bad News
+[59D] The Fate of the Kingdom
+[59D] The Princess's Surprise
+
+Oralius in Burning Steppens (S)
+[58D] The Good Stuff
 
 ## [55-60] Eastern Plaguelands
 
@@ -1921,16 +2117,97 @@ Honored
 
 [60pvp] Establishing New Outposts
 
-## [55-60] Blackrock Depths
+## [57-60] Dire Maul
 
-Ironforge:
-[55] The Smoldering Ruins of Thaurissan
-[55] The Smoldering Ruins of Thaurissan
-Blackrock Depths:
-[59D] Kharan Mighthammer
-[59D] The Bearer of Bad News
-[59D] The Fate of the Kingdom
-[59D] The Princess's Surprise
+Courier Hammerfall in Ironforge
+[57D] Feathermoon Stronghold
+[57D] Lethtendris's Web
+
+[58D] Pusillin and the Elder Azj'Tordin
+
+[60D] The Gordok Taste Test
+
+[60D] A Broken Trap
+
+[60D] Arcane Refreshment {Mage?}
+
+Drop: Codex of Defense
+[60D] Codex of Defense
+
+[60D] Elven Legends
+
+[60D] Free Knot!
+[60D] Free Knot! [repeatable]
+
+[60D] The Gordok Ogre Suit
+[60D] The Gordok Ogre Suit [repeatable]
+
+[60D] The Madness Within
+[60D] The Treasure of the Shen'dralar
+
+[60D] Unfinished Gordok Business
+[60D] Unfinished Gordok Business {same quest?}
+
+Librams [repeatable?]:
+  [60D] Libram of Focus
+  [60D] Libram of Protection
+  [60D] Libram of Repidity
+
+## [58] Scholomance
+
+Western Plaguelands
+[58D] Plagued Hatchlings
+Drop: Healthy Dragon Scale
+[58D] Healthy Dragon Scale
+
+## [59-60] Blackrock Spire
+
+Kilber in Burning Steppeds (N)
+[59D] Kibler's Exotic Pets
+
+Kibler in Burning Steppes (N)
+[59D] En-Ay-Es-Tee-Why
+
+Helendis Riverhorn in Burning Steppes (S)
+[59D] Put Her Down
+
+(Might not be in the game)
+[59D] Bijou's Belongings
+[59D] Message to Maxwell
+[60D] Maxwell's Mission
+
+Ragged John in Burning Steppes (N)
+[60D] Mother's Milk
+
+[60D] Urok Doomhowl
+
+[60D] Seal of Ascension
+[60D] Seal of Ascension
+
+Winterspring
+[60] Lorax's Tale
+Blackrock Spire
+[60D] The Demon Forge
+
+Drop: General Drakkisath's Command form Overlord Wyrmthalak
+[60D] General Drakkisath's Command
+[60R] General Drakkisath's Demise
+
+Count Remington Ridgewell in Stormwind Castle
+[60R] Mayara Brightwing
+[60R] Doomrigger's Clasp
+[60] Delivery to Ridgewell
+
+Blackrock Spire
+[60] Finkle Einhorn, At Your Service!
+Winterspring
+[60+] Breastplate of Bloodthirst
+[60+] Cap of the Scarlet Savant
+[62+] Leggings of Arcana
+
+_Blackwing Lair Attunement_
+Drop: Blackhand's Command from Scarshield Quartermaster
+[60D] Blackhand's Command
 
 ## [60] Darnassus
 
@@ -1951,19 +2228,20 @@ Drop: Head of Nefarian (from Nefarin in Blackwing Lair)
 [60] The Lord of Blackrock
 [60] The Lord of Blackrock
 
-## [60] Blackrock Spire
+## [60] Stratholme
 
-Winterspring
-[60] Lorax's Tale
-Blackrock Spire
-[60D] The Demon Forge
+[60D] The Medallion of Faith
+[60D] Aurius' Reckoning
 
-Blackrock Spire
-[60] Finkle Einhorn, At Your Service!
-Winterspring
-[60+] Breastplate of Bloodthirst
-[60+] Cap of the Scarlet Savant
-[62+] Leggings of Arcana
+Eastern Plaguelands, Leonid Barthalomew the Revered
+[60D] House of the Holy
+
+Eastern Plaguelands, Betina Bigglezink
+[60D] The Flesh Does Not Lie
+[60D] The Active Agent
+
+Eastern Plaguelands, Smokey LaRue
+[60D] The Great Fras Siabi
 
 # Alchemy
 
@@ -2135,22 +2413,6 @@ Zul'Gurub:
 [58] Confront Yeh'kinya
 Tanaris:
 [60] The Hand of Rastakhan
-
-## Earthen (47-50)
-
-Ironforge
-Object: The Discs of Norgannon
-[47] The Platinum Discs
-[47] The Platinum Discs
-[50] Portents of Uldum
-[50] Seeing What Happens
-
-Tanaris
-[50+] The Stone Watcher
-
-Ironforge
-[50+] Return to Ironforge
-[50] A Future Task
 
 ## Searing Gorge Key (48)
 
@@ -2399,6 +2661,14 @@ Stormwind
 Blackrock Spire
 [60R] Drakefire Amulet
 
+## [60] Quel'Serrar
+
+Drop: Foror's Compendium of Dragon Slaying {Warrior, Paladin}
+[60D] Foror's Compendium
+[60D] The Forging of Quel'Serrar
+Onyxia's Lair
+[60R] The Forging of Quel'Serrar
+
 ## Tier 0.5
 
 Ironforge
@@ -2427,7 +2697,7 @@ Eastern Plaguelands
 
 Dire Maul
 [60D] Anthion's Old Friend
-[60D] Falrin Treeshaper
+[60D] Falrin's Vendetta
 [60D] The Instigator's Enchantment
 
 Blackrock Depths
@@ -2588,7 +2858,6 @@ Lower than Neutral:
 [60] Chromatic Mantle of the Dawn [repeatable]
 [60] Superior Armaments of Battle - Exalted Amongst the Dawn
 [60] Epic Armaments of Battle - Exalted Amongst the Dawn
-
 
 ## Timbermaw
 
@@ -2784,6 +3053,11 @@ Drop: Brann Bronzebeard's Lost Letter (from bugs)
 [60] Field Duty Papers [repeatable]
 
 [60R] The Perfect Poison
+
+## Thorium Brotherhood
+
+Sulforon Ingots
+[60D] A Binding Contract
 
 ## Brood of Noozdormu
 
