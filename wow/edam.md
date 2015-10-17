@@ -7,11 +7,85 @@ Fishing Quests
 
 # Quests
 
+## [1-5] Northshire Abbey
+
+[1] A Threat Within
+[2] Kobold Camp Cleanup
+  [1] Simple Letter
+[3] Investigate Echo Ridge
+[5] Skirmish at Echo Ridge
+[5] Report to Goldshire
+
+(After A Threat Within)
+[2] Eagan Peltskinner
+[2] Wolves Across the Border
+
+(After A Threat Within)
+[4] Brotherhood of Thieves
+[5] Bounty on Garrick Padfoot
+
+(After Wolves Across the Border)
+[4] Milly Osworth
+[4] Milly's Harvest
+[4] Grape Manifest
+
+## [2] Stormwind
+
+[2] Harlan Needs a Resupply
+
+[2] Package for Thurman
+
+[2] Wine Shop Advert
+
 ## [5-11] Elwynn Forest
 
-[1] Give Gerard a Drink [repeatable]
+[1] Give Gerard a Drink
 
-_[10] Report to Gryan Stoutmantle_
+[5] Rest and Relaxation
+
+[6] Young Lovers
+[6] Speak with Gramma
+[6] Note to William
+[7] Collecting Kelp
+[7] The Escape
+
+[6] Lost Necklace
+[6] Pie for Billy
+[6] Back to Billy
+[8] Goldtooth
+
+[7] Gold Dust Exchange
+
+[7] Kobold Candles
+[7] Shipment to Stormwind
+
+[7] The Fargodeep Mine
+[10] The Jasperlode Mine
+
+[9] A Bundle of Trouble
+
+[10] A Fishy Peril
+[10] Further Concerns
+[10] Find the Lost Guards
+[10] Discover Rolf's Fate
+[10] Report to Thomas
+[10] Deliver Thomas' Report
+[10] Cloth and Leather Armor
+
+[9] Red Linen Goods
+
+[10] Bounty on Murlocs
+
+[10] Protect the Frontier
+
+[10] Report to Gryan Stoutmantle
+
+[10] Westbrook Garrison Needs Help!
+[10] Riverpaw Gnoll Bounty
+
+[9+] Princess Must Die!
+
+[11+] Wanted: "Hogger"
 
 Drop: ??? (from gnolls)
 [10] The Collector
