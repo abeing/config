@@ -7,115 +7,9 @@ Fishing Quests
 
 # Quests
 
-## [5-11] Elwynn Forest
-
-[10] Report to Gryan Stoutmantle
-
-## [5-12] Dun Morogh
-
-[5] Supplies to Tannok
-
-[5] Tools for Steelgrill
-
-[6] Ammo for Rumbleshot
-
-[6] Stocking Jetsteam
-[7] Evershine
-[8] A Favor for Evershine
-[8] Return to Bellowfiz
-
-[10] The Lost Pilot
-[11] A Pilot's Revenge
-
-[6] Bitter Rivals
-[7] Distracting Jarven
-[1] Guarded Thunderbrew Barrel
-[7] Return to Marleth
-
-[7] The Grizzled Den
-
-{Senir's Observations}
-[9] Frostmane Hold
-[10] The Reports
-
-[9] Those Blased Troggs!
-
-[10] Opperation Recombobulation
-
-[10] Rejold's New Brew
-  [9] The Perfect Stout
-[10] Shimmer Stout
-[10] Stout to Kadrell
-
-[11] The Public Servant
-
-[12] Tundra MacGrann's Stolen Stash
-
-[12+] Preserving the Herd
-
-NPC: Mountaineer Kadrell in Loch Modan
-[23] Stonegear's Search
-[22] Search for Incendicite
-
-## [5-12] Teldrassil
-
-[5] Dolanaar Delivery
-
-[5] Zenn's Bidding
-[7] Seek Redemption!
-
-[5] Denalan's Earth
-[7] Timberling Seeds
-[7] Rellian Greenspyre
-[9] Tumors
-[9] Return to Denalan
-[9+] Oakenscowl
-
-Shadowglen
-[5] Tenaron's Summons
-[5] Crown of the Earth
-[5] Crown of the Earth
-Teldrassil
-[5] Crown of the Earth
-[9] Crown of the Earth
-[11] Crown of the Earth
-[11] Crown of the Earth
-
-[6] The Emerald Dreamcatcher
-[8] Ferocitas the Dream Eater
-
-[6] A Troubleing Breeze
-[6] Gnarlpine Corruption
-[9] The Relics of Wakening
-[12] Ursal the Mauler
-
-[7] Timberling Sprouts
-
-[7] Twisted Hatred
-
-[8] The Road to Darnassus
-
-[8] The Sleeping Druid
-[10] Druid of the Claw
-
-[10] The Glowing Fruit
-
-[10] The Shimmering Frond
-[10] The Sprouted Fronds
-
-[11] The Enchanted Glade
-[11] Teldrassil
-Darnassus
-[11] Grove of the Ancients
-
-[12] Mist
-
-[12] The Moss-twined Heart
-[12] Planting the Heart
-
 ## [10-20] Westfall
 
-[14] The People's Militia (Pillagers and Looters)
+**[14] The People's Militia (Pillagers and Looters)**
 [17] The People's Militia (Highwaymen, Pathstalkers and Knuckledusters)
 
 [15] Thunderbrew Lager (repeatable)
@@ -136,8 +30,7 @@ Darnassus
 Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 [9] Fulbrow's Deed
 
-Drop: Captain Sander's Treasure Map (from murlocs)
-[16] Captain Sander's Hidden Treasure
+**[16] Captain Sander's Hidden Treasure**
 [16] Captain Sander's Hidden Treasure (Part 2)
 [16] Captain Sander's Hidden Treasure (Part 3)
 [16] Captain Sander's Hidden Treasure (Part 4)
@@ -2206,6 +2099,110 @@ Eastern Plaguelands, Betina Bigglezink
 Eastern Plaguelands, Smokey LaRue
 [60D] The Great Fras Siabi
 
+# Completionist Quests
+
+## [5-12] Dun Morogh
+
+[5] Supplies to Tannok
+
+[5] Tools for Steelgrill
+
+[6] Ammo for Rumbleshot
+
+[6] Stocking Jetsteam
+[7] Evershine
+[8] A Favor for Evershine
+[8] Return to Bellowfiz
+
+[10] The Lost Pilot
+[11] A Pilot's Revenge
+
+[6] Bitter Rivals
+[7] Distracting Jarven
+[1] Guarded Thunderbrew Barrel
+[7] Return to Marleth
+
+[7] The Grizzled Den
+
+{Senir's Observations}
+[9] Frostmane Hold
+[10] The Reports
+
+[9] Those Blased Troggs!
+
+[10] Opperation Recombobulation
+
+[10] Rejold's New Brew
+  [9] The Perfect Stout
+[10] Shimmer Stout
+[10] Stout to Kadrell
+
+[11] The Public Servant
+
+[12] Tundra MacGrann's Stolen Stash
+
+[12+] Preserving the Herd
+
+NPC: Mountaineer Kadrell in Loch Modan
+[23] Stonegear's Search
+[22] Search for Incendicite
+
+## [5-12] Teldrassil
+
+[5] Dolanaar Delivery
+
+[5] Zenn's Bidding
+[7] Seek Redemption!
+
+[5] Denalan's Earth
+[7] Timberling Seeds
+[7] Rellian Greenspyre
+[9] Tumors
+[9] Return to Denalan
+[9+] Oakenscowl
+
+Shadowglen
+[5] Tenaron's Summons
+[5] Crown of the Earth
+[5] Crown of the Earth
+Teldrassil
+[5] Crown of the Earth
+[9] Crown of the Earth
+[11] Crown of the Earth
+[11] Crown of the Earth
+
+[6] The Emerald Dreamcatcher
+[8] Ferocitas the Dream Eater
+
+[6] A Troubleing Breeze
+[6] Gnarlpine Corruption
+[9] The Relics of Wakening
+[12] Ursal the Mauler
+
+[7] Timberling Sprouts
+
+[7] Twisted Hatred
+
+[8] The Road to Darnassus
+
+[8] The Sleeping Druid
+[10] Druid of the Claw
+
+[10] The Glowing Fruit
+
+[10] The Shimmering Frond
+[10] The Sprouted Fronds
+
+[11] The Enchanted Glade
+[11] Teldrassil
+Darnassus
+[11] Grove of the Ancients
+
+[12] Mist
+
+[12] The Moss-twined Heart
+[12] Planting the Heart
+
 # Alchemy
 
 [50] Discolored Healing Potion (Quest: Wild Hearts)
@@ -2285,29 +2282,23 @@ Eastern Plaguelands, Smokey LaRue
 
 # Cooking
 
-[1] Crispy Bat Wing (Horde Vendor: Abigail Shiel)
 [1] Gingerbread Cookie (Winter Veil event)
 [1] Slitherskin Mackerel (Vendor: Kriggon Talsone in Westfall)
 [10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
-[20] Scorpid Surprise (Horde Only)
 [25] Beer Basted Boar Ribs (Quest: Beer Basted Boar Ribs in Dun Morogh)
-[35] Roasted Kodo Meat (Horde Only)
 [35] Egg Nog (Winter Veil event)
 [40] Smoked Bear Meat (Vendor: Drac Roughcut in Loch Modan)
 [50] Fillet of Frenzy (Vendor: Laird in Felwood)
-[50] Goretusk Liver Pie (Quest: Goretusk Liver Pie in Westfall)
 [50] Loch Frenzy Delight (Vendor: Khara Deepwater in Loch Modan)
 [50] Rainbow Fin Albacore (Vendor: Catherine Leland in Stormwind City)
 [50] Strider Stew (Quest: Easy Strider Living in Darkshore)
 [60] Blood Sausage (Quest: Thelsamar Blood Sausages in Loch Modan)
 [60] Thistle Tea (Vendor: Smudge Thunderwood in Hillsbrad)
-[75] Westfall Stew (Quest: Westfall Stew in Westfall)
 [80] Crocolisk Steak (Quest: Crocolisk Hunting in Loch Modan)
 [80] Smoked Sagefish (Vendor: Kelsey Yance in Stranglethorn Vale)
 [85] Savory Deviate Delight (Zone Drop: The Barrens)
 [85] Cooked Crab Claw (Vendor: Kendor Kabonka in Stormwind)
 [90] Clam Chowder (Vendor: Kriggon Talsone in Westfall)
-[90] Dig Rat Stew (Horde Only)
 [90] Murloc Fin Soup (Quest: Selling Fish in Redridge Mountains)
 [100] Bristle Whisker Catfish (Vendor: Catherine Leland in Stormwind)
 [100] Crispy Lizard Tail (Horde Only)
