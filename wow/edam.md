@@ -9,22 +9,7 @@ Fishing Quests
 
 ## [5-11] Elwynn Forest
 
-[7] Shipment to Stormwind
-
-[10] Cloth and Leather Armor
-
 [10] Report to Gryan Stoutmantle
-
-[10] Westbrook Garrison Needs Help!
-[10] Riverpaw Gnoll Bounty
-
-__[9+] Princess Must Die!__
-
-[11+] Wanted: "Hogger"
-
-Drop: ??? (from gnolls)
-[10] The Collector
-[10] Manhunt
 
 ## [5-12] Dun Morogh
 
@@ -128,41 +113,10 @@ Darnassus
 [12] The Moss-twined Heart
 [12] Planting the Heart
 
-## [10] Warrior
-
-Elwynn Forest
-[10] A Warrior's Training
-[10] Bartleby the Drunk
-[10] Beat Bartelby
-[10] Bartleby's Mug
-[10] Marshal Haggard
-[10] Dead-tooth Jack
-
 ## [10-20] Westfall
 
-[10] A Swift Message
-[10] Continue to Stormwind
-[10] Dungar Longdrink
-[10] Return to Lewis
-
-[10] Westfall Stew
-[13] Westfall Stew
-
-[12] The Forgotten Heirloom
-
-[12] Goretusk Liver Pie
-
-[12] The People's Militia (Trappers and Smugglers)
 [14] The People's Militia (Pillagers and Looters)
 [17] The People's Militia (Highwaymen, Pathstalkers and Knuckledusters)
-
-[14] Poor Old Blanchy
-
-[14] Patrolling Westfall
-
-[15] Red Leather Bandanas
-
-[15] The Killing Fields
 
 [15] Thunderbrew Lager (repeatable)
 
@@ -2332,7 +2286,6 @@ Eastern Plaguelands, Smokey LaRue
 # Cooking
 
 [1] Crispy Bat Wing (Horde Vendor: Abigail Shiel)
-[1] Brilliant Smallfish (Vendor: Catherine Leland in Stormwind)
 [1] Gingerbread Cookie (Winter Veil event)
 [1] Slitherskin Mackerel (Vendor: Kriggon Talsone in Westfall)
 [10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
@@ -2344,7 +2297,6 @@ Eastern Plaguelands, Smokey LaRue
 [50] Fillet of Frenzy (Vendor: Laird in Felwood)
 [50] Goretusk Liver Pie (Quest: Goretusk Liver Pie in Westfall)
 [50] Loch Frenzy Delight (Vendor: Khara Deepwater in Loch Modan)
-[50] Longjaw Mud Snapper (Vendor: Khara Deepwater in Loch Modan)
 [50] Rainbow Fin Albacore (Vendor: Catherine Leland in Stormwind City)
 [50] Strider Stew (Quest: Easy Strider Living in Darkshore)
 [60] Blood Sausage (Quest: Thelsamar Blood Sausages in Loch Modan)
