@@ -5,6 +5,20 @@ Profession Quests
 Cooking Quests
 Fishing Quests
 
+# Cooking Ingredients
+
+## Vendor
+Small Spider Leg
+Stringy Wolf Meat
+
+## Still Need
+100 Crag Boar Ribs (Beer Basted Boar Ribs)
+160 Boar Ribs (Dry Pork Ribs)
+160 Crocolisk Meat (Crocolisk Steak)
+165 Strinky Vulture Meat (Westfall Stew)
+170 Murloc Fin
+180 Raw Bristle Whisker Catfish
+
 # Quests
 
 ## [10-20] Westfall
@@ -43,31 +57,13 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 
 ## [10-22] Loch Modan
 
-[10] Honor Students
-[10] Ride to Ironforge
-[10] Gryth Thurden
-[10] Return to Brock
-
-[11] Rat Catching
-
-[11] Thelsamar Blood Sausages
-
-[12] The Trogg Threat
-
-[12] In Defense of the King's Lands [Troggs and Scouts]
-[15] In Defense of the King's Lands [Skullthumpers and Seers]
-[15] In Defense of the King's Lands [Shamans and Bonesnappers]
 [17] In Defense of the King's Lands [Grawmug and hisguards]
 
 [15] Crocolisk Hunting
 
-[15] Filthy Paws
+**[14] Stormpike's Order**
 
-[15] Mountaineer Stormpike's Task
-[14] Stormpike's Order
-
-Ironforge: [15] Find Bingles
-[15] Bingles' Missing Supplies
+**[15] Bingles' Missing Supplies**
 
 [15] Excavation Progress Report
 [15] Report to Ironforge
@@ -124,7 +120,7 @@ Ironforge: [15] Find Bingles
   [15] Beached Sea Turtle
   [16] Beached Sea Creature
   [19] Beached Sea Creature
-  [19] Beached Sea Turtle
+  [19]`` Beached Sea Turtle
   [19] Beached Sea Turtle
 
 [14] The Family and the Fishing Pole
@@ -198,8 +194,7 @@ Darkshore
 
 ## [12] Deeprun Tram
 
-[12] Deeprun Rat Roundup
-[12] Me Brother, Nipsy
+**[12] Me Brother, Nipsy**
 
 ## [14-20] The Barrens
 
@@ -220,9 +215,6 @@ Darkshore
 [20] Deepmoss Apider Eggs
 
 ## [15-16] Stormwind
-
-[15] Elmore's Task
-[15] Stormpike's Delivery
 
 [15] Humble Beginnings
 
@@ -2103,26 +2095,14 @@ Eastern Plaguelands, Smokey LaRue
 
 ## [5-12] Dun Morogh
 
-[5] Supplies to Tannok
-
-[5] Tools for Steelgrill
-
-[6] Ammo for Rumbleshot
-
-[6] Stocking Jetsteam
-[7] Evershine
+    [7] Evershine
 [8] A Favor for Evershine
 [8] Return to Bellowfiz
-
-[10] The Lost Pilot
-[11] A Pilot's Revenge
 
 [6] Bitter Rivals
 [7] Distracting Jarven
 [1] Guarded Thunderbrew Barrel
 [7] Return to Marleth
-
-[7] The Grizzled Den
 
 {Senir's Observations}
 [9] Frostmane Hold
@@ -2285,14 +2265,12 @@ Darnassus
 [1] Gingerbread Cookie (Winter Veil event)
 [1] Slitherskin Mackerel (Vendor: Kriggon Talsone in Westfall)
 [10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
-[25] Beer Basted Boar Ribs (Quest: Beer Basted Boar Ribs in Dun Morogh)
 [35] Egg Nog (Winter Veil event)
 [40] Smoked Bear Meat (Vendor: Drac Roughcut in Loch Modan)
 [50] Fillet of Frenzy (Vendor: Laird in Felwood)
 [50] Loch Frenzy Delight (Vendor: Khara Deepwater in Loch Modan)
 [50] Rainbow Fin Albacore (Vendor: Catherine Leland in Stormwind City)
 [50] Strider Stew (Quest: Easy Strider Living in Darkshore)
-[60] Blood Sausage (Quest: Thelsamar Blood Sausages in Loch Modan)
 [60] Thistle Tea (Vendor: Smudge Thunderwood in Hillsbrad)
 [80] Crocolisk Steak (Quest: Crocolisk Hunting in Loch Modan)
 [80] Smoked Sagefish (Vendor: Kelsey Yance in Stranglethorn Vale)
