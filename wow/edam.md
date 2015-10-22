@@ -5,6 +5,55 @@ Profession Quests
 Cooking Quests
 Fishing Quests
 
+# Mod Grey Level
+
+Ch Mo
+16 10
+17 11
+18 12
+19 13
+20 13
+21 14
+22 15
+23 16
+24 17
+25 18
+26 19
+27 20
+28 21
+29 22
+30 22
+31 23
+32 24
+33 25
+34 26
+35 27
+36 28
+37 29
+38 30
+39 31
+40 31
+41 32
+42 33
+43 34
+44 35
+45 35
+46 36
+47 37
+48 38
+49 39
+50 39
+51 40
+52 41
+53 42
+54 43
+55 43
+56 44
+57 45
+58 46
+59 47
+60 51
+
 # Cooking Ingredients
 
 ## Vendor
@@ -106,6 +155,10 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 
 [12] Tools of the Highborne
 
+Fishing
+[12] Gaffer Jacks
+[12] Electropellers
+
 [12] Bashal'Aran
 [12] Bashal'Aran
 [13] Bashal'Aran
@@ -192,10 +245,6 @@ Darkshore
 [20] The Absent Minded Prospector
 [24] The Absent Minded Prospector
 
-## [12] Deeprun Tram
-
-**[12] Me Brother, Nipsy**
-
 ## [14-20] The Barrens
 
 [14] Samophlange
@@ -208,6 +257,9 @@ Darkshore
 [14] The Missing Shipment
 [16] Stolen Booty
 
+Herbalism
+[16] Root Samples
+
 [16] WANTED: Baron Longshore
 
 [18] Minder's Fortune
@@ -216,7 +268,11 @@ Darkshore
 
 ## [15-16] Stormwind
 
+<<<<<<< HEAD
+**[15] Humble Beginnings**
+=======
 [15] Humble Beginnings
+>>>>>>> d6595103a48fe7e84781ffb2744abe76a6decf37
 
 [16] Stormwind Library
 
@@ -1078,6 +1134,20 @@ Item: Syndicate Documents
 Item: The Encorcelled Parchment in a Worn Wooden Chest?
 [40] The Ensorcelled Parchment
 [40] Stormpike's Deciphering
+
+## [35-45] Professions
+
+Nissa Firestone, Physician in Ironforge
+[45] Alliance Trauma
+[45] Triage
+
+Grimnur Stonebrand, Forlorn Cavern in Ironforge
+[45] I Got Nothing' Left!
+[45] Nat Pagle, Angler Extreme
+
+Daryl Riknussun, Iron Pot in Ironforge
+[45] I Know a Guy...
+[45] Clamlette Surprise
 
 ## [35-40] Swamp of Sorrows
 
@@ -2095,7 +2165,11 @@ Eastern Plaguelands, Smokey LaRue
 
 ## [5-12] Dun Morogh
 
+<<<<<<< HEAD
+[7] Evershine
+=======
     [7] Evershine
+>>>>>>> d6595103a48fe7e84781ffb2744abe76a6decf37
 [8] A Favor for Evershine
 [8] Return to Bellowfiz
 
@@ -2164,6 +2238,9 @@ Teldrassil
 [7] Twisted Hatred
 
 [8] The Road to Darnassus
+
+Alchemy
+[8] Elixirs for the Bladeleafs
 
 [8] The Sleeping Druid
 [10] Druid of the Claw
@@ -2907,6 +2984,11 @@ Revered
 [55] Deadly Desert Venom
 [57] Noggle's Last Hope
 [57] Noggle's Lost Satchel
+
+Cooking
+[57] Desert Recipe
+[57] Sharing the Knowledge
+[57] Kitchen Assistance
 
 [58] The Twilight Mystery
 [59] The Deserter
