@@ -54,6 +54,20 @@ Ch Mo
 59 47
 60 51
 
+# Cooking Ingredients
+
+## Vendor
+Small Spider Leg
+Stringy Wolf Meat
+
+## Still Need
+100 Crag Boar Ribs (Beer Basted Boar Ribs)
+160 Boar Ribs (Dry Pork Ribs)
+160 Crocolisk Meat (Crocolisk Steak)
+165 Strinky Vulture Meat (Westfall Stew)
+170 Murloc Fin
+180 Raw Bristle Whisker Catfish
+
 # Quests
 
 ## [10-20] Westfall
@@ -92,11 +106,13 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 
 ## [10-22] Loch Modan
 
-[17] In Defense of the King's Lands [Grawmug and his guards]
+[17] In Defense of the King's Lands [Grawmug and hisguards]
 
 [15] Crocolisk Hunting
 
-[15] Bingles' Missing Supplies
+**[14] Stormpike's Order**
+
+**[15] Bingles' Missing Supplies**
 
 [15] Excavation Progress Report
 [15] Report to Ironforge
@@ -157,7 +173,7 @@ Fishing
   [15] Beached Sea Turtle
   [16] Beached Sea Creature
   [19] Beached Sea Creature
-  [19] Beached Sea Turtle
+  [19]`` Beached Sea Turtle
   [19] Beached Sea Turtle
 
 [14] The Family and the Fishing Pole
@@ -252,7 +268,11 @@ Herbalism
 
 ## [15-16] Stormwind
 
+<<<<<<< HEAD
 **[15] Humble Beginnings**
+=======
+[15] Humble Beginnings
+>>>>>>> d6595103a48fe7e84781ffb2744abe76a6decf37
 
 [16] Stormwind Library
 
@@ -2145,7 +2165,11 @@ Eastern Plaguelands, Smokey LaRue
 
 ## [5-12] Dun Morogh
 
+<<<<<<< HEAD
 [7] Evershine
+=======
+    [7] Evershine
+>>>>>>> d6595103a48fe7e84781ffb2744abe76a6decf37
 [8] A Favor for Evershine
 [8] Return to Bellowfiz
 
@@ -2318,14 +2342,12 @@ Darnassus
 [1] Gingerbread Cookie (Winter Veil event)
 [1] Slitherskin Mackerel (Vendor: Kriggon Talsone in Westfall)
 [10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
-[25] Beer Basted Boar Ribs (Quest: Beer Basted Boar Ribs in Dun Morogh)
 [35] Egg Nog (Winter Veil event)
 [40] Smoked Bear Meat (Vendor: Drac Roughcut in Loch Modan)
 [50] Fillet of Frenzy (Vendor: Laird in Felwood)
 [50] Loch Frenzy Delight (Vendor: Khara Deepwater in Loch Modan)
 [50] Rainbow Fin Albacore (Vendor: Catherine Leland in Stormwind City)
 [50] Strider Stew (Quest: Easy Strider Living in Darkshore)
-[60] Blood Sausage (Quest: Thelsamar Blood Sausages in Loch Modan)
 [60] Thistle Tea (Vendor: Smudge Thunderwood in Hillsbrad)
 [80] Crocolisk Steak (Quest: Crocolisk Hunting in Loch Modan)
 [80] Smoked Sagefish (Vendor: Kelsey Yance in Stranglethorn Vale)
