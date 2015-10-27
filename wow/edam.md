@@ -72,16 +72,8 @@ Stringy Wolf Meat
 
 ## [10-20] Westfall
 
-**[14] The People's Militia (Pillagers and Looters)**
-[17] The People's Militia (Highwaymen, Pathstalkers and Knuckledusters)
-
-[15] Thunderbrew Lager (repeatable)
-
 [16] Keeper of the Flame
 
-[18] The Defias Brotherhood (Gryan to Wiley)
-[18] The Defias Brotherhood (Wiley to Gryan)
-[18] The Defias Brotherhood (Gryan to Mathias)
 [18] The Defias Brotherhood (Mathias to Gryan)
 [18] The Defias Brotherhood (Messenger)
 [18+] The Defias Brotherhood (Escort)
@@ -110,8 +102,6 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 
 [15] Crocolisk Hunting
 
-**[14] Stormpike's Order**
-
 **[15] Bingles' Missing Supplies**
 
 [15] Excavation Progress Report
@@ -126,7 +116,7 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 [20+] Vyrin's Revenge
 [20+] Vyrin's Revenge
 
-[18] Ironband's Excavation
+**[18] Ironband's Excavation**
 [18] Gathering Idols
 
 [18] A Dark Threat Looms
@@ -268,33 +258,10 @@ Herbalism
 
 ## [15-16] Stormwind
 
-<<<<<<< HEAD
-**[15] Humble Beginnings**
-=======
-[15] Humble Beginnings
->>>>>>> d6595103a48fe7e84781ffb2744abe76a6decf37
-
 [16] Stormwind Library
 
 ## [15-25] Redridge Mountains
 
-[14] Messenger to Stormwind
-[14] Messenger to Stormwind
-
-[14] Messenger to Westfall
-[14] Messenger to Westfall
-
-[15] A Free Lunch
-[15] Visit the Herbalist
-[15] Delivering Daffodils
-
-[15] Dry Times
-
-[15] Hilary's Necklace
-
-[16] The Lost Tools
-
-[16] Encroaching Gnolls
 [17] Assessing the Threat
 
 [18] Redridge Goulash

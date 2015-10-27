@@ -29,42 +29,14 @@ Fishing Quests
 [4] Milly's Harvest
 [4] Grape Manifest
 
-## [2] Stormwind
-
-[2] Harlan Needs a Resupply
-
-[2] Package for Thurman
-
-[2] Wine Shop Advert
-
 ## [5-11] Elwynn Forest
 
 [1] Give Gerard a Drink
 
-[5] Rest and Relaxation
-
-[6] Young Lovers
-[6] Speak with Gramma
-[6] Note to William
-[7] Collecting Kelp
-[7] The Escape
-
-[6] Lost Necklace
-[6] Pie for Billy
-[6] Back to Billy
-[8] Goldtooth
-
-[7] Gold Dust Exchange
-
-[7] Kobold Candles
-[7] Shipment to Stormwind
-
-[7] The Fargodeep Mine
 [10] The Jasperlode Mine
 
 [9] A Bundle of Trouble
 
-[10] A Fishy Peril
 [10] Further Concerns
 [10] Find the Lost Guards
 [10] Discover Rolf's Fate
@@ -93,45 +65,14 @@ Drop: ??? (from gnolls)
 
 ## [5-12] Dun Morogh
 
-[5] Supplies to Tannok
-
-[5] Tools for Steelgrill
-
-[6] Ammo for Rumbleshot
-
-[6] Stocking Jetsteam
-[7] Evershine
-[8] A Favor for Evershine
-[8] Return to Bellowfiz
-
 [10] The Lost Pilot
 [11] A Pilot's Revenge
 
-[6] Bitter Rivals
-[7] Distracting Jarven
-[1] Guarded Thunderbrew Barrel
-[7] Return to Marleth
-
-[7] The Grizzled Den
-
-{Senir's Observations}
-[9] Frostmane Hold
-[10] The Reports
-
-[9] Those Blased Troggs!
-
-[10] Opperation Recombobulation
-
-[10] Rejold's New Brew
-  [9] The Perfect Stout
+~~[10] Rejold's New Brew~~
 [10] Shimmer Stout
 [10] Stout to Kadrell
 
-[11] The Public Servant
-
 [12] Tundra MacGrann's Stolen Stash
-
-[12+] Preserving the Herd
 
 NPC: Mountaineer Kadrell in Loch Modan
 [23] Stonegear's Search
@@ -192,16 +133,6 @@ Darnassus
 
 [12] The Moss-twined Heart
 [12] Planting the Heart
-
-## [10] Warrior
-
-Elwynn Forest
-[10] A Warrior's Training
-[10] Bartleby the Drunk
-[10] Beat Bartelby
-[10] Bartleby's Mug
-[10] Marshal Haggard
-[10] Dead-tooth Jack
 
 ## [10-20] Westfall
 
@@ -2402,7 +2333,6 @@ Eastern Plaguelands, Smokey LaRue
 [1] Slitherskin Mackerel (Vendor: Kriggon Talsone in Westfall)
 [10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
 [20] Scorpid Surprise (Horde Only)
-[25] Beer Basted Boar Ribs (Quest: Beer Basted Boar Ribs in Dun Morogh)
 [35] Roasted Kodo Meat (Horde Only)
 [35] Egg Nog (Winter Veil event)
 [40] Smoked Bear Meat (Vendor: Drac Roughcut in Loch Modan)
