@@ -33,22 +33,11 @@ Fishing Quests
 
 [1] Give Gerard a Drink
 
-[10] The Jasperlode Mine
+**[10] The Jasperlode Mine**
 
-[9] A Bundle of Trouble
-
-[10] Further Concerns
-[10] Find the Lost Guards
-[10] Discover Rolf's Fate
 [10] Report to Thomas
 [10] Deliver Thomas' Report
 [10] Cloth and Leather Armor
-
-[9] Red Linen Goods
-
-[10] Bounty on Murlocs
-
-[10] Protect the Frontier
 
 [10] Report to Gryan Stoutmantle
 
