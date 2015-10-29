@@ -7,46 +7,7 @@ Fishing Quests
 
 # Quests
 
-## [1-5] Northshire Abbey
-
-[1] A Threat Within
-[2] Kobold Camp Cleanup
-  [1] Simple Letter
-[3] Investigate Echo Ridge
-[5] Skirmish at Echo Ridge
-[5] Report to Goldshire
-
-(After A Threat Within)
-[2] Eagan Peltskinner
-[2] Wolves Across the Border
-
-(After A Threat Within)
-[4] Brotherhood of Thieves
-[5] Bounty on Garrick Padfoot
-
-(After Wolves Across the Border)
-[4] Milly Osworth
-[4] Milly's Harvest
-[4] Grape Manifest
-
 ## [5-11] Elwynn Forest
-
-[1] Give Gerard a Drink
-
-**[10] The Jasperlode Mine**
-
-[10] Report to Thomas
-[10] Deliver Thomas' Report
-[10] Cloth and Leather Armor
-
-[10] Report to Gryan Stoutmantle
-
-[10] Westbrook Garrison Needs Help!
-[10] Riverpaw Gnoll Bounty
-
-[9+] Princess Must Die!
-
-[11+] Wanted: "Hogger"
 
 Drop: ??? (from gnolls)
 [10] The Collector
@@ -54,74 +15,9 @@ Drop: ??? (from gnolls)
 
 ## [5-12] Dun Morogh
 
-[10] The Lost Pilot
-[11] A Pilot's Revenge
-
-~~[10] Rejold's New Brew~~
-[10] Shimmer Stout
-[10] Stout to Kadrell
-
-[12] Tundra MacGrann's Stolen Stash
-
 NPC: Mountaineer Kadrell in Loch Modan
 [23] Stonegear's Search
 [22] Search for Incendicite
-
-## [5-12] Teldrassil
-
-[5] Dolanaar Delivery
-
-[5] Zenn's Bidding
-[7] Seek Redemption!
-
-[5] Denalan's Earth
-[7] Timberling Seeds
-[7] Rellian Greenspyre
-[9] Tumors
-[9] Return to Denalan
-[9+] Oakenscowl
-
-Shadowglen
-[5] Tenaron's Summons
-[5] Crown of the Earth
-[5] Crown of the Earth
-Teldrassil
-[5] Crown of the Earth
-[9] Crown of the Earth
-[11] Crown of the Earth
-[11] Crown of the Earth
-
-[6] The Emerald Dreamcatcher
-[8] Ferocitas the Dream Eater
-
-[6] A Troubleing Breeze
-[6] Gnarlpine Corruption
-[9] The Relics of Wakening
-[12] Ursal the Mauler
-
-[7] Timberling Sprouts
-
-[7] Twisted Hatred
-
-[8] The Road to Darnassus
-
-[8] The Sleeping Druid
-[10] Druid of the Claw
-
-[10] The Glowing Fruit
-
-[10] The Shimmering Frond
-[10] The Sprouted Fronds
-
-[11] The Enchanted Glade
-[11] Teldrassil
-Darnassus
-[11] Grove of the Ancients
-
-[12] Mist
-
-[12] The Moss-twined Heart
-[12] Planting the Heart
 
 ## [10-20] Westfall
 
@@ -130,7 +26,6 @@ Darnassus
 [10] Dungar Longdrink
 [10] Return to Lewis
 
-[10] Westfall Stew
 [13] Westfall Stew
 
 [12] The Forgotten Heirloom
@@ -181,12 +76,7 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 
 ## [10-22] Loch Modan
 
-[10] Honor Students
-[10] Ride to Ironforge
-[10] Gryth Thurden
 [10] Return to Brock
-
-[11] Rat Catching
 
 [11] Thelsamar Blood Sausages
 
@@ -201,7 +91,6 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 
 [15] Filthy Paws
 
-[15] Mountaineer Stormpike's Task
 [14] Stormpike's Order
 
 Ironforge: [15] Find Bingles
@@ -234,111 +123,6 @@ Ironforge: [15] Find Bingles
 
 [22+] WANTED: Chok'sul
 
-## [10-31] Darkshore
-
-[1??] Onu is meditating
-[1??] Onu is meditating
-
-[10] Buzzbox 827
-[12] Buzzbox 411
-[14] Buzzbox 323
-[16] Buzzbox 525
-
-[12] The Fall of Ameth'Aran
-
-[12] Tools of the Highborne
-
-[12] Bashal'Aran
-[12] Bashal'Aran
-[13] Bashal'Aran
-[13] Bashal'Aran
-
-[13] Washed Ashore
-[14] Washed Ashore
-  [13] Beached Sea Creature
-  [13] Beached Sea Turtle
-  [14] Beached Sea Creature
-  [15] Beached Sea Turtle
-  [15] Beached Sea Turtle
-  [16] Beached Sea Creature
-  [19] Beached Sea Creature
-  [19] Beached Sea Turtle
-  [19] Beached Sea Turtle
-
-[14] The Family and the Fishing Pole
-
-[14] The Red Crystal
-[14] As Water Cascades
-[14] The Fragments Within
-
-[14] Plagued Lands
-[16] Cleansing of the Infected
-[18] Tharnariun's Hope
-
-[14] How Big a Threat?
-[14] How Big a Threat?
-[15] Thundris Windweaver
-[15] The Cliffspring River
-[18] The Blackwood Corrupted
-
-[15] One Shot. One Kill.
-
-[16] For Love Eternal
-
-[17] Deep Ocean, Vast Sea
-
-[17] Fruit of the Sea
-
-[17] Cave Mushrooms
-[17] Onu
-[17] The Master's Glaive
-[17] The Twilight Camp
-[17] Return to Onu
-[20] Mathystra Relics
-
-[18] Therylune's Escape
-
-[18] WANTED: Murkdeep!
-
-[18] The Tower of Althalaxx {Elissa to Balthule}
-[18] The Tower of Althalaxx {Balthule}
-[18] The Tower of Althalaxx {Balthule to Delgren}
-[21] The Tower of Althalaxx {Delgren}
-[24] The Tower of Althalaxx {Delgren} -> {Ashenvale: Supplies to Auberdine}
-[28] The Tower of Althalaxx {Delgren}
-[28] The Tower of Althalaxx part 7
-[31] The Tower of Althalaxx part 8
-[31] The Tower of Althalaxx
-
-[20] The Powers Below
-
-[20] The Sleeper Has Awakened
-
-{Wetlands: Fiora Longears}
-[20] Journey to Astranaar
-
-[20] Gyromast's Retrieval
-[20+] Gyromast's Revenge
-
-[20] A Lost Master
-[20] A Lost Master
-[22] Escape Through Force --or-- [20] Escape Through Stealth
-{Ashenvale: Trek to Ashenvale}
-
-Darnassus
-[14] Trouble in Darkshore?
-Darkshore
-[20] The Absent Minded Prospector
-[20+] The Absent Minded Prospector
-[20] The Absent Minded Prospector
-[20] The Absent Minded Prospector
-[24] The Absent Minded Prospector
-
-## [12] Deeprun Tram
-
-[12] Deeprun Rat Roundup
-[12] Me Brother, Nipsy
-
 ## [14-20] The Barrens
 
 [14] Samophlange
@@ -358,9 +142,6 @@ Darkshore
 [20] Deepmoss Apider Eggs
 
 ## [15-16] Stormwind
-
-[15] Elmore's Task
-[15] Stormpike's Delivery
 
 [15] Humble Beginnings
 
@@ -3165,3 +2946,182 @@ One of:
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
 
+# Low-Level Quests
+
+## [5-12] Teldrassil
+
+[5] Dolanaar Delivery
+
+[5] Zenn's Bidding
+[7] Seek Redemption!
+
+[5] Denalan's Earth
+[7] Timberling Seeds
+[7] Rellian Greenspyre
+[9] Tumors
+[9] Return to Denalan
+[9+] Oakenscowl
+
+Shadowglen
+[5] Tenaron's Summons
+[5] Crown of the Earth
+[5] Crown of the Earth
+Teldrassil
+[5] Crown of the Earth
+[9] Crown of the Earth
+[11] Crown of the Earth
+[11] Crown of the Earth
+
+[6] The Emerald Dreamcatcher
+[8] Ferocitas the Dream Eater
+
+[6] A Troubleing Breeze
+[6] Gnarlpine Corruption
+[9] The Relics of Wakening
+[12] Ursal the Mauler
+
+[7] Timberling Sprouts
+
+[7] Twisted Hatred
+
+[8] The Road to Darnassus
+
+[8] The Sleeping Druid
+[10] Druid of the Claw
+
+[10] The Glowing Fruit
+
+[10] The Shimmering Frond
+[10] The Sprouted Fronds
+
+[11] The Enchanted Glade
+[11] Teldrassil
+Darnassus
+[11] Grove of the Ancients
+
+[12] Mist
+
+[12] The Moss-twined Heart
+[12] Planting the Heart
+
+## [1-5] Northshire Abbey
+
+[1] A Threat Within
+[2] Kobold Camp Cleanup
+  [1] Simple Letter
+[3] Investigate Echo Ridge
+[5] Skirmish at Echo Ridge
+[5] Report to Goldshire
+
+(After A Threat Within)
+[2] Eagan Peltskinner
+[2] Wolves Across the Border
+
+(After A Threat Within)
+[4] Brotherhood of Thieves
+[5] Bounty on Garrick Padfoot
+
+(After Wolves Across the Border)
+[4] Milly Osworth
+[4] Milly's Harvest
+[4] Grape Manifest
+
+## [10-31] Darkshore
+
+[1??] Onu is meditating
+[1??] Onu is meditating
+
+[10] Buzzbox 827
+[12] Buzzbox 411
+[14] Buzzbox 323
+[16] Buzzbox 525
+
+[12] The Fall of Ameth'Aran
+
+[12] Tools of the Highborne
+
+[12] Bashal'Aran
+[12] Bashal'Aran
+[13] Bashal'Aran
+[13] Bashal'Aran
+
+[13] Washed Ashore
+[14] Washed Ashore
+  [13] Beached Sea Creature
+  [13] Beached Sea Turtle
+  [14] Beached Sea Creature
+  [15] Beached Sea Turtle
+  [15] Beached Sea Turtle
+  [16] Beached Sea Creature
+  [19] Beached Sea Creature
+  [19] Beached Sea Turtle
+  [19] Beached Sea Turtle
+
+[14] The Family and the Fishing Pole
+
+[14] The Red Crystal
+[14] As Water Cascades
+[14] The Fragments Within
+
+[14] Plagued Lands
+[16] Cleansing of the Infected
+[18] Tharnariun's Hope
+
+[14] How Big a Threat?
+[14] How Big a Threat?
+[15] Thundris Windweaver
+[15] The Cliffspring River
+[18] The Blackwood Corrupted
+
+[15] One Shot. One Kill.
+
+[16] For Love Eternal
+
+[17] Deep Ocean, Vast Sea
+
+[17] Fruit of the Sea
+
+[17] Cave Mushrooms
+[17] Onu
+[17] The Master's Glaive
+[17] The Twilight Camp
+[17] Return to Onu
+[20] Mathystra Relics
+
+[18] Therylune's Escape
+
+[18] WANTED: Murkdeep!
+
+[18] The Tower of Althalaxx {Elissa to Balthule}
+[18] The Tower of Althalaxx {Balthule}
+[18] The Tower of Althalaxx {Balthule to Delgren}
+[21] The Tower of Althalaxx {Delgren}
+[24] The Tower of Althalaxx {Delgren} -> {Ashenvale: Supplies to Auberdine}
+[28] The Tower of Althalaxx {Delgren}
+[28] The Tower of Althalaxx part 7
+[31] The Tower of Althalaxx part 8
+[31] The Tower of Althalaxx
+
+[20] The Powers Below
+
+[20] The Sleeper Has Awakened
+
+{Wetlands: Fiora Longears}
+[20] Journey to Astranaar
+
+[20] Gyromast's Retrieval
+[20+] Gyromast's Revenge
+
+[20] A Lost Master
+[20] A Lost Master
+[22] Escape Through Force --or-- [20] Escape Through Stealth
+{Ashenvale: Trek to Ashenvale}
+
+Darnassus
+[14] Trouble in Darkshore?
+Darkshore
+[20] The Absent Minded Prospector
+[20+] The Absent Minded Prospector
+[20] The Absent Minded Prospector
+[20] The Absent Minded Prospector
+[24] The Absent Minded Prospector
