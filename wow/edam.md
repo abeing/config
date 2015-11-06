@@ -8,7 +8,6 @@ Fishing Quests
 # Mod Grey Level
 
 Ch Mo
-16 10
 17 11
 18 12
 19 13
@@ -73,10 +72,6 @@ Stringy Wolf Meat
 ## [10-20] Westfall
 
 [16] Keeper of the Flame
-
-[18] The Defias Brotherhood (Mathias to Gryan)
-[18] The Defias Brotherhood (Messenger)
-[18+] The Defias Brotherhood (Escort)
 
 [19] The Coast Isn't Clear
 
