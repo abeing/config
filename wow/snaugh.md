@@ -170,9 +170,6 @@ Darkshore
 
 [16] Keeper of the Flame
 
-[18] The Defias Brotherhood (Wiley to Gryan)
-[18] The Defias Brotherhood (Gryan to Mathias)
-[18] The Defias Brotherhood (Mathias to Gryan)
 [18] The Defias Brotherhood (Messenger)
 [18+] The Defias Brotherhood (Escort)
 
@@ -312,9 +309,6 @@ Westfall
 (After The Defias Brotherhood)
 [22++] The Defias Brotherhood
 
-Ironforge
-[15] Speak with Shoni
-Stormwind
 [20++] Underground Assault
 
 ## [18-25] Wailing Caverns
