@@ -6,7 +6,7 @@
 set nocompatible
 
 " Number of lines of command history.
-set history=700 
+set history=700
 
 " UNK Enable filetype plugins
 " filetype plugin on
@@ -27,6 +27,9 @@ syntax enable
 
 " Draw a colum at 80 for visual width.
 set colorcolumn=80
+
+" MacVim should use a larger, more readable font.
+set guifont=Inconsolata:h18
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User Interface
@@ -143,6 +146,25 @@ map <leader>tm :tabmove
 
 " Switch CWD to the directory of the open buffer.
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
+filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Legacy configuration
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:indent_guides_enable_on_vim_startup = 0
 let g:syntastic_cpp_compiler = 'clang++'
