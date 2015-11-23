@@ -5,10 +5,18 @@ Profession Quests
 Cooking Quests
 Fishing Quests
 
+# Uniques Killed
+
+Grizlak
+
 # Cooking Ingredients
 
-50-90 Kaldorei Spider Kabobs
-  Small Spider Meat
+Small Spider Meat
+
+100-140 Blood Sausage
+  Boar Intestines
+  Spider Icor
+  Bear Meat
 115-165 Westfall Stew
   Stringy Vulture Meat
   Murloc Eye
@@ -19,15 +27,14 @@ Fishing Quests
   Boar Ribs
 130-170 Murloc Fin Soup
   Murloc Fin
-100-140 Blood Sausage
-  Boar Intestines
-  Spider Icor
-  Bear Meat
-
+125-165 Cooked Crab Claw
+  Crawler Claw
+  Buy Kendor Kabonka
+135-175 Redridge Goulash
+  Crisp Spider Meat
+  Tough Condor Meat
 
 # Blacksmithing
-
-[16] Gearing Redridge
 
 [40] The Art of the Armorsmith
 [40] The Way of the Weaponsmith
@@ -71,53 +78,15 @@ Leads to?
 
 [60D] Sweet Serenity
 
-
 # Quests
 
-## [10-10] Elwynn Forest
-
-Drop: ??? (from gnolls)
-[10] The Collector
-[10] Manhunt
-
-## [10-12] Darnassus
-
-[10] Temple of the Moon
-[12] Tears of the Moon
-[12] Sathrah's Sacrifice
-
-## [12-31] Darkshore
+## [15-31] Darkshore
 
 [1??] Onu is meditating
-[1??] Onu is meditating
 
-[16] Buzzbox 525
++ [15] One Shot. One Kill.
 
-  [13] Beached Sea Turtle
-  [14] Beached Sea Creature
-  [15] Beached Sea Turtle
-  [15] Beached Sea Turtle
-  [16] Beached Sea Creature
-  [19] Beached Sea Creature
-  [19] Beached Sea Turtle
-  [19] Beached Sea Turtle
-
-[14] The Family and the Fishing Pole
-
-[15] One Shot. One Kill.
-
-[16] For Love Eternal
-
-[17] Deep Ocean, Vast Sea
-
-[17] Fruit of the Sea
-
-[18] Tharnariun's Hope
-
-[18] The Blackwood Corrupted
-
-[17] Cave Mushrooms
-[17] Onu
+- [17] Onu
 [17] The Master's Glaive
 [17] The Twilight Camp
 [17] Return to Onu
@@ -152,30 +121,13 @@ Drop: ??? (from gnolls)
 [22] Escape Through Force --or-- [20] Escape Through Stealth
 {Ashenvale: Trek to Ashenvale}
 
-Darnassus
-[14] Trouble in Darkshore?
-Darkshore
-[20] The Absent Minded Prospector
+- [20] The Absent Minded Prospector
 [20+] The Absent Minded Prospector
 [20] The Absent Minded Prospector
 [20] The Absent Minded Prospector
 [24] The Absent Minded Prospector
 
-## [14-20] Westfall
-
-[14] The People's Militia (Pillagers and Looters)
-[17] The People's Militia (Highwaymen, Pathstalkers and Knuckledusters)
-
-[15] Thunderbrew Lager (repeatable)
-
-[16] Keeper of the Flame
-
-[18] The Defias Brotherhood (Messenger)
-[18+] The Defias Brotherhood (Escort)
-
-[19] The Coast Isn't Clear
-
-[20] The Coastal Menace
+## [9-16] Westfall
 
 Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 [9] Fulbrow's Deed
@@ -186,37 +138,9 @@ Drop: Captain Sander's Treasure Map (from murlocs)
 [16] Captain Sander's Hidden Treasure (Part 3)
 [16] Captain Sander's Hidden Treasure (Part 4)
 
-## [15-22] Loch Modan
+## [18-22] Loch Modan
 
-[15] In Defense of the King's Lands [Skullthumpers and Seers]
-[15] In Defense of the King's Lands [Shamans and Bonesnappers]
-[17] In Defense of the King's Lands [Grawmug and hisguards]
-
-[15] Crocolisk Hunting
-
-[15] Filthy Paws
-
-Ironforge: [15] Find Bingles
-[15] Bingles' Missing Supplies
-
-[15] Excavation Progress Report
-[15] Report to Ironforge
-[15] Powder to Ironband
-[15] Resupplying the Excavation
-[15] After the Ambush
-[15] Protecting the Shipment
-
-[16] A Hunter's Boast
-[17] A Hunter's Challenge
-[20+] Vyrin's Revenge
-[20+] Vyrin's Revenge
-
-[18] Ironband's Excavation
-[18] Gathering Idols
-
-[18] A Dark Threat Looms
-[18] A Dark Threat Looms
-[18] A Dark Threat Looms
+[18] A Dark Threat Looms {To Dun Modr}
 [18] A Dark Threat Looms
 [18+] A Dark Threat Looms
 [18] A Dark Threat Looms
@@ -244,29 +168,15 @@ Ironforge: [15] Find Bingles
 
 [20] Deepmoss Apider Eggs
 
-## [15-16] Stormwind
+## [16] Stormwind
 
 [16] Stormwind Library
 
-## [15-25] Redridge Mountains
-
-[15] Dry Times
-
-[17] Assessing the Threat
-
-[18] Redridge Goulash
-
-[18] Underbelly Scales
-
-[18] Messenger to Darkshire
-[18] Messenger to Darkshire
+## [20-26] Redridge Mountains
 
 [20] Murloc Poachers
 
-[20] The Everstill Bridge
-
-[20] A Baying of Gnolls
-[25] Howling in the Hills
+- [25] Howling in the Hills
 
 [21] Selling Fish
 
@@ -293,7 +203,7 @@ Ironforge: [15] Find Bingles
 Drop: Glowing Shadowhide Pendant (Shadowhide gnolls in Redridge)
 [23] Theocritus' Retrieval
 
-## [18-22] The Deadmines
+## [18-20] The Deadmines
 
 Stormwind
 [18] Collecting Memories
@@ -301,19 +211,9 @@ Stormwind
 Stormwind
 [20] Oh Brother...
 
-Westfall
-(After Red Leather Bandanas)
-[17++] Red Silk Bandanas
-
-Westfall
-(After The Defias Brotherhood)
-[22++] The Defias Brotherhood
-
-[20++] Underground Assault
-
 ## [18-25] Wailing Caverns
 
-The Barrens, Cran eOperator Bigglefuzz
+The Barrens, Crane Operator Bigglefuzz
 [18] Trouble at the Docks
 
 The Barrens, Bebok Mizzyrix
@@ -426,10 +326,6 @@ NPC: Mountaineer Kadrell in Loch Modan
 
 ## [20-30] Warrior
 
-Wu Shen, Weapon Trainer in Stormwind:
-[20] Yorus Barleybrew
-[22] The Rethban Gauntlet
-[22] The Shieldsmith
 [28+] Fire Hardened Mail
 
 {Fire Hardened Mail}
@@ -2186,7 +2082,6 @@ Eastern Plaguelands, Smokey LaRue
 [1] Crispy Bat Wing (Horde Vendor: Abigail Shiel)
 [1] Brilliant Smallfish (Vendor: Catherine Leland in Stormwind)
 [1] Gingerbread Cookie (Winter Veil event)
-[10] Kaldorei Spider Kabob (Quest: Recipe of the Kaldorei in Teldrassil)
 [20] Scorpid Surprise (Horde Only)
 [35] Roasted Kodo Meat (Horde Only)
 [35] Egg Nog (Winter Veil event)
@@ -2195,9 +2090,6 @@ Eastern Plaguelands, Smokey LaRue
 [50] Loch Frenzy Delight (Vendor: Khara Deepwater in Loch Modan)
 [50] Longjaw Mud Snapper (Vendor: Khara Deepwater in Loch Modan)
 [60] Thistle Tea (Vendor: Smudge Thunderwood in Hillsbrad)
-[75] Westfall Stew (Quest: Westfall Stew in Westfall)
-[80] Crocolisk Steak (Quest: Crocolisk Hunting in Loch Modan)
-[80] Smoked Sagefish (Vendor: Kelsey Yance in Stranglethorn Vale)
 [85] Savory Deviate Delight (Zone Drop: The Barrens)
 [85] Cooked Crab Claw (Vendor: Kendor Kabonka in Stormwind)
 [90] Clam Chowder (Vendor: Kriggon Talsone in Westfall)
@@ -3029,6 +2921,35 @@ One of:
 
 # Low-Level Quests
 
+
+## [1-5] Northshire Abbey
+
+[1] A Threat Within
+[2] Kobold Camp Cleanup
+  [1] Simple Letter
+[3] Investigate Echo Ridge
+[5] Skirmish at Echo Ridge
+[5] Report to Goldshire
+
+(After A Threat Within)
+[2] Eagan Peltskinner
+[2] Wolves Across the Border
+
+(After A Threat Within)
+[4] Brotherhood of Thieves
+[5] Bounty on Garrick Padfoot
+
+(After Wolves Across the Border)
+[4] Milly Osworth
+[4] Milly's Harvest
+[4] Grape Manifest
+
+## [10-10] Elwynn Forest
+
+Drop: Gold Pickup Schedule (from gnolls)
+[10] The Collector
+[10] Manhunt
+
 ## [5-12] Teldrassil
 
 [5] Dolanaar Delivery
@@ -3084,26 +3005,3 @@ Darnassus
 
 [12] The Moss-twined Heart
 [12] Planting the Heart
-
-## [1-5] Northshire Abbey
-
-[1] A Threat Within
-[2] Kobold Camp Cleanup
-  [1] Simple Letter
-[3] Investigate Echo Ridge
-[5] Skirmish at Echo Ridge
-[5] Report to Goldshire
-
-(After A Threat Within)
-[2] Eagan Peltskinner
-[2] Wolves Across the Border
-
-(After A Threat Within)
-[4] Brotherhood of Thieves
-[5] Bounty on Garrick Padfoot
-
-(After Wolves Across the Border)
-[4] Milly Osworth
-[4] Milly's Harvest
-[4] Grape Manifest
-
