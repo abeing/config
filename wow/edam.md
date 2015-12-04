@@ -8,9 +8,6 @@ Fishing Quests
 # Mod Grey Level
 
 Ch Mo
-17 11
-18 12
-19 13
 20 13
 21 14
 22 15
@@ -85,36 +82,8 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 [16] Captain Sander's Hidden Treasure (Part 3)
 [16] Captain Sander's Hidden Treasure (Part 4)
 
-## [10-12] Darnassus
-
-[10] Temple of the Moon
-[12] Tears of the Moon
-[12] Sathrah's Sacrifice
-
 ## [10-22] Loch Modan
 
-[17] In Defense of the King's Lands [Grawmug and hisguards]
-
-[15] Crocolisk Hunting
-
-**[15] Bingles' Missing Supplies**
-
-[15] Excavation Progress Report
-[15] Report to Ironforge
-[15] Powder to Ironband
-[15] Resupplying the Excavation
-[15] After the Ambush
-[15] Protecting the Shipment
-
-[16] A Hunter's Boast
-[17] A Hunter's Challenge
-[20+] Vyrin's Revenge
-[20+] Vyrin's Revenge
-
-**[18] Ironband's Excavation**
-[18] Gathering Idols
-
-[18] A Dark Threat Looms
 [18] A Dark Threat Looms
 [18] A Dark Threat Looms
 [18] A Dark Threat Looms
@@ -126,154 +95,17 @@ Drop: Westfall Deed (some Defias: bandit, dockworker, dockmaster, rogue wizard)
 
 [22+] WANTED: Chok'sul
 
-## [10-31] Darkshore
-
-[1??] Onu is meditating
-[1??] Onu is meditating
-
-[10] Buzzbox 827
-[12] Buzzbox 411
-[14] Buzzbox 323
-[16] Buzzbox 525
-
-[12] The Fall of Ameth'Aran
-
-[12] Tools of the Highborne
-
-Fishing
-[12] Gaffer Jacks
-[12] Electropellers
-
-[12] Bashal'Aran
-[12] Bashal'Aran
-[13] Bashal'Aran
-[13] Bashal'Aran
-
-[13] Washed Ashore
-[14] Washed Ashore
-  [13] Beached Sea Creature
-  [13] Beached Sea Turtle
-  [14] Beached Sea Creature
-  [15] Beached Sea Turtle
-  [15] Beached Sea Turtle
-  [16] Beached Sea Creature
-  [19] Beached Sea Creature
-  [19]`` Beached Sea Turtle
-  [19] Beached Sea Turtle
-
-[14] The Family and the Fishing Pole
-
-[14] The Red Crystal
-[14] As Water Cascades
-[14] The Fragments Within
-
-[14] Plagued Lands
-[16] Cleansing of the Infected
-[18] Tharnariun's Hope
-
-[14] How Big a Threat?
-[14] How Big a Threat?
-[15] Thundris Windweaver
-[15] The Cliffspring River
-[18] The Blackwood Corrupted
-
-[15] One Shot. One Kill.
-
-[16] For Love Eternal
-
-[17] Deep Ocean, Vast Sea
-
-[17] Fruit of the Sea
-
-[17] Cave Mushrooms
-[17] Onu
-[17] The Master's Glaive
-[17] The Twilight Camp
-[17] Return to Onu
-[20] Mathystra Relics
-
-[18] Therylune's Escape
-
-[18] WANTED: Murkdeep!
-
-[18] The Tower of Althalaxx {Elissa to Balthule}
-[18] The Tower of Althalaxx {Balthule}
-[18] The Tower of Althalaxx {Balthule to Delgren}
-[21] The Tower of Althalaxx {Delgren}
-[24] The Tower of Althalaxx {Delgren} -> {Ashenvale: Supplies to Auberdine}
-[28] The Tower of Althalaxx {Delgren}
-[28] The Tower of Althalaxx part 7
-[31] The Tower of Althalaxx part 8
-[31] The Tower of Althalaxx
-
-[20] The Powers Below
-
-[20] The Sleeper Has Awakened
-
-{Wetlands: Fiora Longears}
-[20] Journey to Astranaar
-
-[20] Gyromast's Retrieval
-[20+] Gyromast's Revenge
-
-[20] A Lost Master
-[20] A Lost Master
-[22] Escape Through Force --or-- [20] Escape Through Stealth
-{Ashenvale: Trek to Ashenvale}
-
-Darnassus
-[14] Trouble in Darkshore?
-Darkshore
-[20] The Absent Minded Prospector
-[20+] The Absent Minded Prospector
-[20] The Absent Minded Prospector
-[20] The Absent Minded Prospector
-[24] The Absent Minded Prospector
-
-## [14-20] The Barrens
-
-[14] Samophlange
-[14] Samophlange
-[14] Samophlange
-[16] Samophlange
-
-[14] Southsea Freebooters
-[14] The Missing Shipment
-[14] The Missing Shipment
-[16] Stolen Booty
-
-Herbalism
-[16] Root Samples
-
-[16] WANTED: Baron Longshore
-
-[18] Minder's Fortune
-
-[20] Deepmoss Apider Eggs
-
 ## [15-16] Stormwind
 
 [16] Stormwind Library
 
 ## [15-25] Redridge Mountains
 
-[17] Assessing the Threat
-
-[18] Redridge Goulash
-
-[18] Underbelly Scales
-
-[18] The Price of Shoes
-[18] Return to Verner
-
 [18] Messenger to Darkshire
 [18] Messenger to Darkshire
 
 [20] Murloc Poachers
 
-[20] The Everstill Bridge
-
-[20] A Baying of Gnolls
 [25] Howling in the Hills
 
 [21] Selling Fish
@@ -309,22 +141,15 @@ Stormwind
 Stormwind
 [20] Oh Brother...
 
-Westfall
-(After Red Leather Bandanas)
 [17++] Red Silk Bandanas
 
-Westfall
-(After The Defias Brotherhood)
 [22++] The Defias Brotherhood
 
-Ironforge
-[15] Speak with Shoni
-Stormwind
 [20++] Underground Assault
 
 ## [18-25] Wailing Caverns
 
-The Barrens, Cran eOperator Bigglefuzz
+The Barrens, Crane Operator Bigglefuzz
 [18] Trouble at the Docks
 
 The Barrens, Bebok Mizzyrix
@@ -3145,4 +2970,135 @@ One of:
   [60] The Dread Citadel - Naxxramas [revered]
   [60] The Dread Citadel - Naxxramas [exalted]
 [60R] Echoes of War
+
+## [10-12] Darnassus
+
+[10] Temple of the Moon
+[12] Tears of the Moon
+[12] Sathrah's Sacrifice
+
+## [10-31] Darkshore
+
+[1??] Onu is meditating
+[1??] Onu is meditating
+
+[10] Buzzbox 827
+[12] Buzzbox 411
+[14] Buzzbox 323
+[16] Buzzbox 525
+
+[12] The Fall of Ameth'Aran
+
+[12] Tools of the Highborne
+
+Fishing
+[12] Gaffer Jacks
+[12] Electropellers
+
+[12] Bashal'Aran
+[12] Bashal'Aran
+[13] Bashal'Aran
+[13] Bashal'Aran
+
+[13] Washed Ashore
+[14] Washed Ashore
+  [13] Beached Sea Creature
+  [13] Beached Sea Turtle
+  [14] Beached Sea Creature
+  [15] Beached Sea Turtle
+  [15] Beached Sea Turtle
+  [16] Beached Sea Creature
+  [19] Beached Sea Creature
+  [19]`` Beached Sea Turtle
+  [19] Beached Sea Turtle
+
+[14] The Family and the Fishing Pole
+
+[14] The Red Crystal
+[14] As Water Cascades
+[14] The Fragments Within
+
+[14] Plagued Lands
+[16] Cleansing of the Infected
+[18] Tharnariun's Hope
+
+[14] How Big a Threat?
+[14] How Big a Threat?
+[15] Thundris Windweaver
+[15] The Cliffspring River
+[18] The Blackwood Corrupted
+
+[15] One Shot. One Kill.
+
+[16] For Love Eternal
+
+[17] Deep Ocean, Vast Sea
+
+[17] Fruit of the Sea
+
+[17] Cave Mushrooms
+[17] Onu
+[17] The Master's Glaive
+[17] The Twilight Camp
+[17] Return to Onu
+[20] Mathystra Relics
+
+[18] Therylune's Escape
+
+[18] WANTED: Murkdeep!
+
+[18] The Tower of Althalaxx {Elissa to Balthule}
+[18] The Tower of Althalaxx {Balthule}
+[18] The Tower of Althalaxx {Balthule to Delgren}
+[21] The Tower of Althalaxx {Delgren}
+[24] The Tower of Althalaxx {Delgren} -> {Ashenvale: Supplies to Auberdine}
+[28] The Tower of Althalaxx {Delgren}
+[28] The Tower of Althalaxx part 7
+[31] The Tower of Althalaxx part 8
+[31] The Tower of Althalaxx
+
+[20] The Powers Below
+
+[20] The Sleeper Has Awakened
+
+{Wetlands: Fiora Longears}
+[20] Journey to Astranaar
+
+[20] Gyromast's Retrieval
+[20+] Gyromast's Revenge
+
+[20] A Lost Master
+[20] A Lost Master
+[22] Escape Through Force --or-- [20] Escape Through Stealth
+{Ashenvale: Trek to Ashenvale}
+
+Darnassus
+[14] Trouble in Darkshore?
+Darkshore
+[20] The Absent Minded Prospector
+[20+] The Absent Minded Prospector
+[20] The Absent Minded Prospector
+[20] The Absent Minded Prospector
+[24] The Absent Minded Prospector
+
+## [14-20] The Barrens
+
+[14] Samophlange
+[14] Samophlange
+[14] Samophlange
+[16] Samophlange
+
+[14] Southsea Freebooters
+[14] The Missing Shipment
+[14] The Missing Shipment
+[16] Stolen Booty
+
+Herbalism
+[16] Root Samples
+
+[16] WANTED: Baron Longshore
+
+[18] Minder's Fortune
+
+[20] Deepmoss Apider Eggs
 

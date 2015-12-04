@@ -1,34 +1,18 @@
 Level Bjorn Einarsson
 =====================
 
-- ~~Level to 60~~
-- Complete personal story chapter **The Battle of Claw Island**
-  - Choose to recruit Fibharr
 - Run Sorrow's Embrace dungeon story mode
-- Level to 70
-- Complete personal story chapter Forging the Pact
 - Run Citadel of Flame dungeon story mode
-- Level to 76
 - Run Honor of the Waves dungeon story mode
-- Level to 78
 - Run Crucible of Eternity dungeon story mode
-- Level to 80
 - Complete Marching Orders personal story chapter
 - Run The Ruined City of Arah dungeon story mode
 
 Warrior Training
 ================
 
-- Finish all other training
-  + Finish Defense
-    * Rousing Resilience
-
 # Level Armorsmithing
 
-- ~~Verify I have made all the scale armor~~
-- ~~Level Armorsmithing to 150~~
-- ~~Make 12 Slot Steel Box~~
-- ~~Make a practical backpack~~
 - Make Steel Armor Set
   - ~~Boots~~
   - Chest
