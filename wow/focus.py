@@ -12,3 +12,11 @@
 #
 # Output to standard out the list of focused achievements.
 
+
+def read_datafile(data_filename, achievements):
+    """Read achievements from data file. Ignore disabled achievements and
+    focus focued achievements."""
+    with open(data_filename, 'r') as datafile:
+        for line in datafile:
+            achievements.append(line)
+    datafile.close()
