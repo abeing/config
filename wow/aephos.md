@@ -27,7 +27,7 @@ Everything Is Awesome!
 10,000 World Quests Completed
 ## Legion .....................................................................
 ### Zones
-Good Suramaritan
+!Good Suramaritan
 Leyline Bling
 Pillars of Creation
 Loremaster of Legion
