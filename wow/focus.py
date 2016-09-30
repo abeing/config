@@ -13,6 +13,7 @@
 # Output to standard out the list of focused achievements.
 
 import random
+import sys
 
 DESIRED_FOCUS = 4
 
@@ -48,7 +49,10 @@ def process_datafile(data_filename):
 
 
 def main():
-    focus_achievements = process_datafile("aephos.data")
+    if len(sys.argv) == 1:
+        print "No data file specified; aborting."
+        sys.exit(1)
+    focus_achievements = process_datafile(sys.argv[1])
     for achievement in focus_achievements:
         print achievement
 

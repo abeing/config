@@ -19,7 +19,6 @@ Everything Is Awesome!
 ### Daily Counts
 10000 Daily Quests Completed
 ### World
-200 World Quests Completed
 500 World Quests Completed
 1000 World Quests Completed
 2500 World Quests Completed
@@ -156,7 +155,7 @@ Ready for Raiding II
 Veteran of the Molten Front
 ## Eastern Kingdoms ...........................................................
 ### Zones
-Arathi Highlands Quests
+!Arathi Highlands Quests
 Hinterlands Quests
 Western Plaguelands Quests
 Eastern Plaguelands Quests
@@ -480,7 +479,7 @@ Mythic: Operator Thogar
 Mythic: Iron Maidens
 Mythic: Blackhand's Crucible
 ### Hellfire Citadel
-Hellbreach
+!Hellbreach
 Halls of Blood
 Bastion of Shadows
 Destructor's Rise
@@ -738,7 +737,7 @@ Heroic: Magmaw
 Heroic: Omnotrom Defense System
 Heroic: Maloriak
 Heroic: Atramedes
-Heroic: Chimaeron
+!Heroic: Chimaeron
 Heroic: Nefarian
 ### Firelands
 Bucket List
@@ -980,7 +979,6 @@ Is There a Medic in the Zone?
 Field Medic
 ## Fishing ....................................................................
 ### Counts
-Abyssal Gulper Eel Angler
 Blackwater Whiptail Angler
 Blind Lake Sturgeon Angler
 Fat Sleeper Angler
@@ -1003,7 +1001,7 @@ The Nightfallen
 Broken Isles Diplomat
 ## Draenor
 Savage Friends
-Arakkoa Outcasts
+!Arakkoa Outcasts
 Council of Exarchs
 Sha'tari Defense
 Steamwheedle Preservation Society
@@ -1237,8 +1235,6 @@ Lead a Legion
 ### Level
 Champions Rise
 Champions of Power
-### Quest
-Need Backup
 ## Artifacts ..................................................................
 Forged for Battle
 Improving on History
