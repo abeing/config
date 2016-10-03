@@ -8,9 +8,7 @@ Double Agent
 Got My Mind On My Money {Loot 50,000 gold}
 Got My Mind On My Money {Loot 100,000 gold}
 Got My Mind On My Money {Loot 200,000 gold)
-Got My Mind On My Draenor Money
 ### Items
-Savegely Epic
 Brokenly Epic
 ### Food
 Draenor Cuisine
@@ -35,7 +33,6 @@ Drum Circle
 Hatchling of the Talon
 Zoom!
 ### Stormheim
-Lock, Stock and Two Smoking Goblins
 Tehd & Marius' Excellent Adventure
 ### Suramar
 Why Can't I Hold All This Mana?
@@ -155,7 +152,6 @@ Ready for Raiding II
 Veteran of the Molten Front
 ## Eastern Kingdoms ...........................................................
 ### Zones
-!Arathi Highlands Quests
 Hinterlands Quests
 Western Plaguelands Quests
 Eastern Plaguelands Quests
@@ -185,7 +181,6 @@ Draenor Pathfinder
 Broken Isles Explorer
 ## Legion .....................................................................
 ### Area
-Explore Highmountain
 Explore Stormheim
 Broken Isles Pathfinder, Part One
 ### Treasures
@@ -199,7 +194,6 @@ Adventurer of Azsuna
 Adventurer of Highmountain
 Adventurer of Stormheim
 Adventurer of Suramar
-Adventurer of Val'sharah
 ### Events
 Going Up
 Higher Dimensional Learning
@@ -260,7 +254,6 @@ Medium Rare
 Bloody Rare
 # Dungeons and Raids ##########################################################
 ### Legion
-Legion Dungeon Hero
 Glory of the Legion Hero
 Glory of the Legion Raider
 ### Draenor
@@ -292,8 +285,6 @@ Earth, Wind & Fire (10 Player)
 But You Say He's Just a Friend
 Stay Salty
 Ready for Raiding V
-Heroic: Eye of Azshara
-Mythic: Eye of Azshara
 ### Halls of Valor
 Stag Party
 I Got What You Mead
@@ -308,7 +299,6 @@ Mythic: The Arcway
 Instant Karma
 Helheim Hath No Fury
 Poor Unfortunate Souls
-Heroic: Maw of Souls
 Mythic: Maw of Souls
 ### Darkheart Thicket
 Egg-cellent!
@@ -369,7 +359,6 @@ Mythic: Star Augur Etraeus
 Mythic: Grand Magistrix Elisande
 Mythic: Gul'dan
 ### The Emerald Nightmare
-Darkbough
 Tormented Guardians
 Rift of Aln
 Buggy Fight
@@ -729,16 +718,7 @@ Throne of the Four Winds
 Heroic: Conclave of Wind
 Heroic: Al'akir
 ### Blackwing Descent
-Achieve-a-tron
 Aberrant Behavior
-Keeping it in the Family
-Blackwing Descent
-Heroic: Magmaw
-Heroic: Omnotrom Defense System
-Heroic: Maloriak
-Heroic: Atramedes
-!Heroic: Chimaeron
-Heroic: Nefarian
 ### Firelands
 Bucket List
 Not an Ambi-Turner
@@ -845,19 +825,13 @@ Observed (10 player)
 Supermassive (10 player)
 ## Secrets of Ulduar (25 player) ..............................................
 ### The Siege of Ulduar (25 player)
-Take Out Those Turrets (25 player)
-Hot Pocket (25 player)
 Iron Dwarf, Medium Rare (25 player)
 Nerf Scrapbots (25 player)
 ### The Antechamber of Ulduar (25 player)
-I Choose You, Stormcaller Brundir (25 player)
 Rubble and Roll (25 player)
 ### The Keepers of Ulduar (25 player)
-Not-So-Friendly Fire (25 player)
 Lumberjacked (25 player)
-Deforestation (25 player)
 Who Needs Bloodlust? (25 player)
-Staying Buffed All Winter (25 player)
 ### Ulduar (25 player)
 Supermassive (25 player)
 ## Call of the Crusade ........................................................
@@ -973,7 +947,6 @@ Everything Tastes Better
 The Draenor Gourmet
 The Legion Menu
 ## First Aid ..................................................................
-Legion Medic
 Preparing for Disaster
 Is There a Medic in the Zone?
 Field Medic
@@ -1064,7 +1037,6 @@ That's Whack!
 Darkmoon Duelist
 Darkmoon Dominator
 ### Race
-Darkmoon Race Enthusiast
 Go-Getter
 Powermonger: Bronze
 Powermonger: Silver
@@ -1082,12 +1054,7 @@ Big Race Novice
 Big Race Jockey
 Big Race Leadfoot
 Big Race Roadhog
-Blast Off!
-Rocketeer: Bronze
-Rocketeer: Silver
 Rocketeer: Gold
-Rocket Man
-Big Rocketeer: Bronze
 Big Rocketeer: Silver
 Big Rocketeer: Gold
 Wayfarer
@@ -1330,7 +1297,6 @@ The Rarer the Better
 Treasure Mission Specialist
 Treasure Master
 ### Naval
-Seaman
 Petty Officer
 Fleet Commander
 Admiral
