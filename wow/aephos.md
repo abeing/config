@@ -178,10 +178,8 @@ E'ko Madness
 # Exploration #################################################################
 ###
 Draenor Pathfinder
-Broken Isles Explorer
 ## Legion .....................................................................
 ### Area
-Explore Stormheim
 Broken Isles Pathfinder, Part One
 ### Treasures
 Treasures of Azsuna
@@ -303,7 +301,6 @@ Mythic: Maw of Souls
 ### Darkheart Thicket
 Egg-cellent!
 Burning Down the House
-Mythic: Darkheart Thicket
 ### Court of the Stars
 Waiting for Gerdo
 Dropping Some Eaves
@@ -468,7 +465,7 @@ Mythic: Operator Thogar
 Mythic: Iron Maidens
 Mythic: Blackhand's Crucible
 ### Hellfire Citadel
-!Hellbreach
+Hellbreach
 Halls of Blood
 Bastion of Shadows
 Destructor's Rise
@@ -974,7 +971,7 @@ The Nightfallen
 Broken Isles Diplomat
 ## Draenor
 Savage Friends
-!Arakkoa Outcasts
+Arakkoa Outcasts
 Council of Exarchs
 Sha'tari Defense
 Steamwheedle Preservation Society
