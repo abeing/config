@@ -186,7 +186,6 @@ Treasures of Azsuna
 Treasures of Highmountain
 Treasures of Stormheim
 Treasures of Suramar
-Treasures of Val'sharah
 ### Encounters
 Adventurer of Azsuna
 Adventurer of Highmountain
@@ -356,7 +355,6 @@ Mythic: Star Augur Etraeus
 Mythic: Grand Magistrix Elisande
 Mythic: Gul'dan
 ### The Emerald Nightmare
-Tormented Guardians
 Rift of Aln
 Buggy Fight
 Webbing Crashers
@@ -952,7 +950,6 @@ Field Medic
 Blackwater Whiptail Angler
 Blind Lake Sturgeon Angler
 Fat Sleeper Angler
-Fire Ammonite Angler
 ### Quests
 Learning from the Best
 Fishing 'Round the Isles
@@ -1197,7 +1194,6 @@ Many Many Missions, Handle It!
 ### Recruit
 Lead a Legion
 ### Level
-Champions Rise
 Champions of Power
 ## Artifacts ..................................................................
 Forged for Battle
