@@ -1,5 +1,15 @@
-#!/bin/bash
-ln -s ~/config/screenrc ~/.screenrc
-ln -s ~/config/vimrc.local ~/.vimrc.local
-ln -s ~/config/gitconfig ~/.gitconfig
-ln -s ~/config/zshrc ~/.zshrc
+#!/bin/zsh
+function {
+  local -a configs
+  configs=("screenrc" "vimrc.local" "gitconfig" "zshrc" "nethackrc")
+
+  for config in $configs
+  do
+    if [[ ! -a ~/.$config ]] then
+      echo Linking $config
+      ln -s ~/config/$config ~/.$config
+    else
+      echo Skipping $config, already linked.
+    fi
+  done
+}
