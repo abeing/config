@@ -1,1 +1,7 @@
 OPTIONS=name:Anwyn
+
+# Dungeon display.
+OPTIONS=color,hilite_pet
+
+# Interface
+OPTIONS=pickup_types:$"?!=/
