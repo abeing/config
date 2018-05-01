@@ -1,578 +1,372 @@
 # General #####################################################################
-### Level
-Dynamic Duo
-Terrific Trio
 Quintessential Quintet
-Double Agent
-### Gold
-Got My Mind On My Money {Loot 50,000 gold}
-Got My Mind On My Money {Loot 100,000 gold}
-Got My Mind On My Money {Loot 200,000 gold)
-### Items
-Brokenly Epic
-### Food
-Draenor Cuisine
+Got My Mind On My Money
 Everything Is Awesome!
 # Quests ######################################################################
-### Daily Counts
 10000 Daily Quests Completed
-### World
-500 World Quests Completed
-1000 World Quests Completed
-2500 World Quests Completed
-5000 World Quests Completed
-10,000 World Quests Completed
-## Legion .....................................................................
-### Zones
-Good Suramaritan
-Leyline Bling
-Pillars of Creation
-Loremaster of Legion
-### Hightmountain
-Drum Circle
-Hatchling of the Talon
-Zoom!
-### Stormheim
-Tehd & Marius' Excellent Adventure
-### Suramar
-Why Can't I Hold All This Mana?
-### Events
-Harbinger
-## Draenor ....................................................................
-### Zones
-Shoot For the Moon
-### Shadowmoon Valley
-A Demidos of Reality
-It's the Stones!
-Take From Them Everything
-One of Us! One of Us!
-Would You Like a Pamphlet?
-I Was Framed!
-You Can't Make a Giant Omelette
-You Have Been Rylakinated!
-### Frostfire Rdige
-Breaker of Chains
-Delectable Ogre Delicacies
-Writing in the Snow
-That Was Entirely Unnecessary
-By Fire Be... Merged?
-Slagnarok
-Poisoning the Well
-### Gorgrond
-Ancient No More
-Burn It to the Ground
-Mean and Green
-Picky Palate
-Pillars of Draenor
-Iron Wings
-In Plain Sight
-Fight the Power
-### Shattrath
-Bobbing for Orcs
-Charged Up
-Cut off the Head
-Goodness Gracious
-Heralds of the Legion
-Poor Communication
-The Power Is Yours
-United We Stand
-### Spires of Arak
-A-VOID-ance
-Eggs in One Basket
-Fish Gotta Swim, Birds Gotta Eat
-Monster Mash
-King of the Monsters
-### Nagrand
-Broke Back Precipice
-History of Violence
-Buried Treasures
-### Garrison
-The Garrison Campaign
-Master Relic Hunter
-### Tanaan Jungle
-Draenor's Last Stand
-In Pursuit of Gul'dan
-Rumble in the Jungle
-### Khadgar
-Chapter I: Call of the Archmage
-Chapter II: Gul'dan Strikes Back
-Chapter III: The Foundry Falls
-Chapter IV: Darkness Incarnate
+## Eastern Kingdoms ...........................................................
+Burning Steppes Quests
+Eastern Plaguelands Quests
+Searing Gorge Quests
+Swamp of Sorrows Quests
+Western Plaguelands Quests
+Full Caravan
+## Kalimdor ...................................................................
+Desolace Quests
+Dustwallow Marsh Quests
+Felwood Quests
+Tanaris Quests
+Thousand Needles Quests
+Un'Goro Crater Quests
+Winterspring Quests
+E'ko Madness
+Glutton for Icy Punishment
+Glutton for Shadowy Punishment
+## Cataclysm ..................................................................
+Breaking Out of Tol Barad
+The Fiery Lords of Sethria's Roost
+Have... Have We Met?
+Ready for Raiding II
+Veteran of the Molten Front
 ## Pandaria ...................................................................
-### Klaxxi
-Stay Klaxxi
-Over Their Heads
-### The Golden Lotus
-One Many Army
-Spreading the Warmth
-Roll Club
-Collateral Damage
-One Step at a Time
-### Shado-Pan
+Champion of Chi-Ji
+Yak Attack
+Shadow Hopper
+How To Strain Your Dragon
+In a Trail of Smoke
 Proven Strength
 Getting Around with the Shado-Pan
 Loner and a Rebel
 Silent Assassin
 Know Your Role
 Defender of Gods
-### The August Celestials
-Champion of Chi-Ji
-Yak Attack
-### Order of the Cloud Serpent
-Shadow Hopper
-How To Strain Your Dragon
-In a Trail of Smoke
-### Operation: Shieldwall
+Stay Klaxxi
+Over Their Heads
+One Many Army
+Spreading the Warmth
+Roll Club
+Collateral Damage
+One Step at a Time
 Operation: Shieldwall Campaign
-### Isle of Thunder
+Pay to Slay
+Thunder Plunder
+The Crumble Bundle
+Ready for RAAAAIIIIDDDD?!?ing
+When in Ihgaluk, Do as the Skumblade Do
+The Mogu Below-gu
+Blue Response
+Platform Hero
+Speed Metal
 For the Ward!
 Boop
-Direhorn in a China Shop
-Blue Response
-It Was Worth Every Ritual Stone
 Our Powers Combined
-Pay to Slay
-Platform Hero
-Ready for RAAAAIIIIDDDD?!?ing
-Speed Metal
-The Crumble Bundle
-The Mogu Below-gu
-These Mogu Have Gotta Go-gu
-Thunder Plunder
-When in Ihgaluk, Do as the Skumblade Do
+Direhorn in a China Shop
 Zandalari Library Card
 Stormbreaker
-## Cataclysm ..................................................................
-### Daily
-Breaking Out of Tol Barad
-### The Molten Front
-The Fiery Lords of Sethria's Roost
-Have... Have We Met?
-Ready for Raiding II
-Veteran of the Molten Front
-## Eastern Kingdoms ...........................................................
-### Zones
-Hinterlands Quests
-Western Plaguelands Quests
-Eastern Plaguelands Quests
-Badlands Quests
-Searing Gorge Quests
-Burning Steppes Quests
-Swamp of Sorrows Quests
-### Events
-Full Caravan
-Ready, Set, Goat!
-## Kalimdor ...................................................................
-### Zones
-Desolace Quests
-Dustwallow Marsh Quests
-Thousand Needles Quests
-Felwood Quests
-Tanaris Quests
-Un'Goro Crater Quests
-Winterspring Quests
-### Events
-Glutton for Icy Punishment
-Glutton for Shadowy Punishment
-E'ko Madness
-# Exploration #################################################################
-###
-Draenor Pathfinder
-## Legion .....................................................................
-### Area
-Broken Isles Pathfinder, Part One
-### Treasures
-Treasures of Azsuna
-Treasures of Highmountain
-Treasures of Stormheim
-Treasures of Suramar
-### Encounters
-Adventurer of Azsuna
-Adventurer of Highmountain
-Adventurer of Stormheim
-Adventurer of Suramar
-### Events
-Going Up
-Higher Dimensional Learning
-Underbelly Tycoon
 ## Draenor ....................................................................
-### Area
-Explore Tanaan Jungle
-Field Photographer
-### Treasure
-Grand Treasure Hunter
-Jungle Treasure Hunter
-Jungle Treasure Master
-### Gorgrond
-Gorgrond Monster Hunter
-Prove Your Strength
-### Tanaan Jungle
-Hellbane
-I Came, I Clawed, I Conquered
-Jungle Hunter
-Jungle Stalker
-## Pandaria ...................................................................
-### Lore
-The Zandalari Prophecy
-Rumbles of Thunder
-Gods and Monsters
-### Events
-Glorious!
-Wanderers, Dreamers, and You
-I'm In Your Base, Killing Your Dudes
-Champions of Lei Shen
-Zul'Again
-### Treasure
-Finders Keepers
-One Man's Trash
-Is Another Man's Treasure
-Bounty of Pandaria
-Riches of Pandaria
-### Timeless Isle
-Extreme Treasure Hunter
-Eyes On The Ground
-Killing Time
-Legend of the Past
-Pilgrimage
-Rolo's Riddle
-Timeless Champion
-Timeless Legends
-Timeless Nutriment
-Treasure, Treasure Everywhere
-Where There's Pirates, There's Booty
-Zarhym Altogether
+Master Relic Hunter
+The Garrison Campaign
+Breaker of Chains
+Delectable Ogre Delicacies
+By Fire Be... Merged?
+Slagnarok
+That Was Entirely Unnecessary
+A-VOID-ance
+One of Us! One of Us!
+Would You Like a Pamphlet?
+It's the Stones!
+Take From Them Everything
+A Demidos of Reality
+I Was Framed!
+You Can't Make a Giant Omelette
+You Have Been Rylakinated!
+Poisoning the Well
+Eggs in One Basket
+Fish Gotta Swim, Birds Gotta Eat
+King of the Monsters
+Monster Mash
+History of Violence
+Broke Back Precipice
+Buried Treasures
+Cut off the Head
+Heralds of the Legion
+Bobbing for Orcs
+Charged Up
+United We Stand
+The Power Is Yours
+Poor Communication
+Goodness Gracious
+Fight the Power
+In Plain Sight
+Iron Wings
+Ancient No More
+Burn It to the Ground
+Mean and Green
+Pillars of Draenor
+Picky Palate
+In Pursuit of Gul'dan
+Rumble in the Jungle
+## Legion ......................................................................
+The Total Package
+Post Haste
+Priority Mail
+1000 World Quests Completed
+Crate Expectations
+A Magnificent Contribution
+Assume Command
+It'll Nether Happen
+# Exploration #################################################################
+## Outland ....................................................................
+Medium Rare
+## Northrend ..................................................................
+Frostbitten
 ## Cataclysm ..................................................................
 From Hell's Heart I Stab at Thee
 Stood in the Fire
-## Northrend ..................................................................
-Frostbitten
-## Outland ....................................................................
-Medium Rare
-Bloody Rare
+## Pandaria ...................................................................
+Wanderers, Dreamers, and You
+Bounty of Pandaria
+Finders Keepers
+Glorious!
+I'm In Your Base, Killing Your Dudes
+Zul'Again
+Champions of Lei Shen
+The Zandalari Prophecy
+Rumbles of Thunder
+Gods and Monsters
+Killing Time
+Timeless Champion
+Pilgrimage
+Legend of the Past
+Eyes On The Ground
+Extreme Treasure Hunter
+Where There's Pirates, There's Booty
+Treasure, Treasure Everywhere
+Rolo's Riddle
+Zarhym Altogether
+## Draenor ....................................................................
+Jungle Treasure Hunter
+Prove Your Strength
+I Came, I Clawed, I Conquered
+Hellbane
+Jungle Stalker
+## Legion .....................................................................
+Underbelly Tycoon
+Higher Dimensional Learning
+Shoot First, Loot Later
+Infused and Abused
+Treasures of Highmountain
+Treasures of Stormheim
+Treasures of Suramar
+Adventurer of Suramar
+Bringing Home the Beacon
+Naxt Victim
+Envision Invasion Eradication
+Invasion Obliteration
+Adventurer of Argus
+Paragon of Argus
+...And Chew Mana Buns
 # Dungeons and Raids ##########################################################
-### Legion
-Glory of the Legion Hero
-Glory of the Legion Raider
-### Draenor
-Draenor Dungeon Hero
-Glory of the Draenor Hero
-Glory of the Draenor Raider
-Savage Hero
-Glory of the Hellfire Raider
-### Pandaria
-Tranquil Master
-Glory of the Pandaria Hero
-Glory of the Pandaria Raider
-Glory of the Thundering Raider
-Glory of the Orgrimmar Raider
-### Cataclysm
-Cataclysm Dungeon Hero
+Glory of the Ulduar Raider
+Glory of the Icecrown Raider (10 Player)
 Defender of a Shattered World
 Glory of the Cataclysm Hero
 Glory of the Cataclysm Raider
 Glory of the Firelands Raider
 Glory of the Dragon Soul Raider
-### Wrath of the Lich King
-Glory of the Ulduar Raider (10 Player)
-Glory of the Ulduar Raider (25 Player)
-Glory of the Icecrown Raider (10 Player)
-Earth, Wind & Fire (10 Player)
-## Legion Dungeon .............................................................
-### Eye of Azshara
-But You Say He's Just a Friend
-Stay Salty
-Ready for Raiding V
-### Halls of Valor
-Stag Party
-I Got What You Mead
-Surge Protector
-Mythic: Halls of Valor
-### The Arcway
-Arcanic Cling
-Clean House
-No Time to Waste
-Mythic: The Arcway
-### Maw of Souls
-Instant Karma
-Helheim Hath No Fury
-Poor Unfortunate Souls
-Mythic: Maw of Souls
-### Darkheart Thicket
-Egg-cellent!
-Burning Down the House
-### Court of the Stars
-Waiting for Gerdo
-Dropping Some Eaves
-Mythic: Court of Stars
-### Vault of the Wardens
-A Specter, Illuminated
-I Ain't Even Cold
-Who's Afraid of the Dark?
-Mythic: Vault of the Wardens
-### Violet Hold
-I Made a Food!
-You're Just Making it WORSE!
-Mythic: Assault on Violet Hold
-### Black Rook Hold
-Black Rook Moan
-Adds? More Like Bads
-You Used to Scrawl Me In Your Fel Tome
-Mythic: Black Rook Hold
-### Neltharion's Lair
-Can't Eat Just One
-Got to Ketchum All
-Mythic: Neltharion's Lair
-### Keystone
-Broken Isles Keymaster
-Keystone Initiate
-Keystone Challenger
-Keystone Conqueror
-Keystone Master
-## Legion Raid ................................................................
-### The Nighthold
-Arcing Aqueducts
-Royal Athenaeum
-Nightspire
-Betrayer's Rise
-Cage Rematch
-Grand Opening
-Gluten Free
-A Change In Scenery
-Not For You
-Burning Bridges
-Fruit of All Evil
-Elementalry!
-Infinitesimal
-I've Got My Eyes On You
-Mythic: Skorpyron
-Mythic: Chronomatic Anomaly
-Mythic: Trilliax
-Mythic: Spellblade Aluriel
-Mythic: Tichondrius
-Mythic: Krosus
-Mythic: High Botanist Tel'arn
-Mythic: Star Augur Etraeus
-Mythic: Grand Magistrix Elisande
-Mythic: Gul'dan
-### The Emerald Nightmare
-Rift of Aln
-Buggy Fight
-Webbing Crashers
-Took the Red Eye Down
-Scare Bear
-Imagined Dragons World Tour
-Use the Force(s)
-I Attack the Darkness
-Mythic: Nythendra
-Mythic: Elerethe Renferal
-Mythic: Il'gynoth
-Mythic: Ursoc
-Mythic: Dragons of Nightmare
-Mythic: Cenarius
-Mythic: Xavius
-### World
-Unleashed Monstrosities
-## Draenor Dungeon ............................................................
-### Bloodmaul Slag Mines
-A Gift of Earth and Fire
-Come With Me If You Want to Live
-Is Draenor on Fire?
-Mythic: Bloodmaul Slag Mines
-### Auchindoun
-...They All Fall Down
-Demon's Souls
-No Tag-backs!
-Heroic: Auchindoun
-Mythic: Auchindoun
-### The Everbloom
-They Burn, Burn, Burn
-Water Management
-Weed Whacker
-Heroic: The Everbloom
-Mythic: The Everbloom
-### Shadowmoon Burial Grounds
-What's Your Sign?
-Icky Ichors
-Souls of the Lost
-Mythic: Shadowmoon Burial Grounds
-### Iron Docks
-Expert Timing
-Militaristic, Expansionist
-Take Cover!
-Mythic: Iron Docks
-### Skyreach
-Magnify... Enhance
-I Saw Solis
-Ready for Raiding IV
-Monomania
-Heroic: Skyreach
-Mythic: Skyreach
-### Grimrail Depot
-Grimrail Depot
-This Is Why We Can't Have Nice Things
-No Ticket
-Heroic: Grimrail Depot
-Mythic: Grimrail Depot
-### Upper Blackrock Spire
-Leeeeeeeeeeeeeroy...?
-Bridge Over Troubled Fire
-Magnets, How Do They Work?
-Dragonmaw? More Like Dragonfall!
-Heroic: Upper Blackrock Spire
-Mythic: Upper Blackrock Spire
-## Draenor Raid ...............................................................
-### Highmaul
-Imperator's Fall
-Flame On!
-Hurry Up, Maggot!
-A Fungus Among Us
-More Like Wrecked-us
-Pair Annihilation
-Brothers in Arms
-Lineage of Power
-Mythic: Kargath Bladefist
-Mythic: The Butcher
-Mythic: Brackenspore
-Mythic: Tectus
-Mythic: Ko'ragh
-Mythic: Twin Ogron
-Mythic: Imperator's Fall
-### Blackrock Foundry
-Slagworks
-Black Forge
-Iron Assembly
-Blackhand's Crucible
-The Iron Price
-He Shoots, He Ores
-Ya, We've Got Time...
-Stamp Stamp Revolution
-The Steel Has Been Brought
-Would You Give Me a Hand?
-Fain Would Lie Down
-There's Always a Bigger Train
-Be Quick or Be Dead
-Ashes, Ashes...
-Mythic: Gruul
-Mythic: Oregorger
-Mythic: Blast Furnace
-Mythic: Hans'gar and Franzok
-Mythic: Flamebender Ka'graz
-Mythic: Kromog
-Mythic: Beastlord Darmac
-Mythic: Operator Thogar
-Mythic: Iron Maidens
-Mythic: Blackhand's Crucible
-### Hellfire Citadel
-Hellbreach
-Halls of Blood
-Bastion of Shadows
-Destructor's Rise
-The Black Gate
-Nearly Indestructible
-Turning the Tide
-Waves Came Crashing Down All Around
-Don't Fear the Reaper
-A Race Against Slime
-Get In My Belly!
-Pro Toss
-I'm a Soul Man
-Non-Lethal Enforcer
-This Land Was Green and Good Until...
-You Gotta Keep 'em Separated
-Bad Manner(oth)
-Echoes of Doomfire
-Mythic: Hellfire Assault
-Mythic: Iron Reaver
-Mythic: Kormrok
-Mythic: Hellfire High Council
-Mythic: Kilrogg Deadeye
-Mythic: Gorefiend
-Mythic: Shadow-Lord Iskar
-Mythic: Socrethar the Eternal
-Mythic: Tyrant Velhari
-Mythic: Fel Lord Zakuun
-Mythic: Xhul'horac
-Mythic: Mannoroth
-Mythic: Archimond
-### World
-Goliaths of Gorgrond
-So Grossly Incandescent
-The Legion Will NOT Conquer All
+Tranquil Master
+Glory of the Pandaria Hero
+Glory of the Pandaria Raider
+Glory of the Thundering Raider
+Glory of the Orgrimmar Raider
+Draenor Dungeon Hero
+Savage Hero
+Glory of the Draenor Hero
+Glory of the Draenor Raider
+Glory of the Hellfire Raider
+Glory of the Legion Hero
+Glory of the Legion Raider
+Glory of the Tomb Raider
+Glory of the Argus Raider
+## Lich King Dungeon ..........................................................
+Argent Confessor
+The Faceroller
+I've Had Worse
+Soul Power
+## Lich King Raid .............................................................
+Spore Loser (10 player)
+Many Whelps! Handle It! (10 player)
+Iron Dwarf, Medium Rare
+Nerf Scrapbots
+Rubble and Roll
+Who Needs Bloodlust?
+Lumberjacked
+Supermassive
+Call of the Grand Crusade (10 player)
+Call of the Grand Crusade (25 player)
+Upper Back Pain (10 player)
+Upper Back Pain (25 player)
+Not One, But Two Jormungars (10 player)
+Three Sixty Pain Spike (10 player)
+Three Sixty Pain Spike (25 player)
+The Traitor King (10 player)
+The Traitor King (25 player)
+Earth, Wind & Fire (10 player)
+Full House (10 player)
+The Twilight Destroyer (10 player)
+## Cataclysm Dungeons .........................................................
+Heroic: Zul'Gurub
+Heroic: Zul'Aman
+Heroic: End Time
+Heroic: Well of Eternity
+Heroic: Hour of Twilight
+Crushing Bones and Cracking Skulls
+Ascendant Descending
+Old Faithful
+Prince of Tides
+Rotten to the Core
+Umbrage for Umbriss
+Don't Need to Break Eggs to Make an Omelet
+I Hate That Song
+Straw That Broke the Camel's Back
+Faster Than the Speed of Light
+Sun of a...
+Kill It With Fire!
+Headed South
+Rat Pack
+Pardon Denied
+To the Ground!
+Bullet Time
+Gurubashi Headhunter
+It's Not Easy Being Green
+Ohganot So Fast!
+Here, Kitty Kitty...
+Spirit Twister
+Tunnel Vision
+Hex Mix
+Bear-ly Made It
+Ring Out!
+Moon Guard
+Sevred Ties
+Lazy Eye
+That's Not Canon!
+Eclipse
+## Cataclysm Raid .............................................................
+The Bastion of Twilight
+Throne of the Four Winds
+Heroic: Halfus Wyrmbreaker
+Heroic: Valiona and Theralion
+Heroic: Ascendant Council
+Heroic: Cho'gall
+Heroic: Sinestra
+Heroic: Conclave of Wind
+Heroic: Al'akir
+Aberrant Behavior
+The Only Escape
+Double Dragon
+Elementary
+The Abyss Will Gaze Back Into You
+Stay Chill
+Four Play
+Firelands
+Heroic: Beth'tilac
+Heroic: Lord Rhyolith
+Heroic: Shannox
+Heroic: Alysrazor
+Heroic: Baleroc
+Heroic: Majordomo Fandral Staghelm
+Heroic: Ragnaros
+Death from Above
+Not an Ambi-Turner
+Do a Barrel Roll!
+Bucket List
+Share the Pain
+Only the Penitent...
+Ragnar-O's
+Siege of Wyrmrest Temple
+Fall of Deathwing
+Destroyer's End
+Heroic: Morchok
+Heroic: Warlord Zon'ozz
+Heroic: Yor'sahj the Unsleeping
+Heroic: Hagara the Stormbinder
+Heroic: Ultraxion
+Heroic: Warmaster Blackhorn
+Heroic: Spine of Deathwing
+Heroic: Madness of Deathwing
+Don't Stay So Close to Me
+Ping Pong Champion
+Taste the Rainbow!
+Holding Hands
+Minutes to Midnight
+Deck Defender
+Maybe He'll Get Dizzy...
+Chromatic Champion
 ## Pandaria Dungeons ..........................................................
-### Gate of the Setting Sun
-Conscriptinator
-Bomberman
-Mantid Swarm
-### Mogu'shan Palace
-Glintrok N' Roll
-Quarrelsome Quilen Quintet
-What Does This Button Do?
-### Scarlet Halls
-Humane Society
-Mosh Pit
-### Scarlet Monastery
-Burning Man
-And Stay Dead!
-### Scholomance
-Sanguinarian
-Attention to Detail
-Polyformic Acid Science
-School's Out Forever
-### Shado-Pan Monastery
-Hate Leads to Suffering
-The Obvious Solution
-Respect
-### Siege of Niuzao Temple
-Return to Sender
-Run with the Wind
-### Stormstout Brewery
+Hydrophobia
+Seeds of Doubt
+Hopocalypse Now!
 Keep Rollin' Rollin' Rollin'
 How Did He Get Up There?
-Hopocalypse Now!
-### Temple of the Jade Serpent
-Hydrophobia
-Cleaning Up
-Seeds of Doubt
+Conscriptinator
+Mantid Swarm
+Humane Society
+Mosh Pit
+Burning Man
+And Stay Dead!
+School's Out Forever
+Run with the Wind
+Polyformic Acid Science
 ## Pandaria Raid ..............................................................
-### Mogu'shan Vaults
-Must Love Dogs
-Anything You Can Do, I Can Do Better...
-Sorry, Were You Looking for This?
-Getting Hot in Here
-Show Me Your Moves!
 Heroic: Stone Guard
 Heroic: Feng the Accursed
 Heroic: Gara'jal the Spiritbinder
 Heroic: Four Kings
 Heroic: Elegon
 Heroic: Will of the Emperor
-### Heart of Fear
-Overzealous
-Candle in the Wind
-Like an Arrow to the Face
-Less Than Three
-I Heard You Like Amber
-Timing is Everything
 Heroic: Imperial Vizier Zor'lok
 Heroic: Blade Lord Ta'yak
 Heroic: Garalon
 Heroic: Wind Lord Mel'jarak
 Heroic: Amber-Shaper Un'sok
 Heroic: Grand Empres Shek'zeer
-### Terrace of the Endless Spring
-Power Overwhelming
-Who's Got Two Green thumbs?
-Face Clutchers
-The Mind-Killer
 Heroic: Protectors of the Endless
 Heroic: Tsulong
 Heroic: Lei Shi
 Heroic: Sha of Fear
-### Throne of Thunder
+Must Love Dogs
+Anything You Can Do, I Can Do Better...
+Sorry, Were You Looking for This?
+Getting Hot in Here
+Show Me Your Moves!
+Overzealous
+Candle in the Wind
+Like an Arrow to the Face
+Less Than Three
+I Heard You Like Amber...
+Timing is Everything
+Power Overwhelming
+Who's Got Two Green Thumbs?
+Face Clutchers
+The Mind-Killer
 Last Stand of the Zandalari
 Forgotten Depths
 Halls of Flesh-Shaping
-Pinnacles of Storms
+Pinnacle of Storms
+Millions of Years of Evolution vs. My Fist
+Heroic: Jin'rokh the Breaker
+Heroic: Horridon
+Heroic: Council of Elders
+Heroic: Tortos
+Heroic: Megaera
+Heroic: Ji-Kun
+Heroic: Durumu the Forgotten
+Heroic: Primordius
+Heroic: Dark Animus
+Heroic: Iron Qon
+Heroic: Twin Consorts
+Heroic: Lei Shen
+Heroic: Ra-den
 Lightening Overload
 Cretaceous Collector
 Cage Match
@@ -585,39 +379,8 @@ Ritualist Who?
 Can't Touch This
 From Dusk 'til Dawn
 A Complete Circuit
-Heroic: Jin'rokh the Breaker
-Heroic: Horridon
-Heroic: Council of Elders
-Heroic: Tortos
-Heroic: Megaera
-Heroic: Ji-Kun
-Heroic: Durumu the Forgotten
-Heroic: Primordius
-Heroic: Iron Qon
-Heroic: Twin Consorts
-Heroic: Lei Shen
-Heroic: Ra-den
-Heroic: Dark Animus
-### Siege of Orgrimmar
-Vale of Eternal Sorrows
-Gates of Retribution
-The Underhold
-Downfall
-No More Tears
-Go Long
-None Shall Pass
-Swallow Your Pride
-The Immortal Vanguard
-Fire in the Hole!
-Rescue Raiders
-Gamon Will Save Us!
-Unlimited Potential
-Criss Cross
-Giant Dinosaur vs. Mega Snail
-Lasers and Magnets and Drills! Oh My!
-Now We are the Paragon
-Strike!
 Conqueror of Orgrimmar
+Celestial Challange
 Mythic: Immerseus
 Mythic: Fallen Protectors
 Mythic: Norushen
@@ -632,745 +395,642 @@ Mythic: Thok the Bloodthirsty
 Mythic: Siegecrafter Blackfuse
 Mythic: Paragons of the Klaxxi
 Mythic: Garrosh Hellscream
-### Timeless Isle
-Celestial Challange
-### World
-Millions of Years of Evolution vs. My Fist
-## Cataclysm Dungeons .........................................................
-### Blackrock Caverns
-Crushing Bones and Cracking Skulls
-Ascendant Descending
-### Throne of the Tides
-Old Faithful
-Prince of Tides
-### The Stonecore
-Rotten to the Core
-### The Vortex Pinnacle
-Extra Credit Bonus Stage
-No Static at All
-Heroic: The Vortex Pinnacle
-### Grim Batol
-Umbrage for Umbriss
-Don't Need to Break Eggs to Make an Omelet
-### Halls of Origination
-I Hate That Song
-Straw That Broke the Camel's Back
-Faster Than the Speed of Light
-Sun of a...
-### Lost City of the Tol'vir
-Kill It With Fire!
-Acrocalypse Now
-Headed South
-Heroic: Lost City of the Tol'vir
-### Deadmines
-Rat Pack
-It's Frost Damage
-Vigorous VanCleef Vindicator
-### Hour of Twilight
-Eclipse
-Heroic: Hour of Twilight
-### Shadowfang Keep
-Pardon Denied
-To the Ground!
-Bullet Time
-### Zul'Aman
-Hex Mix
-Tunnel Vision
-Bear-ly Made It
-Ring Out!
-Heroic: Zul'Aman
-### Zul'Gurub
-Gurubashi Headhunter
-It's Not Easy Being Green
-Ohganot So Fast!
-Here, Kitty Kitty...
-Spirit Twister
-Heroic: Zul'Gurub
-### End Time
-Sevred Ties
-Moon Guard
-Heroic: End Time
-### Well of Eternity
-Lazy Eye
-That's Not Canon!
-Heroic: Well of Eternity
-## Cataclysm Raid .............................................................
-### The Bastion of Twilight
-The Only Escape
-Double Dragon
-Elementary
-The Abyss Will Gaze Back Into You
-The Bastion of Twilight
-Heroic: Halfus Wyrmbreaker
-Heroic: Valiona and Theralion
-Heroic: Ascendant Council
-Heroic: Cho'gall
-Heroic: Sinestra
-### Throne of Four Winds
-Stay Chill
-Four Play
-Throne of the Four Winds
-Heroic: Conclave of Wind
-Heroic: Al'akir
-### Blackwing Descent
-Aberrant Behavior
-### Firelands
-Bucket List
-Not an Ambi-Turner
-Death from Above
-Do a Barrel Roll!
-Share the Pain
-Only the Penitent...
-Ragnar-O's
-Firelands
-Heroic: Shannox
-Heroic: Lord Rhyolith
-Heroic: Beth'tilac
-Heroic: Alysrazor
-Heroic: Baleroc
-Heroic: Majordomo Fandral Staghelm
-Heroic: Ragnaros
-### Dragonsoul
-Siege of Wyrmrest Temple
-Fall of Deathwing
-Don't Stay So Close to Me
-Ping Pong Champion
-Taste the Rainbow!
-Holding Hands
-Minutes to Midnight
-Deck Defender
-Maybe He'll Get Dizzy...
-Destroyer's End
-Chromatic Champion
-Heroic: Morchok
-Heroic: Warlord Zon'ozz
-Heroic: Yor'sahj the Unsleeping
-Heroic: Hagara the Stormbinder
-Heroic: Ultraxion
-Heroic: Warmaster Blackhorn
-Heroic: Spine of Deathwing
-Heroic: Madness of Deathwing
-## Lich King Dungeon ..........................................................
-### Trial of the Champion
-Argent Confessor
-The Faceroller
-I've Had Worse
-### Forge of Souls
-Soul Power
-## Lich King Raid .............................................................
-### Naxxramas (10 player)
-Spore Loser (10 player)
-## Secrets of Ulduar (10 player) ..............................................
-### The Siege of Ulduar (10 player)
-Take Out Those Turrets (10 player)
-Dwarfageddon (10 player)
-Orbital Bombardment (10 player)
-Orbital Devestation (10 player)
-Nuked from Orbit (10 player)
-Orbit-uary (10 player)
-Stokin' the Furnace (10 player)
-Iron Dwarf, Medium Rare (10 player)
-Nerf Scrapbots (10 player)
-Must Deconstruct Faster (10 player)
-### The Antechamber of Ulduar (10 player)
-I Choose You, Runemaster Molgeim (10 player)
-I Choose You, Steelbreaker (10 player)
-But I'm On Your Side (10 player)
-Can't Do That While Stunned (10 player)
-Disarmed (10 player)
-If Looks Could Kill (10 player)
-With Open Arms (10 player)
-Rubble and Roll (10 player)
-Nine Lives (10 player)
-Crazy Cat Lady (10 player)
-### The Keepers of Ulduar (10 player)
-Set Up Us the Bomb (10 player)
-Firefighter (10 player)
-Not-So-Friendly Fire (10 player)
-Lumberjacked (10 player)
-Con-speed-atory (10 player)
-Getting Back to Nature (10 player)
-Deforestation (10 player)
-Knock on Wood (10 player)
-Knock, Knock on Wood (10 player)
-Knock, Knock, Knock on Wood (10 player)
-Don't Stand in the Lightening (10 player)
-Who Needs Bloodlust? (10 player)
-Siffed (10 player)
-Lose Your Illusion (10 player)
-Cheese the Freeze (10 player)
-Getting Cold in Here (10 player)
-I Could Say That This Cache Was Rare (10 player)
-### The Descent into Madness (10 player)
-Shadowdodger (10 player)
-I Love the Smell of Saronite in the Morning (10 player)
-Drive Me Crazy (10 player)
-Kiss and Make Up (10 player)
-He's Now Getting Any Older (10 player)
-They're Coming Out of the Walls (10 player)
-In His House He Waits Dreaming (10 player)
-Three Lights in the Darkness (10 player)
-Two Lights in the Darkness (10 player)
-One Light in the Darkness (10 player)
-Alone in the Darkness (10 player)
-The Descent into Madness (10 player)
-### Ulduar (10 player)
-The Secrets of Ulduar (10 player)
-Observed (10 player)
-Supermassive (10 player)
-## Secrets of Ulduar (25 player) ..............................................
-### The Siege of Ulduar (25 player)
-Iron Dwarf, Medium Rare (25 player)
-Nerf Scrapbots (25 player)
-### The Antechamber of Ulduar (25 player)
-Rubble and Roll (25 player)
-### The Keepers of Ulduar (25 player)
-Lumberjacked (25 player)
-Who Needs Bloodlust? (25 player)
-### Ulduar (25 player)
-Supermassive (25 player)
-## Call of the Crusade ........................................................
-### Trial of the Crusader (10 player)
-Not One, But Two Jormungars (10 player)
-Upper Back Pain (10 player)
-Three Sixty Pain Spike (10 player)
-Resilience Will Fix It (10 player)
-The Traitor King (10 player)
-Call of the Grand Crusade (10 player)
-### Trial of the Crusader (25 player)
-Upper Back Pain (25 player)
-Three Sixty Pain Spike (25 player)
-The Traitor King (25 player)
-Call of the Grand Crusade (25 player)
-### Onyxia's Lair (10 player)
-Many Whelps! Handle It! (10 player)
-### Onyxia's Lair (25 player)
-Many Whelps! Handle It! (25 player)
-## Fall of the Lich King ......................................................
-### Icecrown Citadel (Normal) (10 player)
-Full House (10 player)
-Bean Waiting a Long Time for This (10 player)
-### The Ruby Sanctum (10 player)
-The Twilight Destroyer (10 player)
-Heroic: The Twilight Destroyer (10 player)
-## Professions ################################################################
-Professional Legion Master
-Heroic Skills to Pay the Bills
+No More Tears
+Go Long
+Fire in the Hole!
+Rescue Raiders
+Gamon Will Save Us!
+Unlimited Potential
+Criss Cross
+Giant Dinosaur vs. Mega Snail
+Now We are the Paragon
+Strike!
+## Draenor Dungeon ............................................................
+Mythic: Bloodmaul Slag Mines
+Heroic: Auchindoun
+Heroic: Skyreach
+Grimrail Depot
+Heroic: The Everbloom
+Mythic: Shadowmoon Burial Grounds
+Heroic: Upper Blackrock Spire
+A Gift of Earth and Fire
+Come With Me If You Want to Live
+Militaristic, Expansionist
+Expert Timing
+Take Cover!
+...They All Fall Down
+Demon's Souls
+No Tag-backs!
+Ready for Raiding IV
+Magnify... Enhance
+I Saw Solis
+Monomania
+This Is Why We Can't Have Nice Things
+No Ticket
+Water Management
+They Burn, Burn, Burn
+Weed Whacker
+What's Your Sign?
+Icky Ichors
+Souls of the Lost
+Magnets, How Do They Work?
+Leeeeeeeeeeeeeroy...?
+Bridge Over Troubled Fire
+Dragonmaw? More Like Dragonfall!
+## Draenor Raid ...............................................................
+Goliaths of Gorgrond
+Imperator's Fall
+Mythic: Kargath Bladefist
+Mythic: The Butcher
+Mythic: Tectus
+Mythic: Brackenspore
+Mythic: Twin Ogron
+Mythic: Ko'ragh
+Mythic: Imperator's Fall
+Flame On!
+Hurry Up, Maggot!
+More Like Wrecked-us
+A Fungus Among Us
+Brothers in Arms
+Pair Annihilation
+Lineage of Power
+So Grossly Incandescent
+Black Forge
+Iron Assembly
+Blackhand's Crucible
+Mythic: Gruul
+Mythic: Oregorger
+Mythic: Hans'gar and Franzok
+Mythic: Beastlord Darmac
+Mythic: Flamebender Ka'graz
+Mythic: Operator Thogar
+Mythic: Blast Furnace
+Mythic: Kromog
+Mythic: Iron Maidens
+Mythic: Blackhand's Crucible
+The Iron Price
+He Shoots, He Ores
+Stamp Stamp Revolution
+Fain Would Lie Down
+The Steel Has Been Brought
+There's Always a Bigger Train
+Ya, We've Got Time...
+Would You Give Me a Hand?
+Be Quick or Be Dead
+Ashes, Ashes...
+Hellbreach
+Halls of Blood
+Bastion of Shadows
+Destructor's Rise
+Mythic: Hellfire Assault
+Mythic: Iron Reaver
+Mythic: Kormrok
+Mythic: Hellfire High Council
+Mythic: Kilrogg Deadeye
+Mythic: Gorefiend
+Mythic: Shadow-Lord Iskar
+Mythic: Fel Lord Zakuun
+Mythic: Xhul'horac
+Mythic: Socrethar the Eternal
+Mythic: Tyrant Velhari
+Mythic: Mannoroth
+Mythic: Archimonde
+Nearly Indestructible
+Turning the Tide
+Waves Came Crashing Down All Around
+Don't Fear the Reaper
+A Race Against Slime
+Get In My Belly!
+Pro Toss
+I'm a Soul Man
+This Land Was Green and Good Until...
+You Gotta Keep 'em Separated
+Non-Lethal Enforcer
+Bad Manner(oth)
+Echoes of Doomfire
+# Legion Dungeon .............................................................
+Mythic: Maw of Souls
+Mythic: Court of Stars
+Mythic: Return to Karazhan
+Cathedral of Eternal Night
+Heroic: Seat of the Triumvirate
+Keystone Initiate
+Broken Isles Keymaster
+But You Say He's Just a Friend
+Stay Salty
+Egg-cellent!
+Burning Down the House
+Got to Ketchum All
+Can't Eat Just One
+Stag Party
+I Got What You Mead
+Surge Protector
+I Made a Food!
+You're Just Making it WORSE!
+I Ain't Even Cold
+Who's Afraid of the Dark?
+A Specter, Illuminated
+You Used to Scrawl Me In Your Fel Tome
+Black Rook Moan
+Adds? More Like Bads
+Instant Karma
+Helheim Hath No Fury
+Poor Unfortunate Souls
+No Time to Waste
+Clean House
+Arcanic Cling
+Waiting for Gerdo
+Dropping Some Eaves
+Burn After Reading
+Season Tickets
+Dine and Bash
+Scared Straight
+The Rat Pack
+One Night in Karazhan
+Boom Bloom
+A Steamy Romance Saga
+Master of Shadows
+Welcome to the Void
+Let it All Out
+Darker Side
+## Legion Raid ................................................................
+Terrors of the Shore
+Mythic: Nythendra
+Mythic: Elerethe Renferal
+Mythic: Il'gynoth
+Mythic: Ursoc
+Mythic: Dragons of Nightmare
+Mythic: Cenarius
+Mythic: Xavius
+Buggy Fight
+Webbing Crashers
+Scare Bear
+Took the Red Eye Down
+Imagined Dragons World Tour
+Use the Force(s)
+I Attack the Darkness
+Heroic: Trial of Valor
+Mythic: Odyn
+Mythic: Guarm
+Mythic: Helya
+You Runed Everything!
+Boneafide Tri Tip
+Patient Zero
+The Chosen
+Arcing Aqueducts
+Royal Athenaeum
+Nightspire
+Mythic: Skorpyron
+Mythic: Chronomatic Anomaly
+Mythic: Trilliax
+Mythic: Spellblade Aluriel
+Mythic: Star Augur Etraeus
+Mythic: High Botanist Tel'arn
+Mythic: Tichondrius
+Mythic: Krosus
+Mythic: Grand Magistrix Elisande
+Mythic: Gul'dan
+Cage Rematch
+Grand Opening
+Gluten Free
+A Change In Scenery
+Elementalry!
+Fruit of All Evil
+Not For You
+Burning Bridges
+Infinitesimal
+I've Got My Eyes On You
+Mythic: Goroth
+Mythic: Demonic Inquisition
+Mythic: Harjatan
+Mythic: Mistress Sassz'ine
+Mythic: Sisters of the Moon
+Mythic: The Desolate Host
+Mythic: Maiden of Vigilance
+Mythic: Fallen Avatar
+Mythic: Kil'jaeden
+Fel Turkey!
+Grin and Bear It
+Grand Fin-ale
+Five Course Seafood Buffet
+Wax On, Wax Off
+Great Soul, Great Purpose
+Sky Walker
+Bingo!
+Dark Souls
+Forbidden Descent
+Hope's End
+Seat of the Pantheon
+Mythic: Garothi Worldbreaker
+Mythic: Hounds of Sargeras
+Mythic: Antoran High Command
+Mythic: Portal Keeper Hasabel
+Mythic: Eonar
+Mythic: Imonar the Soulhunter
+Mythic: Kin'garoth
+Mythic: Varimathras
+Mythic: The Coven of Shivarra
+Mythic: Aggramar
+Mythic: Argus the Unmaker
+Worm-monger
+Hounds Good To Me
+This is the War Room!
+Portal Combat
+Spheres of Influence
+Hard to Kill
+The World Revolves Around Me
+Together We Stand
+Remember the Titans
+Don't Sweat the Technique
+Stardust Crusaders
+# Professions ################################################################
 Working the Isles
 Master of All
-Grand Master of All
-Legion Master of All
-Resourceful
-### Minigame
+Inspector Gadgetzan
 Hot Swapper
 The Shortest Distance
-### Other
-Inspector Gadgetzan
-Mass Obliteration
+## Cooking ....................................................................
+Everything Tastes Better
+## Fishing ....................................................................
+Learning from the Best
+Fishing 'Round the Isles
+The Wish Remover
+Fisherfriend of the Isles
+## First Aid ..................................................................
+Preparing for Disaster
+Is There a Medic in the Zone?
 ## Archaeology ................................................................
-### Counts
-The Search For Fact, Not Truth
-Getting Your Hands Dirty
-No Stone Unturned
-Sifting Through the Sand
-### Lore
+Strength and Honor
 Ogre Observer
 Secrets of Skettis
-Strength and Honor
-This Side Up
-A Keen Eye
-Handle With Care
-The Dwarven Dream
-### Pristine
+Collector: Pandaren Tea Sets
+Collector: Pandaren Game Boards
+Collector: Twin Stein Sets of Brewfather Quan Tou Kuo
+Collector: Walking Canes of Brewfather Ren Yun
+Collector: Empty Kegs of Brewfather Xin Wo Yin
+Collector: Carved Bronze Mirrors
+Collector: Gold-Inlaid Porcelain Funerary Figurines
+Collector: Apothecary Tins
+Collector: Pearls of Yu'lon
+Collector: Standards of Niuzao
+Collector: Manacles of Rebellion
+Collector: Cracked Mogu Runestones
+Collector: Tarracotta Arms
+Collector: Petrified Bone Whips
+Collector: Thunder King Insignias
+Collector: Edicts of the Thunder King
+Collector: Iron Amulets
+Collector: Warlord's Branding Irons
+Collector: Mogu Coins
+Collector: Worn Monument Ledgers
+Collector: Banners of the Mantid Empire
+Collector: Ancient Sap Feeders
+Collector: Praying Mantids
+Collector: Inert Sound Beacons
+Collector: Remains of Paragons
+Collector: Mantid Lamps
+Collector: Pollen Collectors
+Collector: Kypari Sap Containers
 The Seat of Knowledge
 History of the Mantid
 Unite the Clans
 Highmaul Historian
 Arakkoa Archivist
 Draenor Curator
+This Side Up
 Legion Curator
-### Collector: Pandaren
-Collector: Apothecary Tins
-Collector: Carved Bronze Mirrors
-Collector: Empty Kegs of Brewfather Xin Wo Yin
-Collector: Gold-Inlaid Porcelain Funerary Figurines
-Collector: Pandaren Game Boards {5}
-Collector: Pandaren Game Boards {20}
-Collector: Pandaren Tea Sets
-Collector: Pearls of Yu'lon {5}
-Collector: Pearls of Yu'lon {20}
-Collector: Standards of Niuzao
-Collector: Twin Stein Sets of Brewfather Quan Tou Kuo
-Collector: Walking Canes of Brewfather Ren Yun
-### Collector: Mogu
-Collector: Cracked Mogu Runestones {5}
-Collector: Cracked Mogu Runestones {20}
-Collector: Edicts of the Thunder King
-Collector: Iron Amulets
-Collector: Manacles of Rebellion
-Collector: Mogu Coins
-Collector: Petrified Bone Whips {5}
-Collector: Petrified Bone Whips {20}
-Collector: Tarracotta Arms
-Collector: Thunder King Insignias {5}
-Collector: Thunder King Insignias {20}
-Collector: Warlord's Branding Irons
-Collector: Worn Monument Ledgers
-### Collector: Mantid
-Collector: Ancient Sap Feeders {5}
-Collector: Ancient Sap Feeders {20}
-Collector: Banners of the Mantid Empire {5}
-Collector: Banners of the Mantid Empire {20}
-Collector: Inert Sound Beacons {5}
-Collector: Inert Sound Beacons {20}
-Collector: Kypari Sap Containers {5}
-Collector: Kypari Sap Containers {20}
-Collector: Mantid Lamps {5}
-Collector: Mantid Lamps {20}
-Collector: Pollen Collectors {5}
-Collector: Pollen Collectors {20}
-Collector: Praying Mantids {5}
-Collector: Praying Mantids {20}
-Collector: Remains of Paragons {5}
-Collector: Remains of Paragons {20}
-## Cooking ....................................................................
-### Skill
-Legion Cook
-### Quests
-Everything Tastes Better
-### Gourmet
-The Draenor Gourmet
-The Legion Menu
-## First Aid ..................................................................
-Preparing for Disaster
-Is There a Medic in the Zone?
-Field Medic
-## Fishing ....................................................................
-### Counts
-Blackwater Whiptail Angler
-Blind Lake Sturgeon Angler
-Fat Sleeper Angler
-### Quests
-Learning from the Best
-Fishing 'Round the Isles
-### Pools
-Draenor Angler
-### Coins
-The Wish Remover
+The Dwarven Dream
+Sifting Through the Sand
 # Reputation ##################################################################
-### Counts
-55 Exalted Reputations
 60 Exalted Reputations
-70 Exalted Reputations
-## Legion
-Friends in a Broken Land
-The Nightfallen
-Broken Isles Diplomat
-## Draenor
-Savage Friends
-Arakkoa Outcasts
-Council of Exarchs
-Sha'tari Defense
-Steamwheedle Preservation Society
-Wrynn's Vanguard
-Mantle of the Talon King
-Tanaan Diplomat
-## Pandaria
-Shado-Pan
-The August Celestials
-Pandaren Ambassador
-The Shado-Master
-Kirin Tor Offensive
-Operation: Shieldwall
-Shado-Pan Assault
-Emperor Shaohao
-## Cataclysm
-Ramkahen
-Wildhammer Clan
-Baradin's Wardens
-Avengers of Hyjal
-## The Burning Crusade
+## The Burning Crusade ........................................................
 Skyshattered
 The Scale of the Sands
 Sworn to the Deathsworn
+## Cataclysm ..................................................................
+Wildhammer Clan
+Ramkahen
+Baradin's Wardens
+Avengers of Hyjal
+## Pandaria ...................................................................
+Shado-Pan
+The Shado-Master
+The August Celestials
+Operation: Shieldwall
+Kirin Tor Offensive
+Shado-Pan Assault
+Emperor Shaohao
+Pandaren Ambassador
+## Draenor ....................................................................
+Arakkoa Outcasts
+Mantle of the Talon King
+Steamwheedle Preservation Society
+Wrynn's Vanguard
+Sha'tari Defense
+## Legion .....................................................................
+Paragon of the Broken Isles
+Chromie Homie
+Protector of the Argussian Reach
+Officer of the Light
 # World Events ################################################################
-Calavera
-To The Afterlife
 Vientos!
 ## Love Is In The Air .........................................................
-Beacon of Love
 It Might Just Save Your Life
 Love Magnet
-They Realy Love Me!
 ## Midsummer ..................................................................
-### Desecrate
-Extinguishing Northrend
-Extinguishing the Cataclysm
-Extinguishing Pandaria
-### Honor
-Flame Warden of Northrend
 Flame Warden of Cataclysm
+Flame Warden of Northrend
 Flame Warden of Pandaria
-## Hallow's End ...............................................................
-A Frightening Friend
+Flame Warden of Draenor
+Flame Warden of the Broken Isles
+Extinguishing the Cataclysm
+Extinguishing Northrend
+Extinguishing Pandaria
+Extinguishing Draenor
+Extinguishing the Broken Isles
 ## Winter Veil ................................................................
 The Danger Zone
 Iron Armada
 ## Argent Tournament ..........................................................
-### Other
 The Sword in the Skull
 ## Darkmoon Faire .............................................................
+Darkmoon Duelist
 Darkmoon Defender
 Darkmoon Despoiler
 That Rabbit's Dynamite!
-Brood of Alysrazor
-Darkmoon Like the Wind
 Ace Tonk Commander
 Truimphant Turtle Tosing
 That's Whack!
-Darkmoon Duelist
-Darkmoon Dominator
-### Race
-Go-Getter
-Powermonger: Bronze
-Powermonger: Silver
-Powermonger: Gold
-Goal-Oriented
-Big Powermonger: Bronze
-Big Powermonger: Silver
-Big Powermonger: Gold
 Darkmoon Racer Novice
-Darkmoon Racer Jockey
-Darkmoon Racer Leadfoot
-Darkmoon Racer Roadhog
-Big Race Enthusiast
-Big Race Novice
-Big Race Jockey
-Big Race Leadfoot
-Big Race Roadhog
 Rocketeer: Gold
-Big Rocketeer: Silver
-Big Rocketeer: Gold
-Wayfarer
-Wanderluster: Bronze
 Wanderluster: Silver
-Wanderluster: Gold
-Vagabond
+Powermonger: Silver
+Big Race Novice
+Big Rocketeer: Silver
 Big Wanderluster: Bronze
-Big Wanderluster: Bronze
-Big Wanderluster: Bronze
+Goal-Orieted
+Hey, You're a Rockstar!
+iTaking this Show on the Road
+Perfect Performance
+Mosh Pit
+## Brawler's Guide ............................................................
+The First Rule of Brawler's Guild
+You Are Not The Contents Of Your Wallet
+Educated Guesser
+I Am Thrall's Complete Lack Of Surprise
+Rumble Club
 # Pet Battles #################################################################
-### Quets
-I Choose You
-Pandaren Spirit Tamer
-Fabled Pandaren Tamer
-### Taming
+Ultimate Tamer
 Taming the World
 Taming Northrend
 Taming Cataclysm
 Taming Pandaria
-Taming Azeroth
 Taming Draenor
-### Points
-Ultimate Tamer
-Time to Open a Pet Store
-## Collect ....................................................................
-### Count
-Zen Pet Hunter
-Quality & Quantity
+Taming Azeroth
+Pandaren Spirit Tamer
+Fabled Pandaren Tamer
+Pet Battle Challenge: Wailing Caverns
+Pet Battle Challenge: Deadmines
+I Choose You
 Pet Charmer
+The Longest Day
+## Collect ....................................................................
 That's a Lot of Pet Food
-So. Many. Pets.
-### Zones
-Kalimdor Tamer
-Kalimdor Safari
-Eastern Kingdoms Safari
+Quality & Quantity
+Family Reunion
 Eastern Kingdoms Tamer
+Kalimdor Tamer
 Outland Tamer
-Outland Safari
 Northrend Tamer
-Northrend Safari
 Pandaria Tamer
+Continental Tamer
+Eastern Kingdoms Safari
+Kalimdor Safari
+Outland Safari
+Northrend Safari
 Pandaria Safari
 Draenor Safari
-Continental Tamer
-World Safari
 Broken Isles Safari
-### Other
-Family Reunion
+World Safari
+Celestial Family
+Crazy for Cats
 Raiding with Leashes
 Raiding with Leashes II: Attunement Edition
 Raiding with Leashes III: Drinkin' From the Sunwell
-Celestial Family
-Crazy for Cats
+Raiding with Leashes IV: Wrath of the Lick King
+Raiding with Leashes V: Cuteaclysm
 ## Battle .....................................................................
-### Count
 Grand Master Pet Battler
-Legendary Pet Battler
 Draenic Pet Battler
-Battle on the Broken Isles
-### PVP
 Pet Brawler
-Experienced Pet Brawler
-Master Pet Brawler
-Grand Master Pet Brawler
-Legendary Pet Brawler
-No Time To Heal
-Merciless Pet Brawler
-Veneful Pet Brawler
-Brutal Pet Brawler
-Deadly Pet Brawler
-### Zones
+The Celestial Tournament
 Big City Pet Brawlin' - Alliance
 Big City Pet Brawlin' - Horde
 Big City Pet Brawler
+Merciless Pet Brawler
+Mechanical Brawler
+Aquatic Brawler
+Beast Brawler
+Elemental Brawler
+Magic Brawler
+Critter Brawler
+Undead Brawler
+Flying Brawler
+Dragonkin Brawler
+Humanoid Brawler
+Family Brawler
 World Pet Mauler
+No Time To Heal
 Master of the Masters
+An Awfully Big Adventurer
 Tiny Terrors in Tanaan
-### Species
+Battle on the Broken Isles
 Aquatic Acquiescence
 Best of the Beasts
-Dragons!
-Flock Together
-Master of Magic
 Mousing Around
-Murlocs, Harpies, and Wolvar, Oh My!
+Dragons!
 Ragnaros, Watch and Learn
+Flock Together
+Murlocs, Harpies, and Wolvar, Oh My!
+Master of Magic
 Roboteer
 The Lil' Necromancer
 Family Familiar
-### Other
-The Longest Day
-The Celestial Tournament
-An Awfully Big Adventurer
+Anomalous Animals of Argus
+Aquatic Assault
+Beast Blitz
+Critical Critters
+Draconic Destruction
+Elemental Escalation
+Fierce Fliers
+Humanoid Havoc
+Magical Mayhem
+Mechanical Melee
+Unstoppable Undead
+Family Fighter
 ## Level ......................................................................
-### Raise
-Overstuffed
-### Count
-Rookie Pet Group
 Rookie Pet Crew
-Rookie Pet Mob
 Pro Pet Group
-Pro Pet Crew
-Pro Pet Mob
 No Favorites
-All Pets Allowed
+Overstuffed
 # Collections #################################################################
-### Items
 Going To Need A Bigger Bag
 What A Strange, Interdimensional Trip It's Been
 I Found Pepe!
 The Tangerine Traveler
-### Mounts
+## Toy Box ....................................................................
+Crashin' Thrashin' Commander
+## Mounts .....................................................................
 Get to the Choppa!
-One Hump or Two?
 Vial of the Sands
 Grand Expedition Yak
-Awake the Drakes
-### Mount Count
+One Hump or Two?
 We're Going to Need More Saddles
-Mount Parade
-Mountacular
-Lord of the Reins
-### Toy Box
-The Toymaster
-Crashin' Thrashin' Commander
-Remember to Share
-### Heirlooms
-Heirloom Hoarder
-## Appearances
-Fashionista: Shirt
-Fabulous
+Awake the Drakes
+## Appearances ................................................................
+Dress in Lairs
+Accessor-Eyes
+Outlandish Style
+Merely a Set
+Black is the New Black
+Suns Out, Thori'dals Out
+Undying Aesthetic
+Mogg-Saron
+Style of the Crusader
+Winter Catalog
+Glamour of Twilight
+Hot Couture
+Wardrobe of the Old Gods
+Sha of Fabulous
+Thunderwear
+Yaass'shaarj
+Make it W-orc W-orc
+Extreme Makeover: Fel Edition
+That's So Last Millennium
+Retro Trend
+Argussy Up
+The Original
+No Mercy
+With a Vengeance
+Tough Threads
+Lethal Looks
+The Fierce and the Furious
+Relentlessly Good Looking
+Wrath of the Stitch King
+Viciously Vintage
+(Ruth)less is More
+Cataclysmic Catwalk
+Why Male(volent) Models?
+Dressed to Oppress
+It's Not Fashion Unless It Hurts
+Wear It With Pride
+Untamed Beauty
+Wild Style
+War-Mog-ering
+More Like Win-dictive
+Cruel Intentions
+Claws Out
+Azeroth's Next Top Model
 # Class Hall ##################################################################
-### Campaign
 A Heroic Campaign
-An Epic Campaign
-### Other
-Legendary Research
-A Classy Outfit
-## Missions ...................................................................
-### Count
-Many Many Missions, Handle It!
-### Recruit
-Lead a Legion
-### Level
-Champions of Power
 ## Artifacts ..................................................................
-Forged for Battle
+Crucible's Promise
 Improving on History
 The Prestige
 Fighting with Style: Upgraded
 Fighting with Style: Valorous
 Fighting with Style: War-torn
-Artifact or Artifiction
-Power Realized
+Fighting with Style: Hidden
+Power Unleashed
+A Challenging Look
+Fighting with Style: Challenging
+## Missions ...................................................................
+Many Many Missions, Handle It!
 # Draenor Garrison ############################################################
-### Jukebox
+Don't Call Me Junior
 Ten Hit Tunes
-Azeroth's Top Twenty Tunes
-Full Discography
 ## Buildings ..................................................................
-### Buildings
-Master Builder
-Garison Architect
-### Count
-Grand Master Draftsman
-### Barn
-The Trap Game
 Master Trapper
-Trapper's Delight
-Trap Superstar
-### Inn
-Stay Awhile and Listen
-### Gladiator's Sanctum
-Fight, Kill, Salute!
 The Bone Collector
+Finding Your Waystones
+Wingmen
+Intro to Husbandry
+Advanced Husbandry
+The Stable Master
+Terrific Technology
+Stay Awhile and Listen
+Nemesis: Slayer of Sin'dorei
 Nemesis: Death Stalker
-Nemesis: Huojin's Fall
 Nemesis: Killer of Kezan
 Nemesis: Orcslayer
-Nemesis: Slayer of Sin'dorei
+Nemesis: Huojin's Fall
 Nemesis: The Butcher
 Nemesis: Troll Hunter
+Fight, Kill, Salute!
 Warlord of Draenor
-### Barracks
-Wingman
-Wingmen
-### Mage Tower
-Finding Your Waystones
-### Stables
-Intro to Husbandry
-Master of Mounts
-The Stable Master
-Advanced Husbandry
-### Workshop
-Terrific Technology
-### Shipyard
-Naval Armada
-Ironsides
-Naval Mechanics
 ## Followers ..................................................................
-### Recruit
 Commander
-Don't Call Me Junior
-### Item Level
-Item Level Army
 Item Level Force
 ## Invasions ..................................................................
-### Invasions
-Bronze Defender
-Silver Defender
-Golden Defender
-Platinum Defender
-Master Defender
-Impervious Defender
+Invasion Specialist
 Invasions Are Better with Friends
+Iron Horde Invasion
+Shadowmoon Clan Invasion
+Shadow Council Invasion
+Ogre Invasion
+Goren Invasion
+Botani Invasion
+Bronze Defender
+Master Defender
 Save Those Buildings!
 Master and Commander
-### Count
-Invasion Specialist
-Invasion? What Invasion?
-### Type
-Botani Invasion
-Goren Invasion
-Iron Horde Invasion
-Ogre Invasion
-Shadow Council Invasion
-Shadowmoon Clan Invasion
 ## Missions ...................................................................
-### Missions
-Missions Specialist
-Exploration Mission Master
-Master of the Seas
-### Count
 On a Metric Ton of Missions
-### Rare
 The Rarer the Better
-### Treasure
 Treasure Mission Specialist
-Treasure Master
-### Naval
-Petty Officer
-Fleet Commander
-Admiral
-Naval Bonus Specialist
-Naval Bonus Expert
-Naval Combat Specialist
-Naval Combat Expert
-Naval Siege Specialist
-Naval Siege Expert
-Naval Training Expert
-Naval Treasure Specialist
-Naval Treasure Expert
-Charting a Course
-Exploring the High Seas
+Mission Specialist
+Exploration Mission Master
 ## Monuments ..................................................................
-Defender of Draenor
-Draenor Pet Brawler
 Master Draenor Crafter
-Master of Apexis
+Defender of Draenor
 Mythic Draenor Raider
+Draenor Pet Brawler
+## Shipyard ...................................................................
+Fleet Commander
+Naval Combat Specialist
+Naval Treasure Expert
+Naval Siege Expert
+Naval Bonus Specialist
+Master of the Seas
+Ironsides
+Naval Mechanics
+Charting a Course
 # Scenarios ###################################################################
-### Scenarios
+## Mists of Pandaria ..........................................................
 Pub Crawl
-Scenaturday
-Queuing Spree
-### Brewmoon Festival
-Binan Village All-Star
-### Ungo Ingoo
-The Keg Runner
-Monkey See, Monkey Kill
-### Arena of Annihilation
-In the Eye of the Tiger
-### Crypt of Forgotten Kings
-Fancy Footwork
-Fight Anger with Anger
-Heroic: Crypt of the Forgotten Kings
-### Dagger in the Dark
-You Mean That Wasn't a Void Zone?
-No Egg Left Behind
-### A Little Patience
 Bubbletrapped!
 Cannonballer
 We've Been Dancin'
-### Assault on Zan'vess
+In the Eye of the Tiger
 For the Swarm
-### Theramore's Fall
-No Thank You
-### Lion's Landing
+Binan Village All-Star
+Heroic: Crypt of the Forgotten Kings
+Fancy Footwork
+Fight Anger with Anger
+No Egg Left Behind
+You Mean That Wasn't a Void Zone?
 Waste Not, Want Not
-### Dark Heart of Pandaria
-Accelerated Archaeology
-Heroic: Dark Heart of Pandaria
-### Blood in the Slow
-Heed the Weed
-### Secrets of Ragefire
-Heroic: Secrets of Ragefire
 The Secrets of Ragefire
+Heroic: Secrets of Ragefire
 The Few, the Proud, the Gob Squad
-### Battle on the High Seas
+Monkey See, Monkey Kill
 Battle on the High Seas
 Heroic: Battle on the High Seas
 Keep those Bombs Away! (From Me)
-### Proving Grounds: Damage
+## Proving Grounds
 Proving Yourself: Gold Damage
-Proving Yourself: Endless Damage (Wave 10)
-Proving Yourself: Endless Damage (Wave 20)
-Proving Yourself: Endless Damage (Wave 30)
-### Proving Grounds: Healer
-Proving Yourself: Bronze Damage
-Proving Yourself: Silver Damage
-Proving Yourself: Gold Damage
-Proving Yourself: Endless Healer (Wave 10)
-Proving Yourself: Endless Healer (Wave 20)
-Proving Yourself: Endless Healer (Wave 30)
-### Proving Grounds: Tank
 Proving Yourself: Silver Tank
-Proving Yourself: Gold Tank
-Proving Yourself: Endless Tank (Wave 10)
-Proving Yourself: Endless Tank (Wave 20)
-Proving Yourself: Endless Tank (Wave 30)
-### Proving Grounds: Other
+Proving Yourself: Bronze Healer
 You're Doing it Wrong
 # Missing Mounts ##############################################################
 ### Collect
