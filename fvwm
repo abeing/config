@@ -1,0 +1,32 @@
+# FVWM Config
+# Adam Miezianko <adam@theorylounge.org>
+
+DesktopSize 2x2
+DesktopName 0 Main
+EdgeScroll 100 100
+EdgeResistance 350 350
+EdgeThickness 1
+
+# Number of miliseconds not to be exceeded to be a click (rather than hold)
+ClickTime 350
+
+# Number of pixels the mouse must move to be considered a move.
+MoveThreshold 3
+
+Emulate MWM
+Style * SloppyFocus
+Style * MwmDecor
+
+Colorset 1 fg white, bg #007ab7
+Colorset 2 fg white, bg #333333
+
+DestroyDecor MyDecor
+AddToDecor MyDecor
++ TitleStyle CenterJustified Height 18
++ ButtonStyle All -- UseTitleStyle
+
+Style "*" UseDecor MyDecor
+Style "*" MWMBorder
+Style "*" Colorset 2
+Style "*" HilightColorset 1
+
