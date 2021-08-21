@@ -39,6 +39,10 @@
 (scroll-bar-mode -1) ; Disable visible scrollbar
 (tool-bar-mode -1) ; Disable the toolbar
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(setq make-backup-files nil)
+
 ;;; Disable the menu bar. On macOS the menu bar is unobtrusive, so leave it be.
 ;;; TODO: In the future, wrap this in an OS-specific conditional to remove the
 ;;; menu bar on Windows and Linux.
