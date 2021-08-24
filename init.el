@@ -39,6 +39,9 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; I seperate my sentences with one space not two.
+(setq sentence-end-double-space nil)
+
 (setq make-backup-files nil)
 
 (set-face-attribute 'default nil :font "Go Mono" :height 140)
