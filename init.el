@@ -48,6 +48,8 @@
 
 (load-theme 'leuven t)
 
+(blink-cursor-mode -1)
+
 (setq fill-column 80)
 
 (show-paren-mode 1)
@@ -58,9 +60,10 @@
 
 (use-package w3m)
 
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
+;; (setq ido-enable-flex-matching t)
+;; (setq ido-everywhere t)
+;; (ido-mode 1)
+(fido-mode 1)
 
 (define-key emacs-lisp-mode-map
   (kbd "M-.") 'find-function-at-point)
