@@ -65,10 +65,16 @@
 
 (use-package w3m)
 
-;; (setq ido-enable-flex-matching t)
-;; (setq ido-everywhere t)
-;; (ido-mode 1)
-(fido-mode 1)
+;;; ido-mode
+(ido-mode 1)
+(setq ido-everywhere t)
+(setq ido-enable-flex-matching t)
+
+;;; fido-mode
+;; (fido-mode 1)
+
+;;; Helm
+(use-package helm)
 
 (define-key emacs-lisp-mode-map
   (kbd "M-.") 'find-function-at-point)
