@@ -50,7 +50,9 @@
 
 (blink-cursor-mode -1)
 
-(setq fill-column 80)
+(setq shift-select-mode nil)
+
+(setq-default fill-column 75)
 
 (show-paren-mode 1)
 
@@ -69,3 +71,6 @@
   (kbd "M-.") 'find-function-at-point)
 
 (eldoc-mode 1)
+
+;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
+(global-set-key (kbd "M-i") 'imenu)
