@@ -11,7 +11,8 @@
   ;; Fixes TLS issues on macOS
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
   (setq mac-command-modifier 'meta)
-  (setq mac-option-modifier 'none))
+  (setq mac-option-modifier 'none)
+  (setq w3m-command "/usr/local/bin/w3m"))
 
 (require 'package)
 
