@@ -82,5 +82,20 @@
 
 (eldoc-mode 1)
 
+(use-package magit)
+
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(magit w3m use-package helm evil)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(put 'downcase-region 'disabled nil)
