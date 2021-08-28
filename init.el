@@ -46,11 +46,17 @@
 ;; I seperate my sentences with one space not two.
 (setq sentence-end-double-space nil)
 
+;; Change this to Sasha Chua's backup strategy of using a directory
 (setq make-backup-files nil)
 
 (set-face-attribute 'default nil :font "Go Mono" :height 140)
 
-(load-theme 'leuven t)
+(setq custom-safe-themes t)
+
+(use-package color-theme-sanityinc-solarized)
+(use-package color-theme-sanityinc-tomorrow)
+
+(load-theme 'sanityinc-tomorrow-bright)
 
 (blink-cursor-mode -1)
 
@@ -86,16 +92,3 @@
 
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages '(magit w3m use-package helm evil)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(put 'downcase-region 'disabled nil)
