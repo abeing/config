@@ -55,8 +55,11 @@
 
 (use-package color-theme-sanityinc-solarized)
 (use-package color-theme-sanityinc-tomorrow)
+(use-package zenburn-theme)
 
-(load-theme 'sanityinc-tomorrow-bright)
+(load-theme 'zenburn)
+
+(global-hl-line-mode 1)
 
 (blink-cursor-mode -1)
 
