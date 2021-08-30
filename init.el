@@ -67,6 +67,8 @@
 
 (setq-default fill-column 75)
 
+(setq org-agenda-files '("~/memex"))
+
 (show-paren-mode 1)
 
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
