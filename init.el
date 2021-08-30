@@ -69,6 +69,9 @@
 
 (setq org-agenda-files '("~/memex"))
 
+(define-key global-map (kbd "C-c a") 'org-agenda)
+(define-key global-map (kbd "C-c l") 'org-store-link)
+
 (show-paren-mode 1)
 
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
