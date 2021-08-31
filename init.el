@@ -72,6 +72,9 @@
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
+(use-package org-pomodoro
+  :bind ("C-c p" . org-pomodoro))
+
 (show-paren-mode 1)
 
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
@@ -100,3 +103,7 @@
 
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
+
+;; my latitude and longitude
+(setq calendar-latitude 47.6062
+      calendar-longitude -122.3321)
