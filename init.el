@@ -107,3 +107,6 @@
 ;; my latitude and longitude
 (setq calendar-latitude 47.6062
       calendar-longitude -122.3321)
+
+;; Goal column is handy (C-x C-n)
+(put 'set-goal-column 'disabled nil)
