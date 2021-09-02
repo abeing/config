@@ -53,10 +53,6 @@
 
 (setq custom-safe-themes t)
 
-(use-package color-theme-sanityinc-solarized)
-(use-package color-theme-sanityinc-tomorrow)
-(use-package zenburn-theme)
-
 (load-theme 'leuven)
 
 (global-hl-line-mode 1)
