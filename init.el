@@ -57,7 +57,7 @@
 (use-package color-theme-sanityinc-tomorrow)
 (use-package zenburn-theme)
 
-(load-theme 'zenburn)
+(load-theme 'leuven)
 
 (global-hl-line-mode 1)
 
