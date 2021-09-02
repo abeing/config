@@ -57,7 +57,7 @@
 (use-package color-theme-sanityinc-tomorrow)
 (use-package zenburn-theme)
 
-(load-theme 'zenburn)
+(load-theme 'leuven)
 
 (global-hl-line-mode 1)
 
@@ -65,9 +65,14 @@
 
 (setq shift-select-mode nil)
 
-(setq-default fill-column 75)
+(setq-default fill-column 80)
+(setq-default sentence-end-double-space nil)
+
+;; Org-mode configuration
 
 (setq org-agenda-files '("~/memex"))
+(setq-default org-adapt-indentation 'headline-data)
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
 
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
