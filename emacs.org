@@ -4,36 +4,9 @@ I am rebuilding my Emacs config from scratch. I used to use spacemacs and then
 Doom emacs but both of those were too different from my Emacs experience in the
 90s and early 00s. So, tabula rasa.
 
-* About Me
-
-  Things Emacs should know about me. Currently just my latitude and longitude
-  so calendar knows when sunrise and sunset are.
-  
-#+BEGIN_SRC emacs-lisp
-  (setq calendar-latitude 47.6062
-	calendar-longitude -122.3321)
-#+END_SRC
-
-* Basic Look and Feel
-
-  Remove extraneous user interface elements. Since the macOS menu bar is
-  unobtrusive, don't hide it there.
+* Packages
 
 #+BEGIN_SRC emacs-lisp
-  (scroll-bar-mode -1)
-  (tool-bar-mode -1)
-  (when (not (eq system-type 'darwin))
-    (menu-bar-mode -1))
-#+END_SRC
-
-#+BEGIN_SRC emacs-lisp
-  (when (eq system-type 'darwin)
-    ;; Fixes TLS issues on macOS
-    (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-    (setq mac-command-modifier 'meta)
-    (setq mac-option-modifier 'none)
-    (setq w3m-command "/usr/local/bin/w3m"))
-
   (require 'package)
 
   (setq package-archives
@@ -55,11 +28,56 @@ Doom emacs but both of those were too different from my Emacs experience in the
   ;; when running this init.el on a system for the first time.
   (setq use-package-always-ensure t)
 
+#+END_SRC
+
+* About Me
+
+  Things Emacs should know about me. Currently just my latitude and longitude
+  so calendar knows when sunrise and sunset are.
+  
+#+BEGIN_SRC emacs-lisp
+  (setq calendar-latitude 47.6062
+	calendar-longitude -122.3321)
+#+END_SRC
+
+* Basic Look and Feel
+
+  Remove extraneous user interface elements. Since the macOS menu bar is
+  unobtrusive, don't hide it there.
+
+
+
+#+BEGIN_SRC emacs-lisp
+  (scroll-bar-mode -1)
+  (tool-bar-mode -1)
+  (when (not (eq system-type 'darwin))
+    (menu-bar-mode -1))
+
   (setq inhibit-startup-message t)
   (setq visible-bell t)
 
 
   (defalias 'yes-or-no-p 'y-or-n-p)
+
+#+END_SRC
+
+For themes I jump between zenburn and leuven.
+
+#+BEGIN_SRC emacs-lisp
+
+  (use-package zenburn-theme
+    :config (load-theme 'zenburn t)
+  )
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+  (when (eq system-type 'darwin)
+    ;; Fixes TLS issues on macOS
+    (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+    (setq mac-command-modifier 'meta)
+    (setq mac-option-modifier 'none)
+    (setq w3m-command "/usr/local/bin/w3m"))
+
 
   ;; I seperate my sentences with one space not two.
   (setq sentence-end-double-space nil)
@@ -70,8 +88,6 @@ Doom emacs but both of those were too different from my Emacs experience in the
   (set-face-attribute 'default nil :font "Go Mono" :height 140)
 
   (setq custom-safe-themes t)
-
-  (load-theme 'leuven)
 
   (global-hl-line-mode 1)
 
