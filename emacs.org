@@ -4,6 +4,18 @@ I am rebuilding my Emacs config from scratch. I used to use spacemacs and then
 Doom emacs but both of those were too different from my Emacs experience in the
 90s and early 00s. So, tabula rasa.
 
+* About Me
+
+Things Emacs should know about me. Currently just my latitude and longitude
+so calendar knows when sunrise and sunset are.
+
+#+BEGIN_SRC emacs-lisp
+  (setq calendar-latitude 47.6062
+	calendar-longitude -122.3321)
+
+  (defconst my/laptop-p (equal (system-name) "algos.lan"))
+#+END_SRC
+
 * Packages
 
 #+BEGIN_SRC emacs-lisp
@@ -27,25 +39,12 @@ Doom emacs but both of those were too different from my Emacs experience in the
   ;; Causes use-package function to install packages not yet installed. Useful
   ;; when running this init.el on a system for the first time.
   (setq use-package-always-ensure t)
-
-#+END_SRC
-
-* About Me
-
-  Things Emacs should know about me. Currently just my latitude and longitude
-  so calendar knows when sunrise and sunset are.
-  
-#+BEGIN_SRC emacs-lisp
-  (setq calendar-latitude 47.6062
-	calendar-longitude -122.3321)
 #+END_SRC
 
 * Basic Look and Feel
 
   Remove extraneous user interface elements. Since the macOS menu bar is
   unobtrusive, don't hide it there.
-
-
 
 #+BEGIN_SRC emacs-lisp
   (scroll-bar-mode -1)
@@ -58,13 +57,11 @@ Doom emacs but both of those were too different from my Emacs experience in the
 
 
   (defalias 'yes-or-no-p 'y-or-n-p)
-
 #+END_SRC
 
 For themes I jump between zenburn and leuven.
 
 #+BEGIN_SRC emacs-lisp
-
   (use-package zenburn-theme
     :config (load-theme 'zenburn t)
   )
@@ -142,4 +139,13 @@ For themes I jump between zenburn and leuven.
 
   ;; Goal column is handy (C-x C-n)
   (put 'set-goal-column 'disabled nil)
+#+END_SRC
+
+* Python
+
+Settings that are specific not just to the OS but individual machine.
+
+#+BEGIN_SRC emacs-lisp
+  (if my/laptop-p
+      (setq-default python-shell-interpreter "/usr/local/bin/python3"))
 #+END_SRC
