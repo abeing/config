@@ -95,17 +95,6 @@ For themes I jump between zenburn and leuven.
   (setq-default fill-column 80)
   (setq-default sentence-end-double-space nil)
 
-  ;; Org-mode configuration
-
-  (setq org-agenda-files '("~/memex"))
-  (setq-default org-adapt-indentation 'headline-data)
-  (add-hook 'org-mode-hook 'turn-on-auto-fill)
-
-  (define-key global-map (kbd "C-c a") 'org-agenda)
-  (define-key global-map (kbd "C-c l") 'org-store-link)
-
-  (use-package org-pomodoro
-    :bind ("C-c p" . org-pomodoro))
 
   (show-paren-mode 1)
 
@@ -141,6 +130,28 @@ For themes I jump between zenburn and leuven.
   (put 'set-goal-column 'disabled nil)
 #+END_SRC
 
+* Org Mode
+
+#+begin_src emacs-lisp
+  ;; Org-mode configuration
+
+  (setq org-agenda-files '("~/memex"))
+  (setq-default org-adapt-indentation 'headline-data)
+  (add-hook 'org-mode-hook 'turn-on-auto-fill)
+
+  (define-key global-map (kbd "C-c a") 'org-agenda)
+  (define-key global-map (kbd "C-c l") 'org-store-link)
+#+end_src
+
+I track how long I work on tasks using the Pomodoro technique.
+
+#+begin_src emacs-lisp
+  (setq org-log-done t)
+
+  (use-package org-pomodoro
+    :bind ("C-c p" . org-pomodoro))
+#+end_src
+
 * Python
 
 Settings that are specific not just to the OS but individual machine.
@@ -149,3 +160,14 @@ Settings that are specific not just to the OS but individual machine.
   (if my/laptop-p
       (setq-default python-shell-interpreter "/usr/local/bin/python3"))
 #+END_SRC
+
+* References
+
+These are the configurations where I go to discover new ideas and learn more
+elisp.
+
+- [[https://github.com/caisah/emacs.dz?utm_source=pocket_mylist][A list of people with nice emacs config files]]
+- [[https://github.com/purcell/emacs.d][Steve Purcell's config]] :: 
+- [[https://github.com/sachac/.emacs.d/blob/gh-pages/Sacha.org][Sacha Chua's config]] :: A literate configuration with many explanations.
+- [[https://github.com/bbatsov/prelude][prelude]] :: More of a starter pack. Sane defaults for many things.
+- [[https://en.wikipedia.org/wiki/User%3AGwern%2F.emacs][Gwern Branwen's config]] :: Edits a lot of markdown.
