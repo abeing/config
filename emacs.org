@@ -58,7 +58,34 @@ unobtrusive, don't hide it there.
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
 
-For themes I jump between zenburn and dracula.
+
+** Fonts
+
+I waffle between Go Mono and Fira Code.
+
+  - Fira Code :: Supports ligatures, but I haven't figured out how to turn them
+    on in Emacs yet.
+  - Go Mono :: This is the font I went with because it has serifs.
+
+#+BEGIN_SRC emacs-lisp
+  ;; (set-face-attribute 'default nil :font "Go Mono" :height 140)
+  (set-face-attribute 'default nil :font "Fira Code" :height 120)
+#+END_SRC
+
+
+** Themes
+
+I prefer light themes and the following are all light or have light variants.
+  - Solarized :: Has both dark and light. I've used it for years but find it too
+    low-contrast in my old age.
+  - GruvBox :: Improved contrast from Solarized, and clean.
+  - Ayu Light :: Haven't tried it.
+  - Tomorrow :: Not bad.
+  - Atom One :: Boring, which can be good.
+  - Leuven :: I tried this one first because it was built in and looked nice. In
+    the end I found the org font-locks not to my liking.
+  - Zenburn :: A great dark theme.
+  - Dracula :: A colorful dark theme. Has nice org stylings.
 
 #+BEGIN_SRC emacs-lisp
   (use-package zenburn-theme)
@@ -67,11 +94,6 @@ For themes I jump between zenburn and dracula.
   )
 #+END_SRC
 
-I waffle between Go Mono and Fira Code.
-#+BEGIN_SRC emacs-lisp
-  ;; (set-face-attribute 'default nil :font "Go Mono" :height 140)
-  (set-face-attribute 'default nil :font "Fira Code" :height 120)
-#+END_SRC
 
 #+BEGIN_SRC emacs-lisp
   (when (eq system-type 'darwin)
