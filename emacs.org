@@ -43,8 +43,8 @@ so calendar knows when sunrise and sunset are.
 
 * Basic Look and Feel
 
-  Remove extraneous user interface elements. Since the macOS menu bar is
-  unobtrusive, don't hide it there.
+Remove extraneous user interface elements. Since the macOS menu bar is
+unobtrusive, don't hide it there.
 
 #+BEGIN_SRC emacs-lisp
   (scroll-bar-mode -1)
@@ -55,16 +55,22 @@ so calendar knows when sunrise and sunset are.
   (setq inhibit-startup-message t)
   (setq visible-bell t)
 
-
   (defalias 'yes-or-no-p 'y-or-n-p)
 #+END_SRC
 
-For themes I jump between zenburn and leuven.
+For themes I jump between zenburn and dracula.
 
 #+BEGIN_SRC emacs-lisp
-  (use-package zenburn-theme
-    :config (load-theme 'zenburn t)
+  (use-package zenburn-theme)
+  (use-package dracula-theme
+    :config (load-theme 'dracula t)
   )
+#+END_SRC
+
+I waffle between Go Mono and Fira Code.
+#+BEGIN_SRC emacs-lisp
+  ;; (set-face-attribute 'default nil :font "Go Mono" :height 140)
+  (set-face-attribute 'default nil :font "Fira Code" :height 120)
 #+END_SRC
 
 #+BEGIN_SRC emacs-lisp
@@ -72,9 +78,7 @@ For themes I jump between zenburn and leuven.
     ;; Fixes TLS issues on macOS
     (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
     (setq mac-command-modifier 'meta)
-    (setq mac-option-modifier 'none)
-    (setq w3m-command "/usr/local/bin/w3m"))
-
+    (setq mac-option-modifier 'none))
 
   ;; I seperate my sentences with one space not two.
   (setq sentence-end-double-space nil)
@@ -82,7 +86,6 @@ For themes I jump between zenburn and leuven.
   ;; Change this to Sasha Chua's backup strategy of using a directory
   (setq make-backup-files nil)
 
-  (set-face-attribute 'default nil :font "Go Mono" :height 140)
 
   (setq custom-safe-themes t)
 
@@ -101,8 +104,6 @@ For themes I jump between zenburn and leuven.
   ;; Emacs doesn't provide enough terminal support for pagers like less, but we
   ;; don't need pagers since we have a buffer. We can just use cat instead.
   (setenv "PAGER" "/bin/cat")
-
-  (use-package w3m)
 
   ;;; ido-mode
   (ido-mode 1)
@@ -129,6 +130,8 @@ For themes I jump between zenburn and leuven.
   ;; Goal column is handy (C-x C-n)
   (put 'set-goal-column 'disabled nil)
 #+END_SRC
+
+#+RESULTS:
 
 * Org Mode
 
