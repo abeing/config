@@ -119,5 +119,12 @@
 (use-package org-pomodoro
   :bind ("C-c p" . org-pomodoro))
 
+(defun my/org-last-heading ()
+  "Go to last visible org heading"
+  (interactive)
+  (progn (call-interactively 'end-of-buffer)
+	 (call-interactively 'org-previous-visible-heading)))
+(define-key global-map (kbd "C-c t") 'my/org-last-heading)
+
 (if my/laptop-p
     (setq-default python-shell-interpreter "/usr/local/bin/python3"))
