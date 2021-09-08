@@ -51,7 +51,12 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(set-face-attribute 'default nil :font "Go Mono" :height 140)
+(set-face-attribute 'default nil :font "Iosevka" :height 140)
+
+;; This should allow emojii to be displayed, but it didn't seem to work
+(use-package unicode-fonts
+  :config
+  (unicode-fonts-setup))
 
 (setq custom-safe-themes t)
 
@@ -121,3 +126,16 @@
 
 (if my/laptop-p
     (setq-default python-shell-interpreter "/usr/local/bin/python3"))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(unicode-fonts zenburn-theme use-package org-pomodoro magit helm)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
