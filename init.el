@@ -51,6 +51,8 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(add-to-list 'initial-frame-alist '(fullscreen . fullheight))
+
 (set-face-attribute 'default nil :font "Iosevka" :height 140)
 
 (setq custom-safe-themes t)
