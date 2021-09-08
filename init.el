@@ -53,11 +53,6 @@
 
 (set-face-attribute 'default nil :font "Iosevka" :height 140)
 
-;; This should allow emojii to be displayed, but it didn't seem to work
-(use-package unicode-fonts
-  :config
-  (unicode-fonts-setup))
-
 (setq custom-safe-themes t)
 
 (use-package zenburn-theme
@@ -119,6 +114,15 @@
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
+(setq org-todo-keywords
+      '((sequence "TODO" "NEXT" "|" "DONE")))
+
+(setq org-tag-alist '((:startgroup . nil)
+		      ("size_large" . ?l)
+		      ("size_uncertain" . ?u)
+		      ("size_small" . ?s)
+		      (:endgroup . nil)))
+
 (setq org-log-done t)
 
 (use-package org-pomodoro
@@ -133,16 +137,3 @@
 
 (if my/laptop-p
     (setq-default python-shell-interpreter "/usr/local/bin/python3"))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(unicode-fonts zenburn-theme use-package org-pomodoro magit helm)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
