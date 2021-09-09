@@ -88,11 +88,9 @@
 ;; don't need pagers since we have a buffer. We can just use cat instead.
 (setenv "PAGER" "/bin/cat")
 
-(ido-mode 1)
-(setq ido-everywhere t)
-(setq ido-enable-flex-matching t)
-
-(use-package helm)
+(use-package counsel
+  :config
+  (ivy-mode 1))
 
 (define-key emacs-lisp-mode-map
   (kbd "M-.") 'find-function-at-point)
@@ -147,6 +145,8 @@
 		      (:endgroup . nil)))
 
 (setq org-log-done t)
+
+(setq org-use-speed-commands t)
 
 (use-package org-pomodoro
   :bind ("C-c p" . org-pomodoro))
