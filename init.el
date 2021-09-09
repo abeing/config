@@ -109,8 +109,29 @@
 
 ;; Org-mode configuration
 
+(setq org-directory "~/memex")
+
 (setq org-agenda-files '("~/memex"))
+
+;; This is where capture will place new content by default
+(setq org-default-notes-file (concat org-directory "/journal.org"))
+
+;; This doesn't work. Instead of placing the TODO on the fourth level, it's
+;; placed on the first. I don't care enough to fix it, yet.
+(setq org-capture-templates
+      '(("t" "Todo" entry (file "~/memex/journal.org")
+	 "**** TODO %?")))
+
+(setq org-feed-alist
+      '(("Hacker News Front Page"
+	 "https://hnrss.org/frontpage"
+	 "~/memex/feeds.org" "Hacker News Front Page")
+	("xkcd"
+	 "https://xkcd.com/atom.xml"
+	 "~/memex/feeds.org" "xkcd")))
+
 (setq-default org-adapt-indentation 'headline-data)
+
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 
 (define-key global-map (kbd "C-c a") 'org-agenda)
@@ -129,6 +150,11 @@
 
 (use-package org-pomodoro
   :bind ("C-c p" . org-pomodoro))
+
+;; Only show the highest-level TODO of a TODO tree
+(setq org-agenda-todo-list-sublevels nil)
+
+(setq org-agenda-diary-file "~/memex/journal.org")
 
 (defun my/org-last-heading ()
   "Go to last visible org heading"
