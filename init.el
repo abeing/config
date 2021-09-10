@@ -179,3 +179,10 @@
    ("C-c n i" . org-roam-node-insert))
   :config
   (org-roam-setup))
+
+(use-package diminish)
+
+(use-package which-key
+  :config
+  (which-key-mode)
+  (diminish 'which-key))
