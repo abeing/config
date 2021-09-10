@@ -146,6 +146,8 @@
 
 (setq org-log-done t)
 
+(setq-default buffer-file-coding-system "utf-8-unix")
+
 (setq org-use-speed-commands t)
 
 (use-package org-pomodoro
