@@ -186,3 +186,5 @@
   :config
   (which-key-mode)
   (diminish 'which-key))
+
+(use-package elpher)
