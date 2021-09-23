@@ -188,3 +188,12 @@
   (diminish 'which-key))
 
 (use-package elpher)
+
+(setq org-capture-templates
+      (quote (
+	      ("p" "org-protocol" entry (file+headline "~/memex/nonfiction.org" "Articles")
+	       "* %:annotation\n%i\n\n" :immediate-finish t))))
+
+
+(server-start)
+(require 'org-protocol)
