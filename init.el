@@ -53,13 +53,19 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :font "Iosevka" :height 140)
+;; (set-face-attribute 'default nil :font "Iosevka" :height 140)
+
+(set-face-attribute 'default nil :font "Go Mono" :height 140)
 
 (setq custom-safe-themes t)
 
-(use-package zenburn-theme
+;; (use-package zenburn-theme
+;;  :config
+;;  (load-theme 'zenburn t))
+
+(use-package leuven-theme
   :config
-  (load-theme 'zenburn t))
+  (load-theme 'leuven t))
 
 (when (eq system-type 'darwin)
   ;; Fixes TLS issues on macOS
@@ -128,7 +134,9 @@
 	 "https://xkcd.com/atom.xml"
 	 "~/memex/feeds.org" "xkcd")))
 
-(setq-default org-adapt-indentation 'headline-data)
+(setq-default org-startup-indented t)
+;; (setq-default org-adapt-indentation 'headline-data)
+(setq-default org-adapt-indentation nil)
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 
@@ -191,8 +199,10 @@
 
 (setq org-capture-templates
       (quote (
-	      ("p" "org-protocol" entry (file+headline "~/memex/nonfiction.org" "Articles")
-	       "* %:annotation\n%i\n\n" :immediate-finish t))))
+	      ("p" "org-protocol"
+	      entry (file+headline "~/memex/nonfiction.org" "Articles")
+	       "* %:annotation\n%i\n\n" :empty-lines-after 2
+	       :immediate-finish t))))
 
 
 (server-start)
