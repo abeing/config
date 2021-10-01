@@ -195,7 +195,7 @@
       (quote (
 	      ("p" "org-protocol"
 	      entry (file+headline "~/memex/reading.org" "Articles")
-	      "* MAYBE %:description\n:PROPERTIES:\n:Link:%:link\n:END:\n%i\n\n"
+	      "* MAYBE %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
 	      :empty-lines-after 2
 	      :immediate-finish t)
 	      ("t" "todo"
