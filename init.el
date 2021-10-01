@@ -120,12 +120,6 @@
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/journal.org"))
 
-;; This doesn't work. Instead of placing the TODO on the fourth level, it's
-;; placed on the first. I don't care enough to fix it, yet.
-(setq org-capture-templates
-      '(("t" "Todo" entry (file "~/memex/journal.org")
-	 "**** TODO %?")))
-
 (setq org-feed-alist
       '(("Hacker News Front Page"
 	 "https://hnrss.org/frontpage"
@@ -144,7 +138,7 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
 (setq org-todo-keywords
-      '((sequence "TODO" "NEXT" "|" "DONE")))
+      '((sequence "MAYBE" "TODO" "NEXT" "|" "DONE" "CANCELLED" "DELEGATED")))
 
 (setq org-tag-alist '((:startgroup . nil)
 		      ("size_large" . ?l)
@@ -200,10 +194,18 @@
 (setq org-capture-templates
       (quote (
 	      ("p" "org-protocol"
-	      entry (file+headline "~/memex/nonfiction.org" "Articles")
-	       "* %:annotation\n%i\n\n" :empty-lines-after 2
-	       :immediate-finish t))))
+	      entry (file+headline "~/memex/reading.org" "Articles")
+	      "* MAYBE %:description\n:PROPERTIES:\n:Link:%:link\n:END:\n%i\n\n"
+	      :empty-lines-after 2
+	      :immediate-finish t)
+	      ("t" "todo"
+	       entry (file+datetree "~/memex/journal.org")
+	       "* TODO %?")
+	      )))
 
 
 (server-start)
 (require 'org-protocol)
+
+(use-package evil)
+
