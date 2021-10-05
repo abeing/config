@@ -120,6 +120,12 @@
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/journal.org"))
 
+
+(setq org-modules '(org-habit))
+
+(setq-default org-habit-graph-column 70)
+(setq org-habit-show-habits-only-for-today nil)
+
 (setq org-feed-alist
       '(("Hacker News Front Page"
 	 "https://hnrss.org/frontpage"
@@ -209,3 +215,4 @@
 
 (use-package evil)
 
+(use-package markdown-mode)
