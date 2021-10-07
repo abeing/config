@@ -53,15 +53,9 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-;; (set-face-attribute 'default nil :font "Iosevka" :height 140)
-
 (set-face-attribute 'default nil :font "Go Mono" :height 140)
 
 (setq custom-safe-themes t)
-
-;; (use-package zenburn-theme
-;;  :config
-;;  (load-theme 'zenburn t))
 
 (use-package leuven-theme
   :config
@@ -123,7 +117,7 @@
 
 (setq org-modules '(org-habit))
 
-(setq-default org-habit-graph-column 70)
+(setq-default org-habit-graph-column 60)
 (setq org-habit-show-habits-only-for-today nil)
 
 (setq org-feed-alist
