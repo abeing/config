@@ -61,6 +61,10 @@
   :config
   (load-theme 'leuven t))
 
+;; (use-package color-theme-sanityinc-tomorrow
+;;  :config
+;;  (load-theme 'sanityinc-tomorrow-bright))
+
 (when (eq system-type 'darwin)
   ;; Fixes TLS issues on macOS
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
@@ -213,3 +217,7 @@
   (rg-enable-default-bindings))
 
 (setq org-enforce-todo-dependencies t)
+
+(setq-default indent-tabs-node nil)
+
+(setq-default tab-always-indent 'complete)
