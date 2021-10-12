@@ -73,8 +73,6 @@
 ;; Change this to Sasha Chua's backup strategy of using a directory
 (setq make-backup-files nil)
 
-(global-hl-line-mode 1)
-
 (blink-cursor-mode -1)
 
 (setq shift-select-mode nil)
@@ -114,7 +112,6 @@
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/journal.org"))
 
-
 (setq org-modules '(org-habit))
 
 (setq-default org-habit-graph-column 60)
@@ -134,11 +131,9 @@
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 
+(define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
-
-(setq org-todo-keywords
-      '((sequence "MAYBE" "TODO" "NEXT" "|" "DONE" "CANCELLED" "DELEGATED")))
 
 (setq org-tag-alist '((:startgroup . nil)
 		      ("size_large" . ?l)
@@ -199,7 +194,7 @@
 	      :empty-lines-after 2
 	      :immediate-finish t)
 	      ("t" "todo"
-	       entry (file+datetree "~/memex/journal.org")
+	       entry (file+headline "~/memex/plan.org" "Inbox")
 	       "* TODO %?")
 	      )))
 
@@ -210,3 +205,11 @@
 (use-package evil)
 
 (use-package markdown-mode)
+
+(setq-default show-trailing-whitespace t)
+
+(use-package rg
+  :config
+  (rg-enable-default-bindings))
+
+(setq org-enforce-todo-dependencies t)
