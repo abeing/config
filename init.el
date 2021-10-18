@@ -221,3 +221,13 @@
 (setq-default indent-tabs-node nil)
 
 (setq-default tab-always-indent 'complete)
+
+(defun my/show-formfeed-as-line ()
+  "Display formfeed ^L char as line."
+  (interactive)
+  (progn
+    (when (not buffer-display-table)
+      (setq buffer-display-table (make-display-table)))
+    (aset buffer-display-table ?\^L
+	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
+    (redraw-frame)))
