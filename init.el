@@ -57,13 +57,12 @@
 
 (setq custom-safe-themes t)
 
+(use-package tao-theme)
+
 (use-package leuven-theme
   :config
+  (setq-default org-fontify-whole-heading-line t)
   (load-theme 'leuven t))
-
-;; (use-package color-theme-sanityinc-tomorrow
-;;  :config
-;;  (load-theme 'sanityinc-tomorrow-bright))
 
 (when (eq system-type 'darwin)
   ;; Fixes TLS issues on macOS
@@ -77,7 +76,7 @@
 ;; Change this to Sasha Chua's backup strategy of using a directory
 (setq make-backup-files nil)
 
-(blink-cursor-mode -1)
+;; (blink-cursor-mode -1)
 
 (setq shift-select-mode nil)
 
@@ -194,7 +193,7 @@
       (quote (
 	      ("p" "org-protocol"
 	      entry (file+headline "~/memex/reading.org" "Articles")
-	      "* MAYBE %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
+	      "* TODO %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
 	      :empty-lines-after 2
 	      :immediate-finish t)
 	      ("t" "todo"
@@ -222,6 +221,10 @@
 
 (setq-default tab-always-indent 'complete)
 
+;; (use-package powerline
+;;  :config
+;;  (powerline-default-theme))
+
 (defun my/show-formfeed-as-line ()
   "Display formfeed ^L char as line."
   (interactive)
@@ -231,3 +234,25 @@
     (aset buffer-display-table ?\^L
 	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
     (redraw-frame)))
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (scheme . t)))
+
+(setq org-babel-python-command "python3")
+(setq org-babel-scheme-command "mit-scheme")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(hl-sexp-background-color "#efebe9")
+ '(package-selected-packages
+   '(modus-themes zenburn-theme which-key use-package tao-theme solarized-theme rg powerline poet-theme plan9-theme org-roam org-pomodoro nordless-theme nord-theme moe-theme markdown-mode magit leuven-theme gruvbox-theme gotham-theme flatui-theme evil elpher diminish cyberpunk-theme counsel color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
