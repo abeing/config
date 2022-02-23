@@ -19,10 +19,10 @@
 
 (defconst my/laptop-p (equal (system-name) "algos.lan"))
 
-(require 'package)
+;; (require 'package)
 
 (setq package-archives
-      '(("gnu" . "http://elpa.gnu.org/packages/")
+    '(("gnu" . "http://elpa.gnu.org/packages/")
 	("melpa" . "https://melpa.org/packages/")))
 
 (package-initialize)
@@ -31,14 +31,14 @@
   (package-refresh-contents))
 
 ;; use-package allows for cleaner configuration of packages
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
+;;(unless (package-installed-p 'use-package)
+;;  (package-install 'use-package))
 
-(require 'use-package)
+;; (require 'use-package)
 
 ;; Causes use-package function to install packages not yet installed. Useful
 ;; when running this init.el on a system for the first time.
-(setq use-package-always-ensure t)
+;; (setq use-package-always-ensure t)
 
 
 (scroll-bar-mode -1)
@@ -53,16 +53,13 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :font "Go Mono" :height 120)
+(set-face-attribute 'default nil :font "Iosevka" :height 120)
 
 (setq custom-safe-themes t)
 
-(use-package tao-theme)
-
-(use-package leuven-theme
-  :config
-  (setq-default org-fontify-whole-heading-line t)
-  (load-theme 'leuven t))
+(require 'modus-themes)
+(modus-themes-load-operandi)
+(setq-default org-fontify-whole-heading-line t)
 
 (when (eq system-type 'darwin)
   ;; Fixes TLS issues on macOS
@@ -71,7 +68,7 @@
   (setq mac-option-modifier 'none))
 
 ;; I seperate my sentences with one space not two.
-(setq sentence-end-double-space nil)
+(setq-default sentence-end-double-space nil)
 
 ;; Change this to Sasha Chua's backup strategy of using a directory
 (setq make-backup-files nil)
@@ -81,7 +78,6 @@
 (setq shift-select-mode nil)
 
 (setq-default fill-column 80)
-(setq-default sentence-end-double-space nil)
 
 (show-paren-mode 1)
 
@@ -89,16 +85,16 @@
 ;; don't need pagers since we have a buffer. We can just use cat instead.
 (setenv "PAGER" "/bin/cat")
 
-(use-package counsel
-  :config
-  (ivy-mode 1))
+;;(use-package counsel
+;;  :config
+;;  (ivy-mode 1))
 
-(define-key emacs-lisp-mode-map
-  (kbd "M-.") 'find-function-at-point)
+;;(define-key emacs-lisp-mode-map
+;;  (kbd "M-.") 'find-function-at-point)
 
-(eldoc-mode 1)
+;;(eldoc-mode 1)
 
-(use-package magit)
+;;(use-package magit)
 
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
@@ -117,18 +113,10 @@
 
 (setq org-modules '(org-habit))
 
-(setq-default org-habit-graph-column 60)
-(setq org-habit-show-habits-only-for-today nil)
+;; (setq-default org-habit-graph-column 60)
+;; (setq org-habit-show-habits-only-for-today t)
 
-(setq org-feed-alist
-      '(("Hacker News Front Page"
-	 "https://hnrss.org/frontpage"
-	 "~/memex/feeds.org" "Hacker News Front Page")
-	("xkcd"
-	 "https://xkcd.com/atom.xml"
-	 "~/memex/feeds.org" "xkcd")))
-
-(setq-default org-startup-indented t)
+;; (setq-default org-startup-indented t)
 ;; (setq-default org-adapt-indentation 'headline-data)
 (setq-default org-adapt-indentation nil)
 
@@ -150,8 +138,8 @@
 
 (setq org-use-speed-commands t)
 
-(use-package org-pomodoro
-  :bind ("C-c p" . org-pomodoro))
+;;(use-package org-pomodoro
+;;  :bind ("C-c p" . org-pomodoro))
 
 ;; Only show the highest-level TODO of a TODO tree
 (setq org-agenda-todo-list-sublevels nil)
@@ -168,26 +156,30 @@
 (if my/laptop-p
     (setq-default python-shell-interpreter "/usr/local/bin/python3"))
 
-(use-package org-roam
-  :init
-  (setq org-roam-v2-ack t)
-  :custom
-  (org-roam-directory "~/memex/roam")
-  :bind
-  (("C-c n l" . org-roam-buffer-toggle)
-   ("C-c n f" . org-roam-node-find)
-   ("C-c n i" . org-roam-node-insert))
-  :config
-  (org-roam-setup))
+(require 'evil-mode)
 
-(use-package diminish)
+(evil-mode)
 
-(use-package which-key
-  :config
-  (which-key-mode)
-  (diminish 'which-key))
+;;(use-package org-roam
+;;  :init
+;;  (setq org-roam-v2-ack t)
+  ;; :custom
+  ;; (org-roam-directory "~/memex/roam")
+  ;; :bind
+  ;; (("C-c n l" . org-roam-buffer-toggle)
+  ;;  ("C-c n f" . org-roam-node-find)
+  ;;  ("C-c n i" . org-roam-node-insert))
+  ;; :config
+  ;; (org-roam-setup))
 
-(use-package elpher)
+;; (use-package diminish)
+
+;; (use-package which-key
+;;   :config
+;;   (which-key-mode)
+;;   (diminish 'which-key))
+
+;; (use-package elpher)
 
 (setq org-capture-templates
       (quote (
@@ -205,15 +197,13 @@
 (server-start)
 (require 'org-protocol)
 
-(use-package evil)
-
-(use-package markdown-mode)
+;; (use-package markdown-mode)
 
 (setq-default show-trailing-whitespace t)
 
-(use-package rg
-  :config
-  (rg-enable-default-bindings))
+;; (use-package rg
+;;  :config
+;;  (rg-enable-default-bindings))
 
 (setq org-enforce-todo-dependencies t)
 
@@ -247,69 +237,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(awesome-tray-mode-line-active-color "#0031a9")
- '(awesome-tray-mode-line-inactive-color "#d7d7d7")
- '(exwm-floating-border-color "#888888")
- '(flymake-error-bitmap '(flymake-double-exclamation-mark modus-themes-fringe-red))
- '(flymake-note-bitmap '(exclamation-mark modus-themes-fringe-cyan))
- '(flymake-warning-bitmap '(exclamation-mark modus-themes-fringe-yellow))
- '(hl-sexp-background-color "#efebe9")
- '(hl-todo-keyword-faces
-   '(("HOLD" . "#70480f")
-     ("TODO" . "#721045")
-     ("NEXT" . "#5317ac")
-     ("THEM" . "#8f0075")
-     ("PROG" . "#00538b")
-     ("OKAY" . "#30517f")
-     ("DONT" . "#315b00")
-     ("FAIL" . "#a60000")
-     ("BUG" . "#a60000")
-     ("DONE" . "#005e00")
-     ("NOTE" . "#863927")
-     ("KLUDGE" . "#813e00")
-     ("HACK" . "#813e00")
-     ("TEMP" . "#5f0000")
-     ("FIXME" . "#a0132f")
-     ("XXX+" . "#972500")
-     ("REVIEW" . "#005a5f")
-     ("DEPRECATED" . "#201f55")))
- '(ibuffer-deletion-face 'modus-themes-mark-del)
- '(ibuffer-filter-group-name-face 'modus-themes-pseudo-header)
- '(ibuffer-marked-face 'modus-themes-mark-sel)
- '(ibuffer-title-face 'default)
- '(org-src-block-faces 'nil)
- '(package-selected-packages
-   '(bongo nov w3m modus-themes zenburn-theme which-key use-package tao-theme solarized-theme rg powerline poet-theme plan9-theme org-roam org-pomodoro nordless-theme nord-theme moe-theme markdown-mode magit leuven-theme gruvbox-theme gotham-theme flatui-theme evil elpher diminish cyberpunk-theme counsel color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized))
- '(pdf-view-midnight-colors '("#000000" . "#f8f8f8"))
- '(vc-annotate-background nil)
- '(vc-annotate-background-mode nil)
- '(vc-annotate-color-map
-   '((20 . "#a60000")
-     (40 . "#721045")
-     (60 . "#8f0075")
-     (80 . "#972500")
-     (100 . "#813e00")
-     (120 . "#70480f")
-     (140 . "#5d3026")
-     (160 . "#184034")
-     (180 . "#005e00")
-     (200 . "#315b00")
-     (220 . "#005a5f")
-     (240 . "#30517f")
-     (260 . "#00538b")
-     (280 . "#093060")
-     (300 . "#0031a9")
-     (320 . "#2544bb")
-     (340 . "#0000c0")
-     (360 . "#5317ac")))
- '(vc-annotate-very-old-color nil)
- '(xterm-color-names
-   ["black" "#a60000" "#005e00" "#813e00" "#0031a9" "#721045" "#00538b" "gray65"])
- '(xterm-color-names-bright
-   ["gray35" "#972500" "#315b00" "#70480f" "#2544bb" "#8f0075" "#30517f" "white"]))
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+ '(package-selected-packages '(magit evil elpher modus-themes)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(variable-pitch ((t (:family "Go")))))
+ )
