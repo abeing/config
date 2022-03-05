@@ -53,12 +53,12 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :font "Iosevka" :height 120)
+(set-face-attribute 'default nil :font "Hack" :height 120)
 
 (setq custom-safe-themes t)
 
-(require 'modus-themes)
-(modus-themes-load-operandi)
+(load-theme 'leuven)
+
 (setq-default org-fontify-whole-heading-line t)
 
 (when (eq system-type 'darwin)
@@ -80,6 +80,9 @@
 (setq-default fill-column 80)
 
 (show-paren-mode 1)
+
+;; save-place-mode causes Emacs to remember the point position for each file
+(save-place-mode 1)
 
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
 ;; don't need pagers since we have a buffer. We can just use cat instead.
@@ -156,9 +159,9 @@
 (if my/laptop-p
     (setq-default python-shell-interpreter "/usr/local/bin/python3"))
 
-(require 'evil-mode)
+;; (require 'evil-mode)
 
-(evil-mode)
+;; (evil-mode)
 
 ;;(use-package org-roam
 ;;  :init
@@ -232,19 +235,3 @@
 
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
- '(package-selected-packages '(magit evil elpher modus-themes)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
