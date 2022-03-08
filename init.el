@@ -53,11 +53,12 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :font "Hack" :height 120)
+;; (set-face-attribute 'default nil :font "Hack" :height 120)
+(set-face-attribute 'default nil :font "Iosevka" :height 130)
 
 (setq custom-safe-themes t)
 
-(load-theme 'leuven)
+(modus-themes-load-operandi)
 
 (setq-default org-fontify-whole-heading-line t)
 
@@ -112,7 +113,7 @@
 (setq org-agenda-files '("~/memex"))
 
 ;; This is where capture will place new content by default
-(setq org-default-notes-file (concat org-directory "/journal.org"))
+(setq org-default-notes-file (concat org-directory "/inbox.org"))
 
 (setq org-modules '(org-habit))
 
@@ -128,12 +129,6 @@
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
-
-(setq org-tag-alist '((:startgroup . nil)
-		      ("size_large" . ?l)
-		      ("size_uncertain" . ?u)
-		      ("size_small" . ?s)
-		      (:endgroup . nil)))
 
 (setq org-log-done t)
 
@@ -185,16 +180,17 @@
 ;; (use-package elpher)
 
 (setq org-capture-templates
-      (quote (
-	      ("p" "org-protocol"
-	      entry (file+headline "~/memex/reading.org" "Articles")
-	      "* TODO %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
-	      :empty-lines-after 2
-	      :immediate-finish t)
-	      ("t" "todo"
-	       entry (file+headline "~/memex/plan.org" "Inbox")
-	       "* TODO %?")
-	      )))
+      '(("p" "org-protocol"
+	 entry (file+headline "~/memex/reading.org" "Articles")
+	 "* TODO %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
+	 :empty-lines-after 2
+	 :immediate-finish t)
+	("t" "Todo [inbox]" entry
+	 (file+headline "~/memex/inbox.org" "Tasks")
+	 "* TODO %i%?")
+	("T" "Tickler" entry
+	 (file+headline "~/memex/tickler.org" "Tickler")
+	 "* %i%? \n %U")))
 
 
 (server-start)
