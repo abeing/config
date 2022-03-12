@@ -192,6 +192,12 @@
 	 (file+headline "~/memex/tickler.org" "Tickler")
 	 "* %i%? \n %U")))
 
+(setq org-refile-targets '(("~/memex/plan.org" :maxlevel . 3)
+			   ("~/memex/someday.org" :level . 1)
+			   ("~/memex/tickker.org" :maxlevel . 2)))
+
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
 (server-start)
 (require 'org-protocol)
@@ -229,5 +235,21 @@
  '((python . t)
    (scheme . t)))
 
+(setq langtool-java-classpath "/usr/share/languagetool:/usr/share/java/languagetool/*")
+(require 'langtool)
+
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
