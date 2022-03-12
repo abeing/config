@@ -54,11 +54,19 @@
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
 ;; (set-face-attribute 'default nil :font "Hack" :height 120)
-(set-face-attribute 'default nil :font "Iosevka" :height 130)
+(set-face-attribute 'default nil :family "Iosevka")
+;; (set-face-attribute 'variable-pitch nil :family "Source Sans Pro")
+(set-face-attribute 'variable-pitch nil :family "Source Serif Pro")
+
+(require 'pulse)
 
 (setq custom-safe-themes t)
 
+;;; Configure themes
+
+(setq modus-themes-mode-line '(accented borderless))
 (modus-themes-load-operandi)
+
 
 (setq-default org-fontify-whole-heading-line t)
 
@@ -106,7 +114,8 @@
 ;; Goal column is handy (C-x C-n)
 (put 'set-goal-column 'disabled nil)
 
-;; Org-mode configuration
+;;; Org-mode configuration
+;;; ---------------------------------------------------------------------------
 
 (setq org-directory "~/memex")
 
@@ -125,6 +134,29 @@
 (setq-default org-adapt-indentation nil)
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
+
+(require 'org-modern)
+
+(modify-all-frames-parameters
+ '((right-divider-width . 20)
+   (internal-border-width . 10)))
+(dolist (face '(window-divider
+		window-divider-first-pixel
+		window-divider-last-pixel))
+  (face-spec-reset-face face)
+  (set-face-foreground face (face-attribute 'default :background)))
+(set-face-background 'fringe (face-attribute 'default :background))
+
+(setq org-hide-emphasis-markers t
+      org-pretty-entites t
+      org-auto-align-tags nil
+      org-tags-column 0
+      org-ellipses "…"
+      org-catch-invisible-edits 'show-and-error
+      org-special-ctrl-a/e t
+      org-insert-heading-respect-content t)
+
+(add-hook 'org-mode-hook 'org-modern-mode)
 
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
@@ -230,6 +262,8 @@
 	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
     (redraw-frame)))
 
+(require 'orderless)
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
@@ -240,13 +274,26 @@
 
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
+
+;;; The Simple HTML Renderer (shr) is used by the Emacs Web Browser (EWW) and
+;;; nov.el to render HTML. I want it to act mostly like reader mode.
+
+(setq shr-use-colors nil)
+(setq shr-use-fonts nil)
+(setq shr-max-image-proportion 0.6)
+(setq shr-width 72)
+
+;;; nov.el for reading epubs
+
+(add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
+   '(orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
