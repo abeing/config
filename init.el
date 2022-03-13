@@ -54,11 +54,13 @@
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
 ;; (set-face-attribute 'default nil :font "Hack" :height 120)
-(set-face-attribute 'default nil :family "Iosevka")
+(set-face-attribute 'default nil :family "Iosevka" :height 130)
 ;; (set-face-attribute 'variable-pitch nil :family "Source Sans Pro")
-(set-face-attribute 'variable-pitch nil :family "Source Serif Pro")
+(set-face-attribute 'variable-pitch nil :family "Source Serif Pro" :height 1.1)
 
 (require 'pulse)
+
+(setq bongo-enabled-backends '(mpv vlc speexdec))
 
 (setq custom-safe-themes t)
 
@@ -134,6 +136,10 @@
 (setq-default org-adapt-indentation nil)
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
+(add-hook 'org-mode-hook (lambda ()
+			   (setq-local show-trailing-whitespace t)))
+
+
 
 (require 'org-modern)
 
@@ -236,8 +242,6 @@
 
 ;; (use-package markdown-mode)
 
-(setq-default show-trailing-whitespace t)
-
 ;; (use-package rg
 ;;  :config
 ;;  (rg-enable-default-bindings))
@@ -285,7 +289,18 @@
 
 ;;; nov.el for reading epubs
 
+(require 'visual-fill-column)
+(defun nov-mode-spacing ()
+  (progn
+    (setq line-spacing 0.3)
+    (setq nov-text-width 72)
+    (setq visual-fill-column-center-text t)
+    (visual-line-mode)
+    (visual-fill-column-mode)))
+(add-hook 'nov-mode-hook 'nov-mode-spacing)
+
 (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -293,7 +308,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
+   '(visual-fill-column orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
