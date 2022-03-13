@@ -68,7 +68,7 @@
 
 (setq modus-themes-mode-line '(accented borderless))
 (modus-themes-load-operandi)
-
+(define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 (setq-default org-fontify-whole-heading-line t)
 
@@ -138,8 +138,6 @@
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 (add-hook 'org-mode-hook (lambda ()
 			   (setq-local show-trailing-whitespace t)))
-
-
 
 (require 'org-modern)
 
@@ -298,6 +296,27 @@
     (visual-line-mode)
     (visual-fill-column-mode)))
 (add-hook 'nov-mode-hook 'nov-mode-spacing)
+
+(defun my-nov-window-configuration-change-hook ()
+  (my-nov-post-html-render-hook)
+  (remove-hook 'window-configuration-change-hook
+	       'my-nov-window-configuration-change-hook
+	       t))
+
+(defun my-nov-post-html-render-hook ()
+  (if (get-buffer-window)
+      (with-current-buffer (current-buffer)
+	(goto-char (point-min))
+	(while (not (eobp))
+	  (when (looking-at "^[[:space:]]*$")
+	    (kill-line)
+	    (insert "    "))
+	  (forward-line 1)))
+    (add-hook 'window-configuration-change-hook
+	      'my-nov-window-configuration-change-hook
+	      nil t)))
+
+(add-hook 'nov-post-html-render-hook 'my-nov-post-html-render-hook)
 
 (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
 
