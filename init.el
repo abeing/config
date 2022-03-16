@@ -22,7 +22,7 @@
 ;; (require 'package)
 
 (setq package-archives
-    '(("gnu" . "http://elpa.gnu.org/packages/")
+      '(("gnu" . "http://elpa.gnu.org/packages/")
 	("melpa" . "https://melpa.org/packages/")))
 
 (package-initialize)
@@ -40,7 +40,6 @@
 ;; when running this init.el on a system for the first time.
 ;; (setq use-package-always-ensure t)
 
-
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (when (not (eq system-type 'darwin))
@@ -50,6 +49,9 @@
 (setq visible-bell t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+(global-hl-line-mode 1)
+(line-number-mode 1)
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
@@ -329,6 +331,12 @@
 
 (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
 
+;;; Completion
+
+(require 'icomplete-vertical)
+(icomplete-vertical-mode)
+(require 'orderless)
+(setq completion-styles '(orderless))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -336,7 +344,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(elfeed visual-fill-column orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
+   '(icomplete-vertical elfeed visual-fill-column orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
