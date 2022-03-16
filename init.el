@@ -157,7 +157,7 @@
       org-tags-column 0
       org-ellipses "…"
       org-catch-invisible-edits 'show-and-error
-      org-special-ctrl-a/e t
+      org-special-ctrl-a/e nil
       org-insert-heading-respect-content t)
 
 (add-hook 'org-mode-hook 'org-modern-mode)
@@ -234,6 +234,15 @@
 
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
+
+;;; Elfeed --
+
+(setq elfeed-feeds
+      '(("https://pluralistic.net/feed/" privacy)
+	("https://www.rockpapershotgun.com/feed" games)
+	("https://yourlocalepidemiologist.substack.com/feed" covid)))
+
+;;; Emacs server
 
 (server-start)
 (require 'org-protocol)
@@ -327,7 +336,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(visual-fill-column orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
+   '(elfeed visual-fill-column orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
