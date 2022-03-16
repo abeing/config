@@ -28,29 +28,75 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
 
+;; On macOS, fix an issue with TLS
+(when (eq system-type 'darwin)
+  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
+
 (package-initialize)
 
 (when (not (package-installed-p 'use-package))
   (package-refresh-contents)
   (package-install 'use-package))
 
-;; (require 'use-package)
+;;; ————— Use better defaults —————
 
-;; Causes use-package function to install packages not yet installed. Useful
-;; when running this init.el on a system for the first time.
-;; (setq use-package-always-ensure t)
+;; Don't use compiled code if its older than uncompiled code
+(setq-default load-prefer-newer t)
 
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
+;; Don't show the startup message/screen
+(setq-default inhibit-startup-message t)
+
+;; Don't put 'customize' config in init.el; git it another file
+(setq-default custom-file "~/.config/emacs/custom-file.el")
+
+;; 72 is too narrow
+(setq-default fill-column 80)
+
+;; TODO: Don't use hard tabs? I haven't had this set and haven't noticed any
+;; issues. I think most modes are sane and use spaces. Is this necessary?
+; (setq-default indent-tabs-mode nil)
+
+;; Don't litter backup files everywhere. Contain them to a directory in .config
+(setq-default backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
+
+;; Change yes/no questions to y/n instead
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; On macOS, use Command as Meta, not Option
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'none))
+
+;; Delete trailing whitespace before saving a file
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Enable narrowing commands
+(put 'narrow-to-region 'disabled nil)
+(put 'narrow-to-page 'disabled nil)
+
+;; Display column number in addition to line number in mode line
+(column-number-mode 1)
+
+;; Automatically update buffers if file content on disk has changes
+(global-auto-revert-mode t)
+
+;; Hilight the current line
+(global-hl-line-mode 1)
+
+;;; ————— Disable unnecessary UI elements
+
+;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
+;; up any additional screen real estate, so there's no harm in keeping it.
 (when (not (eq system-type 'darwin))
   (menu-bar-mode -1))
 
-(setq inhibit-startup-message t)
+;; Don't show the scroll bar or tool bar.
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+
 (setq visible-bell t)
 
-(defalias 'yes-or-no-p 'y-or-n-p)
 
-(global-hl-line-mode 1)
 (line-number-mode 1)
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
@@ -90,7 +136,6 @@
 
 (setq shift-select-mode nil)
 
-(setq-default fill-column 80)
 
 (show-paren-mode 1)
 
@@ -337,17 +382,3 @@
 (icomplete-vertical-mode)
 (require 'orderless)
 (setq completion-styles '(orderless))
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(icomplete-vertical elfeed visual-fill-column orderless bongo org-modern nov langtool elpher gemini-mode modus-themes markdown-mode magit evil decide)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
