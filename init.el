@@ -12,6 +12,8 @@
 
 ;;; Code:
 
+;;; ————— User information —————
+
 (setq user-full-name "Adam Miezianko"
       user-mail-address "adam.miezianko@gmail.com")
 (setq calendar-latitude 47.6062
@@ -19,20 +21,18 @@
 
 (defconst my/laptop-p (equal (system-name) "algos.lan"))
 
-;; (require 'package)
+;;; ————— Set up package.el —————
 
-(setq package-archives
-      '(("gnu" . "http://elpa.gnu.org/packages/")
-	("melpa" . "https://melpa.org/packages/")))
+(require 'package)
+
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
 
-(unless package-archive-contents
-  (package-refresh-contents))
-
-;; use-package allows for cleaner configuration of packages
-;;(unless (package-installed-p 'use-package)
-;;  (package-install 'use-package))
+(when (not (package-installed-p 'use-package))
+  (package-refresh-contents)
+  (package-install 'use-package))
 
 ;; (require 'use-package)
 
