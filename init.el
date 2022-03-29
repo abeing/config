@@ -70,9 +70,12 @@
 ;; Delete trailing whitespace before saving a file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;; Enable narrowing commands
+;; Enable narrowing commands (C-x n)
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
+
+;; Enable goal column (C-x C-n)
+(put 'set-goal-column 'disabled nil)
 
 ;; Display column number in addition to line number in mode line
 (column-number-mode 1)
@@ -81,9 +84,9 @@
 (global-auto-revert-mode t)
 
 ;; Hilight the current line
-(global-hl-line-mode 1)
+;; (global-hl-line-mode 1)
 
-;;; ————— Disable unnecessary UI elements
+;;; ————— Disable unnecessary UI elements —————
 
 ;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
 ;; up any additional screen real estate, so there's no harm in keeping it.
@@ -96,17 +99,29 @@
 
 (setq visible-bell t)
 
+;;; ————— Company mode —————
+
+(use-package company
+  :bind (:map company-active-map
+	      ("C-n" . company-select-next)
+	      ("C-p" . company-select-previous))
+  :config
+  (setq company-idle-delay 0.3)
+  (global-company-mode t))
+
+;;; ————— Magit —————
+
+(use-package magit
+  :ensure t
+  :bind ("C-x g" . magit-status))
+
 
 (line-number-mode 1)
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-;; (set-face-attribute 'default nil :font "Hack" :height 120)
 (set-face-attribute 'default nil :family "Iosevka" :height 130)
-;; (set-face-attribute 'variable-pitch nil :family "Source Sans Pro")
 (set-face-attribute 'variable-pitch nil :family "Source Serif Pro" :height 1.1)
-
-(require 'pulse)
 
 (setq bongo-enabled-backends '(mpv vlc speexdec))
 
@@ -114,28 +129,15 @@
 
 ;;; Configure themes
 
-(setq modus-themes-mode-line '(accented borderless))
 (modus-themes-load-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 (setq-default org-fontify-whole-heading-line t)
 
-(when (eq system-type 'darwin)
-  ;; Fixes TLS issues on macOS
-  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-  (setq mac-command-modifier 'meta)
-  (setq mac-option-modifier 'none))
-
 ;; I seperate my sentences with one space not two.
 (setq-default sentence-end-double-space nil)
 
-;; Change this to Sasha Chua's backup strategy of using a directory
-(setq make-backup-files nil)
-
-;; (blink-cursor-mode -1)
-
 (setq shift-select-mode nil)
-
 
 (show-paren-mode 1)
 
@@ -146,22 +148,8 @@
 ;; don't need pagers since we have a buffer. We can just use cat instead.
 (setenv "PAGER" "/bin/cat")
 
-;;(use-package counsel
-;;  :config
-;;  (ivy-mode 1))
-
-;;(define-key emacs-lisp-mode-map
-;;  (kbd "M-.") 'find-function-at-point)
-
-;;(eldoc-mode 1)
-
-;;(use-package magit)
-
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
-
-;; Goal column is handy (C-x C-n)
-(put 'set-goal-column 'disabled nil)
 
 ;;; Org-mode configuration
 ;;; ---------------------------------------------------------------------------
@@ -175,9 +163,6 @@
 
 (setq org-modules '(org-habit))
 
-;; (setq-default org-habit-graph-column 60)
-;; (setq org-habit-show-habits-only-for-today t)
-
 ;; (setq-default org-startup-indented t)
 ;; (setq-default org-adapt-indentation 'headline-data)
 (setq-default org-adapt-indentation nil)
@@ -186,18 +171,7 @@
 (add-hook 'org-mode-hook (lambda ()
 			   (setq-local show-trailing-whitespace t)))
 
-(require 'org-modern)
-
-(modify-all-frames-parameters
- '((right-divider-width . 20)
-   (internal-border-width . 10)))
-(dolist (face '(window-divider
-		window-divider-first-pixel
-		window-divider-last-pixel))
-  (face-spec-reset-face face)
-  (set-face-foreground face (face-attribute 'default :background)))
-(set-face-background 'fringe (face-attribute 'default :background))
-
+;; TODO: See which I want to keep…
 (setq org-hide-emphasis-markers t
       org-pretty-entites t
       org-auto-align-tags nil
@@ -207,7 +181,7 @@
       org-special-ctrl-a/e nil
       org-insert-heading-respect-content t)
 
-(add-hook 'org-mode-hook 'org-modern-mode)
+;; (add-hook 'org-mode-hook 'org-modern-mode)
 
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
@@ -234,34 +208,6 @@
 	 (call-interactively 'org-previous-visible-heading)))
 (define-key global-map (kbd "C-c t") 'my/org-last-heading)
 
-(if my/laptop-p
-    (setq-default python-shell-interpreter "/usr/local/bin/python3"))
-
-;; (require 'evil-mode)
-
-;; (evil-mode)
-
-;;(use-package org-roam
-;;  :init
-;;  (setq org-roam-v2-ack t)
-  ;; :custom
-  ;; (org-roam-directory "~/memex/roam")
-  ;; :bind
-  ;; (("C-c n l" . org-roam-buffer-toggle)
-  ;;  ("C-c n f" . org-roam-node-find)
-  ;;  ("C-c n i" . org-roam-node-insert))
-  ;; :config
-  ;; (org-roam-setup))
-
-;; (use-package diminish)
-
-;; (use-package which-key
-;;   :config
-;;   (which-key-mode)
-;;   (diminish 'which-key))
-
-;; (use-package elpher)
-
 (setq org-capture-templates
       '(("p" "org-protocol"
 	 entry (file+headline "~/memex/reading.org" "Articles")
@@ -282,12 +228,39 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
+
+;;; Org-roam
+;;; ----------------------------------------------------------------------
+
+(use-package org-roam
+  :init
+  (setq org-roam-v2-ack t)
+  :custom
+  (org-roam-directory "~/memex/roam")
+  :bind
+  (("C-c n l" . org-roam-buffer-toggle)
+   ("C-c n f" . org-roam-node-find)
+   ("C-c n i" . org-roam-node-insert))
+  :config
+  (org-roam-setup))
+
+;; (use-package diminish)
+
+;; (use-package which-key
+;;   :config
+;;   (which-key-mode)
+;;   (diminish 'which-key))
+
+;; (use-package elpher)
+
+
 ;;; Elfeed --
 
 (setq elfeed-feeds
       '(("https://pluralistic.net/feed/" privacy)
 	("https://www.rockpapershotgun.com/feed" games)
-	("https://yourlocalepidemiologist.substack.com/feed" covid)))
+	("https://yourlocalepidemiologist.substack.com/feed" covid)
+	("https://musicforprogramming.net/rss.xml" music)))
 
 ;;; Emacs server
 
@@ -326,6 +299,9 @@
  'org-babel-load-languages
  '((python . t)
    (scheme . t)))
+
+(if my/laptop-p
+    (setq-default python-shell-interpreter "/usr/local/bin/python3"))
 
 (setq langtool-java-classpath "/usr/share/languagetool:/usr/share/java/languagetool/*")
 (require 'langtool)
@@ -378,7 +354,9 @@
 
 ;;; Completion
 
-(require 'icomplete-vertical)
-(icomplete-vertical-mode)
-(require 'orderless)
-(setq completion-styles '(orderless))
+;; (require 'icomplete-vertical)
+;; (icomplete-vertical-mode)
+;; (require 'orderless)
+;; (setq completion-styles '(orderless))
+
+(fido-mode)
