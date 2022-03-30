@@ -12,7 +12,7 @@
 
 ;;; Code:
 
-;;; ————— User information —————
+;;; -------------------- User information
 
 (setq user-full-name "Adam Miezianko"
       user-mail-address "adam.miezianko@gmail.com")
@@ -151,8 +151,7 @@
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
 
-;;; Org-mode configuration
-;;; ---------------------------------------------------------------------------
+;; ────────────────────────────────── Org-mode ──────────────────────────────────
 
 (setq org-directory "~/memex")
 
@@ -360,3 +359,35 @@
 ;; (setq completion-styles '(orderless))
 
 (fido-mode)
+
+(defun comment-pretty ()
+  "Insert a comment with '─' (C-x 8 RET BOX DRAWINGS LIGHT HORIZONTAL) on each side."
+  (interactive)
+  (let* ((comment-char "─")
+	 (comment (read-from-minibuffer "Comment: "))
+	 (comment-length (length comment))
+	 (current-column-pos (current-column))
+	 (space-on-each-side (/ (- fill-column
+				   current-column-pos
+				   comment-length
+				   (length comment-start)
+				   ;; Single space on each side of comment
+				   (if (> comment-length 0) 2 0)
+				   ;; Single space after comment syntax string
+				   1)
+				2)))
+    (if (< space-on-each-side 2)
+	(message "Comment string is too big to fit in one line")
+      (progn
+	(insert comment-start)
+	(when (equal comment-start ";")
+	  (insert comment-start))
+	(insert " ")
+	(dotimes (_ space-on-each-side) (insert comment-char))
+	(when (> comment-length 0) (insert " "))
+	(insert comment)
+	(when (> comment-length 0) (insert " "))
+	(dotimes (_ (if (= (% comment-length 2) 0)
+			space-on-each-side
+		      (- space-on-each-side 1)))
+	  (insert comment-char))))))
