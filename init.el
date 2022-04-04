@@ -135,7 +135,7 @@
 (setq-default org-fontify-whole-heading-line t)
 
 ;; I seperate my sentences with one space not two.
-(setq-default sentence-end-double-space nil)
+(setq-default sentence-end-double-space t)
 
 (setq shift-select-mode nil)
 
@@ -227,9 +227,13 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
+(require 'org-modern)
+(require 'olivetti)
 
-;;; Org-roam
-;;; ----------------------------------------------------------------------
+(add-hook 'org-mode-hook 'org-modern-mode)
+(add-hook 'org-mode-hook 'olivetti-mode)
+
+;; ────────────────────────────────── Org-roam ──────────────────────────────────
 
 (use-package org-roam
   :init
