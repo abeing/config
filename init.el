@@ -175,6 +175,9 @@
 ;; save-place-mode causes Emacs to remember the point position for each file
 (save-place-mode 1)
 
+(savehist-mode t)
+(recentf-mode t)
+
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
 ;; don't need pagers since we have a buffer. We can just use cat instead.
 (setenv "PAGER" "/bin/cat")
@@ -229,7 +232,7 @@
 (setq org-agenda-diary-file "~/memex/journal.org")
 
 (defun my/org-last-heading ()
-  "Go to last visible org heading"
+  "Go to last visible org heading."
   (interactive)
   (progn (call-interactively 'end-of-buffer)
 	 (call-interactively 'org-previous-visible-heading)))
@@ -257,13 +260,15 @@
 
 (use-package org-modern
   :hook org-mode)
+
 (use-package olivetti
   :hook org-mode)
+
 (use-package org-pomodoro
   :bind
   (("C-c p" . org-pomodoro)))
 
-;; ────────────────────────────────── Org-roam ──────────────────────────────────
+;; ---------- Org-roam ----------
 
 (use-package org-roam
   :init
@@ -276,6 +281,13 @@
    ("C-c n i" . org-roam-node-insert))
   :config
   (org-roam-setup))
+
+;; ---------- Avy ----------
+
+(unless (package-installed-p 'avy)
+  (package-install 'avy))
+
+(global-set-key (kbd "C-c z") #'avy-goto-word-1)
 
 ;; (use-package diminish)
 
