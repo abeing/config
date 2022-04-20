@@ -229,9 +229,12 @@
 
 (require 'org-modern)
 (require 'olivetti)
+(require 'org-pomodoro)
+(define-key global-map (kbd "C-c p") 'org-pomodoro)
 
 (add-hook 'org-mode-hook 'org-modern-mode)
 (add-hook 'org-mode-hook 'olivetti-mode)
+
 
 ;; ────────────────────────────────── Org-roam ──────────────────────────────────
 
