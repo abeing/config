@@ -227,14 +227,13 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
-(require 'org-modern)
-(require 'olivetti)
-(require 'org-pomodoro)
-(define-key global-map (kbd "C-c p") 'org-pomodoro)
-
-(add-hook 'org-mode-hook 'org-modern-mode)
-(add-hook 'org-mode-hook 'olivetti-mode)
-
+(use-package org-modern
+  :hook org-mode)
+(use-package olivetti
+  :hook org-mode)
+(use-package org-pomodoro
+  :bind
+  (("C-c p" . org-pomodoro)))
 
 ;; ────────────────────────────────── Org-roam ──────────────────────────────────
 
@@ -299,7 +298,7 @@
 	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
     (redraw-frame)))
 
-(require 'orderless)
+(use-package orderless)
 
 (org-babel-do-load-languages
  'org-babel-load-languages
