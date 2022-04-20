@@ -12,7 +12,7 @@
 
 ;;; Code:
 
-;;; -------------------- User information
+;;; ---------- User information ----------
 
 (setq user-full-name "Adam Miezianko"
       user-mail-address "adam.miezianko@gmail.com")
@@ -21,12 +21,9 @@
 
 (defconst my/laptop-p (equal (system-name) "algos.lan"))
 
-;;; ————— Set up package.el —————
+;;; ---------- Set up package.el ----------
 
 (require 'package)
-
-(add-to-list 'package-archives
-	     '("melpa" . "https://melpa.org/packages/"))
 
 ;; On macOS, fix an issue with TLS
 (when (eq system-type 'darwin)
@@ -38,7 +35,7 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-;;; ————— Use better defaults —————
+;;; ---------- Use better defaults ----------
 
 ;; Don't use compiled code if its older than uncompiled code
 (setq-default load-prefer-newer t)
@@ -47,14 +44,15 @@
 (setq-default inhibit-startup-message t)
 
 ;; Don't put 'customize' config in init.el; git it another file
-(setq-default custom-file "~/.config/emacs/custom-file.el")
+(setq-default custom-file (locate-user-emacs-file "custom.el"))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 ;; 72 is too narrow
 (setq-default fill-column 80)
 
-;; TODO: Don't use hard tabs? I haven't had this set and haven't noticed any
-;; issues. I think most modes are sane and use spaces. Is this necessary?
-; (setq-default indent-tabs-mode nil)
+;; Don't use hard tabs.
+(setq-default indent-tabs-mode nil)
 
 ;; Don't litter backup files everywhere. Contain them to a directory in .config
 (setq-default backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
@@ -83,11 +81,6 @@
 ;; Automatically update buffers if file content on disk has changes
 (global-auto-revert-mode t)
 
-;; Hilight the current line
-;; (global-hl-line-mode 1)
-
-;;; ————— Disable unnecessary UI elements —————
-
 ;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
 ;; up any additional screen real estate, so there's no harm in keeping it.
 (when (not (eq system-type 'darwin))
@@ -99,7 +92,11 @@
 
 (setq visible-bell t)
 
-;;; ————— Company mode —————
+;; Allow Emacs to resize by pixel rather than character
+(setq window-resize-pixelwise t)
+(setq frame-resize-pixelwise t)
+
+;;; ---------- Company mode ----------
 
 (use-package company
   :bind (:map company-active-map
@@ -109,12 +106,47 @@
   (setq company-idle-delay 0.3)
   (global-company-mode t))
 
-;;; ————— Magit —————
+;;; ---------- Completion ----------
 
-(use-package magit
-  :ensure t
-  :bind ("C-x g" . magit-status))
+(unless (package-installed-p 'vertico)
+  (package-install 'vertico))
 
+(vertico-mode t)
+
+(unless (package-installed-p 'consult)
+  (package-install 'consult))
+
+(global-set-key [rebind switch-to-buffer] #'consult-buffer)
+
+(setq read-buffer-completion-ignore-case t
+      read-file-name-completion-ignore-case t
+      completion-ignore-case t)
+
+;;; ---------- LSP support ----------
+
+(unless (package-installed-p 'eglot)
+  (package-install 'eglot))
+
+(add-hook 'prog-mode-hook #'eglot-ensure)
+
+(add-hook 'prog-mode-hook #'flymake-mode)
+
+;;; ---------- Source control ----------
+
+(unless (package-installed-p 'magit)
+  (package-install 'magit))
+
+(global-set-key (kbd "C-c g") #'magit-status)
+
+(unless (package-installed-p 'diff-hl)
+  (package-install 'diff-hl))
+
+(add-hook 'prog-mode-hook #'diff-hl-mode)
+
+;;; ---------- Markdown support ----------
+
+(unless (package-installed-p 'markdown-mode)
+  (package-install 'markdown-mode))
 
 (line-number-mode 1)
 
@@ -127,8 +159,7 @@
 
 (setq custom-safe-themes t)
 
-;;; Configure themes
-
+(load-theme 'modus-operandi t)
 (modus-themes-load-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
@@ -151,7 +182,7 @@
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
 
-;; ────────────────────────────────── Org-mode ──────────────────────────────────
+;; ---------- Org-mode ----------
 
 (setq org-directory "~/memex")
 
@@ -191,9 +222,6 @@
 (setq-default buffer-file-coding-system 'utf-8-unix)
 
 (setq org-use-speed-commands t)
-
-;;(use-package org-pomodoro
-;;  :bind ("C-c p" . org-pomodoro))
 
 ;; Only show the highest-level TODO of a TODO tree
 (setq org-agenda-todo-list-sublevels nil)
@@ -272,8 +300,6 @@
 (server-start)
 (require 'org-protocol)
 
-;; (use-package markdown-mode)
-
 ;; (use-package rg
 ;;  :config
 ;;  (rg-enable-default-bindings))
@@ -326,6 +352,7 @@
 
 (require 'visual-fill-column)
 (defun nov-mode-spacing ()
+  "Spacing for nov.el mode."
   (progn
     (setq line-spacing 0.3)
     (setq nov-text-width 72)
@@ -357,43 +384,4 @@
 
 (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
 
-;;; Completion
-
-;; (require 'icomplete-vertical)
-;; (icomplete-vertical-mode)
-;; (require 'orderless)
-;; (setq completion-styles '(orderless))
-
-(fido-mode)
-
-(defun comment-pretty ()
-  "Insert a comment with '─' (C-x 8 RET BOX DRAWINGS LIGHT HORIZONTAL) on each side."
-  (interactive)
-  (let* ((comment-char "─")
-	 (comment (read-from-minibuffer "Comment: "))
-	 (comment-length (length comment))
-	 (current-column-pos (current-column))
-	 (space-on-each-side (/ (- fill-column
-				   current-column-pos
-				   comment-length
-				   (length comment-start)
-				   ;; Single space on each side of comment
-				   (if (> comment-length 0) 2 0)
-				   ;; Single space after comment syntax string
-				   1)
-				2)))
-    (if (< space-on-each-side 2)
-	(message "Comment string is too big to fit in one line")
-      (progn
-	(insert comment-start)
-	(when (equal comment-start ";")
-	  (insert comment-start))
-	(insert " ")
-	(dotimes (_ space-on-each-side) (insert comment-char))
-	(when (> comment-length 0) (insert " "))
-	(insert comment)
-	(when (> comment-length 0) (insert " "))
-	(dotimes (_ (if (= (% comment-length 2) 0)
-			space-on-each-side
-		      (- space-on-each-side 1)))
-	  (insert comment-char))))))
+;;; init.el ends here
