@@ -336,7 +336,7 @@
 	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
     (redraw-frame)))
 
-(use-package orderless)
+;; (use-package orderless)
 
 (org-babel-do-load-languages
  'org-babel-load-languages
