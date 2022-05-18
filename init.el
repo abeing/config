@@ -6,9 +6,9 @@
 
 ;;; Commentary:
 
-;; I am rebuilding my Emacs config from scratch. I used to use spacemacs and
-;; then Doom emacs but both of those were too different from my Emacs experience
-;; in the 90s and early 00s. So, tabula rasa.
+;; I am rebuilding my Emacs config from scratch.  I used to use spacemacs and
+;; then Doom Emacs but both of those were too different from my Emacs experience
+;; in the 90s and early 00s.  So, tabula rasa.
 
 ;;; Code:
 
@@ -98,13 +98,13 @@
 
 ;;; ---------- Company mode ----------
 
-(use-package company
-  :bind (:map company-active-map
-	      ("C-n" . company-select-next)
-	      ("C-p" . company-select-previous))
-  :config
-  (setq company-idle-delay 0.3)
-  (global-company-mode t))
+;; (use-package company
+;;   :bind (:map company-active-map
+;; 	      ("C-n" . company-select-next)
+;; 	      ("C-p" . company-select-previous))
+;;   :config
+;;   (setq company-idle-delay 0.3)
+;;   (global-company-mode t))
 
 ;;; ---------- Completion ----------
 
@@ -114,7 +114,7 @@
 (vertico-mode t)
 
 (unless (package-installed-p 'consult)
-  (package-install 'consult))
+ (package-install 'consult))
 
 (global-set-key [rebind switch-to-buffer] #'consult-buffer)
 
@@ -153,14 +153,18 @@
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
 (set-face-attribute 'default nil :family "Iosevka" :height 130)
-(set-face-attribute 'variable-pitch nil :family "Source Serif Pro" :height 1.1)
+(set-face-attribute 'variable-pitch nil :family "Source Serif Pro" :height 1.0)
+;; (set-face-attribute 'variable-pitch nil :family "Bookerly" :height 1.3)
 
 (setq bongo-enabled-backends '(mpv vlc speexdec))
 
 (setq custom-safe-themes t)
 
 (load-theme 'modus-operandi t)
-(modus-themes-load-operandi)
+(setq org-fontify-whole-heading-line t)
+(setq modus-themes-headings
+      '((1 . (overline background bold rainbow))
+        (2 . (overline background bold rainbow))))
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 (setq-default org-fontify-whole-heading-line t)
@@ -175,8 +179,8 @@
 ;; save-place-mode causes Emacs to remember the point position for each file
 (save-place-mode 1)
 
-(savehist-mode t)
-(recentf-mode t)
+;; (savehist-mode t)
+;; (recentf-mode t)
 
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
 ;; don't need pagers since we have a buffer. We can just use cat instead.
@@ -213,8 +217,6 @@
       org-catch-invisible-edits 'show-and-error
       org-special-ctrl-a/e nil
       org-insert-heading-respect-content t)
-
-;; (add-hook 'org-mode-hook 'org-modern-mode)
 
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
@@ -258,11 +260,15 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
-(use-package org-modern
-  :hook org-mode)
+(unless (package-installed-p 'org-modern)
+  (package-install 'org-modern))
 
-(use-package olivetti
-  :hook org-mode)
+(add-hook 'org-mode-hook 'org-modern-mode)
+
+(unless (package-installed-p 'olivetti)
+  (package-install 'olivetti))
+
+(add-hook 'org-mode-hook 'olivetti-mode)
 
 (use-package org-pomodoro
   :bind
