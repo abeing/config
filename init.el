@@ -160,11 +160,11 @@
 
 (setq custom-safe-themes t)
 
-(load-theme 'modus-operandi t)
 (setq org-fontify-whole-heading-line t)
 (setq modus-themes-headings
       '((1 . (overline background bold rainbow))
         (2 . (overline background bold rainbow))))
+(load-theme 'modus-operandi t)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 (setq-default org-fontify-whole-heading-line t)
@@ -263,7 +263,7 @@
 (unless (package-installed-p 'org-modern)
   (package-install 'org-modern))
 
-(add-hook 'org-mode-hook 'org-modern-mode)
+;; (add-hook 'org-mode-hook 'org-modern-mode)
 
 (unless (package-installed-p 'olivetti)
   (package-install 'olivetti))
