@@ -96,52 +96,12 @@
 (setq window-resize-pixelwise t)
 (setq frame-resize-pixelwise t)
 
-;;; ---------- Company mode ----------
-
-;; (use-package company
-;;   :bind (:map company-active-map
-;; 	      ("C-n" . company-select-next)
-;; 	      ("C-p" . company-select-previous))
-;;   :config
-;;   (setq company-idle-delay 0.3)
-;;   (global-company-mode t))
-
-;;; ---------- Completion ----------
-
-(unless (package-installed-p 'vertico)
-  (package-install 'vertico))
-
-(vertico-mode t)
-
-(unless (package-installed-p 'consult)
- (package-install 'consult))
-
-(global-set-key [rebind switch-to-buffer] #'consult-buffer)
-
-(setq read-buffer-completion-ignore-case t
-      read-file-name-completion-ignore-case t
-      completion-ignore-case t)
-
-;;; ---------- LSP support ----------
-
-(unless (package-installed-p 'eglot)
-  (package-install 'eglot))
-
-(add-hook 'prog-mode-hook #'eglot-ensure)
-
-(add-hook 'prog-mode-hook #'flymake-mode)
-
 ;;; ---------- Source control ----------
 
 (unless (package-installed-p 'magit)
   (package-install 'magit))
 
 (global-set-key (kbd "C-c g") #'magit-status)
-
-(unless (package-installed-p 'diff-hl)
-  (package-install 'diff-hl))
-
-(add-hook 'prog-mode-hook #'diff-hl-mode)
 
 ;;; ---------- Markdown support ----------
 
@@ -153,24 +113,12 @@
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
 (set-face-attribute 'default nil :family "Iosevka" :height 130)
-(set-face-attribute 'variable-pitch nil :family "Source Serif Pro" :height 1.0)
-;; (set-face-attribute 'variable-pitch nil :family "Bookerly" :height 1.3)
 
-(setq bongo-enabled-backends '(mpv vlc speexdec))
-
-(setq custom-safe-themes t)
-
-(setq org-fontify-whole-heading-line t)
-(setq modus-themes-headings
-      '((1 . (overline background bold rainbow))
-        (2 . (overline background bold rainbow))))
-(load-theme 'modus-operandi t)
+(load-theme 'modus-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
-(setq-default org-fontify-whole-heading-line t)
-
 ;; I seperate my sentences with one space not two.
-(setq-default sentence-end-double-space t)
+(setq-default sentence-end-double-space nil)
 
 (setq shift-select-mode nil)
 
@@ -260,20 +208,6 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
-(unless (package-installed-p 'org-modern)
-  (package-install 'org-modern))
-
-;; (add-hook 'org-mode-hook 'org-modern-mode)
-
-(unless (package-installed-p 'olivetti)
-  (package-install 'olivetti))
-
-(add-hook 'org-mode-hook 'olivetti-mode)
-
-(use-package org-pomodoro
-  :bind
-  (("C-c p" . org-pomodoro)))
-
 ;; ---------- Org-roam ----------
 
 (use-package org-roam
@@ -287,31 +221,6 @@
    ("C-c n i" . org-roam-node-insert))
   :config
   (org-roam-setup))
-
-;; ---------- Avy ----------
-
-(unless (package-installed-p 'avy)
-  (package-install 'avy))
-
-(global-set-key (kbd "C-c z") #'avy-goto-word-1)
-
-;; (use-package diminish)
-
-;; (use-package which-key
-;;   :config
-;;   (which-key-mode)
-;;   (diminish 'which-key))
-
-;; (use-package elpher)
-
-
-;;; Elfeed --
-
-(setq elfeed-feeds
-      '(("https://pluralistic.net/feed/" privacy)
-	("https://www.rockpapershotgun.com/feed" games)
-	("https://yourlocalepidemiologist.substack.com/feed" covid)
-	("https://musicforprogramming.net/rss.xml" music)))
 
 ;;; Emacs server
 
@@ -327,10 +236,6 @@
 (setq-default indent-tabs-node nil)
 
 (setq-default tab-always-indent 'complete)
-
-;; (use-package powerline
-;;  :config
-;;  (powerline-default-theme))
 
 (defun my/show-formfeed-as-line ()
   "Display formfeed ^L char as line."
@@ -398,8 +303,8 @@
 	      'my-nov-window-configuration-change-hook
 	      nil t)))
 
-(add-hook 'nov-post-html-render-hook 'my-nov-post-html-render-hook)
+;; (add-hook 'nov-post-html-render-hook 'my-nov-post-html-render-hook)
 
-(add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+;; (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
 
 ;;; init.el ends here
