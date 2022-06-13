@@ -114,6 +114,27 @@
 
 (set-face-attribute 'default nil :family "Iosevka" :height 130)
 
+;;; ---------- Completion ----------
+
+(icomplete-mode)
+
+;;; ---------- Modus theme ----------
+
+(setq org-fontify-whole-heading-line t)
+(setq org-fontify-whole-block-delimiter-line t)
+(setq org-fontify-todo-headline nil)
+(setq modus-themes-mode-line '(3d accented))
+(setq modus-themes-region '(accented))
+(setq modus-themes-completions '(opinionated))
+(setq modus-themes-bold-constructs t)
+(setq modus-themes-italic-constructs t)
+(setq modus-themes-paren-match '(bold intesnse))
+(setq modus-themes-headings '((1 . (rainbow overline background 1.4))
+                              (2 . (rainbow background 1.3))
+                              (3 . (rainbow bold 1.2))
+                              (t . (semibold 1.1))))
+(setq modus-themes-scale-headings t)
+(setq modus-themes-org-blocks 'gray-background)
 (load-theme 'modus-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
