@@ -129,8 +129,8 @@
 (setq modus-themes-bold-constructs t)
 (setq modus-themes-italic-constructs t)
 (setq modus-themes-paren-match '(bold intesnse))
-(setq modus-themes-headings '((1 . (rainbow overline background 1.4))
-                              (2 . (rainbow background 1.3))
+(setq modus-themes-headings '((1 . (rainbow bold 1.4))
+                              (2 . (rainbow bold 1.3))
                               (3 . (rainbow bold 1.2))
                               (t . (semibold 1.1))))
 (setq modus-themes-scale-headings t)
@@ -190,6 +190,7 @@
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
+(define-key global-map (kbd "C-c p") 'org-pomodoro)
 
 (setq org-log-done t)
 
