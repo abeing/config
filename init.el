@@ -96,13 +96,6 @@
 (setq window-resize-pixelwise t)
 (setq frame-resize-pixelwise t)
 
-;;; ---------- Source control ----------
-
-(unless (package-installed-p 'magit)
-  (package-install 'magit))
-
-(global-set-key (kbd "C-c g") #'magit-status)
-
 ;;; ---------- Markdown support ----------
 
 (unless (package-installed-p 'markdown-mode)
@@ -116,25 +109,13 @@
 
 ;;; ---------- Completion ----------
 
-(icomplete-mode)
+;; (icomplete-mode)
+
+(require 'vertico)
+(vertico-mode)
 
 ;;; ---------- Modus theme ----------
 
-(setq org-fontify-whole-heading-line t)
-(setq org-fontify-whole-block-delimiter-line t)
-(setq org-fontify-todo-headline nil)
-(setq modus-themes-mode-line '(3d accented))
-(setq modus-themes-region '(accented))
-(setq modus-themes-completions '(opinionated))
-(setq modus-themes-bold-constructs t)
-(setq modus-themes-italic-constructs t)
-(setq modus-themes-paren-match '(bold intesnse))
-(setq modus-themes-headings '((1 . (rainbow bold 1.4))
-                              (2 . (rainbow bold 1.3))
-                              (3 . (rainbow bold 1.2))
-                              (t . (semibold 1.1))))
-(setq modus-themes-scale-headings t)
-(setq modus-themes-org-blocks 'gray-background)
 (load-theme 'modus-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
@@ -177,22 +158,13 @@
 (add-hook 'org-mode-hook (lambda ()
 			   (setq-local show-trailing-whitespace t)))
 
-;; TODO: See which I want to keep…
-(setq org-hide-emphasis-markers t
-      org-pretty-entites t
-      org-auto-align-tags nil
-      org-tags-column 0
-      org-ellipses "…"
-      org-catch-invisible-edits 'show-and-error
-      org-special-ctrl-a/e nil
-      org-insert-heading-respect-content t)
-
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c p") 'org-pomodoro)
 
-(setq org-log-done t)
+(setq org-pretty-entities t)
+(setq org-hide-emphasis-markers t)
 
 (setq-default buffer-file-coding-system 'utf-8-unix)
 
@@ -225,35 +197,16 @@
 
 (setq org-refile-targets '(("~/memex/plan.org" :maxlevel . 3)
 			   ("~/memex/someday.org" :level . 1)
-			   ("~/memex/tickker.org" :maxlevel . 2)))
-
-(setq org-todo-keywords
-      '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
-
-;; ---------- Org-roam ----------
-
-(use-package org-roam
-  :init
-  (setq org-roam-v2-ack t)
-  :custom
-  (org-roam-directory "~/memex/roam")
-  :bind
-  (("C-c n l" . org-roam-buffer-toggle)
-   ("C-c n f" . org-roam-node-find)
-   ("C-c n i" . org-roam-node-insert))
-  :config
-  (org-roam-setup))
+			   ("~/memex/tickler.org" :maxlevel . 2)))
 
 ;;; Emacs server
 
 (server-start)
 (require 'org-protocol)
 
-;; (use-package rg
-;;  :config
-;;  (rg-enable-default-bindings))
-
 (setq org-enforce-todo-dependencies t)
+
+(setq org-log-done t)
 
 (setq-default indent-tabs-node nil)
 
@@ -285,48 +238,12 @@
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
 
-;;; The Simple HTML Renderer (shr) is used by the Emacs Web Browser (EWW) and
-;;; nov.el to render HTML. I want it to act mostly like reader mode.
+;; denote
 
-(setq shr-use-colors nil)
-(setq shr-use-fonts nil)
-(setq shr-max-image-proportion 0.6)
-(setq shr-width 72)
+(require 'denote)
 
-;;; nov.el for reading epubs
+(setq denote-directory (expand-file-name "~/memex"))
 
-(require 'visual-fill-column)
-(defun nov-mode-spacing ()
-  "Spacing for nov.el mode."
-  (progn
-    (setq line-spacing 0.3)
-    (setq nov-text-width 72)
-    (setq visual-fill-column-center-text t)
-    (visual-line-mode)
-    (visual-fill-column-mode)))
-(add-hook 'nov-mode-hook 'nov-mode-spacing)
-
-(defun my-nov-window-configuration-change-hook ()
-  (my-nov-post-html-render-hook)
-  (remove-hook 'window-configuration-change-hook
-	       'my-nov-window-configuration-change-hook
-	       t))
-
-(defun my-nov-post-html-render-hook ()
-  (if (get-buffer-window)
-      (with-current-buffer (current-buffer)
-	(goto-char (point-min))
-	(while (not (eobp))
-	  (when (looking-at "^[[:space:]]*$")
-	    (kill-line)
-	    (insert "    "))
-	  (forward-line 1)))
-    (add-hook 'window-configuration-change-hook
-	      'my-nov-window-configuration-change-hook
-	      nil t)))
-
-;; (add-hook 'nov-post-html-render-hook 'my-nov-post-html-render-hook)
-
-;; (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+(define-key global-map (kbd "C-c n r") #'denote-dired-rename-file)
 
 ;;; init.el ends here
