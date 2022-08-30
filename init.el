@@ -31,10 +31,6 @@
 
 (package-initialize)
 
-(when (not (package-installed-p 'use-package))
-  (package-refresh-contents)
-  (package-install 'use-package))
-
 ;;; ---------- Use better defaults ----------
 
 ;; Don't use compiled code if its older than uncompiled code
@@ -221,8 +217,6 @@
     (aset buffer-display-table ?\^L
 	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
     (redraw-frame)))
-
-;; (use-package orderless)
 
 (org-babel-do-load-languages
  'org-babel-load-languages
