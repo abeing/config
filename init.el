@@ -92,11 +92,6 @@
 (setq window-resize-pixelwise t)
 (setq frame-resize-pixelwise t)
 
-;;; ---------- Markdown support ----------
-
-(unless (package-installed-p 'markdown-mode)
-  (package-install 'markdown-mode))
-
 (line-number-mode 1)
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
@@ -107,11 +102,17 @@
 
 ;; (icomplete-mode)
 
+(when (not (package-installed-p 'vertico))
+  (package-refresh-contents)
+  (package-install 'vertico))
 (require 'vertico)
 (vertico-mode)
 
 ;;; ---------- Modus theme ----------
 
+(when (not (package-installed-p 'modus-themes))
+  (package-refresh-contents)
+  (package-install 'modus-themes))
 (load-theme 'modus-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
@@ -226,14 +227,14 @@
 (if my/laptop-p
     (setq-default python-shell-interpreter "/usr/local/bin/python3"))
 
-(setq langtool-java-classpath "/usr/share/languagetool:/usr/share/java/languagetool/*")
-(require 'langtool)
-
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
 
 ;; denote
 
+(when (not (package-installed-p 'denote))
+  (package-refresh-contents)
+  (package-install 'denote))
 (require 'denote)
 
 (setq denote-directory (expand-file-name "~/memex"))
