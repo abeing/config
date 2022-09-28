@@ -29,6 +29,8 @@
 (when (eq system-type 'darwin)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 (package-initialize)
 
 ;;; ---------- Use better defaults ----------
@@ -96,7 +98,7 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :family "Iosevka" :height 130)
+(set-face-attribute 'default nil :family "Iosevka" :height 150)
 
 ;;; ---------- Completion ----------
 
@@ -135,6 +137,10 @@
 
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
+
+;;; Langtool
+
+(setq langtool-language-tool-jar "/usr/local/opt/languagetool/libexec/languagetool-commandline.jar")
 
 ;; ---------- Org-mode ----------
 
