@@ -184,6 +184,7 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c p") 'org-pomodoro)
 
+(setq org-startup-indented t)
 (setq org-pretty-entities t)
 (setq org-hide-emphasis-markers t)
 
