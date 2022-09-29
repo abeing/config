@@ -29,6 +29,8 @@
 (when (eq system-type 'darwin)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 (package-initialize)
 
 ;;; ---------- Use better defaults ----------
@@ -113,8 +115,20 @@
 (when (not (package-installed-p 'modus-themes))
   (package-refresh-contents)
   (package-install 'modus-themes))
+
+(setq modus-themes-bold-constructs t
+      modus-themes-italic-constructs t
+      modus-themes-links nil
+      modus-themes-mode-line 'accented
+      modus-themes-markup '(bold)
+      modus-themes-org-blocks 'background)
+
+(setq org-fontify-quote-and-verse-blocks t)
+
 (load-theme 'modus-operandi)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
+
+;; (setq modus-themes-org-blocks 'gray-background)
 
 ;; I seperate my sentences with one space not two.
 (setq-default sentence-end-double-space nil)
@@ -196,6 +210,11 @@
 			   ("~/memex/someday.org" :level . 1)
 			   ("~/memex/tickler.org" :maxlevel . 2)))
 
+;;; Bongos
+
+(when (not (package-installed-p 'bongo))
+  (package-install 'bongo))
+
 ;;; Emacs server
 
 (server-start)
@@ -240,5 +259,20 @@
 (setq denote-directory (expand-file-name "~/memex"))
 
 (define-key global-map (kbd "C-c n r") #'denote-dired-rename-file)
+(define-key global-map (kbd "C-c n n") #'denote-create-note)
+(define-key global-map (kbd "C-c n l") #'denote-link-insert-link)
+
+;;; Logos narrowing
+
+(when (not (package-installed-p 'logos))
+  (package-refresh-contents)
+  (package-install 'logos))
+(require 'logos)
+(setq logos-outlines-are-pages t)
+(setq logos-outline-regexp-alist
+      `((emacs-lisp-mode . "^;;;+ ")
+        (org-mode . "^\\*+ +")
+        (t . ,(or outline-regexp logos--page-delimiter))))
+(define-key global-map (kbd "C-x n l") #'logos-narrow-dwim)
 
 ;;; init.el ends here
