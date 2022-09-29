@@ -110,25 +110,31 @@
 (require 'vertico)
 (vertico-mode)
 
-;;; ---------- Modus theme ----------
+;;; ---------- Theme ----------
 
-(when (not (package-installed-p 'modus-themes))
+;; (when (not (package-installed-p 'modus-themes))
+;;   (package-refresh-contents)
+;;   (package-install 'modus-themes))
+
+(when (not (package-installed-p 'ef-themes))
   (package-refresh-contents)
-  (package-install 'modus-themes))
+  (package-install 'ef-themes))
 
-(setq modus-themes-bold-constructs t
-      modus-themes-italic-constructs t
-      modus-themes-links nil
-      modus-themes-mode-line 'accented
-      modus-themes-markup '(bold)
-      modus-themes-org-blocks 'background)
+;; (setq modus-themes-bold-constructs t
+;;       modus-themes-italic-constructs t
+;;       modus-themes-links nil
+;;       modus-themes-mode-line 'accented
+;;       modus-themes-markup '(bold)
+;;       modus-themes-org-blocks 'background)
 
 (setq org-fontify-quote-and-verse-blocks t)
 
-(load-theme 'modus-operandi)
-(define-key global-map (kbd "<f5>") #'modus-themes-toggle)
+;; (load-theme 'modus-operandi)
+;; (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 ;; (setq modus-themes-org-blocks 'gray-background)
+
+(ef-themes-load-random 'light)
 
 ;; I seperate my sentences with one space not two.
 (setq-default sentence-end-double-space nil)
