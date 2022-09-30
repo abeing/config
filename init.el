@@ -111,13 +111,39 @@
 (require 'vertico)
 (vertico-mode)
 
-;;; ---------- Modus theme ----------
+;;; ---------- Theme ----------
 
 (when (not (package-installed-p 'modus-themes))
   (package-refresh-contents)
   (package-install 'modus-themes))
-(load-theme 'modus-operandi)
-(define-key global-map (kbd "<f5>") #'modus-themes-toggle)
+
+(when (not (package-installed-p 'ef-themes))
+  (package-refresh-contents)
+  (package-install 'ef-themes))
+
+(setq modus-themes-bold-constructs t
+      modus-themes-italic-constructs t
+      modus-themes-links nil
+      modus-themes-mode-line 'accented
+      modus-themes-markup '(bold)
+      modus-themes-org-blocks 'background)
+
+(setq org-fontify-quote-and-verse-blocks t)
+
+;; (load-theme 'modus-operandi)
+;; (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
+(ef-themes-load-random 'autumn)
+
+;;; ---------- gode-mode ----------
+
+(require 'god-mode)
+(god-mode)
+(global-set-key (kbd "<escape>") #'god-local-mode)
+(define-key god-local-mode-map (kbd "i") #'god-local-mode)
+(define-key god-local-mode-map (kbd ".") #'repeat)
+
+;;; ---------- Other ----------
+
 
 ;; I seperate my sentences with one space not two.
 (setq-default sentence-end-double-space nil)
@@ -167,6 +193,7 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c p") 'org-pomodoro)
 
+(setq org-startup-indented t)
 (setq org-pretty-entities t)
 (setq org-hide-emphasis-markers t)
 
@@ -204,6 +231,11 @@
 (setq org-refile-targets '(("~/memex/plan.org" :maxlevel . 3)
 			   ("~/memex/someday.org" :level . 1)
 			   ("~/memex/tickler.org" :maxlevel . 2)))
+
+;;; Bongos
+
+(when (not (package-installed-p 'bongo))
+  (package-install 'bongo))
 
 ;;; Emacs server
 
@@ -249,5 +281,20 @@
 (setq denote-directory (expand-file-name "~/memex"))
 
 (define-key global-map (kbd "C-c n r") #'denote-dired-rename-file)
+(define-key global-map (kbd "C-c n n") #'denote-create-note)
+(define-key global-map (kbd "C-c n l") #'denote-link-insert-link)
+
+;;; Logos narrowing
+
+(when (not (package-installed-p 'logos))
+  (package-refresh-contents)
+  (package-install 'logos))
+(require 'logos)
+(setq logos-outlines-are-pages t)
+(setq logos-outline-regexp-alist
+      `((emacs-lisp-mode . "^;;;+ ")
+        (org-mode . "^\\*+ +")
+        (t . ,(or outline-regexp logos--page-delimiter))))
+(define-key global-map (kbd "C-x n l") #'logos-narrow-dwim)
 
 ;;; init.el ends here
