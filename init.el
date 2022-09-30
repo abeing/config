@@ -33,6 +33,11 @@
 
 (package-initialize)
 
+;;; ---------- Laptop-specific settings ----------
+
+(when my/laptop-p
+  (setq ispell-program-name "/usr/local/bin/ispell"))
+
 ;;; ---------- Use better defaults ----------
 
 ;; Don't use compiled code if its older than uncompiled code
