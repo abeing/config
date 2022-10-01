@@ -50,6 +50,15 @@
  vc-follow-symlinks t        ; Follow symlinks without asking
  ring-bell-function nil)     ; Don't ding
 
+(savehist-mode t)             ; Save the minibuffer history
+(show-paren-mode)             ; Highlight matching parenthesis
+(save-place-mode)             ; Remember the point position for each file
+(electric-pair-mode)          ; Automagically insert matching parenthesis,
+                              ; bracket, brace, etc.
+(global-hl-line-mode)         ; Hilight the current line in all buffers
+(delete-selection-mode)       ; Replace selection when typing
+(prefer-coding-system 'utf-8) ; Default to UTF-8 encoding
+
 ;; Don't use compiled code if its older than uncompiled code
 (setq-default load-prefer-newer t)
 
@@ -156,12 +165,7 @@
 
 (setq shift-select-mode nil)
 
-(show-paren-mode 1)
 
-;; save-place-mode causes Emacs to remember the point position for each file
-(save-place-mode 1)
-
-;; (savehist-mode t)
 ;; (recentf-mode t)
 
 ;; Emacs doesn't provide enough terminal support for pagers like less, but we
@@ -203,7 +207,8 @@
 (setq org-pretty-entities t)
 (setq org-hide-emphasis-markers t)
 
-(setq-default buffer-file-coding-system 'utf-8-unix)
+;; This should not be necessary with (prefer-coding-system 'utf-8) above
+;; (setq-default buffer-file-coding-system 'utf-8-unix)
 
 (setq org-use-speed-commands t)
 (setq org-fontify-whole-heading-line t)
