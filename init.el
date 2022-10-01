@@ -40,22 +40,23 @@
 
 ;;; ---------- Use better defaults ----------
 
+(setq-default
+ inhibit-startup-screen t
+ initial-scratch-message nil ; The *scratch* buffer doesn't need to comment on top
+ indent-tabs-mode nil        ; Don't use tabs, ever!
+ tab-width 2                 ; The number of spaces a tab is equal to
+ fill-column 78              ; Wrap at 78; 72 was too narrow
+ column-number-mode t        ; Display column number in the mode line
+ vc-follow-symlinks t        ; Follow symlinks without asking
+ ring-bell-function nil)     ; Don't ding
+
 ;; Don't use compiled code if its older than uncompiled code
 (setq-default load-prefer-newer t)
-
-;; Don't show the startup message/screen
-(setq-default inhibit-startup-message t)
 
 ;; Don't put 'customize' config in init.el; git it another file
 (setq-default custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
   (load custom-file))
-
-;; 72 is too narrow
-(setq-default fill-column 80)
-
-;; Don't use hard tabs.
-(setq-default indent-tabs-mode nil)
 
 ;; Don't litter backup files everywhere. Contain them to a directory in .config
 (setq-default backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
@@ -78,8 +79,6 @@
 ;; Enable goal column (C-x C-n)
 (put 'set-goal-column 'disabled nil)
 
-;; Display column number in addition to line number in mode line
-(column-number-mode 1)
 
 ;; Automatically update buffers if file content on disk has changes
 (global-auto-revert-mode t)
@@ -104,7 +103,9 @@
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 (add-to-list 'default-frame-alist '(width . 177))
 
-(set-face-attribute 'default nil :family "Iosevka" :height 150)
+;; Font
+
+(set-face-attribute 'default nil :family "Iosevka" :height 140)
 
 ;;; ---------- Completion ----------
 
