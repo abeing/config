@@ -55,7 +55,6 @@
 (save-place-mode)             ; Remember the point position for each file
 (electric-pair-mode)          ; Automagically insert matching parenthesis,
                               ; bracket, brace, etc.
-(global-hl-line-mode)         ; Hilight the current line in all buffers
 (delete-selection-mode)       ; Replace selection when typing
 (prefer-coding-system 'utf-8) ; Default to UTF-8 encoding
 
@@ -136,18 +135,20 @@
   (package-refresh-contents)
   (package-install 'ef-themes))
 
+(setq org-fontify-quote-and-verse-blocks t
+      org-fontify-whole-block-delimiter-line nil)
+
 (setq modus-themes-bold-constructs t
       modus-themes-italic-constructs t
       modus-themes-links nil
       modus-themes-mode-line 'accented
       modus-themes-markup '(bold)
-      modus-themes-org-blocks 'background)
+      modus-themes-org-blocks 'tinted-background)
 
-(setq org-fontify-quote-and-verse-blocks t)
+(modus-themes-load-operandi)
+(define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
-;; (load-theme 'modus-operandi)
-;; (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
-(ef-themes-load-random 'autumn)
+;; (ef-themes-load-random 'light)
 
 ;;; ---------- Other ----------
 
