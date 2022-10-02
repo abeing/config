@@ -117,13 +117,15 @@
 
 ;;; ---------- Completion ----------
 
-;; (icomplete-mode)
-
 (when (not (package-installed-p 'vertico))
   (package-refresh-contents)
   (package-install 'vertico))
+
 (require 'vertico)
 (vertico-mode)
+
+(require 'orderless)
+(setq completion-styles '(orderless))
 
 ;;; ---------- Theme ----------
 
@@ -136,7 +138,7 @@
   (package-install 'ef-themes))
 
 (setq org-fontify-quote-and-verse-blocks t
-      org-fontify-whole-block-delimiter-line nil)
+      org-fontify-whole-block-delimiter-line t)
 
 (setq modus-themes-bold-constructs t
       modus-themes-italic-constructs t
