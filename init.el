@@ -149,14 +149,6 @@
 ;; (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 (ef-themes-load-random 'autumn)
 
-;;; ---------- gode-mode ----------
-
-(require 'god-mode)
-(god-mode)
-(global-set-key (kbd "<escape>") #'god-local-mode)
-(define-key god-local-mode-map (kbd "i") #'god-local-mode)
-(define-key god-local-mode-map (kbd ".") #'repeat)
-
 ;;; ---------- Other ----------
 
 
