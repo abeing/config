@@ -150,7 +150,6 @@
 
 (pulsar-global-mode 1)
 
-
 ;;; ---------- Other ----------
 
 ;; I seperate my sentences with one space not two.
