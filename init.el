@@ -129,37 +129,18 @@
 
 ;;; ---------- Theme ----------
 
-(when (not (package-installed-p 'modus-themes))
-  (package-refresh-contents)
-  (package-install 'modus-themes))
-
 (when (not (package-installed-p 'ef-themes))
   (package-refresh-contents)
   (package-install 'ef-themes))
 
-(setq org-fontify-quote-and-verse-blocks t
-      org-fontify-whole-block-delimiter-line t)
-
-(setq modus-themes-bold-constructs t
-      modus-themes-italic-constructs t
-      modus-themes-links nil
-      modus-themes-mode-line 'accented
-      modus-themes-markup '(bold)
-      modus-themes-org-blocks 'tinted-background)
-
-(modus-themes-load-operandi)
-(define-key global-map (kbd "<f5>") #'modus-themes-toggle)
-
-;; (ef-themes-load-random 'light)
+(load-theme 'ef-light)
 
 ;;; ---------- Other ----------
-
 
 ;; I seperate my sentences with one space not two.
 (setq-default sentence-end-double-space nil)
 
 (setq shift-select-mode nil)
-
 
 ;; (recentf-mode t)
 
