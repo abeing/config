@@ -135,6 +135,22 @@
 
 (load-theme 'ef-light)
 
+;;; ---------- Pulsar ----------
+
+(when (not (package-installed-p 'pulsar))
+  (package-refresh-contents)
+  (package-install 'pulsar))
+
+(require 'pulsar)
+(setq pulsar-pulse t
+      pulsar-delay 0.055
+      pulsar-iterations 10
+      pulsar-face 'pulsar-magenta
+      pulsar-highlight-face 'pulsar-yellow)
+
+(pulsar-global-mode 1)
+
+
 ;;; ---------- Other ----------
 
 ;; I seperate my sentences with one space not two.
