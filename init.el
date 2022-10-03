@@ -29,8 +29,6 @@
 (when (eq system-type 'darwin)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-
 (package-initialize)
 
 ;;; ---------- Laptop-specific settings ----------
@@ -133,7 +131,7 @@
   (package-refresh-contents)
   (package-install 'ef-themes))
 
-(load-theme 'ef-light)
+(load-theme 'ef-autumn)
 
 ;;; ---------- Pulsar ----------
 
@@ -233,11 +231,6 @@
 (setq org-refile-targets '(("~/memex/plan.org" :maxlevel . 3)
 			   ("~/memex/someday.org" :level . 1)
 			   ("~/memex/tickler.org" :maxlevel . 2)))
-
-;;; Bongos
-
-(when (not (package-installed-p 'bongo))
-  (package-install 'bongo))
 
 ;;; Emacs server
 
