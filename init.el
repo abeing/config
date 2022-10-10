@@ -51,8 +51,6 @@
 (savehist-mode t)             ; Save the minibuffer history
 (show-paren-mode)             ; Highlight matching parenthesis
 (save-place-mode)             ; Remember the point position for each file
-(electric-pair-mode)          ; Automagically insert matching parenthesis,
-                              ; bracket, brace, etc.
 (delete-selection-mode)       ; Replace selection when typing
 (prefer-coding-system 'utf-8) ; Default to UTF-8 encoding
 
@@ -125,14 +123,6 @@
 (require 'orderless)
 (setq completion-styles '(orderless))
 
-;;; ---------- Theme ----------
-
-(when (not (package-installed-p 'ef-themes))
-  (package-refresh-contents)
-  (package-install 'ef-themes))
-
-(load-theme 'ef-autumn)
-
 ;;; ---------- Pulsar ----------
 
 (when (not (package-installed-p 'pulsar))
@@ -201,6 +191,7 @@
 
 (setq org-use-speed-commands t)
 (setq org-fontify-whole-heading-line t)
+(setq org-fontify-quote-and-verse-blocks t)
 (setq org-startup-indented t)
 
 ;; Only show the highest-level TODO of a TODO tree
@@ -231,6 +222,14 @@
 (setq org-refile-targets '(("~/memex/plan.org" :maxlevel . 3)
 			   ("~/memex/someday.org" :level . 1)
 			   ("~/memex/tickler.org" :maxlevel . 2)))
+
+;;; ---------- Theme ----------
+
+(when (not (package-installed-p 'ef-themes))
+  (package-refresh-contents)
+  (package-install 'ef-themes))
+
+(load-theme 'ef-summer)
 
 ;;; Emacs server
 
@@ -273,11 +272,18 @@
   (package-install 'denote))
 (require 'denote)
 
+(setq denote-known-keywords
+      '("literature", "idea", "project", "index"))
+
 (setq denote-directory (expand-file-name "~/memex"))
 
-(define-key global-map (kbd "C-c n r") #'denote-dired-rename-file)
+(add-hook 'dired-mode-hook #'denote-dired-mode)
+
+(define-key global-map (kbd "C-c n r") #'denote-rename-file)
 (define-key global-map (kbd "C-c n n") #'denote-create-note)
 (define-key global-map (kbd "C-c n l") #'denote-link-insert-link)
+
+
 
 ;;; Logos narrowing
 
