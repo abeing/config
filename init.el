@@ -29,7 +29,10 @@
 (when (eq system-type 'darwin)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
 (package-initialize)
+(package-refresh-contents)
 
 ;;; ---------- Laptop-specific settings ----------
 
@@ -225,11 +228,16 @@
 
 ;;; ---------- Theme ----------
 
+;; Aesthetic and subjective look-and-feel choices.
+
 (when (not (package-installed-p 'ef-themes))
   (package-refresh-contents)
   (package-install 'ef-themes))
 
-(load-theme 'ef-summer)
+(load-theme 'ef-frost)
+
+(when (not (package-isntalled-p 'olivetti))
+  (package-install 'olivetti))
 
 ;;; Emacs server
 
