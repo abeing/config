@@ -216,13 +216,13 @@
 	 :empty-lines-after 2
 	 :immediate-finish t)
 	("t" "Todo [inbox]" entry
-	 (file+headline "~/memex/inbox.org" "Tasks")
+	 (file+headline "~/memex/inbox.org" "Task Inbox")
 	 "* TODO %i%?")
 	("T" "Tickler" entry
 	 (file+headline "~/memex/tickler.org" "Tickler")
 	 "* %i%? \n %U")))
 
-(setq org-refile-targets '(("~/memex/plan.org" :maxlevel . 3)
+(setq org-refile-targets '(("~/memex/todo.org" :maxlevel . 2)
 			   ("~/memex/someday.org" :level . 1)
 			   ("~/memex/tickler.org" :maxlevel . 2)))
 
@@ -236,7 +236,7 @@
 
 (load-theme 'ef-frost)
 
-(when (not (package-isntalled-p 'olivetti))
+(when (not (package-installed-p 'olivetti))
   (package-install 'olivetti))
 
 ;;; Emacs server
