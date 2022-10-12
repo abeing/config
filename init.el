@@ -224,9 +224,10 @@
 	 (file+headline "~/memex/tickler.org" "Tickler")
 	 "* %i%? \n %U")))
 
-(setq org-refile-targets '(("~/memex/todo.org" :maxlevel . 2)
-			   ("~/memex/someday.org" :level . 1)
-			   ("~/memex/tickler.org" :maxlevel . 2)))
+(setq org-refile-targets
+      '(("~/memex/todo.org" :maxlevel . 2)
+			  ("~/memex/someday.org" :level . 1)
+			  ("~/memex/tickler.org" :maxlevel . 2)))
 
 ;;; ---------- Theme ----------
 
