@@ -294,7 +294,10 @@
 (define-key global-map (kbd "C-c n n") #'denote-create-note)
 (define-key global-map (kbd "C-c n l") #'denote-link-insert-link)
 
+;;; ----------=[ Magit ]=--------------------------------------------------------
 
+(use-package magit
+  :ensure t)
 
 ;;; Logos narrowing
 
