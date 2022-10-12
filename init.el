@@ -32,7 +32,9 @@
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (package-initialize)
-(package-refresh-contents)
+
+(eval-when-compile
+  (require 'use-package))
 
 ;;; ---------- Laptop-specific settings ----------
 
@@ -120,26 +122,26 @@
   (package-refresh-contents)
   (package-install 'vertico))
 
-(require 'vertico)
-(vertico-mode)
+(use-package vertico
+  :ensure t
+  :init
+  (vertico-mode))
 
-(require 'orderless)
-(setq completion-styles '(orderless))
+(use-package orderless
+  :ensure t
+  :init
+  (setq completion-styles '(orderless)))
 
 ;;; ---------- Pulsar ----------
 
-(when (not (package-installed-p 'pulsar))
-  (package-refresh-contents)
-  (package-install 'pulsar))
-
-(require 'pulsar)
-(setq pulsar-pulse t
-      pulsar-delay 0.055
-      pulsar-iterations 10
-      pulsar-face 'pulsar-magenta
-      pulsar-highlight-face 'pulsar-yellow)
-
-(pulsar-global-mode 1)
+(use-package pulsar
+  :init
+  (setq pulsar-pulse t
+        pulsar-delay 0.055
+        pulsar-iterations 10
+        pulsar-face 'pulsar-magenta
+        pulsar-highlight-face 'pulsar-yellow)
+  (pulsar-global-mode 1))
 
 ;;; ---------- Other ----------
 
