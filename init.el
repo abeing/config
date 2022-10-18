@@ -200,7 +200,9 @@
 (setq org-startup-indented t)
 
 ;; Only show the highest-level TODO of a TODO tree
-(setq org-agenda-todo-list-sublevels nil)
+(setq org-agenda-todo-list-sublevels t)
+
+(setq org-todo-keywords '((type "TODO" "WAITING" "|" "DONE")))
 
 (setq org-agenda-diary-file "~/memex/journal.org")
 
@@ -225,7 +227,7 @@
 	 "* %i%? \n %U")))
 
 (setq org-refile-targets
-      '(("~/memex/todo.org" :maxlevel . 2)
+      '(("~/memex/todo.org" :level . 1)
 			  ("~/memex/someday.org" :level . 1)
 			  ("~/memex/tickler.org" :maxlevel . 2)))
 
