@@ -239,7 +239,7 @@
   (package-refresh-contents)
   (package-install 'ef-themes))
 
-(load-theme 'ef-frost)
+(ef-themes-load-random 'light)
 
 (when (not (package-installed-p 'olivetti))
   (package-install 'olivetti))
