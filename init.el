@@ -200,7 +200,9 @@
 (setq org-startup-indented t)
 
 ;; Only show the highest-level TODO of a TODO tree
-(setq org-agenda-todo-list-sublevels nil)
+(setq org-agenda-todo-list-sublevels t)
+
+(setq org-todo-keywords '((type "TODO" "WAITING" "|" "DONE")))
 
 (setq org-agenda-diary-file "~/memex/journal.org")
 
@@ -224,9 +226,10 @@
 	 (file+headline "~/memex/tickler.org" "Tickler")
 	 "* %i%? \n %U")))
 
-(setq org-refile-targets '(("~/memex/todo.org" :maxlevel . 2)
-			   ("~/memex/someday.org" :level . 1)
-			   ("~/memex/tickler.org" :maxlevel . 2)))
+(setq org-refile-targets
+      '(("~/memex/todo.org" :level . 1)
+			  ("~/memex/someday.org" :level . 1)
+			  ("~/memex/tickler.org" :maxlevel . 2)))
 
 ;;; ---------- Theme ----------
 
@@ -293,7 +296,10 @@
 (define-key global-map (kbd "C-c n n") #'denote-create-note)
 (define-key global-map (kbd "C-c n l") #'denote-link-insert-link)
 
+;;; ----------=[ Magit ]=--------------------------------------------------------
 
+(use-package magit
+  :ensure t)
 
 ;;; Logos narrowing
 
