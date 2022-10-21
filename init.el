@@ -308,4 +308,10 @@
         (t . ,(or outline-regexp logos--page-delimiter))))
 (define-key global-map (kbd "C-x n l") #'logos-narrow-dwim)
 
+;;; ----------=[ evil-mode ]=---------------------------------------------------
+
+(use-package evil
+  :ensure t
+  :bind (("<spc> t" . org-capture)))
+
 ;;; init.el ends here
