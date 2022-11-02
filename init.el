@@ -235,14 +235,19 @@
 
 ;; Aesthetic and subjective look-and-feel choices.
 
-(when (not (package-installed-p 'ef-themes))
-  (package-refresh-contents)
-  (package-install 'ef-themes))
+(use-package ef-themes
+  :ensure t
+  :init
+  (load-theme 'ef-cyprus))
 
-(ef-themes-load-random 'light)
+(use-package olivetti
+  :ensure t)
 
-(when (not (package-installed-p 'olivetti))
-  (package-install 'olivetti))
+(use-package org-modern
+  :ensure t
+  :init
+  (global-org-modern-mode))
+
 
 ;;; Emacs server
 
