@@ -241,7 +241,10 @@
   (load-theme 'ef-cyprus))
 
 (use-package olivetti
-  :ensure t)
+  :ensure t
+  :init
+  (setq olivetti-body-width 84)
+  (add-hook 'org-mode-hook #'olivetti-mode))
 
 (use-package org-modern
   :ensure t
