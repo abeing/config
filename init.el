@@ -259,9 +259,18 @@
   :init
   (setq elfeed-feeds '(("https://pluralistic.net/feed/" tech)
                        ("https://yourlocalepidemiologist.substack.com/feed" health)
-                       ("https://news.ycombinator.com/rss" tech)
-                       ("https://reddit.com/r/seattle/.rss" seattle)
-                       ("https://www.reddit.com/r/Fantasy/.rss" ))))
+                       ("https://news.ycombinator.com/rss")
+                       ("https://www.reddit.com/r/Fantasy/.rss")
+                       ("https://nitter.net/orangebook_/rss")
+                       ("https://lobste.rs/rss"))))
+
+;;; ---------- Mastodon ----------
+
+(use-package mastodon
+  :ensure t
+  :config
+  (setq mastodon-instance-url "https://fosstodon.org")
+  (setq mastodon-active-user "aephos"))
 
 ;;; ---------- Bongo ----------
 
