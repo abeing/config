@@ -114,8 +114,7 @@
 
 ;; Font
 
-;; (set-face-attribute 'default nil :family "Iosevka" :height 140)
-(set-face-attribute 'default nil :family "Go Mono" :height 140)
+(set-face-attribute 'default nil :family "Iosevka" :height 140)
 
 ;;; ---------- Completion ----------
 
