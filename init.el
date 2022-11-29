@@ -114,7 +114,8 @@
 
 ;; Font
 
-(set-face-attribute 'default nil :family "Iosevka" :height 140)
+;; (set-face-attribute 'default nil :family "Iosevka" :height 140)
+(set-face-attribute 'default nil :family "Go Mono" :height 140)
 
 ;;; ---------- Completion ----------
 
@@ -238,19 +239,7 @@
 (use-package ef-themes
   :ensure t
   :init
-  (load-theme 'ef-cyprus))
-
-(use-package olivetti
-  :ensure t
-  :init
-  (setq olivetti-body-width 84)
-  (add-hook 'org-mode-hook #'olivetti-mode))
-
-(use-package org-modern
-  :ensure t
-  :init
-  (global-org-modern-mode))
-
+  (ef-themes-load-random 'light))
 
 ;;; ---------- Elfeed ----------
 
