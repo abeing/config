@@ -21,7 +21,7 @@
 
 (defconst my/laptop-p (equal (system-name) "algos.lan"))
 
-;;; ---------- Set up package.el ----------
+;;; ---------- Package management  ----------
 
 (require 'package)
 
@@ -29,12 +29,21 @@
 (when (eq system-type 'darwin)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(setq package-archive-priorities '(("melpa" . 100)
+                                   ("gnu" . 50)
+                                   ("nongnu" . 25)))
 (package-initialize)
 
-(eval-when-compile
-  (require 'use-package))
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(use-package use-package
+  :init
+  (setq use-package-always-ensure t)
+  (use-package use-package-ensure-system-package
+    :ensure t))
 
 ;;; ---------- Laptop-specific settings ----------
 
@@ -238,7 +247,7 @@
 (use-package ef-themes
   :ensure t
   :init
-  (ef-themes-load-random 'light))
+  (ef-themes-select 'ef-autumn))
 
 ;;; ---------- Elfeed ----------
 
