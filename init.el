@@ -215,6 +215,10 @@
 
 (setq org-agenda-diary-file "~/memex/journal.org")
 
+(setq org-log-into-drawer t)
+
+(setq org-hierarchical-todo-statistics nil)
+
 (defun my/org-last-heading ()
   "Go to last visible org heading."
   (interactive)
