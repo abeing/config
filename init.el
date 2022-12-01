@@ -277,6 +277,14 @@
   :custom
   (olivetti-body-width 85))
 
+;;; ---------- Projectil ----------
+
+(use-package projectile
+  :init
+  (projectile-mode)
+  :bind
+  ("C-c p" . projectile-command-map))
+
 ;;; ---------- Mastodon ----------
 
 (use-package mastodon
