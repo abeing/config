@@ -285,6 +285,20 @@
   :bind
   ("C-c p" . projectile-command-map))
 
+;;; ---------- Nov ----------
+
+(use-package nov
+  :mode ("\\.epub\\'" . nov-mode)
+  :preface
+  (defun adam/nov-font-setup ()
+    (face-remap-add-relative 'variable-pitch
+                             :family "Iosevka"
+                             :height 210)
+    (setq line-spacing 0.15))
+  :hook (nov-mode . 'adam/nov-font-setup)
+  :custom
+  (nov-text-width t))
+
 ;;; ---------- Mastodon ----------
 
 (use-package mastodon
