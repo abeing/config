@@ -265,6 +265,18 @@
                        ("https://nitter.net/orangebook_/rss")
                        ("https://lobste.rs/rss"))))
 
+;;; ---------- Olivetti ----------
+
+(use-package olivetti
+  :hook ((org-mode          . olivetti-mode)
+         (nov-mode          . olivetti-mode)
+         (markdown-mode     . olivetti-mode)
+         (mu4e-view-mode    . olivetti-mode)
+         (elfeed-show-mode  . olivetti-mode)
+         (mu4e-compose-mode . olivetti-mode))
+  :custom
+  (olivetti-body-width 85))
+
 ;;; ---------- Mastodon ----------
 
 (use-package mastodon
