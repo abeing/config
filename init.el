@@ -127,19 +127,28 @@
 
 ;;; ---------- Completion ----------
 
-(when (not (package-installed-p 'vertico))
-  (package-refresh-contents)
-  (package-install 'vertico))
-
 (use-package vertico
-  :ensure t
   :init
-  (vertico-mode))
+  (vertico-mode)
+  :custom
+  (vertico-cycle t))
 
 (use-package orderless
-  :ensure t
+  :custom
+  (completion-styles '(orderless)))
+
+(use-package marginalia
   :init
-  (setq completion-styles '(orderless)))
+  (marginalia-mode)
+  :custom
+  (marginalia-align 'right))
+
+(use-package consult
+  :bind (("C-s" . consult-line)
+         ("C-x b" . consult-buffer)))
+
+
+
 
 ;;; ---------- Pulsar ----------
 
@@ -346,23 +355,18 @@
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
 
-;; denote
+;; ---------- Denote ----------
 
-(when (not (package-installed-p 'denote))
-  (package-refresh-contents)
-  (package-install 'denote))
-(require 'denote)
-
-(setq denote-known-keywords
-      '("literature", "idea", "project", "index"))
-
-(setq denote-directory (expand-file-name "~/memex"))
-
-(add-hook 'dired-mode-hook #'denote-dired-mode)
-
-(define-key global-map (kbd "C-c n r") #'denote-rename-file)
-(define-key global-map (kbd "C-c n n") #'denote-create-note)
-(define-key global-map (kbd "C-c n l") #'denote-link-insert-link)
+(use-package denote
+  :after org
+  :bind (("C-c n r" . denote-rename-file)
+         ("C-c n n" . denote-create-note)
+         ("C-c n l" . denote-link-insert-link))
+  :hook (dired-mode . denote-dired-mode)
+  :custom
+  (denote-sort-keywords t)
+  (denote-directory (concat org-directory "/"))
+  (denote-known-keywords '("literature", "idea", "project", "index")))
 
 ;;; ----------=[ Magit ]=--------------------------------------------------------
 
