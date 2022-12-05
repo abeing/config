@@ -190,6 +190,19 @@
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
 
+;; Uses UTF-8 bullets of various styles.
+
+(use-package org-bullets
+  :after org
+  :hook (org-mode . org-bullets-mode))
+
+;; Makes emphasis markers appear when the point is within their bounds. This
+;; enables easier editing.
+
+(use-package org-appear
+  :after org
+  :hook (org-mode . org-appear-mode))
+
 (setq org-modules '(org-habit))
 
 ;; (setq-default org-startup-indented t)
