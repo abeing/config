@@ -297,7 +297,12 @@
   :custom
   (olivetti-body-width 85))
 
-;;; ---------- Projectil ----------
+;;; ---------- Org-modern ----------
+
+(use-package org-modern
+  :hook ((org-mode . ord-modern-mode)))
+
+;;; ---------- Projectile ----------
 
 (use-package projectile
   :init
@@ -372,7 +377,8 @@
   :after org
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
-         ("C-c n l" . denote-link-insert-link))
+         ("C-c n l" . denote-link-insert-link)
+         ("C-c n f" . denote-open-or-create))
   :hook (dired-mode . denote-dired-mode)
   :custom
   (denote-sort-keywords t)
