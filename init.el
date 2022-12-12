@@ -264,7 +264,7 @@
 (setq org-refile-targets
       '(("~/memex/todo.org" :level . 1)
 			  ("~/memex/someday.org" :level . 1)
-			  ("~/memex/tickler.org" :maxlevel . 2)))
+			  ("~/memex/tickler.org" :level . 1)))
 
 ;;; ---------- Theme ----------
 
@@ -273,7 +273,7 @@
 (use-package ef-themes
   :ensure t
   :init
-  (ef-themes-select 'ef-autumn))
+  (ef-themes-select 'ef-cyprus))
 
 ;;; ---------- Elfeed ----------
 
@@ -284,6 +284,13 @@
                        ("https://yourlocalepidemiologist.substack.com/feed" health)
                        ("https://lobste.rs/rss" tech)
                        ("https://sachachua.com/blog/category/emacs-news/feed" tech))))
+
+;;; ---------- Nov ----------
+
+;; A mode for reading EPUBs.
+
+(use-package nov
+  :mode ("\\.epub\\'" . nov-mode))
 
 ;;; ---------- Olivetti ----------
 
@@ -300,7 +307,16 @@
 ;;; ---------- Org-modern ----------
 
 (use-package org-modern
-  :hook ((org-mode . ord-modern-mode)))
+  :hook ((org-mode . org-modern-mode)))
+
+;;; ---------- org-autolist ----------
+
+;; Org-autolist makes org-mode lists behave more like lists in other editors.
+;; When editing a list item, pressing <return> will insert a new list item.
+;; Pressing <delete> at the beginning of a list item deletes the item.
+
+(use-package org-autolist
+  :hook ((org-mode . org-autolist-mode)))
 
 ;;; ---------- Projectile ----------
 
