@@ -190,46 +190,37 @@
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
 
-;; Makes emphasis markers appear when the point is within their bounds. This
-;; enables easier editing.
-
-(use-package org-appear
-  :after org
-  :hook (org-mode . org-appear-mode))
-
 (setq org-modules '(org-habit))
 
-;; (setq-default org-startup-indented t)
-;; (setq-default org-adapt-indentation 'headline-data)
-(setq-default org-adapt-indentation nil)
-
-(add-hook 'org-mode-hook 'turn-on-auto-fill)
+;; (add-hook 'org-mode-hook 'turn-on-auto-fill)
 (add-hook 'org-mode-hook (lambda ()
-			   (setq-local show-trailing-whitespace t)))
+			                     (setq-local show-trailing-whitespace t)))
 
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c p") 'org-pomodoro)
 
-(setq org-startup-indented t)
-(setq org-pretty-entities t)
-(setq org-hide-emphasis-markers t)
+;; (setq org-pretty-entities t)
+;; (setq org-hide-emphasis-markers t)
 
 ;; This should not be necessary with (prefer-coding-system 'utf-8) above
 ;; (setq-default buffer-file-coding-system 'utf-8-unix)
 
-(setq org-use-speed-commands t)
-(setq org-fontify-whole-heading-line t)
-(setq org-fontify-quote-and-verse-blocks t)
-(setq org-startup-indented t)
+;; (setq org-use-speed-commands t)
+;; (setq org-fontify-whole-heading-line t)
+;; (setq org-fontify-quote-and-verse-blocks t)
 
 ;; Only show the highest-level TODO of a TODO tree
-(setq org-agenda-todo-list-sublevels t)
+;; (setq org-agenda-todo-list-sublevels t)
 
-(setq org-todo-keywords '((type "TODO" "WAITING" "|" "DONE")))
+;; (setq org-todo-keywords '((type "TODO" "WAITING" "|" "DONE")))
 
-(setq org-agenda-diary-file "~/memex/journal.org")
+;; (setq org-enforce-todo-dependencies t)
+
+;; (setq org-log-done t)
+
+;; (setq org-agenda-diary-file "~/memex/journal.org")
 
 (setq org-log-into-drawer t)
 
@@ -244,16 +235,16 @@
 
 (setq org-capture-templates
       '(("p" "org-protocol"
-	 entry (file+headline "~/memex/reading.org" "Articles")
-	 "* TODO %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
-	 :empty-lines-after 2
-	 :immediate-finish t)
-	("t" "Todo [inbox]" entry
-	 (file+headline "~/memex/inbox.org" "Task Inbox")
-	 "* TODO %i%?")
-	("T" "Tickler" entry
-	 (file+headline "~/memex/tickler.org" "Tickler")
-	 "* %i%? \n %U")))
+	       entry (file+headline "~/memex/reading.org" "Articles")
+	       "* TODO %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
+	       :empty-lines-after 2
+	       :immediate-finish t)
+	      ("t" "Todo [inbox]" entry
+	       (file+headline "~/memex/inbox.org" "Task Inbox")
+	       "* TODO %i%?")
+	      ("T" "Tickler" entry
+	       (file+headline "~/memex/tickler.org" "Tickler")
+	       "* %i%? \n %U")))
 
 (setq org-refile-targets
       '(("~/memex/todo.org" :level . 1)
@@ -262,12 +253,7 @@
 
 ;;; ---------- Theme ----------
 
-;; Aesthetic and subjective look-and-feel choices.
-
-(use-package ef-themes
-  :ensure t
-  :init
-  (ef-themes-select 'ef-cyprus))
+(load-theme 'modus-operandi)
 
 ;;; ---------- Elfeed ----------
 
@@ -277,53 +263,8 @@
   (setq elfeed-feeds '(("https://pluralistic.net/feed/" tech)
                        ("https://yourlocalepidemiologist.substack.com/feed" health)
                        ("https://lobste.rs/rss" tech)
-                       ("https://sachachua.com/blog/category/emacs-news/feed" tech))))
-
-;;; ---------- Nov ----------
-
-;; A mode for reading EPUBs.
-
-(use-package nov
-  :mode ("\\.epub\\'" . nov-mode))
-
-;;; ---------- Olivetti ----------
-
-(use-package olivetti
-  :hook ((org-mode          . olivetti-mode)
-         (nov-mode          . olivetti-mode)
-         (markdown-mode     . olivetti-mode)
-         (mu4e-view-mode    . olivetti-mode)
-         (elfeed-show-mode  . olivetti-mode)
-         (mu4e-compose-mode . olivetti-mode))
-  :custom
-  (olivetti-body-width 85))
-
-;;; ---------- Org-modern ----------
-
-(use-package org-modern
-  :custom
-  (org-special-ctrl-a/e t)
-  (org-insert-heading-respect-content t)
-  (org-ellipsis "…")
-  :init
-  (global-org-modern-mode))
-
-;;; ---------- org-autolist ----------
-
-;; Org-autolist makes org-mode lists behave more like lists in other editors.
-;; When editing a list item, pressing <return> will insert a new list item.
-;; Pressing <delete> at the beginning of a list item deletes the item.
-
-(use-package org-autolist
-  :hook ((org-mode . org-autolist-mode)))
-
-;;; ---------- Projectile ----------
-
-(use-package projectile
-  :init
-  (projectile-mode)
-  :bind
-  ("C-c p" . projectile-command-map))
+                       ("https://sachachua.com/blog/category/emacs-news/feed" tech)
+                       ("https://xkcd.com/atom.xml" comic))))
 
 ;;; ---------- Nov ----------
 
@@ -339,27 +280,10 @@
   :custom
   (nov-text-width t))
 
-;;; ---------- Mastodon ----------
-
-(use-package mastodon
-  :ensure t
-  :config
-  (setq mastodon-instance-url "https://fosstodon.org")
-  (setq mastodon-active-user "aephos"))
-
-;;; ---------- Bongo ----------
-
-(use-package bongo
-  :ensure t)
-
 ;;; Emacs server
 
 (server-start)
 (require 'org-protocol)
-
-(setq org-enforce-todo-dependencies t)
-
-(setq org-log-done t)
 
 (setq-default indent-tabs-node nil)
 
@@ -417,11 +341,5 @@
         (org-mode . "^\\*+ +")
         (t . ,(or outline-regexp logos--page-delimiter))))
 (define-key global-map (kbd "C-x n l") #'logos-narrow-dwim)
-
-;;; ----------=[ evil-mode ]=---------------------------------------------------
-
-(use-package evil
-  :ensure t
-  :bind (("<spc> t" . org-capture)))
 
 ;;; init.el ends here
