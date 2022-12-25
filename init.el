@@ -266,6 +266,10 @@
                        ("https://sachachua.com/blog/category/emacs-news/feed" tech)
                        ("https://xkcd.com/atom.xml" comic))))
 
+;;; ---------- Markdown ----------
+
+(use-package markdown-mode)
+
 ;;; ---------- Nov ----------
 
 (use-package nov
