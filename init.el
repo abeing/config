@@ -19,7 +19,7 @@
 (setq calendar-latitude 47.6062
       calendar-longitude -122.3321)
 
-(defconst my/laptop-p (equal (system-name) "algos.lan"))
+(defconst my/laptop-p (equal (system-name) "algos.local"))
 
 ;;; ---------- Package management  ----------
 
@@ -123,7 +123,7 @@
 
 ;; Font
 
-(set-face-attribute 'default nil :family "Iosevka" :height 140)
+(set-face-attribute 'default nil :family "Iosevka" :height 160)
 
 ;;; ---------- Completion ----------
 
@@ -201,15 +201,16 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c p") 'org-pomodoro)
 
-;; (setq org-pretty-entities t)
-;; (setq org-hide-emphasis-markers t)
+(setq org-pretty-entities t)
+(setq org-hide-emphasis-markers t)
 
 ;; This should not be necessary with (prefer-coding-system 'utf-8) above
 ;; (setq-default buffer-file-coding-system 'utf-8-unix)
 
-;; (setq org-use-speed-commands t)
-;; (setq org-fontify-whole-heading-line t)
-;; (setq org-fontify-quote-and-verse-blocks t)
+(setq org-use-speed-commands t)
+(setq org-fontify-whole-heading-line t)
+(setq org-fontify-quote-and-verse-blocks t)
+(setq org-startup-indented t)
 
 ;; Only show the highest-level TODO of a TODO tree
 ;; (setq org-agenda-todo-list-sublevels t)
@@ -218,7 +219,7 @@
 
 ;; (setq org-enforce-todo-dependencies t)
 
-;; (setq org-log-done t)
+(setq org-log-done t)
 
 ;; (setq org-agenda-diary-file "~/memex/journal.org")
 
@@ -253,7 +254,7 @@
 
 ;;; ---------- Theme ----------
 
-(load-theme 'modus-operandi)
+(load-theme 'ef-summer)
 
 ;;; ---------- Elfeed ----------
 
@@ -268,7 +269,9 @@
 
 ;;; ---------- Markdown ----------
 
-(use-package markdown-mode)
+(use-package markdown-mode
+  :init
+  (setq markdown-enable-wiki-links t))
 
 ;;; ---------- Nov ----------
 
@@ -288,8 +291,6 @@
 
 (server-start)
 (require 'org-protocol)
-
-(setq-default indent-tabs-node nil)
 
 (setq-default tab-always-indent 'complete)
 
