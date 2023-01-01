@@ -254,7 +254,9 @@
 
 ;;; ---------- Theme ----------
 
-(load-theme 'ef-summer)
+(use-package modus-themes
+  :init
+  (load-theme 'modus-operandi))
 
 ;;; ---------- Elfeed ----------
 
@@ -265,7 +267,8 @@
                        ("https://yourlocalepidemiologist.substack.com/feed" health)
                        ("https://lobste.rs/rss" tech)
                        ("https://sachachua.com/blog/category/emacs-news/feed" tech)
-                       ("https://xkcd.com/atom.xml" comic))))
+                       ("https://xkcd.com/atom.xml" comic)
+                       ("https://protesilaos.com/master.xml" tech))))
 
 ;;; ---------- Markdown ----------
 
