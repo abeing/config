@@ -207,10 +207,8 @@
 ;; This should not be necessary with (prefer-coding-system 'utf-8) above
 ;; (setq-default buffer-file-coding-system 'utf-8-unix)
 
-(setq org-use-speed-commands t)
 (setq org-fontify-whole-heading-line t)
 (setq org-fontify-quote-and-verse-blocks t)
-(setq org-startup-indented t)
 
 ;; Only show the highest-level TODO of a TODO tree
 ;; (setq org-agenda-todo-list-sublevels t)
