@@ -252,9 +252,9 @@
 
 ;;; ---------- Theme ----------
 
-(use-package modus-themes
+(use-package ef-themes
   :init
-  (load-theme 'modus-operandi))
+  (load-theme 'ef-spring))
 
 ;;; ---------- Elfeed ----------
 
