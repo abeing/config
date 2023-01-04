@@ -266,7 +266,9 @@
                        ("https://lobste.rs/rss" tech)
                        ("https://sachachua.com/blog/category/emacs-news/feed" tech)
                        ("https://xkcd.com/atom.xml" comic)
-                       ("https://protesilaos.com/master.xml" tech))))
+                       ("https://protesilaos.com/master.xml" tech)
+                       ("https://jvns.ca/atom.xml" tech)
+                       ("https://jamesclear.com/rss" life))))
 
 ;;; ---------- Markdown ----------
 
