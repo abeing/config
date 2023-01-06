@@ -143,22 +143,13 @@
   :custom
   (marginalia-align 'right))
 
-(use-package consult
-  :bind (("C-s" . consult-line)
-         ("C-x b" . consult-buffer)))
-
-
-
-
 ;;; ---------- Pulsar ----------
 
 (use-package pulsar
   :init
   (setq pulsar-pulse t
         pulsar-delay 0.055
-        pulsar-iterations 10
-        pulsar-face 'pulsar-magenta
-        pulsar-highlight-face 'pulsar-yellow)
+        pulsar-iterations 10)
   (pulsar-global-mode 1))
 
 ;;; ---------- Other ----------
