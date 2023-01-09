@@ -143,6 +143,14 @@
   :custom
   (marginalia-align 'right))
 
+(use-package company)
+
+;;; ---------- Keyboard use ----------
+
+(use-package which-key
+  :init
+  (which-key-mode))
+
 ;;; ---------- Pulsar ----------
 
 (use-package pulsar
