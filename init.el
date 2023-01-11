@@ -30,7 +30,7 @@
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(setq package-archive-priorities '(("melpa" . 100)
+(setq package-archive-priorities '(("mela" . 100)
                                    ("gnu" . 50)
                                    ("nongnu" . 25)))
 (package-initialize)
@@ -174,6 +174,11 @@
 
 ;; ---------- Org-mode ----------
 
+(use-package org
+  :init
+  (setq org-startup-indented t))
+
+
 (setq org-directory "~/memex")
 
 (setq org-agenda-files '("~/memex"))
@@ -183,7 +188,7 @@
 
 (setq org-modules '(org-habit))
 
-;; (add-hook 'org-mode-hook 'turn-on-auto-fill)
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
 (add-hook 'org-mode-hook (lambda ()
 			                     (setq-local show-trailing-whitespace t)))
 
@@ -241,11 +246,22 @@
 			  ("~/memex/someday.org" :level . 1)
 			  ("~/memex/tickler.org" :level . 1)))
 
+;;; ---------- Flycheck ----------
+
+(use-package flycheck)
+
+;;; ---------- EMMS ----------
+
+(use-package emms
+  :init
+  (emms-all)
+  (emms-default-players))
+
 ;;; ---------- Theme ----------
 
-(use-package ef-themes
+(use-package modus-themes
   :init
-  (load-theme 'ef-spring))
+  (load-theme 'modus-operandi))
 
 ;;; ---------- Elfeed ----------
 
