@@ -261,7 +261,18 @@
 
 (use-package modus-themes
   :init
+  (setq modus-themes-disable-other-themes t
+        modus-themes-org-blocks 'gray-background)
   (load-theme 'modus-operandi))
+
+;;; ---------- Roam ----------
+
+(use-package org-roam
+  :config
+  (setq org-roam-directory "~/memex/roam"
+        org-roam-index-file "~/memex/roam/index.org"))
+
+
 
 ;;; ---------- Elfeed ----------
 
