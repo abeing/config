@@ -143,6 +143,26 @@
   :custom
   (marginalia-align 'right))
 
+(use-package company)
+
+;;; ---------- Timer ----------
+
+(use-package tmr)
+
+(defun am/pomodoro (task)
+  "Start a Pomodoro"
+  (interactive "sTask: ")
+  (tmr-with-description "25m" task))
+
+(define-key global-map (kbd "C-c p") 'am/pomodoro)
+
+
+;;; ---------- Keyboard use ----------
+
+(use-package which-key
+  :init
+  (which-key-mode))
+
 ;;; ---------- Pulsar ----------
 
 (use-package pulsar
@@ -195,7 +215,6 @@
 (define-key global-map (kbd "C-c c") 'org-capture)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
-(define-key global-map (kbd "C-c p") 'org-pomodoro)
 
 (setq org-pretty-entities t)
 (setq org-hide-emphasis-markers t)
