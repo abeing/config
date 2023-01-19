@@ -125,6 +125,8 @@
 
 (set-face-attribute 'default nil :family "Iosevka" :height 160)
 
+(setq shr-width 80)
+
 ;;; ---------- Completion ----------
 
 (use-package vertico
@@ -154,7 +156,14 @@
   (interactive "sTask: ")
   (tmr-with-description "25m" task))
 
-(define-key global-map (kbd "C-c p") 'am/pomodoro)
+(defun am/brew-hojicha ()
+  "Brew hojicha"
+  (interactive)
+  (tmr-with-description "3m" "Hojicha"))
+
+(global-set-key (kbd "C-c t p") 'am/pomodoro)
+(global-set-key (kbd "C-c t g") 'am/brew-hojicha)
+(global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
 
 
 ;;; ---------- Keyboard use ----------
@@ -196,7 +205,9 @@
 
 (use-package org
   :init
-  (setq org-startup-indented t))
+  (setq org-startup-indented t
+        org-fontify-todo-headline nil
+        org-fontify-done-headline nil))
 
 
 (setq org-directory "~/memex")
@@ -245,7 +256,7 @@
   (interactive)
   (progn (call-interactively 'end-of-buffer)
 	 (call-interactively 'org-previous-visible-heading)))
-(define-key global-map (kbd "C-c t") 'my/org-last-heading)
+;; (define-key global-map (kbd "C-c t") 'my/org-last-heading)
 
 (setq org-capture-templates
       '(("p" "org-protocol"
@@ -281,8 +292,12 @@
 (use-package modus-themes
   :init
   (setq modus-themes-disable-other-themes t
-        modus-themes-org-blocks 'gray-background)
-  (load-theme 'modus-operandi))
+        modus-themes-org-blocks 'gray-background
+        modus-themes-to-toggle '(modus-operandi modus-vivendi)
+        modus-themes-italic-constructs t
+        modus-themes-bold-constructs t)
+  (load-theme (car modus-themes-to-toggle) t)
+  :bind ("<f5>" . modus-themes-toggle))
 
 ;;; ---------- Roam ----------
 
@@ -305,7 +320,8 @@
                        ("https://xkcd.com/atom.xml" comic)
                        ("https://protesilaos.com/master.xml" tech)
                        ("https://jvns.ca/atom.xml" tech)
-                       ("https://jamesclear.com/rss" life))))
+                       ("https://jamesclear.com/rss" life)
+                       ("https://www.davidrevoy.com/feed/en/rss" comic))))
 
 ;;; ---------- Markdown ----------
 
@@ -316,16 +332,7 @@
 ;;; ---------- Nov ----------
 
 (use-package nov
-  :mode ("\\.epub\\'" . nov-mode)
-  :preface
-  (defun adam/nov-font-setup ()
-    (face-remap-add-relative 'variable-pitch
-                             :family "Iosevka"
-                             :height 210)
-    (setq line-spacing 0.15))
-  :hook (nov-mode . 'adam/nov-font-setup)
-  :custom
-  (nov-text-width t))
+  :mode ("\\.epub\\'" . nov-mode))
 
 ;;; Emacs server
 
