@@ -197,10 +197,6 @@
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
 
-;;; Langtool
-
-(setq langtool-language-tool-jar "/usr/local/opt/languagetool/libexec/languagetool-commandline.jar")
-
 ;; ---------- Org-mode ----------
 
 (use-package org
