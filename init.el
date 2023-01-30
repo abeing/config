@@ -67,6 +67,8 @@
 (save-place-mode)             ; Remember the point position for each file
 (delete-selection-mode)       ; Replace selection when typing
 (prefer-coding-system 'utf-8) ; Default to UTF-8 encoding
+(electric-pair-mode t)        ; When entering a character with a natural pair,
+                              ; insert it's corresponding pair
 
 ;; Don't use compiled code if its older than uncompiled code
 (setq-default load-prefer-newer t)
@@ -203,8 +205,10 @@
   :init
   (setq org-startup-indented t
         org-fontify-todo-headline nil
-        org-fontify-done-headline nil))
-
+        org-fontify-done-headline nil
+        org-hide-emphasis-markers t
+        org-log-done t
+        org-todo-keywords '((sequence "TODO(t/!)" "WAIT(w/!)" "|" "DONE(d/!)" "CNCL(c/!)"))))
 
 (setq org-directory "~/memex")
 
@@ -224,7 +228,6 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
 (setq org-pretty-entities t)
-(setq org-hide-emphasis-markers t)
 
 ;; This should not be necessary with (prefer-coding-system 'utf-8) above
 ;; (setq-default buffer-file-coding-system 'utf-8-unix)
@@ -235,15 +238,9 @@
 ;; Only show the highest-level TODO of a TODO tree
 ;; (setq org-agenda-todo-list-sublevels t)
 
-;; (setq org-todo-keywords '((type "TODO" "WAITING" "|" "DONE")))
 
 ;; (setq org-enforce-todo-dependencies t)
 
-(setq org-log-done t)
-
-;; (setq org-agenda-diary-file "~/memex/journal.org")
-
-(setq org-log-into-drawer t)
 
 (setq org-hierarchical-todo-statistics nil)
 
