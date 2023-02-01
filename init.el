@@ -208,7 +208,8 @@
         org-fontify-done-headline nil
         org-hide-emphasis-markers t
         org-log-done t
-        org-todo-keywords '((sequence "TODO(t/!)" "WAIT(w/!)" "|" "DONE(d/!)" "CNCL(c/!)"))))
+        org-log-into-drawer t
+        org-todo-keywords '((sequence "TODO(t/!)" "WAIT(w/!)" "PROJ(p/!)" "|" "DONE(d/!)" "CNCL(c/!)"))))
 
 (setq org-directory "~/memex")
 
