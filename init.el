@@ -147,7 +147,22 @@
   :custom
   (marginalia-align 'right))
 
-(use-package company)
+(use-package corfu
+  :ensure t
+  :config
+  (global-corfu-mode))
+
+(use-package corfu-popupinfo
+  :ensure nil
+  :after corfu
+  :hook (corfu-mode . corfu-popupinfo-mode)
+  :custom
+  (corfu-popupinfo-delay '(0.25 . 0.1))
+  (corfu-popupinfo-hide nil)
+  :config
+  (corfu-popupinfo-mode))
+
+;; (use-package company)
 
 ;;; ---------- Timer ----------
 
