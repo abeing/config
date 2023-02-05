@@ -26,11 +26,12 @@
 (require 'package)
 
 ;; On macOS, fix an issue with TLS
+;; Is this still necessary?
 (when (eq system-type 'darwin)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(setq package-archive-priorities '(("mela" . 100)
+(setq package-archive-priorities '(("melpa" . 100)
                                    ("gnu" . 50)
                                    ("nongnu" . 25)))
 (package-initialize)
@@ -99,7 +100,6 @@
 ;; Enable goal column (C-x C-n)
 (put 'set-goal-column 'disabled nil)
 
-
 ;; Automatically update buffers if file content on disk has changes
 (global-auto-revert-mode t)
 
@@ -121,7 +121,6 @@
 (line-number-mode 1)
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
-(add-to-list 'default-frame-alist '(width . 177))
 
 ;; Font
 
@@ -132,20 +131,15 @@
 ;;; ---------- Completion ----------
 
 (use-package vertico
+  :ensure t
   :init
-  (vertico-mode)
-  :custom
-  (vertico-cycle t))
-
-(use-package orderless
-  :custom
-  (completion-styles '(orderless)))
+  (fido-mode 0)
+  (vertico-mode))
 
 (use-package marginalia
-  :init
-  (marginalia-mode)
-  :custom
-  (marginalia-align 'right))
+  :ensure t
+  :config
+  (marginalia-mode))
 
 (use-package corfu
   :ensure t
@@ -162,7 +156,22 @@
   :config
   (corfu-popupinfo-mode))
 
-;; (use-package company)
+(use-package kind-icon
+  :ensure t
+  :after corfu
+  :config
+  (add-to-list 'corfu-margin-formatters #'kind-icon-margin-formatter))
+
+(use-package consult
+  :ensure t
+  :bind (("C-x b" . consult-buffer)
+         ("M-y" . consult-yank-pop)
+         ("C-s" . consult-line)))
+
+(use-package orderless
+  :ensure t
+  :custom
+  (completion-styles '(orderless)))
 
 ;;; ---------- Timer ----------
 
@@ -298,15 +307,19 @@
 
 ;;; ---------- Theme ----------
 
-(use-package modus-themes
+(use-package ef-themes
   :init
-  (setq modus-themes-disable-other-themes t
-        modus-themes-org-blocks 'gray-background
-        modus-themes-to-toggle '(modus-operandi modus-vivendi)
-        modus-themes-italic-constructs t
-        modus-themes-bold-constructs t)
-  (load-theme (car modus-themes-to-toggle) t)
-  :bind ("<f5>" . modus-themes-toggle))
+  (ef-themes-select 'ef-spring))
+
+;; (use-package modus-themes
+;;   :init
+;;   (setq modus-themes-disable-other-themes t
+;;         modus-themes-org-blocks 'gray-background
+;;         modus-themes-to-toggle '(modus-operandi modus-vivendi)
+;;         modus-themes-italic-constructs t
+;;         modus-themes-bold-constructs t)
+;;   (load-theme (car modus-themes-to-toggle) t)
+;;   :bind ("<f5>" . modus-themes-toggle))
 
 ;;; ---------- Roam ----------
 
@@ -315,8 +328,6 @@
   (setq org-roam-directory "~/memex/roam"
         org-roam-index-file "~/memex/roam/index.org"))
 
-
-
 ;;; ---------- Elfeed ----------
 
 (use-package elfeed
@@ -324,7 +335,6 @@
   :init
   (setq elfeed-feeds '(("https://pluralistic.net/feed/" tech)
                        ("https://yourlocalepidemiologist.substack.com/feed" health)
-                       ("https://lobste.rs/rss" tech)
                        ("https://sachachua.com/blog/category/emacs-news/feed" tech)
                        ("https://xkcd.com/atom.xml" comic)
                        ("https://protesilaos.com/master.xml" tech)
