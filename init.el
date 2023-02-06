@@ -339,7 +339,6 @@
                        ("https://xkcd.com/atom.xml" comic)
                        ("https://protesilaos.com/master.xml" tech)
                        ("https://jvns.ca/atom.xml" tech)
-                       ("https://jamesclear.com/rss" life)
                        ("https://www.davidrevoy.com/feed/en/rss" comic))))
 
 ;;; ---------- Markdown ----------
