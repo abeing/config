@@ -33,10 +33,6 @@
 (when my-laptop-p
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(setq package-archive-priorities '(("melpa" . 100)
-                                   ("gnu" . 50)
-                                   ("nongnu" . 25)))
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -205,6 +201,7 @@
 ;;; ---------- Keyboard use ----------
 
 (use-package which-key
+  :ensure t
   :init
   (which-key-mode))
 
@@ -283,11 +280,6 @@
 			  ("~/memex/someday.org" :level . 1)
 			  ("~/memex/tickler.org" :level . 1)))
 
-;;; ---------- Flycheck ----------
-
-(use-package flycheck
-  :ensure t)
-
 ;;; --------------------[ EMMS ]------------------------------------------------
 
 ;; I go back and forth between using EMMS and bongo but am considering using
@@ -317,43 +309,12 @@
 (use-package ef-themes
   :ensure t)
 
-;;; --------------------[ Roam ]------------------------------------------------
-
-;; I'm considering no longer using org-roam. I've been enjoying using denote.
-
-(use-package org-roam
-  :config
-  (setq org-roam-directory "~/memex/roam"
-        org-roam-index-file "~/memex/roam/index.org"))
-
-;;; --------------------[ Elfeed ]----------------------------------------------
-
-;; I'm considering no longer using Elfeed. Thunderbird is a good-enough RSS
-;; reader.
-
-(use-package elfeed
-  :ensure t
-  :init
-  (setq elfeed-feeds '(("https://pluralistic.net/feed/" tech)
-                       ("https://yourlocalepidemiologist.substack.com/feed" health)
-                       ("https://sachachua.com/blog/category/emacs-news/feed" tech)
-                       ("https://xkcd.com/atom.xml" comic)
-                       ("https://protesilaos.com/master.xml" tech)
-                       ("https://jvns.ca/atom.xml" tech)
-                       ("https://www.davidrevoy.com/feed/en/rss" comic))))
-
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
   :ensure t
   :init
   (setq markdown-enable-wiki-links t))
-
-;;; --------------------[ Nov ]-------------------------------------------------
-
-(use-package nov
-  :ensure t
-  :mode ("\\.epub\\'" . nov-mode))
 
 ;;; Emacs server
 
