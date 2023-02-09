@@ -226,8 +226,8 @@
 (use-package org
   :init
   (setq org-startup-indented t
-        org-fontify-todo-headline nil
-        org-fontify-done-headline nil
+        org-fontify-todo-headline t
+        org-fontify-done-headline t
         org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
