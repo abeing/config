@@ -23,7 +23,7 @@
 ;; Is Emacs running on my laptop? Used for setting laptop-specific settings
 ;; where necessary.
 (defconst my-laptop-p (eq system-type 'darwin))
-
+(defconst my-work-machine-p (eq system-type 'windows-nt))
 
 ;;; --------------------[ Package management ]----------------------------------
 
@@ -52,7 +52,7 @@
   (setq mac-option-modifier 'none))
 
 
-;;; ---------- Use better defaults ----------
+;;; --------------------[ General settings ]------------------------------------
 
 (setq-default
  inhibit-startup-screen t
@@ -120,11 +120,22 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-;; Font
-
 (set-face-attribute 'default nil :family "Iosevka" :height 160)
 
 (setq shr-width 80)
+
+;; I seperate my sentences with one space not two.
+(setq-default sentence-end-double-space nil)
+
+(setq shift-select-mode nil)
+
+;; Emacs doesn't provide enough terminal support for pagers like less, but we
+;; don't need pagers since we have a buffer. We can just use cat instead.
+(setenv "PAGER" "/bin/cat")
+
+;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
+(global-set-key (kbd "M-i") 'imenu)
+
 
 ;;; --------------------[ Completion ]------------------------------------------
 
@@ -197,32 +208,23 @@
   :init
   (which-key-mode))
 
-;;; ---------- Pulsar ----------
 
-(use-package pulsar
-  :init
-  (setq pulsar-pulse t
-        pulsar-delay 0.055
-        pulsar-iterations 10)
-  (pulsar-global-mode 1))
+;;; --------------------[ Pulsar ]----------------------------------------------
 
-;;; ---------- Other ----------
+;; This performs poorly on Windows. I should consider creating something like
+;; 'my-work-machine-p to do some conditional configuration on Windows.
 
-;; I seperate my sentences with one space not two.
-(setq-default sentence-end-double-space nil)
+(when (not my-work-machine-p)
+  (use-package pulsar
+    :ensure t
+    :init
+    (setq pulsar-pulse t
+          pulsar-delay 0.055
+          pulsar-iterations 10)
+    (pulsar-global-mode 1)))
 
-(setq shift-select-mode nil)
 
-;; (recentf-mode t)
-
-;; Emacs doesn't provide enough terminal support for pagers like less, but we
-;; don't need pagers since we have a buffer. We can just use cat instead.
-(setenv "PAGER" "/bin/cat")
-
-;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
-(global-set-key (kbd "M-i") 'imenu)
-
-;; ---------- Org-mode ----------
+;; --------------------[ Org-mode ]---------------------------------------------
 
 (use-package org
   :init
@@ -235,7 +237,6 @@
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
 (setq org-directory "~/memex")
-
 (setq org-agenda-files '("~/memex"))
 
 ;; This is where capture will place new content by default
@@ -252,19 +253,8 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
 (setq org-pretty-entities t)
-
-;; This should not be necessary with (prefer-coding-system 'utf-8) above
-;; (setq-default buffer-file-coding-system 'utf-8-unix)
-
 (setq org-fontify-whole-heading-line t)
 (setq org-fontify-quote-and-verse-blocks t)
-
-;; Only show the highest-level TODO of a TODO tree
-;; (setq org-agenda-todo-list-sublevels t)
-
-
-;; (setq org-enforce-todo-dependencies t)
-
 
 (setq org-hierarchical-todo-statistics nil)
 
@@ -295,17 +285,24 @@
 
 ;;; ---------- Flycheck ----------
 
-(use-package flycheck)
+(use-package flycheck
+  :ensure t)
 
-;;; ---------- EMMS ----------
+;;; --------------------[ EMMS ]------------------------------------------------
+
+;; I go back and forth between using EMMS and bongo but am considering using
+;; Elsa or something else instead.
 
 (use-package emms
+  :ensure t
   :init
   (emms-all)
   (emms-default-players))
 
 
-;;; --------------------[ Theme ]-----------------------------------------------
+;;; --------------------[ Themes ]----------------------------------------------
+
+;; Sometimes I want more color and load ef-themes.
 
 (use-package modus-themes
   :init
@@ -317,14 +314,22 @@
   (load-theme (car modus-themes-to-toggle) t)
   :bind ("<f5>" . modus-themes-toggle))
 
+(use-package ef-themes
+  :ensure t)
+
 ;;; --------------------[ Roam ]------------------------------------------------
+
+;; I'm considering no longer using org-roam. I've been enjoying using denote.
 
 (use-package org-roam
   :config
   (setq org-roam-directory "~/memex/roam"
         org-roam-index-file "~/memex/roam/index.org"))
 
-;;; ---------- Elfeed ----------
+;;; --------------------[ Elfeed ]----------------------------------------------
+
+;; I'm considering no longer using Elfeed. Thunderbird is a good-enough RSS
+;; reader.
 
 (use-package elfeed
   :ensure t
