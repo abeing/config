@@ -301,8 +301,8 @@
   (setq modus-themes-disable-other-themes t
         modus-themes-org-blocks 'gray-background
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
-        modus-themes-italic-constructs t
-        modus-themes-bold-constructs t)
+        modus-themes-italic-constructs nil
+        modus-themes-bold-constructs nil)
   (load-theme (car modus-themes-to-toggle) t)
   :bind ("<f5>" . modus-themes-toggle))
 
@@ -337,6 +337,7 @@
 ;; --------------------[ Denote ]-----------------------------------------------
 
 (use-package denote
+  :ensure t
   :after org
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
