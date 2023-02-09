@@ -30,7 +30,7 @@
 (require 'package)
 
 ;; On macOS, fix an issue with TLS. Is this still necessary?
-(when (my-laptop-p)
+(when my-laptop-p
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -72,8 +72,8 @@
 ;; Don't use compiled code if its older than uncompiled code
 (setq-default load-prefer-newer t)
 
-;; Don't put 'customize' config in init.el; git it another file
-(setq-default custom-file (locate-user-emacs-file "custom.el"))
+;; Don't put 'customize' config in init.el; give it another file
+(setq custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
   (load custom-file))
 
