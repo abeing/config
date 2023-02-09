@@ -1,5 +1,5 @@
 ;;; init.el --- Adam Miezianko's Emacs configuraiton
-;;
+
 ;; Author: Adam Miezianko <adam.miezianko@gmail.com>
 
 ;; This file is not part of GNU Emacs
@@ -12,22 +12,25 @@
 
 ;;; Code:
 
-;;; ---------- User information ----------
+
+;;; --------------------[ User information ]------------------------------------
 
 (setq user-full-name "Adam Miezianko"
       user-mail-address "adam.miezianko@gmail.com")
 (setq calendar-latitude 47.6062
       calendar-longitude -122.3321)
 
-(defconst my/laptop-p (equal (system-name) "algos.local"))
+;; Is Emacs running on my laptop? Used for setting laptop-specific settings
+;; where necessary.
+(defconst my-laptop-p (eq system-type 'darwin))
 
-;;; ---------- Package management  ----------
+
+;;; --------------------[ Package management ]----------------------------------
 
 (require 'package)
 
-;; On macOS, fix an issue with TLS
-;; Is this still necessary?
-(when (eq system-type 'darwin)
+;; On macOS, fix an issue with TLS. Is this still necessary?
+(when (my-laptop-p)
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -40,15 +43,10 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package use-package
-  :init
-  (setq use-package-always-ensure t)
-  (use-package use-package-ensure-system-package
-    :ensure t))
 
 ;;; ---------- Laptop-specific settings ----------
 
-(when my/laptop-p
+(when my-laptop-p
   (setq ispell-program-name "/usr/local/bin/ispell"))
 
 ;;; ---------- Use better defaults ----------
@@ -175,22 +173,23 @@
   :custom
   (completion-styles '(orderless)))
 
-;;; ---------- Timer ----------
+;;; --------------------[ Timers ]----------------------------------------------
 
-(use-package tmr)
+(use-package tmr
+  :ensure t)
 
-(defun am/pomodoro (task)
+(defun start-pomodoro (task)
   "Start a Pomodoro"
   (interactive "sTask: ")
   (tmr-with-description "25m" task))
 
-(defun am/brew-hojicha ()
+(defun brew-hojicha ()
   "Brew hojicha"
   (interactive)
   (tmr-with-description "3m" "Hojicha"))
 
-(global-set-key (kbd "C-c t p") 'am/pomodoro)
-(global-set-key (kbd "C-c t g") 'am/brew-hojicha)
+(global-set-key (kbd "C-c t p") 'start-pomodoro)
+(global-set-key (kbd "C-c t g") 'brew-hojicha)
 (global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
 
 
@@ -307,21 +306,18 @@
   (emms-all)
   (emms-default-players))
 
-;;; ---------- Theme ----------
 
-(use-package ef-themes
+;;; --------------------[ Theme ]-----------------------------------------------
+
+(use-package modus-themes
   :init
-  (ef-themes-select 'ef-spring))
-
-;; (use-package modus-themes
-;;   :init
-;;   (setq modus-themes-disable-other-themes t
-;;         modus-themes-org-blocks 'gray-background
-;;         modus-themes-to-toggle '(modus-operandi modus-vivendi)
-;;         modus-themes-italic-constructs t
-;;         modus-themes-bold-constructs t)
-;;   (load-theme (car modus-themes-to-toggle) t)
-;;   :bind ("<f5>" . modus-themes-toggle))
+  (setq modus-themes-disable-other-themes t
+        modus-themes-org-blocks 'gray-background
+        modus-themes-to-toggle '(modus-operandi modus-vivendi)
+        modus-themes-italic-constructs t
+        modus-themes-bold-constructs t)
+  (load-theme (car modus-themes-to-toggle) t)
+  :bind ("<f5>" . modus-themes-toggle))
 
 ;;; ---------- Roam ----------
 
@@ -376,8 +372,8 @@
  '((python . t)
    (scheme . t)))
 
-(if my/laptop-p
-    (setq-default python-shell-interpreter "/usr/local/bin/python3"))
+(when my-laptop-p
+  (setq python-shell-interpreter "/usr/local/bin/python3"))
 
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
