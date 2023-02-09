@@ -47,7 +47,10 @@
 ;;; ---------- Laptop-specific settings ----------
 
 (when my-laptop-p
-  (setq ispell-program-name "/usr/local/bin/ispell"))
+  (setq ispell-program-name "/usr/local/bin/ispell")
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'none))
+
 
 ;;; ---------- Use better defaults ----------
 
@@ -83,11 +86,6 @@
 ;; Change yes/no questions to y/n instead
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; On macOS, use Command as Meta, not Option
-(when (eq system-type 'darwin)
-  (setq mac-command-modifier 'meta)
-  (setq mac-option-modifier 'none))
-
 ;; Delete trailing whitespace before saving a file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -105,7 +103,7 @@
 
 ;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
 ;; up any additional screen real estate, so there's no harm in keeping it.
-(when (not (eq system-type 'darwin))
+(when (not my-laptop-p)
   (menu-bar-mode -1))
 
 ;; Don't show the scroll bar or tool bar.
@@ -128,7 +126,7 @@
 
 (setq shr-width 80)
 
-;;; ---------- Completion ----------
+;;; --------------------[ Completion ]------------------------------------------
 
 (use-package vertico
   :ensure t
@@ -319,7 +317,7 @@
   (load-theme (car modus-themes-to-toggle) t)
   :bind ("<f5>" . modus-themes-toggle))
 
-;;; ---------- Roam ----------
+;;; --------------------[ Roam ]------------------------------------------------
 
 (use-package org-roam
   :config
@@ -339,15 +337,17 @@
                        ("https://jvns.ca/atom.xml" tech)
                        ("https://www.davidrevoy.com/feed/en/rss" comic))))
 
-;;; ---------- Markdown ----------
+;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
+  :ensure t
   :init
   (setq markdown-enable-wiki-links t))
 
-;;; ---------- Nov ----------
+;;; --------------------[ Nov ]-------------------------------------------------
 
 (use-package nov
+  :ensure t
   :mode ("\\.epub\\'" . nov-mode))
 
 ;;; Emacs server
@@ -356,16 +356,6 @@
 (require 'org-protocol)
 
 (setq-default tab-always-indent 'complete)
-
-(defun my/show-formfeed-as-line ()
-  "Display formfeed ^L char as line."
-  (interactive)
-  (progn
-    (when (not buffer-display-table)
-      (setq buffer-display-table (make-display-table)))
-    (aset buffer-display-table ?\^L
-	  (vconcat (make-list 80 (make-glyph-code ?- 'font-lock-comment-face))))
-    (redraw-frame)))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -378,7 +368,7 @@
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
 
-;; ---------- Denote ----------
+;; --------------------[ Denote ]-----------------------------------------------
 
 (use-package denote
   :after org
@@ -392,22 +382,19 @@
   (denote-directory (concat org-directory "/"))
   (denote-known-keywords '("literature", "idea", "project", "index")))
 
-;;; ----------=[ Magit ]=--------------------------------------------------------
+
+;;; --------------------[ Magit ]-----------------------------------------------
 
 (use-package magit
   :ensure t)
 
-;;; Logos narrowing
+;;; --------------------[ Useful functions ]------------------------------------
 
-(when (not (package-installed-p 'logos))
-  (package-refresh-contents)
-  (package-install 'logos))
-(require 'logos)
-(setq logos-outlines-are-pages t)
-(setq logos-outline-regexp-alist
-      `((emacs-lisp-mode . "^;;;+ ")
-        (org-mode . "^\\*+ +")
-        (t . ,(or outline-regexp logos--page-delimiter))))
-(define-key global-map (kbd "C-x n l") #'logos-narrow-dwim)
+(defun my-fill-to-eol (char)
+  "Fill a character from point until column 80."
+  (interactive "cChar: ")
+  (insert-char char 80)
+  (move-to-column 80)
+  (kill-line))
 
 ;;; init.el ends here
