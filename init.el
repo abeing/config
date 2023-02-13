@@ -299,11 +299,12 @@
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
         modus-themes-italic-constructs t
         modus-themes-bold-constructs t)
-  (load-theme (car modus-themes-to-toggle) t)
   :bind ("<f5>" . modus-themes-toggle))
 
 (use-package ef-themes
-  :ensure t)
+  :ensure t
+  :init
+  (ef-themes-select 'ef-cyprus))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
 
