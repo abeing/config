@@ -225,10 +225,7 @@
 
 (use-package org
   :init
-  (setq org-startup-indented t
-        org-fontify-todo-headline t
-        org-fontify-done-headline t
-        org-hide-emphasis-markers t
+  (setq org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
@@ -239,7 +236,7 @@
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
 
-(setq org-modules '(org-habit))
+(setq org-modules '(org-habit org-protocol))
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 (add-hook 'org-mode-hook (lambda ()
@@ -250,7 +247,6 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
 (setq org-pretty-entities t)
-(setq org-fontify-whole-heading-line t)
 (setq org-fontify-quote-and-verse-blocks t)
 
 (setq org-hierarchical-todo-statistics nil)
@@ -301,8 +297,8 @@
   (setq modus-themes-disable-other-themes t
         modus-themes-org-blocks 'gray-background
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
-        modus-themes-italic-constructs nil
-        modus-themes-bold-constructs nil)
+        modus-themes-italic-constructs t
+        modus-themes-bold-constructs t)
   (load-theme (car modus-themes-to-toggle) t)
   :bind ("<f5>" . modus-themes-toggle))
 
