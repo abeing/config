@@ -181,12 +181,19 @@
 ;;; --------------------[ Timers ]----------------------------------------------
 
 (use-package tmr
-  :ensure t)
+  :ensure t
+  :custom
+  (tmr-sound-file nil))
 
 (defun start-pomodoro (task)
   "Start a Pomodoro"
   (interactive "sTask: ")
   (tmr-with-description "25m" task))
+
+(defun start-short-break ()
+  "Start a short break"
+  (interactive)
+  (tmr-with-description "5m" "Short break"))
 
 (defun brew-hojicha ()
   "Brew hojicha"
@@ -194,6 +201,7 @@
   (tmr-with-description "3m" "Hojicha"))
 
 (global-set-key (kbd "C-c t p") 'start-pomodoro)
+(global-set-key (kbd "C-c t b") 'start-short-break)
 (global-set-key (kbd "C-c t g") 'brew-hojicha)
 (global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
 
