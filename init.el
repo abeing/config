@@ -298,8 +298,6 @@
 
 ;;; --------------------[ Themes ]----------------------------------------------
 
-;; Sometimes I want more color and load ef-themes.
-
 (use-package modus-themes
   :init
   (setq modus-themes-disable-other-themes t
@@ -307,12 +305,8 @@
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
         modus-themes-italic-constructs t
         modus-themes-bold-constructs t)
+  (modus-themes-load-operandi)
   :bind ("<f5>" . modus-themes-toggle))
-
-(use-package ef-themes
-  :ensure t
-  :init
-  (ef-themes-select 'ef-cyprus))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
 
