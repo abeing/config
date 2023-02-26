@@ -236,6 +236,7 @@
   (setq org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
+        org-startup-indented t
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
 (setq org-directory "~/memex")
@@ -305,7 +306,7 @@
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
         modus-themes-italic-constructs t
         modus-themes-bold-constructs t)
-  (modus-themes-load-operandi)
+  (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
