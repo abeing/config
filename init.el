@@ -116,7 +116,7 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :family "Iosevka" :height 160)
+(set-face-attribute 'default nil :family "Iosevka" :height 120)
 
 (setq shr-width 80)
 
@@ -236,6 +236,7 @@
   (setq org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
+        org-adapt-indentation t
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
 (setq org-directory "~/memex")
@@ -306,7 +307,7 @@
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
         modus-themes-italic-constructs t
         modus-themes-bold-constructs t)
-  (modus-themes-load-operandi)
+  (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
