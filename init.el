@@ -299,6 +299,7 @@
 ;;; --------------------[ Themes ]----------------------------------------------
 
 (use-package modus-themes
+  :ensure t
   :init
   (setq modus-themes-disable-other-themes t
         modus-themes-org-blocks 'gray-background
