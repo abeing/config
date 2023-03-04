@@ -356,6 +356,11 @@
 (use-package magit
   :ensure t)
 
+;;; --------------------[ Rust ]------------------------------------------------
+
+(use-package rust-mode
+  :ensure t)
+
 ;;; --------------------[ Useful functions ]------------------------------------
 
 (defun my-fill-to-eol (char)
