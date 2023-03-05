@@ -120,8 +120,9 @@
 
 (setq shr-width 80)
 
-;; I seperate my sentences with one space not two.
-(setq-default sentence-end-double-space nil)
+;; I usually seperate my sentences with one space not two, but am
+;; experimenting with being a two-spacer.
+(setq-default sentence-end-double-space t)
 
 (setq shift-select-mode nil)
 
@@ -236,7 +237,6 @@
   (setq org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
-        org-adapt-indentation t
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
 (setq org-directory "~/memex")
