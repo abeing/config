@@ -134,6 +134,11 @@
 (global-set-key (kbd "M-i") 'imenu)
 
 
+;;; --------------------[ Avy ]-------------------------------------------------
+
+(use-package avy
+  :bind (("C-c g g" . avy-goto-char)))
+
 ;;; --------------------[ Completion ]------------------------------------------
 
 (use-package vertico
