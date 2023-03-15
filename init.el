@@ -33,6 +33,8 @@
 (when my-laptop-p
   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 (package-initialize)
 
 (unless (package-installed-p 'use-package)
@@ -345,16 +347,32 @@
 (use-package denote
   :ensure t
   :after org
-  :bind (("C-c n r" . denote-rename-file)
-         ("C-c n n" . denote-create-note)
-         ("C-c n l" . denote-link-insert-link)
-         ("C-c n f" . denote-open-or-create))
+  :bind (("C-c N r" . denote-rename-file)
+         ("C-c N n" . denote-create-note)
+         ("C-c N l" . denote-link-insert-link)
+         ("C-c N f" . denote-open-or-create))
   :hook (dired-mode . denote-dired-mode)
   :custom
   (denote-sort-keywords t)
   (denote-directory (concat org-directory "/"))
   (denote-known-keywords '("literature", "idea", "project", "index")))
 
+;;; --------------------[ Org-roam ]--------------------------------------------
+
+(use-package org-roam
+  :ensure t
+  :custom
+  (org-roam-directory (file-truename "~/memex/roam"))
+  :bind (("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n g" . org-roam-graph)
+         ("C-c n i" . org-roam-node-insert)
+         ("C-c n n" . org-roam-capture)
+         ("C-c n d" . org-roam-dailies-capture-today)
+         ("C-c n r" . org-roam-node-random))
+  :config
+  (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
+  (org-roam-db-autosync-mode))
 
 ;;; --------------------[ Magit ]-----------------------------------------------
 
