@@ -384,13 +384,33 @@
 (use-package rust-mode
   :ensure t)
 
+;;; --------------------[ Nov.el ]----------------------------------------------
+
+(use-package nov
+  :config
+  (add-to-list 'auto-mode-alist '("\\.epub\\'". nov-mode)))
+
 ;;; --------------------[ Useful functions ]------------------------------------
 
-(defun my-fill-to-eol (char)
+(defun fill-to-eol (char)
   "Fill a character from point until column 80."
   (interactive "cChar: ")
   (insert-char char 80)
   (move-to-column 80)
   (kill-line))
+
+(defun insert-comment-header (title)
+  "Create a Lisp comment header with a given title."
+  (interactive "sTitle: ")
+  (insert ";;; --------------------[ ")
+  (insert title)
+  (insert " ]")
+  (fill-to-eol ?\-))
+
+(defun choose-from (x)
+  "Choose at random from a space-dilimited list of choices."
+  (interactive "sChoices: ")
+  (let ((y (split-string x)))
+    (message "Chose: %s" (nth (random (length y)) y))))
 
 ;;; init.el ends here
