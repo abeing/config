@@ -287,10 +287,7 @@
 	       (file+headline "~/memex/tickler.org" "Tickler")
 	       "* %i%? \n %U")))
 
-(setq org-refile-targets
-      '(("~/memex/todo.org" :level . 1)
-			  ("~/memex/someday.org" :level . 1)
-			  ("~/memex/tickler.org" :level . 1)))
+(setq org-refile-targets nil)
 
 ;;; --------------------[ EMMS ]------------------------------------------------
 
@@ -301,7 +298,9 @@
   :ensure t
   :init
   (emms-all)
-  (emms-default-players))
+  (emms-default-players)
+  :bind (("C-c m p" . emms-pause)
+         ("C-c m m" . emms)))
 
 
 ;;; --------------------[ Themes ]----------------------------------------------
@@ -389,6 +388,13 @@
 (use-package nov
   :config
   (add-to-list 'auto-mode-alist '("\\.epub\\'". nov-mode)))
+
+;;; --------------------[ Proselint ]-------------------------------------------
+
+(use-package flymake-proselint
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook #'flymake-proselint-setup))
 
 ;;; --------------------[ Useful functions ]------------------------------------
 
