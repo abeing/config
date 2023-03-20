@@ -246,6 +246,9 @@
         org-log-into-drawer t
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
+(use-package org-web-tools
+  :ensure t)
+
 (setq org-directory "~/memex")
 (setq org-agenda-files '("~/memex" "~/memex/roam" "~/memex/roam/daily"))
 
@@ -287,7 +290,7 @@
 	       (file+headline "~/memex/tickler.org" "Tickler")
 	       "* %i%? \n %U")))
 
-(setq org-refile-targets nil)
+(setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
 ;;; --------------------[ EMMS ]------------------------------------------------
 
@@ -301,7 +304,6 @@
   (emms-default-players)
   :bind (("C-c m p" . emms-pause)
          ("C-c m m" . emms)))
-
 
 ;;; --------------------[ Themes ]----------------------------------------------
 
