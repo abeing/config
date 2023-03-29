@@ -139,7 +139,9 @@
 ;;; --------------------[ Avy ]-------------------------------------------------
 
 (use-package avy
-  :bind (("C-c g g" . avy-goto-char)))
+  :ensure t
+  :bind (("C-c g c" . avy-goto-char)
+         ("C-c g w" . avy-goto-word-0)))
 
 ;;; --------------------[ Completion ]------------------------------------------
 
