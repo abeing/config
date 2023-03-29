@@ -248,6 +248,9 @@
         org-log-into-drawer t
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
+(use-package org-web-tools
+  :ensure t)
+
 (setq org-directory "~/memex")
 (setq org-agenda-files '("~/memex" "~/memex/roam" "~/memex/roam/daily"))
 
@@ -289,10 +292,7 @@
 	       (file+headline "~/memex/tickler.org" "Tickler")
 	       "* %i%? \n %U")))
 
-(setq org-refile-targets
-      '(("~/memex/todo.org" :level . 1)
-			  ("~/memex/someday.org" :level . 1)
-			  ("~/memex/tickler.org" :level . 1)))
+(setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
 ;;; --------------------[ EMMS ]------------------------------------------------
 
@@ -303,8 +303,9 @@
   :ensure t
   :init
   (emms-all)
-  (emms-default-players))
-
+  (emms-default-players)
+  :bind (("C-c m p" . emms-pause)
+         ("C-c m m" . emms)))
 
 ;;; --------------------[ Themes ]----------------------------------------------
 
@@ -386,13 +387,40 @@
 (use-package rust-mode
   :ensure t)
 
+;;; --------------------[ Nov.el ]----------------------------------------------
+
+(use-package nov
+  :config
+  (add-to-list 'auto-mode-alist '("\\.epub\\'". nov-mode)))
+
+;;; --------------------[ Proselint ]-------------------------------------------
+
+(use-package flymake-proselint
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook #'flymake-proselint-setup))
+
 ;;; --------------------[ Useful functions ]------------------------------------
 
-(defun my-fill-to-eol (char)
+(defun fill-to-eol (char)
   "Fill a character from point until column 80."
   (interactive "cChar: ")
   (insert-char char 80)
   (move-to-column 80)
   (kill-line))
+
+(defun insert-comment-header (title)
+  "Create a Lisp comment header with a given title."
+  (interactive "sTitle: ")
+  (insert ";;; --------------------[ ")
+  (insert title)
+  (insert " ]")
+  (fill-to-eol ?\-))
+
+(defun choose-from (x)
+  "Choose at random from a space-dilimited list of choices."
+  (interactive "sChoices: ")
+  (let ((y (split-string x)))
+    (message "Chose: %s" (nth (random (length y)) y))))
 
 ;;; init.el ends here
