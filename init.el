@@ -387,12 +387,6 @@
 (use-package rust-mode
   :ensure t)
 
-;;; --------------------[ Nov.el ]----------------------------------------------
-
-(use-package nov
-  :config
-  (add-to-list 'auto-mode-alist '("\\.epub\\'". nov-mode)))
-
 ;;; --------------------[ Proselint ]-------------------------------------------
 
 (use-package flymake-proselint
