@@ -139,7 +139,21 @@
 ;;; --------------------[ Avy ]-------------------------------------------------
 
 (use-package avy
-  :bind (("C-c g g" . avy-goto-char)))
+  :ensure t
+  :bind (("C-c g g" . avy-goto-char)
+         ("C-c g l" . avy-goto-line)
+         ("C-c g w" . avy-goto-word-0)))
+
+;;; --------------------[ Eglot ]-----------------------------------------------
+
+(use-package eglot
+  :ensure t  ; When I move to Emacs 29, I can remove this as eglot will be
+                                        ; built-in
+  :hook
+  ((rust-mode . eglot))
+
+  :custom
+  (eglot-send-changes-idle-time 0.1))
 
 ;;; --------------------[ Completion ]------------------------------------------
 
@@ -244,7 +258,10 @@
   (setq org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
-        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
+        org-adapt-indentation nil
+        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
+  :hook
+  (org-mode . org-indent-mode))
 
 (use-package org-web-tools
   :ensure t)
@@ -388,6 +405,7 @@
 ;;; --------------------[ Nov.el ]----------------------------------------------
 
 (use-package nov
+  :ensure t
   :config
   (add-to-list 'auto-mode-alist '("\\.epub\\'". nov-mode)))
 
