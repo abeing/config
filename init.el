@@ -259,9 +259,9 @@
         org-log-done t
         org-log-into-drawer t
         org-adapt-indentation nil
-        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
-  :hook
-  (org-mode . org-indent-mode))
+        org-startup-folded 'showall
+        org-startup-indented t
+        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
 
 (use-package org-web-tools
   :ensure t)
@@ -301,10 +301,10 @@
 	       :empty-lines-after 2
 	       :immediate-finish t)
 	      ("t" "Todo [inbox]" entry
-	       (file+headline "~/memex/inbox.org" "Task Inbox")
+	       (file+headline "~/memex/gtd.org" "Inbox")
 	       "* TODO %i%?")
 	      ("T" "Tickler" entry
-	       (file+headline "~/memex/tickler.org" "Tickler")
+	       (file+headline "~/memex/gtd.org" "Tickler")
 	       "* %i%? \n %U")))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
