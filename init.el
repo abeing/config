@@ -253,15 +253,26 @@
 
 ;; --------------------[ Org-mode ]---------------------------------------------
 
+(defun fold-done-entries ()
+  "Fold all enteries marked DONE."
+  (interactive)
+  (save-excursion
+    (goto-char (point-max))
+    (while (outline-previous-heading)
+      (when (org-entry-is-done-p)
+        (hide-subtree)))))
+
 (use-package org
   :init
   (setq org-hide-emphasis-markers t
         org-log-done t
         org-log-into-drawer t
         org-adapt-indentation nil
-        org-startup-folded 'showall
-        org-startup-indented t
-        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)"))))
+        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
+  :hook
+  (org-mode . org-indent-mode)
+  (org-mode . fold-done-entries))
+
 
 (use-package org-web-tools
   :ensure t)
