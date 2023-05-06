@@ -193,7 +193,9 @@
   :ensure t
   :bind (("C-x b" . consult-buffer)
          ("M-y" . consult-yank-pop)
-         ("C-s" . consult-line)))
+         ("C-s" . consult-line)
+         :map org-mode-map
+         ("C-c C-j" . consult-org-heading)))
 
 (use-package orderless
   :ensure t
