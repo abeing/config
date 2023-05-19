@@ -318,7 +318,10 @@
 	       "* TODO %i%?")
 	      ("T" "Tickler" entry
 	       (file+headline "~/memex/gtd.org" "Tickler")
-	       "* %i%? \n %U")))
+	       "* %i%? \n %U")
+        ("w" "Weight" table-line
+         (file+olp "~/memex/health.org" "Weight" "Data")
+         "| %U | %? | " :unnarrowed t)))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
