@@ -202,6 +202,11 @@
   :custom
   (completion-styles '(orderless)))
 
+;;; --------------------[ Spaced repetition ]-----------------------------------
+
+(use-package org-drill
+  :ensure t)
+
 ;;; --------------------[ Timers ]----------------------------------------------
 
 (use-package tmr
