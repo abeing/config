@@ -386,15 +386,29 @@
 (use-package denote
   :ensure t
   :after org
-  :bind (("C-c n r" . denote-rename-file)
-         ("C-c n n" . denote-create-note)
-         ("C-c n l" . denote-link-insert-link)
-         ("C-c n f" . denote-open-or-create))
   :hook (dired-mode . denote-dired-mode)
   :custom
   (denote-sort-keywords t)
   (denote-directory (concat org-directory "/"))
-  (denote-known-keywords '("literature", "idea", "project", "index")))
+  (denote-known-keywords '("literature", "idea", "project", "index"))
+  (defun my-denote-journal ()
+    "Create an entry tagged 'journal' with the date as its title."
+    (interactive)
+    (denote
+     (format-time-string "%A %B %e %Y") ; format like Friday 14 July 2023
+     '("journal"))) ; multiple keywords are a list of strings: '("one" "two")
+  :bind (("C-c n r" . denote-rename-file)
+         ("C-c n n" . denote-create-note)
+         ("C-c n l" . denote-link-insert-link)
+         ("C-c n f" . denote-open-or-create)
+         ("C-c n j" . my-denote-journal)))
+
+
+;;; --------------------[ Dired ]-----------------------------------------------
+
+(use-package dired
+  :init
+  :hook (dired-mode . dired-hide-details-mode))
 
 ;;; --------------------[ Org-roam ]--------------------------------------------
 
