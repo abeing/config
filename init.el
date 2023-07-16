@@ -230,13 +230,12 @@
 (global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
 
 
-;;; ---------- Keyboard use ----------
+;;; ;;; --------------------[ Keyboard ]----------------------------------------
 
 (use-package which-key
   :ensure t
   :init
   (which-key-mode))
-
 
 ;;; --------------------[ Pulsar ]----------------------------------------------
 
@@ -431,6 +430,13 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook #'flymake-proselint-setup))
+
+;;; --------------------[ Feeds ]-----------------------------------------------
+
+(use-package elfeed
+  :ensure t
+  :config
+  (load-file "~/.config/emacs/feeds.el"))
 
 ;;; --------------------[ Useful functions ]------------------------------------
 
