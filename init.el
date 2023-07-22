@@ -118,7 +118,7 @@
 
 (add-to-list 'initial-frame-alist '(fullscreen . fullheight))
 
-(set-face-attribute 'default nil :family "Iosevka" :height 140)
+(set-face-attribute 'default nil :family "Iosevka" :height 120)
 
 (setq shr-width 80)
 
