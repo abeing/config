@@ -395,7 +395,7 @@
     "Create an entry tagged 'journal' with the date as its title."
     (interactive)
     (denote
-     (format-time-string "%A %B %e %Y") ; format like Friday 14 July 2023
+     (format-time-string "%A, %B %e, %Y") ; format like Friday, July 14, 2023
      '("journal"))) ; multiple keywords are a list of strings: '("one" "two")
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
@@ -450,13 +450,6 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook #'flymake-proselint-setup))
-
-;;; --------------------[ Feeds ]-----------------------------------------------
-
-(use-package elfeed
-  :ensure t
-  :config
-  (load-file "~/.config/emacs/feeds.el"))
 
 ;;; --------------------[ Useful functions ]------------------------------------
 
