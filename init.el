@@ -330,6 +330,20 @@
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
 
+;;; --------------------[ GTD ]-------------------------------------------------
+
+(use-package org-gtd
+  :ensure t
+  :after org
+  :init
+  (setq org-gtd-update-ack "3.0.0")
+  (setq org-gtd-directory "~/memex/gtd/")
+  :bind
+  ("C-c d i" . org-gtd-capture)
+  ("C-c d e" . org-gtd-engage)
+  ("C-c d p" . org-gtd-process-inbox))
+
+
 ;;; --------------------[ EMMS ]------------------------------------------------
 
 ;; I go back and forth between using EMMS and bongo but am considering using
