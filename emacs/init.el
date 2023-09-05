@@ -262,9 +262,6 @@
   (org-mode . fold-done-entries))
 
 
-(use-package org-web-tools
-  :ensure t)
-
 (setq org-directory "~/memex")
 (setq org-agenda-files '("~/memex" "~/memex/roam" "~/memex/roam/daily"))
 
