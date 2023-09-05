@@ -65,6 +65,10 @@
 ;; Change yes/no questions to y/n instead
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Make right-click do something sensible
+(when (display-graphic-p)
+  (context-menu-mode))
+
 ;; Delete trailing whitespace before saving a file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -85,15 +89,7 @@
 (when (not my-laptop-p)
   (menu-bar-mode -1))
 
-;; Don't show the scroll bar or tool bar.
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
-
 (setq visible-bell t)
-
-;; Allow Emacs to resize by pixel rather than character
-(setq window-resize-pixelwise t)
-(setq frame-resize-pixelwise t)
 
 (line-number-mode 1)
 
@@ -138,7 +134,7 @@
 ;;; --------------------[ Completion ]------------------------------------------
 
 (use-package vertico
-  :ensure t
+1  :ensure t
   :init
   (fido-mode 0)
   (vertico-mode))
@@ -219,7 +215,7 @@
 
 (use-package which-key
   :ensure t
-  :init
+  :config
   (which-key-mode))
 
 ;;; --------------------[ Pulsar ]----------------------------------------------
