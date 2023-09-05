@@ -6,9 +6,7 @@
 
 ;;; Commentary:
 
-;; I am rebuilding my Emacs config from scratch.  I used to use spacemacs and
-;; then Doom Emacs but both of those were too different from my Emacs experience
-;; in the 90s and early 00s.  So, tabula rasa.
+;; I keep removing configuration from my init.el as Emacs gets more and more sane defaults.
 
 ;;; Code:
 
@@ -24,23 +22,6 @@
 ;; where necessary.
 (defconst my-laptop-p (eq system-type 'darwin))
 (defconst my-work-machine-p (eq system-type 'windows-nt))
-
-;;; --------------------[ Package management ]----------------------------------
-
-(require 'package)
-
-;; On macOS, fix an issue with TLS. Is this still necessary?
-(when my-laptop-p
-  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
-
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-
-(package-initialize)
-
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-
 
 ;;; ---------- Laptop-specific settings ----------
 
@@ -436,13 +417,6 @@
 
 (use-package rust-mode
   :ensure t)
-
-;;; --------------------[ Nov.el ]----------------------------------------------
-
-(use-package nov
-  :ensure t
-  :config
-  (add-to-list 'auto-mode-alist '("\\.epub\\'". nov-mode)))
 
 ;;; --------------------[ Proselint ]-------------------------------------------
 
