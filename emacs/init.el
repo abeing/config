@@ -76,8 +76,8 @@
 (put 'set-goal-column 'disabled nil)
 
 ;; Automatically update buffers if file content on disk has changes
-(setq auto-revert-interval 3
-      auto-revert-check-vc-info t)
+(setq auto-revert-interval 1
+(setq auto-revert-check-vc-info t)
 (global-auto-revert-mode t)
 
 ;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
