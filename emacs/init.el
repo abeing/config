@@ -97,8 +97,6 @@
 
 (line-number-mode 1)
 
-(add-to-list 'initial-frame-alist '(fullscreen . fullheight))
-
 (set-face-attribute 'default nil :family "Iosevka" :height 120)
 
 (setq shr-width 80)
