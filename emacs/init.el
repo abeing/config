@@ -80,7 +80,7 @@
 (put 'set-goal-column 'disabled nil)
 
 ;; Automatically update buffers if file content on disk has changes
-(setq auto-revert-interval 1
+(setq auto-revert-interval 1)
 (setq auto-revert-check-vc-info t)
 (global-auto-revert-mode t)
 
@@ -134,7 +134,7 @@
 ;;; --------------------[ Completion ]------------------------------------------
 
 (use-package vertico
-1  :ensure t
+  :ensure t
   :init
   (fido-mode 0)
   (vertico-mode))
