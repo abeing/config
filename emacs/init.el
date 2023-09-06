@@ -355,6 +355,13 @@
 
 ;; --------------------[ Denote ]-----------------------------------------------
 
+(defun my-denote-journal ()
+  "Create an entry tagged 'journal' with the date as its title."
+  (interactive)
+  (denote
+   (format-time-string "%A, %B %e, %Y") ; format like Friday, July 14, 2023
+   '("journal"))) ; multiple keywords are a list of strings: '("one" "two")
+
 (use-package denote
   :ensure t
   :after org
@@ -363,12 +370,6 @@
   (denote-sort-keywords t)
   (denote-directory (concat org-directory "/"))
   (denote-known-keywords '("literature", "idea", "project", "index"))
-  (defun my-denote-journal ()
-    "Create an entry tagged 'journal' with the date as its title."
-    (interactive)
-    (denote
-     (format-time-string "%A, %B %e, %Y") ; format like Friday, July 14, 2023
-     '("journal"))) ; multiple keywords are a list of strings: '("one" "two")
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-insert-link)
