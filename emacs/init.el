@@ -120,9 +120,9 @@
 (use-package avy
   :ensure t
   :bind (("C-c g g" . avy-goto-char)
-         ("M-g g" . avy-goto-line)
-         ("M-g h" . avy-goto-char-timer)
-         ("M-g w" . avy-goto-word-0)))
+         ("C-c g l" . avy-goto-line)
+         ("C-c g c" . avy-goto-char-timer)
+         ("C-c g w" . avy-goto-word-0)))
 
 ;;; --------------------[ Eglot ]-----------------------------------------------
 
