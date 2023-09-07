@@ -80,7 +80,7 @@
 (put 'set-goal-column 'disabled nil)
 
 ;; Automatically update buffers if file content on disk has changes
-(setq auto-revert-interval 1
+(setq auto-revert-interval 1)
 (setq auto-revert-check-vc-info t)
 (global-auto-revert-mode t)
 
@@ -110,6 +110,10 @@
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
 
+;;; --------------------[ Diminish ]--------------------------------------------
+
+(use-package diminish
+  :ensure t)
 
 ;;; --------------------[ Avy ]-------------------------------------------------
 
@@ -123,10 +127,10 @@
 ;;; --------------------[ Eglot ]-----------------------------------------------
 
 (use-package eglot
-  :ensure t  ; When I move to Emacs 29, I can remove this as eglot will be
-                                        ; built-in
+  :ensure t
+
   :hook
-  ((rust-mode . eglot))
+  ((rust-mode . rust-ts-mode))
 
   :custom
   (eglot-send-changes-idle-time 0.1))
@@ -134,7 +138,7 @@
 ;;; --------------------[ Completion ]------------------------------------------
 
 (use-package vertico
-1  :ensure t
+  :ensure t
   :init
   (fido-mode 0)
   (vertico-mode))
@@ -215,6 +219,7 @@
 
 (use-package which-key
   :ensure t
+  :diminish
   :config
   (which-key-mode))
 

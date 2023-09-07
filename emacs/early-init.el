@@ -10,4 +10,6 @@
 (tool-bar-mode -1)
 (setq default-frame-alist '((fullscreen . maximized)
                             (background-color . "#FFFFFF")
+                            (vertical-scroll-bars . nil)
+                            (horizontal-scroll-bars . nil)
                             (ns-appearance . light)))
