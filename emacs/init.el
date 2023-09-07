@@ -388,23 +388,6 @@
   :init
   :hook (dired-mode . dired-hide-details-mode))
 
-;;; --------------------[ Org-roam ]--------------------------------------------
-
-;; (use-package org-roam
-;;   :ensure t
-;;   :custom
-;;   (org-roam-directory (file-truename "~/memex/roam"))
-;;   :bind (("C-c n l" . org-roam-buffer-toggle)
-;;          ("C-c n f" . org-roam-node-find)
-;;          ("C-c n g" . org-roam-graph)
-;;          ("C-c n i" . org-roam-node-insert)
-;;          ("C-c n n" . org-roam-capture)
-;;          ("C-c n d" . org-roam-dailies-capture-today)
-;;          ("C-c n r" . org-roam-node-random))
-;;   :config
-;;   (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:10}" 'face 'org-tag)))
-;;   (org-roam-db-autosync-mode))
-
 ;;; --------------------[ Magit ]-----------------------------------------------
 
 (use-package magit
