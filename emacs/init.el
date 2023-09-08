@@ -320,8 +320,7 @@
   :bind (("C-c m p" . emms-pause)
          ("C-c m m" . emms)
          ("C-c m r" . emms-random)
-         ("C-c m +" . emms-volume-raise)
-         ("C-c m -" . emms-volume-lower)))
+         ("C-c m v" . emms-volume-minor-mode)))
 
 ;;; --------------------[ Themes ]----------------------------------------------
 
