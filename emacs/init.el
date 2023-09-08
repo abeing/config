@@ -131,7 +131,7 @@
 
   :hook
   ((rust-mode . rust-ts-mode))
-
+  :bind (("C-c g e" . flymake-goto-next-error))
   :custom
   (eglot-send-changes-idle-time 0.1))
 
@@ -318,7 +318,10 @@
   (emms-all)
   (emms-default-players)
   :bind (("C-c m p" . emms-pause)
-         ("C-c m m" . emms)))
+         ("C-c m m" . emms)
+         ("C-c m r" . emms-random)
+         ("C-c m +" . emms-volume-raise)
+         ("C-c m -" . emms-volume-lower)))
 
 ;;; --------------------[ Themes ]----------------------------------------------
 
@@ -396,7 +399,9 @@
 ;;; --------------------[ Rust ]------------------------------------------------
 
 (use-package rust-mode
-  :ensure t)
+  :ensure t
+  :bind
+  (("C-c r r" . rust-run)))
 
 ;;; --------------------[ Proselint ]-------------------------------------------
 
