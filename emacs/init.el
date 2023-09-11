@@ -97,7 +97,8 @@
 
 (line-number-mode 1)
 
-(set-face-attribute 'default nil :family "Iosevka" :height 140)
+;; (set-face-attribute 'default nil :family "Iosevka" :height 120)
+(set-face-attribute 'default nil :family "Fira Code" :height 120)
 
 (setq shr-width 80)
 
