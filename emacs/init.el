@@ -97,8 +97,7 @@
 
 (line-number-mode 1)
 
-;; (set-face-attribute 'default nil :family "Iosevka" :height 120)
-(set-face-attribute 'default nil :family "Fira Code" :height 120)
+(set-face-attribute 'default nil :family "Iosevka" :height 120)
 
 (setq shr-width 80)
 
@@ -186,34 +185,6 @@
   :ensure t
   :custom
   (completion-styles '(orderless)))
-
-;;; --------------------[ Ligatures ]-------------------------------------------
-
-(use-package ligature
-  :ensure t
-  :config
-  ;; Enable the "www" ligature in every possible major mode
-  (ligature-set-ligatures 't '("www"))
-  ;; Enable traditional ligature support in eww-mode, if the
-  ;; `variable-pitch' face supports it
-  (ligature-set-ligatures 'eww-mode '("ff" "fi" "ffi"))
-  ;; Enable all Cascadia Code ligatures in programming modes
-  (ligature-set-ligatures 'prog-mode '("|||>" "<|||" "<==>" "<!--" "####" "~~>" "***" "||=" "||>"
-                                       ":::" "::=" "=:=" "===" "==>" "=!=" "=>>" "=<<" "=/=" "!=="
-                                       "!!." ">=>" ">>=" ">>>" ">>-" ">->" "->>" "-->" "---" "-<<"
-                                       "<~~" "<~>" "<*>" "<||" "<|>" "<$>" "<==" "<=>" "<=<" "<->"
-                                       "<--" "<-<" "<<=" "<<-" "<<<" "<+>" "</>" "###" "#_(" "..<"
-                                       "..." "+++" "/==" "///" "_|_" "www" "&&" "^=" "~~" "~@" "~="
-                                       "~>" "~-" "**" "*>" "*/" "||" "|}" "|]" "|=" "|>" "|-" "{|"
-                                       "[|" "]#" "::" ":=" ":>" ":<" "$>" "==" "=>" "!=" "!!" ">:"
-                                       ">=" ">>" ">-" "-~" "-|" "->" "--" "-<" "<~" "<*" "<|" "<:"
-                                       "<$" "<=" "<>" "<-" "<<" "<+" "</" "#{" "#[" "#:" "#=" "#!"
-                                       "##" "#(" "#?" "#_" "%%" ".=" ".-" ".." ".?" "+>" "++" "?:"
-                                       "?=" "?." "??" ";;" "/*" "/=" "/>" "//" "__" "~~" "(*" "*)"
-                                       "\\\\" "://"))
-  ;; Enables ligature checks globally in all buffers.  You can also do it
-  ;; per mode with `ligature-mode'.
-  (global-ligature-mode t))
 
 ;;; --------------------[ Spaced repetition ]-----------------------------------
 
@@ -368,6 +339,9 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
+(use-package ef-themes
+  :ensure t)
+
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
@@ -433,7 +407,8 @@
 (use-package rust-mode
   :ensure t
   :bind
-  (("C-c r r" . rust-run)))
+  (("C-c r r" . rust-run)
+   ("C-c r f" . rust-format-buffer)))
 
 ;;; --------------------[ Proselint ]-------------------------------------------
 
