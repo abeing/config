@@ -339,9 +339,6 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
-(use-package ef-themes
-  :ensure t)
-
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
