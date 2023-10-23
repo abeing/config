@@ -344,8 +344,19 @@
 (use-package markdown-mode
   :ensure t
   :init
-  (setq markdown-enable-wiki-links t))
+  (setq-default markdown-enable-wiki-links t
+                markdown-hide-urls nil
+                markdown-hide-markup nil))
 
+;;; --------------------[ Evil ]------------------------------------------------
+
+(use-package evil
+  :ensure t
+  :config
+  (evil-set-leader 'normal (kbd "SPC"))
+  (evil-define-key 'normal 'global (kbd "<leader>gl") 'avy-goto-line)
+  (evil-define-key 'normal 'global (kbd "<leader>gc") 'avy-goto-char-timer)
+  (evil-define-key 'normal 'global (kbd "<leader>gw") 'avy-goto-word-1))
 ;;; Emacs server
 
 (server-start)
@@ -383,7 +394,7 @@
   (denote-known-keywords '("literature", "idea", "project", "index"))
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
-         ("C-c n l" . denote-link-insert-link)
+         ("C-c n l" . denote-link-or-create)
          ("C-c n f" . denote-open-or-create)
          ("C-c n j" . my-denote-journal)))
 
