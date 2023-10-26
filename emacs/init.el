@@ -392,6 +392,8 @@
   (denote-sort-keywords t)
   (denote-directory (concat org-directory "/"))
   (denote-known-keywords '("literature", "idea", "project", "index"))
+  :init
+  (denote-rename-buffer-mode)
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-or-create)
