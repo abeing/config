@@ -1,0 +1,51 @@
+set nocompatible
+filetype plugin on
+syntax on
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'lervag/wiki.vim'
+call plug#end()
+
+" Configure vimwiki
+let g:vimwiki_list=[{'path': '~/memex/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_conceallevel=0
+
+" Configure wiki.vim
+let g:wiki_root='~/memex/'
+let g:wiki_filetypes = ['md']
+let g:wiki_link_extension = '.md'
+let g:wiki_link_target_map = 'WikiLinkFunction'
+let g:wiki_link_target_type = 'md'
+function! WikiLinkFunction(text)
+    return substitute(tolower(a:text), '\s', '', 'g')
+endfunction
+
+" Configure the GUI font (used by MacVim)
+set guifont=Iosevka\ SS08:h14
+" Configure gruvbox 
+" Background override, otherwise MacVim will use the system default theme
+" to determine light or dark background mode.
+set background=dark
+autocmd vimenter * ++nested colorscheme gruvbox
+
+" Number of lines to scroll when moving past the edge of the window
+set scrolloff=10
+
+set expandtab
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+
+set autoindent
+set nosmartindent
+
+set colorcolumn=80
+
+set list
+set listchars=tab:>\ ,trail:•,extends:#,nbsp:.
+
+" Make navigating around long, wrapped lines easier
+set showbreak=....
+map j gj
+map k gk
