@@ -352,11 +352,18 @@
 
 (use-package evil
   :ensure t
+  :init
+  (setq evil-want-keybinding nil)
   :config
   (evil-set-leader 'normal (kbd "SPC"))
   (evil-define-key 'normal 'global (kbd "<leader>gl") 'avy-goto-line)
   (evil-define-key 'normal 'global (kbd "<leader>gc") 'avy-goto-char-timer)
   (evil-define-key 'normal 'global (kbd "<leader>gw") 'avy-goto-word-1))
+
+(use-package evil-collection
+  :ensure t
+  :after evil)
+
 ;;; Emacs server
 
 (server-start)

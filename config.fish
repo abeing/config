@@ -12,3 +12,6 @@ end
 
 fish_add_path ~/bin
 fish_add_path ~/.cargo/bin
+
+# Created by `pipx` on 2023-11-03 02:16:49
+set PATH $PATH /home/adam/.local/bin
