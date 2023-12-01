@@ -1,0 +1,9 @@
+theme = "acme"
+
+[editor]
+text-width = 80
+line-number = "relative"
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
