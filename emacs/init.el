@@ -336,8 +336,21 @@
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
         modus-themes-italic-constructs t
         modus-themes-bold-constructs t)
-  (load-theme 'modus-operandi)
+  ; (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
+
+(use-package ef-themes
+  :ensure
+  :init
+  (defun ef-themes-random-light ()
+    "Load a random light ef-theme."
+    (interactive)
+    (ef-themes-load-random 'light))
+  (defun ef-themes-random-dark ()
+    "Load a random dark ef-theme."
+    (interactive)
+    (ef-themes-load-random 'dark)))
+
 
 ;;; --------------------[ Markdown ]--------------------------------------------
 
