@@ -97,7 +97,8 @@
 
 (line-number-mode 1)
 
-(set-face-attribute 'default nil :family "Iosevka" :height 120)
+;; (set-face-attribute 'default nil :family "Iosevka" :height 120)
+(set-face-attribute 'default nil :family "Iosevka Comfy" :height 120)
 
 (setq shr-width 80)
 
@@ -320,6 +321,9 @@
   :ensure t
   :init
   (emms-all)
+  (setq emms-info-functions '(emms-info-native
+                              emms-info-metaflac
+                              emms-info-ogginfo))
   (emms-default-players)
   :bind (("C-c m p" . emms-pause)
          ("C-c m m" . emms)
