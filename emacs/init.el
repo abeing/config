@@ -97,8 +97,8 @@
 
 (line-number-mode 1)
 
-;; (set-face-attribute 'default nil :family "Iosevka" :height 120)
-(set-face-attribute 'default nil :family "Iosevka Comfy" :height 120)
+(set-face-attribute 'default nil :family "Iosevka" :height 120)
+;;(set-face-attribute 'default nil :family "Iosevka Comfy" :height 120)
 
 (setq shr-width 80)
 
@@ -344,7 +344,7 @@
   :bind ("<f5>" . modus-themes-toggle))
 
 (use-package ef-themes
-  :ensure
+  :ensure t
   :init
   (defun ef-themes-random-light ()
     "Load a random light ef-theme."
@@ -353,7 +353,9 @@
   (defun ef-themes-random-dark ()
     "Load a random dark ef-theme."
     (interactive)
-    (ef-themes-load-random 'dark)))
+    (ef-themes-load-random 'dark))
+  :config
+  (ef-themes-random-light))
 
 
 ;;; --------------------[ Markdown ]--------------------------------------------
@@ -412,17 +414,19 @@
   :ensure t
   :after org
   :hook (dired-mode . denote-dired-mode)
+  :init
+  (setq denote-journal-extras-title-format 'day-date-month-year)
+  (require 'denote-journal-extras)
+  (denote-rename-buffer-mode)
   :custom
   (denote-sort-keywords t)
   (denote-directory (concat org-directory "/"))
   (denote-known-keywords '("literature", "idea", "project", "index"))
-  :init
-  (denote-rename-buffer-mode)
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-or-create)
          ("C-c n f" . denote-open-or-create)
-         ("C-c n j" . my-denote-journal)))
+         ("C-c n j" . denote-journal-extras-new-or-existing-entry)))
 
 
 ;;; --------------------[ Dired ]-----------------------------------------------
