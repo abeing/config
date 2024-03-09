@@ -115,10 +115,22 @@
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
 
+;;; --------------------[ Pocket ]----------------------------------------------
+
+(use-package pocket-reader)
+
 ;;; --------------------[ Diminish ]--------------------------------------------
 
 (use-package diminish
   :ensure t)
+
+;;; --------------------[ Elfeed ]----------------------------------------------
+
+(use-package elfeed
+  :ensure t
+  :config
+  (setq elfeed-feeds
+        '("https://pluralistic.net/feed/")))
 
 ;;; --------------------[ Avy ]-------------------------------------------------
 
@@ -393,13 +405,15 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
-   (scheme . t)))
+   (scheme . t)
+   (lisp . t)))
 
 (when my-laptop-p
   (setq python-shell-interpreter "/usr/local/bin/python3"))
 
 (setq org-babel-python-command "python3")
 (setq org-babel-scheme-command "mit-scheme")
+(setq org-babel-lisp-eval-fn #'sly-eval)
 
 ;; --------------------[ Denote ]-----------------------------------------------
 
@@ -477,5 +491,10 @@
   (interactive "sChoices: ")
   (let ((y (split-string x)))
     (message "Chose: %s" (nth (random (length y)) y))))
+
+;;; --------------------[ Macros ]----------------------------------------------
+
+(defalias 'tvdb
+   (kmacro "C-y C-u C-SPC \" C-d M-l <escape> SPC - <escape> SPC C-e <backspace> \""))
 
 ;;; init.el ends here
