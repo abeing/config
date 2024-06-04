@@ -32,6 +32,7 @@
 
 ;;; --------------------[ Packages ]--------------------------------------------
 
+(require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
 
@@ -114,10 +115,6 @@
 
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
-
-;;; --------------------[ Pocket ]----------------------------------------------
-
-(use-package pocket-reader)
 
 ;;; --------------------[ Diminish ]--------------------------------------------
 
@@ -279,7 +276,7 @@
 
 
 (setq org-directory "~/memex")
-(setq org-agenda-files '("~/memex" "~/memex/roam" "~/memex/roam/daily"))
+(setq org-agenda-files `(,org-directory))
 
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
@@ -348,26 +345,27 @@
   :ensure t
   :init
   (setq modus-themes-disable-other-themes t
+        modus-themes-mode-line '(borderless accented)
         modus-themes-org-blocks 'gray-background
         modus-themes-to-toggle '(modus-operandi modus-vivendi)
         modus-themes-italic-constructs t
         modus-themes-bold-constructs t)
-  ; (load-theme 'modus-operandi)
+  (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
-(use-package ef-themes
-  :ensure t
-  :init
-  (defun ef-themes-random-light ()
-    "Load a random light ef-theme."
-    (interactive)
-    (ef-themes-load-random 'light))
-  (defun ef-themes-random-dark ()
-    "Load a random dark ef-theme."
-    (interactive)
-    (ef-themes-load-random 'dark))
-  :config
-  (ef-themes-random-light))
+;; (use-package ef-themes
+;;   :ensure t
+;;   :init
+;;   (defun ef-themes-random-light ()
+;;     "Load a random light ef-theme."
+;;     (interactive)
+;;     (ef-themes-load-random 'light))
+;;   (defun ef-themes-random-dark ()
+;;     "Load a random dark ef-theme."
+;;     (interactive)
+;;     (ef-themes-load-random 'dark))
+;;   :config
+;;   (ef-themes-random-light))
 
 
 ;;; --------------------[ Markdown ]--------------------------------------------
@@ -486,15 +484,18 @@
   (insert " ]")
   (fill-to-eol ?\-))
 
+(defun random-list-element (x)
+  (nth (random (length x)) x))
+
 (defun choose-from (x)
   "Choose at random from a space-dilimited list of choices."
   (interactive "sChoices: ")
   (let ((y (split-string x)))
-    (message "Chose: %s" (nth (random (length y)) y))))
+    (message "Chose: %s" (random-list-element y))))
 
 ;;; --------------------[ Macros ]----------------------------------------------
 
 (defalias 'tvdb
-   (kmacro "C-y C-u C-SPC \" C-d M-l <escape> SPC - <escape> SPC C-e <backspace> \""))
+   (kmacro "C-y C-u C-SPC \" C-d C-d M-l <escape> SPC - <escape> SPC C-e <backspace> \""))
 
 ;;; init.el ends here
