@@ -121,14 +121,6 @@
 (use-package diminish
   :ensure t)
 
-;;; --------------------[ Elfeed ]----------------------------------------------
-
-(use-package elfeed
-  :ensure t
-  :config
-  (setq elfeed-feeds
-        '("https://pluralistic.net/feed/")))
-
 ;;; --------------------[ Avy ]-------------------------------------------------
 
 (use-package avy
@@ -195,11 +187,6 @@
   :ensure t
   :custom
   (completion-styles '(orderless)))
-
-;;; --------------------[ Spaced repetition ]-----------------------------------
-
-(use-package org-drill
-  :ensure t)
 
 ;;; --------------------[ Timers ]----------------------------------------------
 
@@ -353,19 +340,19 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
-;; (use-package ef-themes
-;;   :ensure t
-;;   :init
-;;   (defun ef-themes-random-light ()
-;;     "Load a random light ef-theme."
-;;     (interactive)
-;;     (ef-themes-load-random 'light))
-;;   (defun ef-themes-random-dark ()
-;;     "Load a random dark ef-theme."
-;;     (interactive)
-;;     (ef-themes-load-random 'dark))
-;;   :config
-;;   (ef-themes-random-light))
+(use-package ef-themes
+  :ensure t
+  :init
+  (defun ef-themes-random-light ()
+    "Load a random light ef-theme."
+    (interactive)
+    (ef-themes-load-random 'light))
+  (defun ef-themes-random-dark ()
+    "Load a random dark ef-theme."
+    (interactive)
+    (ef-themes-load-random 'dark))
+  :config
+  (ef-themes-random-light))
 
 
 ;;; --------------------[ Markdown ]--------------------------------------------
@@ -376,22 +363,6 @@
   (setq-default markdown-enable-wiki-links t
                 markdown-hide-urls nil
                 markdown-hide-markup nil))
-
-;;; --------------------[ Evil ]------------------------------------------------
-
-(use-package evil
-  :ensure t
-  :init
-  (setq evil-want-keybinding nil)
-  :config
-  (evil-set-leader 'normal (kbd "SPC"))
-  (evil-define-key 'normal 'global (kbd "<leader>gl") 'avy-goto-line)
-  (evil-define-key 'normal 'global (kbd "<leader>gc") 'avy-goto-char-timer)
-  (evil-define-key 'normal 'global (kbd "<leader>gw") 'avy-goto-word-1))
-
-(use-package evil-collection
-  :ensure t
-  :after evil)
 
 ;;; Emacs server
 
