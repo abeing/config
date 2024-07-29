@@ -352,7 +352,14 @@
     (interactive)
     (ef-themes-load-random 'dark))
   :config
-  (ef-themes-random-light))
+  :bind (("<f6>" . ef-themes-random-light)
+         ("<f7>" . ef-themes-random-dark)))
+
+(use-package spacious-padding
+  :ensure t
+  :after ef-themes
+  :config
+  (spacious-padding-mode))
 
 
 ;;; --------------------[ Markdown ]--------------------------------------------
