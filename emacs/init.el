@@ -351,16 +351,10 @@
     "Load a random dark ef-theme."
     (interactive)
     (ef-themes-load-random 'dark))
-  :config
   :bind (("<f6>" . ef-themes-random-light)
-         ("<f7>" . ef-themes-random-dark)))
-
-(use-package spacious-padding
-  :ensure t
-  :after ef-themes
+         ("<f7>" . ef-themes-random-dark))
   :config
-  (spacious-padding-mode))
-
+  (ef-themes-random-light))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
 
