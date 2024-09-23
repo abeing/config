@@ -409,6 +409,7 @@
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-or-create)
+         ("C-c n b" . denote-backlinks)
          ("C-c n f" . denote-open-or-create)
          ("C-c n j" . denote-journal-extras-new-or-existing-entry)))
 
