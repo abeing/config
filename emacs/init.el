@@ -149,6 +149,12 @@
   (fido-mode 0)
   (vertico-mode))
 
+(use-package vertico-directory
+  :ensure nil
+  :after vertico
+  :bind (:map vertico-map
+              ("M-DEL" . vertico-directory-delete-word)))
+
 (use-package marginalia
   :ensure t
   :config
@@ -156,8 +162,13 @@
 
 (use-package corfu
   :ensure t
-  :config
-  (global-corfu-mode))
+  :init
+  (global-corfu-mode)
+  :bind
+  (:map corfu-map
+        ("SPC" . corfu-insert-separator)
+        ("C-n" . corfu-next)
+        ("C-p" . corfu-previous)))
 
 (use-package corfu-popupinfo
   :ensure nil
@@ -168,6 +179,12 @@
   (corfu-popupinfo-hide nil)
   :config
   (corfu-popupinfo-mode))
+
+(use-package cape
+  :ensure t
+  :init
+  (add-to-list 'completion-at-point-functions #'cape-dabbrev)
+  (add-to-list 'completion-at-point-functions #'cape-file))
 
 (use-package kind-icon
   :ensure t
@@ -238,6 +255,15 @@
           pulsar-iterations 10)
     (pulsar-global-mode 1)))
 
+
+;;; --------------------[ Remark ]----------------------------------------------
+
+(use-package org-remark
+  :ensure t
+  :bind (("C-c r m" . org-remark-mark)
+         ("C-c r o" . org-remark-open)
+         ("C-c r n" . org-remark-view-next)
+         ("C-c r p" . org-remark-view-prev)))
 
 ;; --------------------[ Org-mode ]---------------------------------------------
 
