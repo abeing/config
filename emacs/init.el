@@ -149,6 +149,12 @@
   (fido-mode 0)
   (vertico-mode))
 
+(use-package vertico-directory
+  :ensure nil
+  :after vertico
+  :bind (:map vertico-map
+              ("M-DEL" . vertico-directory-delete-word)))
+
 (use-package marginalia
   :ensure t
   :config
@@ -156,8 +162,13 @@
 
 (use-package corfu
   :ensure t
-  :config
-  (global-corfu-mode))
+  :init
+  (global-corfu-mode)
+  :bind
+  (:map corfu-map
+        ("SPC" . corfu-insert-separator)
+        ("C-n" . corfu-next)
+        ("C-p" . corfu-previous)))
 
 (use-package corfu-popupinfo
   :ensure nil
@@ -168,6 +179,12 @@
   (corfu-popupinfo-hide nil)
   :config
   (corfu-popupinfo-mode))
+
+(use-package cape
+  :ensure t
+  :init
+  (add-to-list 'completion-at-point-functions #'cape-dabbrev)
+  (add-to-list 'completion-at-point-functions #'cape-file))
 
 (use-package kind-icon
   :ensure t
@@ -238,6 +255,15 @@
           pulsar-iterations 10)
     (pulsar-global-mode 1)))
 
+
+;;; --------------------[ Remark ]----------------------------------------------
+
+(use-package org-remark
+  :ensure t
+  :bind (("C-c r m" . org-remark-mark)
+         ("C-c r o" . org-remark-open)
+         ("C-c r n" . org-remark-view-next)
+         ("C-c r p" . org-remark-view-prev)))
 
 ;; --------------------[ Org-mode ]---------------------------------------------
 
@@ -355,16 +381,10 @@
     "Load a random dark ef-theme."
     (interactive)
     (ef-themes-load-random 'dark))
-  :config
   :bind (("<f6>" . ef-themes-random-light)
-         ("<f7>" . ef-themes-random-dark)))
-
-(use-package spacious-padding
-  :ensure t
-  :after ef-themes
+         ("<f7>" . ef-themes-random-dark))
   :config
-  (spacious-padding-mode))
-
+  (ef-themes-random-light))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
 
@@ -419,6 +439,7 @@
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-or-create)
+         ("C-c n b" . denote-backlinks)
          ("C-c n f" . denote-open-or-create)
          ("C-c n j" . denote-journal-extras-new-or-existing-entry)))
 
