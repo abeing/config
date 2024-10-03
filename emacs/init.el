@@ -98,8 +98,7 @@
 
 (line-number-mode 1)
 
-(set-face-attribute 'default nil :family "Iosevka" :height 120)
-;;(set-face-attribute 'default nil :family "Iosevka Comfy" :height 120)
+(set-face-attribute 'default nil :family "Iosevka" :height 140)
 
 (setq shr-width 80)
 
@@ -458,6 +457,11 @@
   :bind
   (("C-c r r" . rust-run)
    ("C-c r f" . rust-format-buffer)))
+
+;;; --------------------[ Go ]--------------------------------------------------
+
+(use-package go-mode
+  :ensure t)
 
 ;;; --------------------[ Proselint ]-------------------------------------------
 
