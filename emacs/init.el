@@ -288,7 +288,11 @@
 
 
 (setq org-directory "~/memex")
-(setq org-agenda-files `(,org-directory))
+;; (setq org-agenda-files `(,org-directory))
+(setq org-agenda-files (nconc
+                        '("gtd.org")
+                        (directory-files-recursively org-directory ".*_area.*\.org$")
+                        (directory-files-recursively org-directory ".*_project.*\.org$")))
 
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
