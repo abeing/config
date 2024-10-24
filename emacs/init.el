@@ -405,7 +405,8 @@
  'org-babel-load-languages
  '((python . t)
    (scheme . t)
-   (lisp . t)))
+   (lisp . t)
+   (octave . t)))
 
 (when my-laptop-p
   (setq python-shell-interpreter "/usr/local/bin/python3"))
