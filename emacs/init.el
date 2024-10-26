@@ -475,6 +475,13 @@
 (use-package org-drill
   :ensure t)
 
+;;; --------------------[ Feeds ]-----------------------------------------------
+
+(use-package elfeed
+  :ensure t
+  :config
+  (load-file "~/.config/emacs/feeds.el"))
+
 ;;; --------------------[ Proselint ]-------------------------------------------
 
 (use-package flymake-proselint
