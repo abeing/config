@@ -133,7 +133,6 @@
 
 (use-package eglot
   :ensure t
-
   :hook
   ((rust-mode . rust-ts-mode))
   :bind (("C-c g e" . flymake-goto-next-error))
@@ -253,7 +252,6 @@
           pulsar-delay 0.055
           pulsar-iterations 10)
     (pulsar-global-mode 1)))
-
 
 ;;; --------------------[ Remark ]----------------------------------------------
 
@@ -461,17 +459,6 @@
          ("C-c n f" . denote-open-or-create)
          ("C-c n j" . denote-journal-extras-new-or-existing-entry)))
 
-
-;;; --------------------[ Write Room ]------------------------------------------
-
-(use-package writeroom-mode
-  :ensure t
-  :config
-  (global-writeroom-mode))
-
-(use-package writegood-mode
-  :ensure t)
-
 ;;; --------------------[ Dired ]-----------------------------------------------
 
 (use-package dired
@@ -503,13 +490,6 @@
 
 (use-package org-drill
   :ensure t)
-
-;;; --------------------[ Feeds ]-----------------------------------------------
-
-(use-package elfeed
-  :ensure t
-  :config
-  (load-file "~/.config/emacs/feeds.el"))
 
 ;;; --------------------[ Proselint ]-------------------------------------------
 
