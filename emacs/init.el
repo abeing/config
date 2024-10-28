@@ -253,35 +253,6 @@
           pulsar-iterations 10)
     (pulsar-global-mode 1)))
 
-;;; --------------------[ Remark ]----------------------------------------------
-
-(defun my-modus-remark-hilight ()
-  (modify-face 'org-remark-highlighter
-               (modus-themes-get-color-value 'fg-main)
-               (modus-themes-get-color-value 'bg-hl-line)))
-
-(defun my-ef-remark-hilight (&optional type)
-  (modify-face 'org-remark-highlighter
-               (ef-themes-get-color-value 'fg-main)
-               (ef-themes-get-color-value 'bg-hl-line)))
-
-(use-package org-remark
-  :ensure t
-  :after ef-themes
-  :bind (("C-c r m" . org-remark-mark)
-         ("C-c r o" . org-remark-open)
-         ("C-c r n" . org-remark-view-next)
-         ("C-c r p" . org-remark-view-prev))
-  :init
-  (org-remark-global-tracking-mode +1)
-  (advice-add 'ef-themes-load-random :after #'my-ef-remark-hilight)
-  (advice-add 'modus-themes-toggle :after #'my-modus-remark-hilight)
-  :config
-  (org-remark-mode +1)
-  (use-package org-remark-info :after info :config (org-remark-info-mode +1))
-  (use-package org-remark-eww :after eww :config (org-remark-eww-mode +1))
-  (use-package org-remark-nov :after nov :config (org-remark-nov-mode +1)))
-
 ;; --------------------[ Org-mode ]---------------------------------------------
 
 (defun fold-done-entries ()
