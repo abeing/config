@@ -372,6 +372,13 @@
   :bind (("<f6>" . ef-themes-random-light)
          ("<f7>" . ef-themes-random-dark)))
 
+(use-package spacious-padding
+  :ensure t
+  :after modus-themes
+  :bind (("<f8>" . spacious-padding-mode))
+  :config
+  (spacious-padding-mode 1))
+
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
