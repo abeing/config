@@ -6,10 +6,15 @@
 
 ;;; Commentary:
 
-;; I keep removing configuration from my init.el as Emacs gets more and more sane defaults.
+;; I keep removing configuration from my init.el as Emacs gets more and more
+;; sane defaults.
 
 ;;; Code:
 
+;; Just in case I run my config on an older Emacs somewhere
+(when (< emacs-major-version 29)
+  (error "Emacs version 29 and newer required; this is version %s" emacs-major-version))
+;; DONE
 
 ;;; --------------------[ User information ]------------------------------------
 
@@ -85,9 +90,11 @@
 (put 'set-goal-column 'disabled nil)
 
 ;; Automatically update buffers if file content on disk has changes
-(setq auto-revert-interval 1)
-(setq auto-revert-check-vc-info t)
+(setopt auto-revert-avoid-polling t)
+(setopt auto-revert-interval t)
+(setopt auto-revert-check-vc-info t)
 (global-auto-revert-mode t)
+;; DONE
 
 ;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
 ;; up any additional screen real estate, so there's no harm in keeping it.
