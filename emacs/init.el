@@ -230,8 +230,24 @@
 (global-set-key (kbd "C-c t g") 'brew-hojicha)
 (global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
 
+;;; --------------------[ Logos ]-----------------------------------------------
 
-;;; ;;; --------------------[ Keyboard ]----------------------------------------
+;; Logos is a focus mode.
+
+(use-package logos
+  :ensure t
+  :config
+  (setq logos-outlines-are-pages t
+        logos-olivetti t
+        olivetti-body-width 0.7
+        olivetti-recall-visual-line-mode-entry-state t
+        olivetti-minimum-body-width 88)
+  :bind (("C-c f f" . logos-forward-page-dwim)
+         ("C-c f b" . logos-backward-page-dwim)
+         ("C-c f n" . logos-narrow-dwim)
+         ("<f9>" . logos-focus-mode)))
+
+;;; --------------------[ Keyboard ]--------------------------------------------
 
 (use-package which-key
   :ensure t
