@@ -35,6 +35,11 @@
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'none))
 
+;; Make right-click do something sensible
+(when (display-graphic-p)
+  (context-menu-mode))
+;; DONE
+
 ;;; --------------------[ Packages ]--------------------------------------------
 
 (require 'package)
@@ -53,7 +58,14 @@
  vc-follow-symlinks t        ; Follow symlinks without asking
  ring-bell-function nil)     ; Don't ding
 
-(savehist-mode t)             ; Save the minibuffer history
+;; Save history of the minibuffer
+(savehist-mode t)
+;; DONE
+
+;; Use Ctrl-<arrow keys> to move through windows
+(windmove-default-keybindings 'control)
+;; DONE
+
 (show-paren-mode)             ; Highlight matching parenthesis
 (save-place-mode)             ; Remember the point position for each file
 (delete-selection-mode)       ; Replace selection when typing
@@ -70,7 +82,14 @@
   (load custom-file))
 
 ;; Don't litter backup files everywhere. Contain them to a directory in .config
-(setq-default backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
+(defun am/backup-file-name (fpath)
+  "Redirect the file path to backup directory where the init file lives."
+  (let* ((backup-root-dir (concat user-emacs-directory "backup/"))
+         (file-path (replace-regexp-in-string "[A-Za-z]:" "" fpath))
+         (backup-file-path (replace-regexp-in-string "//" "/" (concat backup-root-dir file-path "~"))))
+    (make-directory (file-name-directory backup-file-path) (file-name-directory backup-file-path))
+    backup-file-path))
+(setopt make-backup-file-name-function 'am/backup-file-name)
 
 ;; Change yes/no questions to y/n instead
 (defalias 'yes-or-no-p 'y-or-n-p)
