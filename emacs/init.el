@@ -516,4 +516,7 @@
 (defalias 'tvdb
    (kmacro "C-y C-u C-SPC \" C-d C-d M-l <escape> SPC - <escape> SPC C-e <backspace> \""))
 
+;; Return `gc-cons-threshold' to its initial value stored in `early-init.el'
+(setq gc-cons-threshold am/initial-gc-cons-threshold)
+
 ;;; init.el ends here
