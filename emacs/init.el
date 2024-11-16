@@ -14,7 +14,6 @@
 ;; Just in case I run my config on an older Emacs somewhere
 (when (< emacs-major-version 29)
   (error "Emacs version 29 and newer required; this is version %s" emacs-major-version))
-;; DONE
 
 ;;; --------------------[ User information ]------------------------------------
 
@@ -28,23 +27,16 @@
 (defconst my-laptop-p (eq system-type 'darwin))
 (defconst my-work-machine-p (eq system-type 'windows-nt))
 
-;;; ---------- Laptop-specific settings ----------
+;;; --------------------[ Computer specific settings ]--------------------------
 
 (when my-laptop-p
   (setq ispell-program-name "/usr/local/bin/ispell")
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'none))
 
-;; Make right-click do something sensible
+;; Make right-click do something sensible when using GUI Emacs
 (when (display-graphic-p)
   (context-menu-mode))
-;; DONE
-
-;;; --------------------[ Packages ]--------------------------------------------
-
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
 
 ;;; --------------------[ General settings ]------------------------------------
 
@@ -60,11 +52,9 @@
 
 ;; Save history of the minibuffer
 (savehist-mode t)
-;; DONE
 
 ;; Use Ctrl-<arrow keys> to move through windows
 (windmove-default-keybindings 'control)
-;; DONE
 
 (show-paren-mode)             ; Highlight matching parenthesis
 (save-place-mode)             ; Remember the point position for each file
@@ -90,22 +80,14 @@
     (make-directory (file-name-directory backup-file-path) (file-name-directory backup-file-path))
     backup-file-path))
 (setopt make-backup-file-name-function 'am/backup-file-name)
-;; DONE
 
 ;;; --------------------[ Discovery aids ]--------------------------------------
-
-;; Show the quick help buffer after startup.  I'm experimenting with keeping
-;; this up for a while to see if its context-sensitive.  I'll disable it in
-;; the future.
-(add-hook 'after-init-hook 'help-quick)
 
 (use-package which-key
   :ensure t
   :diminish
   :config
   (which-key-mode))
-
-;; DONE
 
 ;;; --------------------[ Minibuffer and completion ]---------------------------
 
@@ -127,7 +109,12 @@
 ;; TAB acts more like how it does in the shell
 (keymap-set minibuffer-mode-map "TAB" 'minibuffer-complete)
 
-;; DONE
+;;; --------------------[ Interface enhancements ]------------------------------
+
+;; Show line and column number in the modeline
+(setopt line-number-mode t)
+(setopt column-number-mode t)
+(setopt indicate-buffer-boundaries 'left)  ; Show buffer top and bottom in the margin
 
 ;; Change yes/no questions to y/n instead
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -155,8 +142,6 @@
   (menu-bar-mode -1))
 
 (setq visible-bell t)
-
-(line-number-mode 1)
 
 (set-face-attribute 'default nil :family "Iosevka" :height 140)
 
@@ -426,27 +411,6 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
-(use-package ef-themes
-  :ensure t
-  :init
-  (defun ef-themes-random-light ()
-    "Load a random light ef-theme."
-    (interactive)
-    (ef-themes-load-random 'light))
-  (defun ef-themes-random-dark ()
-    "Load a random dark ef-theme."
-    (interactive)
-    (ef-themes-load-random 'dark))
-  :bind (("<f6>" . ef-themes-random-light)
-         ("<f7>" . ef-themes-random-dark)))
-
-(use-package spacious-padding
-  :ensure t
-  :after modus-themes
-  :bind (("<f8>" . spacious-padding-mode))
-  :config
-  (spacious-padding-mode 1))
-
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
@@ -455,13 +419,6 @@
   (setq-default markdown-enable-wiki-links t
                 markdown-hide-urls nil
                 markdown-hide-markup nil))
-
-;;; Emacs server
-
-(server-start)
-(require 'org-protocol)
-
-(setq-default tab-always-indent 'complete)
 
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -514,7 +471,8 @@
 ;;; --------------------[ Magit ]-----------------------------------------------
 
 (use-package magit
-  :ensure t)
+  :ensure t
+  :bind (("C-x g" . magit-status)))
 
 ;;; --------------------[ Rust ]------------------------------------------------
 
