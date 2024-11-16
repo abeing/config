@@ -169,10 +169,46 @@
 
 (use-package avy
   :ensure t
-  :bind (("C-c g g" . avy-goto-char)
-         ("C-c g w" . avy-goto-word-0)
-         ("C-c g l" . avy-goto-line)
-         ("C-c g c" . avy-goto-char-timer)))
+  :bind (("C-c j" . avy-goto-line)
+         ("C-c k" . avy-goto-char-timer)))
+
+;;; --------------------[ Consult ]---------------------------------------------
+
+(use-package consult
+  :ensure t
+  :bind (("C-x b" . consult-buffer)
+         ("M-y" . consult-yank-pop)
+         ("C-s" . consult-line)
+         ("M-s r" . consult-ripgrep)
+         ("M-s l" . consult-line)
+         ("M-s j" . consult-outline))
+  :config
+  (setq consult-narrow-key "<"))
+
+;;; --------------------[ Embark ]----------------------------------------------
+
+(use-package embark
+  :ensure t
+  :demand t
+  :after avy
+  :bind (("C-c a" . embark-act))        ; bind this to an easy key to hit
+  :init
+  ;; Add the option to run embark when using avy
+  (defun bedrock/avy-action-embark (pt)
+    (unwind-protect
+        (save-excursion
+          (goto-char pt)
+          (embark-act))
+      (select-window
+       (cdr (ring-ref avy-ring 0))))
+    t)
+
+  ;; After invoking avy-goto-char-timer, hit "." to run embark at the next
+  ;; candidate you select
+  (setf (alist-get ?. avy-dispatch-alist) 'bedrock/avy-action-embark))
+
+(use-package embark-consult
+  :ensure t)
 
 ;;; --------------------[ Eglot ]-----------------------------------------------
 
@@ -223,6 +259,12 @@
   :config
   (corfu-popupinfo-mode))
 
+(use-package corfu-terminal
+  :if (not (display-graphic-p))
+  :ensure t
+  :config
+  (corfu-terminal-mode))
+
 (use-package cape
   :ensure t
   :init
@@ -230,23 +272,32 @@
   (add-to-list 'completion-at-point-functions #'cape-file))
 
 (use-package kind-icon
+  :if (display-graphic-p)
   :ensure t
   :after corfu
   :config
   (add-to-list 'corfu-margin-formatters #'kind-icon-margin-formatter))
 
-(use-package consult
-  :ensure t
-  :bind (("C-x b" . consult-buffer)
-         ("M-y" . consult-yank-pop)
-         ("C-s" . consult-line)
-         :map org-mode-map
-         ("C-c C-j" . consult-org-heading)))
-
 (use-package orderless
   :ensure t
   :custom
   (completion-styles '(orderless)))
+
+;;; --------------------[ Eshell ]----------------------------------------------
+
+(use-package eshell
+  :init
+  (defun my/setup-eshell ()
+    (keymap-set eshell-mode-map "C-r" 'consult-history))
+  :hook ((eshell-mode . my/setup-eshell)))
+
+(use-package eat
+  :ensure t
+  :custom
+  (eat-term-name "xterm")
+  :config
+  (eat-eshell-mode)
+  (eat-eshell-visual-command-mode))
 
 ;;; --------------------[ Timers ]----------------------------------------------
 
@@ -275,27 +326,9 @@
 (global-set-key (kbd "C-c t g") 'brew-hojicha)
 (global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
 
-;;; --------------------[ Logos ]-----------------------------------------------
-
-;; Logos is a focus mode.
-
-(use-package logos
-  :ensure t
-  :config
-  (setq logos-outlines-are-pages t
-        logos-olivetti t
-        olivetti-body-width 0.7
-        olivetti-recall-visual-line-mode-entry-state t
-        olivetti-minimum-body-width 88)
-  :bind (("C-c f f" . logos-forward-page-dwim)
-         ("C-c f b" . logos-backward-page-dwim)
-         ("C-c f n" . logos-narrow-dwim)
-         ("<f9>" . logos-focus-mode)))
-
 ;;; --------------------[ Pulsar ]----------------------------------------------
 
-;; This performs poorly on Windows. I should consider creating something like
-;; 'my-work-machine-p to do some conditional configuration on Windows.
+;; This performs poorly on Windows, so I don't enable it on my work machine.
 
 (when (not my-work-machine-p)
   (use-package pulsar
@@ -325,7 +358,6 @@
         org-adapt-indentation nil
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
   :hook
-  (org-mode . org-indent-mode)
   (org-mode . fold-done-entries))
 
 
