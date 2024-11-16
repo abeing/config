@@ -90,13 +90,47 @@
     (make-directory (file-name-directory backup-file-path) (file-name-directory backup-file-path))
     backup-file-path))
 (setopt make-backup-file-name-function 'am/backup-file-name)
+;; DONE
+
+;;; --------------------[ Discovery aids ]--------------------------------------
+
+;; Show the quick help buffer after startup.  I'm experimenting with keeping
+;; this up for a while to see if its context-sensitive.  I'll disable it in
+;; the future.
+(add-hook 'after-init-hook 'help-quick)
+
+(use-package which-key
+  :ensure t
+  :diminish
+  :config
+  (which-key-mode))
+
+;; DONE
+
+;;; --------------------[ Minibuffer and completion ]---------------------------
+
+(setopt enable-recursive-minibuffers t) ; Use the minibuffer whilst in the
+                                        ; minibuffer
+(setopt completion-cycle-threshold 1)   ; TAB cycles candidates
+(setopt completions-detailed t)         ; Show annotations
+(setopt tab-always-indent 'complete)    ; TAB tries to complete, otherwise
+                                        ; indents
+;; Different styles to match input candidates
+(setopt completion-styles '(basic initials substring))
+(setopt completion-auto-help 'always)   ; Open completion always; `lazy'
+                                        ; another option
+(setopt completions-max-height 20)
+(setopt completions-format 'one-column)
+(setopt completions-group t)
+(setopt completion-auto-select 'second-tab)
+
+;; TAB acts more like how it does in the shell
+(keymap-set minibuffer-mode-map "TAB" 'minibuffer-complete)
+
+;; DONE
 
 ;; Change yes/no questions to y/n instead
 (defalias 'yes-or-no-p 'y-or-n-p)
-
-;; Make right-click do something sensible
-(when (display-graphic-p)
-  (context-menu-mode))
 
 ;; Delete trailing whitespace before saving a file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -110,7 +144,7 @@
 
 ;; Automatically update buffers if file content on disk has changes
 (setopt auto-revert-avoid-polling t)
-(setopt auto-revert-interval t)
+(setopt auto-revert-interval 5)
 (setopt auto-revert-check-vc-info t)
 (global-auto-revert-mode t)
 ;; DONE
@@ -272,14 +306,6 @@
          ("C-c f b" . logos-backward-page-dwim)
          ("C-c f n" . logos-narrow-dwim)
          ("<f9>" . logos-focus-mode)))
-
-;;; --------------------[ Keyboard ]--------------------------------------------
-
-(use-package which-key
-  :ensure t
-  :diminish
-  :config
-  (which-key-mode))
 
 ;;; --------------------[ Pulsar ]----------------------------------------------
 
