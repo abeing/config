@@ -378,7 +378,7 @@
 			                     (setq-local show-trailing-whitespace t)))
 
 (define-key global-map (kbd "C-c c") 'org-capture)
-(define-key global-map (kbd "C-c a") 'org-agenda)
+(define-key global-map (kbd "C-c C-a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
 (setq org-pretty-entities t)
@@ -394,12 +394,7 @@
 ;; (define-key global-map (kbd "C-c t") 'my/org-last-heading)
 
 (setq org-capture-templates
-      '(("p" "org-protocol"
-	       entry (file+headline "~/memex/reading.org" "Articles")
-	       "* TODO %:description\n:PROPERTIES:\n:Link: %:link\n:END:\n%i\n\n"
-	       :empty-lines-after 2
-	       :immediate-finish t)
-	      ("t" "Todo [inbox]" entry
+      '(("t" "Todo [inbox]" entry
 	       (file+headline "~/memex/gtd.org" "Inbox")
 	       "* TODO %i%?")
 	      ("T" "Tickler" entry
@@ -468,31 +463,21 @@
 
 ;; --------------------[ Denote ]-----------------------------------------------
 
-(defun my-denote-journal ()
-  "Create an entry tagged 'journal' with the date as its title."
-  (interactive)
-  (denote
-   (format-time-string "%A, %B %e, %Y") ; format like Friday, July 14, 2023
-   '("journal"))) ; multiple keywords are a list of strings: '("one" "two")
-
 (use-package denote
   :ensure t
   :after org
   :hook (dired-mode . denote-dired-mode)
   :init
-  (setq denote-journal-extras-title-format 'day-date-month-year)
-  (require 'denote-journal-extras)
   (denote-rename-buffer-mode)
   :custom
   (denote-sort-keywords t)
   (denote-directory (concat org-directory "/"))
-  (denote-known-keywords '("literature", "idea", "project", "index"))
+  (denote-known-keywords '("literature", "idea", "project", "index", "area", "resource"))
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-or-create)
          ("C-c n b" . denote-backlinks)
-         ("C-c n f" . denote-open-or-create)
-         ("C-c n j" . denote-journal-extras-new-or-existing-entry)))
+         ("C-c n f" . denote-open-or-create)))
 
 ;;; --------------------[ Dired ]-----------------------------------------------
 
