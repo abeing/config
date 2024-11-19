@@ -178,7 +178,6 @@
   :ensure t
   :bind (("C-x b" . consult-buffer)
          ("M-y" . consult-yank-pop)
-         ("C-s" . consult-line)
          ("M-s r" . consult-ripgrep)
          ("M-s l" . consult-line)
          ("M-s j" . consult-outline))
@@ -189,23 +188,7 @@
 
 (use-package embark
   :ensure t
-  :demand t
-  :after avy
-  :bind (("C-c a" . embark-act))        ; bind this to an easy key to hit
-  :init
-  ;; Add the option to run embark when using avy
-  (defun bedrock/avy-action-embark (pt)
-    (unwind-protect
-        (save-excursion
-          (goto-char pt)
-          (embark-act))
-      (select-window
-       (cdr (ring-ref avy-ring 0))))
-    t)
-
-  ;; After invoking avy-goto-char-timer, hit "." to run embark at the next
-  ;; candidate you select
-  (setf (alist-get ?. avy-dispatch-alist) 'bedrock/avy-action-embark))
+  :bind (("C-c e" . embark-act)))        ; bind this to an easy key to hit
 
 (use-package embark-consult
   :ensure t)
@@ -378,7 +361,7 @@
 			                     (setq-local show-trailing-whitespace t)))
 
 (define-key global-map (kbd "C-c c") 'org-capture)
-(define-key global-map (kbd "C-c C-a") 'org-agenda)
+(define-key global-map (kbd "C-c a") 'org-agenda)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 
 (setq org-pretty-entities t)
