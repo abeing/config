@@ -60,8 +60,8 @@
 (save-place-mode)             ; Remember the point position for each file
 (delete-selection-mode)       ; Replace selection when typing
 (prefer-coding-system 'utf-8) ; Default to UTF-8 encoding
-(electric-pair-mode t)        ; When entering a character with a natural pair,
-                              ; insert it's corresponding pair
+(electric-pair-mode nil)      ; When entering a character with a natural pair,
+                              ; DON't insert it's corresponding pair
 
 ;; Don't use compiled code if its older than uncompiled code
 (setq-default load-prefer-newer t)
