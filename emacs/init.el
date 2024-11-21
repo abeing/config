@@ -421,6 +421,19 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
+(use-package ef-themes
+  :ensure t
+  :init
+  (defun ef-themes-random-light ()
+    "Load a random light ef-theme."
+    (interactive)
+    (ef-themes-load-random 'light))
+  (defun ef-themes-random-dark ()
+    "Load a random dark ef-theme."
+    (interactive)
+    (ef-themes-load-random 'dark))
+  :bind (("<f6>" . ef-themes-random-light)))
+
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
