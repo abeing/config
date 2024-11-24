@@ -169,8 +169,9 @@
 
 (use-package avy
   :ensure t
-  :bind (("C-c j" . avy-goto-line)
-         ("C-c k" . avy-goto-char-timer)))
+  :bind (("C-c g l" . avy-goto-line)
+         ("C-c g c" . avy-goto-char-timer)
+         ("C-c g w" . avy-goto-word-0-regexp)))
 
 ;;; --------------------[ Consult ]---------------------------------------------
 
@@ -179,7 +180,8 @@
   :bind (("C-x b" . consult-buffer)
          ("M-y" . consult-yank-pop)
          ("M-s r" . consult-ripgrep)
-         ("M-s l" . consult-line)
+         ("C-s" . consult-line)
+         ("M-s e" . consult-flymake)
          ("M-s j" . consult-outline))
   :config
   (setq consult-narrow-key "<"))
@@ -192,6 +194,17 @@
 
 (use-package embark-consult
   :ensure t)
+
+;;; --------------------[ Evil ]------------------------------------------------
+
+(use-package evil
+  :ensure t
+  :config
+  (evil-set-leader 'normal (kbd "SPC"))
+  (evil-define-key 'normal 'global (kbd "<leader>f") 'find-file)
+  (evil-define-key 'normal 'global (kbd "<leader>b") 'consult-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader>a") 'embark-act)
+  (evil-define-key 'normal 'global (kbd "<leader>gs") 'magit-status))
 
 ;;; --------------------[ Eglot ]-----------------------------------------------
 
@@ -432,7 +445,8 @@
     "Load a random dark ef-theme."
     (interactive)
     (ef-themes-load-random 'dark))
-  :bind (("<f6>" . ef-themes-random-light)))
+  :bind (("<f6>" . ef-themes-random-light)
+         ("<f7>" . ef-themes-random-dark)))
 
 ;;; --------------------[ Markdown ]--------------------------------------------
 
