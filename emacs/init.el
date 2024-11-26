@@ -458,8 +458,6 @@
   :bind (("<f6>" . ef-themes-random-light)
          ("<f7>" . ef-themes-random-dark)))
 
-
-
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
@@ -566,6 +564,11 @@
   (interactive "sChoices: ")
   (let ((y (split-string x)))
     (message "Chose: %s" (random-list-element y))))
+
+(defun random-line ()
+  "Go to a random line in the buffer."
+  (interactive)
+  (goto-line (1+ (random (count-lines (point-min) (point-max))))))
 
 ;;; --------------------[ Macros ]----------------------------------------------
 
