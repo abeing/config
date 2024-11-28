@@ -444,7 +444,7 @@
     "Tweak the style of the mode lines."
     (ef-themes-with-colors
       (custom-set-faces
-       `(mode-line ((,c :background ,bg-active :foreground ,fg-main :box (:line-width 1 :color ,fg-dim))))
+       `(mode-line ((,c :box (:line-width 1 :color ,fg-dim))))
        `(mode-line-inactive ((,c :box (:line-width 1 :color ,bg-active)))))))
   (defun ef-themes-random-light ()
     "Load a random light ef-theme."
