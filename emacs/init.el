@@ -443,12 +443,6 @@
   :ensure t
   :init
   (setq ef-themes-disable-other-themes t)
-  (defun am/ef-themes-mode-line ()
-    "Tweak the style of the mode lines."
-    (ef-themes-with-colors
-      (custom-set-faces
-       `(mode-line ((,c :box (:line-width 1 :color ,fg-dim))))
-       `(mode-line-inactive ((,c :box (:line-width 1 :color ,bg-active)))))))
   (defun ef-themes-random-light ()
     "Load a random light ef-theme."
     (interactive)
@@ -457,7 +451,6 @@
     "Load a random dark ef-theme."
     (interactive)
     (ef-themes-load-random 'dark))
-  (add-hook 'ef-themes-post-load-hook #'am/ef-themes-mode-line)
   :bind (("<f6>" . ef-themes-random-light)
          ("<f7>" . ef-themes-random-dark)))
 
@@ -541,6 +534,18 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook #'flymake-proselint-setup))
+
+;;; --------------------[ LLMs ]------------------------------------------------
+
+(use-package ellama
+  :ensure t
+  :bind ("C-c i" . ellama-transient-main-menu)
+  :init
+  (require 'llm-ollama)
+  (setopt ellama-provider
+          (make-llm-ollama
+           :chat-model "deepseek-r1:latest")))
+
 
 ;;; --------------------[ Useful functions ]------------------------------------
 
