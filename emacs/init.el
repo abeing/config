@@ -532,6 +532,18 @@
   :config
   (add-hook 'org-mode-hook #'flymake-proselint-setup))
 
+;;; --------------------[ LLMs ]------------------------------------------------
+
+(use-package ellama
+  :ensure t
+  :bind ("C-c i" . ellama-transient-main-menu)
+  :init
+  (require 'llm-ollama)
+  (setopt ellama-provider
+          (make-llm-ollama
+           :chat-model "deepseek-r1:latest")))
+
+
 ;;; --------------------[ Useful functions ]------------------------------------
 
 (defun fill-to-eol (char)
