@@ -218,6 +218,9 @@
   :hook
   ((rust-mode . rust-ts-mode))
   :bind (("C-c g e" . flymake-goto-next-error))
+  :config
+  (add-to-list 'eglot-server-programs
+               '(python-mode . ("/Library/Frameworks/Python.framework/Versions/3.11/bin/jedi-language-server")))
   :custom
   (eglot-send-changes-idle-time 0.1))
 
