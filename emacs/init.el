@@ -15,6 +15,9 @@
 (when (< emacs-major-version 29)
   (error "Emacs version 29 and newer required; this is version %s" emacs-major-version))
 
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
 ;;; --------------------[ User information ]------------------------------------
 
 (setq user-full-name "Adam Miezianko"
@@ -492,10 +495,15 @@
          ("C-c n b" . denote-backlinks)
          ("C-c n f" . denote-open-or-create)))
 
+(use-package denote-explore
+  :ensure t
+  :after denote)
+
 ;;; --------------------[ Dired ]-----------------------------------------------
 
 (use-package dired
   :init
+  (setq dired-dwim-target t)
   :hook (dired-mode . dired-hide-details-mode))
 
 ;;; --------------------[ Magit ]-----------------------------------------------
