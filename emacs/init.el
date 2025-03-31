@@ -16,7 +16,7 @@
   (error "Emacs version 29 and newer required; this is version %s" emacs-major-version))
 
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 
 ;;; --------------------[ User information ]------------------------------------
 
@@ -304,6 +304,11 @@
   (eat-eshell-visual-command-mode))
 
 ;;; --------------------[ Timers ]----------------------------------------------
+
+(use-package org-pomodoro
+  :ensure t
+  :bind (("<f4>" . org-pomodoro)
+         ("C-c p" . org-pomodoro)))
 
 (use-package tmr
   :ensure t
