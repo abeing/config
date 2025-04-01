@@ -420,6 +420,9 @@
 ;; I go back and forth between using EMMS and bongo but am considering using
 ;; Elsa or something else instead.
 
+(use-package somafm
+  :ensure t)
+
 (use-package emms
   :ensure t
   :init
