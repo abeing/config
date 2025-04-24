@@ -15,9 +15,6 @@
 (when (< emacs-major-version 29)
   (error "Emacs version 29 and newer required; this is version %s" emacs-major-version))
 
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
-
 ;;; --------------------[ User information ]------------------------------------
 
 (setq user-full-name "Adam Miezianko"
@@ -305,11 +302,6 @@
 
 ;;; --------------------[ Timers ]----------------------------------------------
 
-(use-package org-pomodoro
-  :ensure t
-  :bind (("<f4>" . org-pomodoro)
-         ("C-c p" . org-pomodoro)))
-
 (use-package tmr
   :ensure t
   :custom
@@ -420,9 +412,6 @@
 ;; I go back and forth between using EMMS and bongo but am considering using
 ;; Elsa or something else instead.
 
-(use-package somafm
-  :ensure t)
-
 (use-package emms
   :ensure t
   :init
@@ -505,10 +494,6 @@
          ("C-c n l" . denote-link-or-create)
          ("C-c n b" . denote-backlinks)
          ("C-c n f" . denote-open-or-create)))
-
-(use-package denote-explore
-  :ensure t
-  :after denote)
 
 ;;; --------------------[ Dired ]-----------------------------------------------
 
