@@ -12,8 +12,8 @@
 ;;; Code:
 
 ;; Just in case I run my config on an older Emacs somewhere
-(when (< emacs-major-version 29)
-  (error "Emacs version 29 and newer required; this is version %s" emacs-major-version))
+(when (< emacs-major-version 30)
+  (error "Emacs version 30 and newer required; this is version %s" emacs-major-version))
 
 ;;; --------------------[ User information ]------------------------------------
 
