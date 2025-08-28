@@ -15,6 +15,10 @@
 (when (< emacs-major-version 30)
   (error "Emacs version 30 and newer required; this is version %s" emacs-major-version))
 
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
 ;;; --------------------[ User information ]------------------------------------
 
 (setq user-full-name "Adam Miezianko"
@@ -439,21 +443,6 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
-(use-package ef-themes
-  :ensure t
-  :init
-  (setq ef-themes-disable-other-themes t)
-  (defun ef-themes-random-light ()
-    "Load a random light ef-theme."
-    (interactive)
-    (ef-themes-load-random 'light))
-  (defun ef-themes-random-dark ()
-    "Load a random dark ef-theme."
-    (interactive)
-    (ef-themes-load-random 'dark))
-  :bind (("<f6>" . ef-themes-random-light)
-         ("<f7>" . ef-themes-random-dark)))
-
 ;;; --------------------[ Markdown ]--------------------------------------------
 
 (use-package markdown-mode
@@ -492,8 +481,11 @@
   :bind (("C-c n r" . denote-rename-file)
          ("C-c n n" . denote-create-note)
          ("C-c n l" . denote-link-or-create)
-         ("C-c n b" . denote-backlinks)
+         ("C-c n b" . denote-find-backlink)
          ("C-c n f" . denote-open-or-create)))
+
+(use-package denote-explore
+  :ensure t)
 
 ;;; --------------------[ Dired ]-----------------------------------------------
 
