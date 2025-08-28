@@ -516,11 +516,6 @@
   (go-mode . (lambda () (setq tab-width 8)))
   )
 
-;;; --------------------[ Drill ]-----------------------------------------------
-
-(use-package org-drill
-  :ensure t)
-
 ;;; --------------------[ Proselint ]-------------------------------------------
 
 (use-package flymake-proselint
