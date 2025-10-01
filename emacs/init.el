@@ -175,7 +175,7 @@
   :ensure t
   :bind (("C-c g l" . avy-goto-line)
          ("C-c g c" . avy-goto-char-timer)
-         ("C-c g w" . avy-goto-word-0-regexp)))
+         ("C-c g w" . avy-goto-word-0)))
 
 ;;; --------------------[ Consult ]---------------------------------------------
 
@@ -194,7 +194,7 @@
 
 (use-package embark
   :ensure t
-  :bind (("C-c e" . embark-act)))        ; bind this to an easy key to hit
+  :bind (("C-." . embark-act)))        ; bind this to an easy key to hit
 
 (use-package embark-consult
   :ensure t)
@@ -219,11 +219,17 @@
   :hook
   ((rust-mode . rust-ts-mode))
   :bind (("C-c g e" . flymake-goto-next-error))
-  :config
-  (add-to-list 'eglot-server-programs
-               '(python-mode . ("/Library/Frameworks/Python.framework/Versions/3.11/bin/jedi-language-server")))
+  ;; :config
+  ;; (add-to-list 'eglot-server-programs
+  ;;              '(python-mode . ("/Library/Frameworks/Python.framework/Versions/3.11/bin/jedi-language-server")))
   :custom
   (eglot-send-changes-idle-time 0.1))
+
+(use-package flycheck
+  :ensure)
+
+(use-package flycheck-eglot
+  :ensure)
 
 ;;; --------------------[ Completion ]------------------------------------------
 
@@ -391,12 +397,11 @@
 
 (setq org-hierarchical-todo-statistics nil)
 
-(defun my/org-last-heading ()
+(defun am/org-last-heading ()
   "Go to last visible org heading."
   (interactive)
-  (progn (call-interactively 'end-of-buffer)
-	 (call-interactively 'org-previous-visible-heading)))
-;; (define-key global-map (kbd "C-c t") 'my/org-last-heading)
+  (progn (goto-char (point-max))
+         (outline-previous-heading)))
 
 (setq org-capture-templates
       '(("t" "Todo [inbox]" entry
@@ -525,15 +530,34 @@
 
 ;;; --------------------[ LLMs ]------------------------------------------------
 
+(use-package gptel
+  :ensure t
+  :config
+  (setq
+   gptel-model 'gemma3:latest
+   gptel-backed (gptel-make-ollama "Ollama"
+                  :host "localhost:11434"
+                  :stream t
+                  :models '(gemma3:latest))))
+
 (use-package ellama
   :ensure t
-  :bind ("C-c i" . ellama-transient-main-menu)
+  :bind ("C-c e" . ellama-transient-main-menu)
   :init
   (require 'llm-ollama)
-  (setopt ellama-provider
-          (make-llm-ollama
-           :chat-model "deepseek-r1:latest")))
-
+  (setq ellama-providers
+        '(("gemma3" . (make-llm-ollama
+                           :chat-model "gemma3:latest"))
+          ("gemma3-27b" . (make-llm-ollama
+                           :chat-model "gemma3:27b"))
+          ("gemma2" . (make-llm-ollama
+                       :chat-model "gemma2:latest"))
+          ("llama3" . (make-llm-ollama
+                       :chat-model "llama3:latest"))
+          ("qwen3" . (make-llm-ollama
+                      :chat-model "qwen3:latest"))
+          ("deepseek" . (make-llm-ollama
+                         :chat-model "deepseek-r1:latest")))))
 
 ;;; --------------------[ Useful functions ]------------------------------------
 
