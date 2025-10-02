@@ -530,16 +530,6 @@
 
 ;;; --------------------[ LLMs ]------------------------------------------------
 
-(use-package gptel
-  :ensure t
-  :config
-  (setq
-   gptel-model 'gemma3:latest
-   gptel-backed (gptel-make-ollama "Ollama"
-                  :host "localhost:11434"
-                  :stream t
-                  :models '(gemma3:latest))))
-
 (use-package ellama
   :ensure t
   :bind ("C-c e" . ellama-transient-main-menu)
