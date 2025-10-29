@@ -376,6 +376,7 @@
 ;; (setq org-agenda-files `(,org-directory))
 (setq org-agenda-files (nconc
                         '("gtd.org")
+                        '("todo.org")
                         (directory-files-recursively org-directory ".*_area.*\.org$")
                         (directory-files-recursively org-directory ".*_project.*\.org$")))
 
