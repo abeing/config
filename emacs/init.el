@@ -374,8 +374,8 @@
 
 (use-package org-modern
   :ensure t
-  :hook
-  (org-mode . org-modern-mode))
+  :config
+  (global-org-modern-mode))
 
 (setq org-directory "~/memex")
 ;; (setq org-agenda-files `(,org-directory))
