@@ -369,13 +369,7 @@
         org-adapt-indentation nil
         org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
   :hook
-  (org-mode . fold-done-entries)
-  (org-mode . org-indent-mode))
-
-(use-package org-modern
-  :ensure t
-  :config
-  (global-org-modern-mode))
+  (org-mode . fold-done-entries))
 
 (setq org-directory "~/memex")
 ;; (setq org-agenda-files `(,org-directory))
