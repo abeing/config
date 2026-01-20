@@ -231,6 +231,13 @@
 (use-package flycheck-eglot
   :ensure)
 
+;;; --------------------[ Python ]----------------------------------------------
+
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+
 ;;; --------------------[ Completion ]------------------------------------------
 
 (use-package vertico
@@ -462,7 +469,8 @@
  '((python . t)
    (scheme . t)
    (lisp . t)
-   (octave . t)))
+   (octave . t)
+   (shell . t)))
 
 (when my-laptop-p
   (setq python-shell-interpreter "/usr/local/bin/python3"))
