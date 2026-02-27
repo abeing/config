@@ -85,34 +85,6 @@
     backup-file-path))
 (setopt make-backup-file-name-function 'am/backup-file-name)
 
-;;; --------------------[ Discovery aids ]--------------------------------------
-
-(use-package which-key
-  :ensure t
-  :diminish
-  :config
-  (which-key-mode))
-
-;;; --------------------[ Minibuffer and completion ]---------------------------
-
-(setopt enable-recursive-minibuffers t) ; Use the minibuffer whilst in the
-                                        ; minibuffer
-(setopt completion-cycle-threshold 1)   ; TAB cycles candidates
-(setopt completions-detailed t)         ; Show annotations
-(setopt tab-always-indent 'complete)    ; TAB tries to complete, otherwise
-                                        ; indents
-;; Different styles to match input candidates
-(setopt completion-styles '(basic initials substring))
-(setopt completion-auto-help 'always)   ; Open completion always; `lazy'
-                                        ; another option
-(setopt completions-max-height 20)
-(setopt completions-format 'one-column)
-(setopt completions-group t)
-(setopt completion-auto-select 'second-tab)
-
-;; TAB acts more like how it does in the shell
-(keymap-set minibuffer-mode-map "TAB" 'minibuffer-complete)
-
 ;;; --------------------[ Interface enhancements ]------------------------------
 
 ;; Show line and column number in the modeline
@@ -138,7 +110,6 @@
 (setopt auto-revert-interval 5)
 (setopt auto-revert-check-vc-info t)
 (global-auto-revert-mode t)
-;; DONE
 
 ;; Don't show the menu bar, except on macOS. On macOS the menu bar doesn't take
 ;; up any additional screen real estate, so there's no harm in keeping it.
@@ -163,82 +134,54 @@
 
 ;; rebinding M-i (tab-to-tab-stop) to something I use more often: imenu
 (global-set-key (kbd "M-i") 'imenu)
+(global-set-key (kbd "C-c s i") 'imenu)
+
+;;; --------------------[ Themes ]----------------------------------------------
+
+(use-package modus-themes
+  :ensure t
+  :init
+  (setq modus-themes-disable-other-themes t
+        modus-themes-mode-line '(borderless accented)
+        modus-themes-org-blocks 'gray-background
+        modus-themes-to-toggle '(modus-operandi modus-vivendi)
+        modus-themes-italic-constructs t
+        modus-themes-bold-constructs t)
+  (load-theme 'modus-operandi)
+  :bind ("<f5>" . modus-themes-toggle))
 
 ;;; --------------------[ Diminish ]--------------------------------------------
 
 (use-package diminish
   :ensure t)
 
-;;; --------------------[ Avy ]-------------------------------------------------
+;;; --------------------[ Discovery aids ]--------------------------------------
 
-(use-package avy
+(use-package which-key
   :ensure t
-  :bind (("C-c g l" . avy-goto-line)
-         ("C-c g c" . avy-goto-char-timer)
-         ("C-c g w" . avy-goto-word-0)))
-
-;;; --------------------[ Consult ]---------------------------------------------
-
-(use-package consult
-  :ensure t
-  :bind (("C-x b" . consult-buffer)
-         ("M-y" . consult-yank-pop)
-         ("M-s r" . consult-ripgrep)
-         ("C-s" . consult-line)
-         ("M-s e" . consult-flymake)
-         ("M-s j" . consult-outline))
+  :diminish
   :config
-  (setq consult-narrow-key "<"))
-
-;;; --------------------[ Embark ]----------------------------------------------
-
-(use-package embark
-  :ensure t
-  :bind (("C-." . embark-act)))        ; bind this to an easy key to hit
-
-(use-package embark-consult
-  :ensure t)
-
-;;; --------------------[ Evil ]------------------------------------------------
-
-(use-package evil
-  :ensure t
-  :config
-  (evil-set-leader 'normal (kbd "SPC"))
-  (evil-define-key 'normal 'global (kbd "<leader>f") 'find-file)
-  (evil-define-key 'normal 'global (kbd "<leader>b") 'consult-buffer)
-  (evil-define-key 'normal 'global (kbd "<leader>a") 'embark-act)
-  (evil-define-key 'normal 'global (kbd "<leader>wo") 'other-window)
-  (evil-define-key 'normal 'global (kbd "<leader>w1") 'delete-other-windows)
-  (evil-define-key 'normal 'global (kbd "<leader>gs") 'magit-status))
-
-;;; --------------------[ Eglot ]-----------------------------------------------
-
-(use-package eglot
-  :ensure t
-  :hook
-  ((rust-mode . rust-ts-mode))
-  :bind (("C-c g e" . flymake-goto-next-error))
-  ;; :config
-  ;; (add-to-list 'eglot-server-programs
-  ;;              '(python-mode . ("/Library/Frameworks/Python.framework/Versions/3.11/bin/jedi-language-server")))
-  :custom
-  (eglot-send-changes-idle-time 0.1))
-
-(use-package flycheck
-  :ensure)
-
-(use-package flycheck-eglot
-  :ensure)
-
-;;; --------------------[ Python ]----------------------------------------------
-
-(use-package elpy
-  :ensure t
-  :init
-  (elpy-enable))
+  (which-key-mode))
 
 ;;; --------------------[ Completion ]------------------------------------------
+
+(setopt enable-recursive-minibuffers t) ; Use the minibuffer whilst in the
+                                        ; minibuffer
+(setopt completion-cycle-threshold 1)   ; TAB cycles candidates
+(setopt completions-detailed t)         ; Show annotations
+(setopt tab-always-indent 'complete)    ; TAB tries to complete, otherwise
+                                        ; indents
+;; Different styles to match input candidates
+(setopt completion-styles '(basic initials substring))
+(setopt completion-auto-help 'always)   ; Open completion always; `lazy'
+                                        ; another option
+(setopt completions-max-height 20)
+(setopt completions-format 'one-column)
+(setopt completions-group t)
+(setopt completion-auto-select 'second-tab)
+
+;; TAB acts more like how it does in the shell
+(keymap-set minibuffer-mode-map "TAB" 'minibuffer-complete)
 
 (use-package vertico
   :ensure t
@@ -301,53 +244,161 @@
   :custom
   (completion-styles '(orderless)))
 
-;;; --------------------[ Eshell ]----------------------------------------------
+;;; --------------------[ Navigation and actions ]------------------------------
 
-(use-package eshell
-  :init
-  (defun my/setup-eshell ()
-    (keymap-set eshell-mode-map "C-r" 'consult-history))
-  :hook ((eshell-mode . my/setup-eshell)))
-
-(use-package eat
+(use-package avy
   :ensure t
-  :custom
-  (eat-term-name "xterm")
+  :bind (("C-c j l" . avy-goto-line)
+         ("C-c j c" . avy-goto-char-timer)
+         ("C-c j w" . avy-goto-word-0)))
+
+(use-package consult
+  :ensure t
+  :bind (("C-x b"   . consult-buffer)
+         ("M-y"     . consult-yank-pop)
+         ("C-s"     . consult-line)
+         ("C-c s s" . consult-line)
+         ("C-c s r" . consult-ripgrep)
+         ("C-c s o" . consult-outline)
+         ("C-c s e" . consult-flymake))
   :config
-  (eat-eshell-mode)
-  (eat-eshell-visual-command-mode))
+  (setq consult-narrow-key "<"))
 
-;;; --------------------[ Timers ]----------------------------------------------
-
-(use-package tmr
+(use-package embark
   :ensure t
-  :custom
-  (tmr-sound-file nil))
+  :bind (("C-." . embark-act)))        ; bind this to an easy key to hit
 
-(defun start-pomodoro (task)
-  "Start a Pomodoro"
-  (interactive "sTask: ")
-  (tmr-with-description "25m" task))
+(use-package embark-consult
+  :ensure t)
 
-(defun start-short-break ()
-  "Start a short break"
-  (interactive)
-  (tmr-with-description "5m" "Short break"))
+;;; --------------------[ Evil ]------------------------------------------------
 
-(defun brew-hojicha ()
-  "Brew hojicha"
-  (interactive)
-  (tmr-with-description "3m" "Hojicha"))
+(use-package evil
+  :ensure t
+  :config
+  (evil-mode 1)
+  (evil-set-leader 'normal (kbd "SPC"))
 
-(global-set-key (kbd "C-c t p") 'start-pomodoro)
-(global-set-key (kbd "C-c t b") 'start-short-break)
-(global-set-key (kbd "C-c t g") 'brew-hojicha)
-(global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
+  (evil-define-key 'normal 'global
+    ;; Top-level
+    (kbd "<leader>SPC") 'execute-extended-command
+    (kbd "<leader>a")   'embark-act
 
-;;; --------------------[ Pulsar ]----------------------------------------------
+    ;; f: Files
+    (kbd "<leader>ff")  'find-file
+    (kbd "<leader>fr")  'consult-recent-file
+    (kbd "<leader>fs")  'save-buffer
+
+    ;; b: Buffers
+    (kbd "<leader>bb")  'consult-buffer
+    (kbd "<leader>bk")  'kill-current-buffer
+    (kbd "<leader>bn")  'next-buffer
+    (kbd "<leader>bp")  'previous-buffer
+
+    ;; w: Windows
+    (kbd "<leader>wo")  'other-window
+    (kbd "<leader>w1")  'delete-other-windows
+    (kbd "<leader>ws")  'split-window-below
+    (kbd "<leader>wv")  'split-window-right
+    (kbd "<leader>wd")  'delete-window
+
+    ;; g: Git
+    (kbd "<leader>gs")  'magit-status
+    (kbd "<leader>gb")  'magit-blame
+    (kbd "<leader>gl")  'magit-log-current
+
+    ;; s: Search
+    (kbd "<leader>ss")  'consult-line
+    (kbd "<leader>sr")  'consult-ripgrep
+    (kbd "<leader>so")  'consult-outline
+    (kbd "<leader>si")  'imenu
+    (kbd "<leader>se")  'consult-flymake
+
+    ;; j: Jump (avy)
+    (kbd "<leader>jl")  'avy-goto-line
+    (kbd "<leader>jc")  'avy-goto-char-timer
+    (kbd "<leader>jw")  'avy-goto-word-0
+
+    ;; o: Org
+    (kbd "<leader>oa")  'org-agenda
+    (kbd "<leader>oc")  'org-capture
+    (kbd "<leader>ol")  'org-store-link
+    (kbd "<leader>ot")  'org-todo
+    (kbd "<leader>os")  'org-schedule
+    (kbd "<leader>od")  'org-deadline
+    (kbd "<leader>or")  'org-refile
+    (kbd "<leader>op")  'org-priority
+
+    ;; n: Notes (denote)
+    (kbd "<leader>nn")  'denote-create-note
+    (kbd "<leader>nf")  'denote-open-or-create
+    (kbd "<leader>nl")  'denote-link-or-create
+    (kbd "<leader>nb")  'denote-find-backlink
+    (kbd "<leader>nr")  'denote-rename-file
+    (kbd "<leader>nj")  'denote-journal-new-or-existing-entry
+
+    ;; m: Media
+    (kbd "<leader>mp")  'emms-pause
+    (kbd "<leader>mm")  'emms
+    (kbd "<leader>mr")  'emms-random
+
+    ;; t: Timers
+    (kbd "<leader>tp")  'start-pomodoro
+    (kbd "<leader>tb")  'start-short-break
+    (kbd "<leader>tt")  'tmr-tabulated-view
+    (kbd "<leader>tg")  'brew-hojicha
+
+    ;; e: LLMs
+    (kbd "<leader>ee")  'ellama-transient-main-menu
+    (kbd "<leader>eg")  'gptel
+    (kbd "<leader>ec")  'claude-code-transient
+
+    ;; T: Themes
+    (kbd "<leader>Tt")  'modus-themes-toggle
+
+    ;; Helix-inspired space mode
+    (kbd "<leader>/")   'consult-ripgrep      ; SPC / global search
+    (kbd "<leader>k")   'eldoc-doc-buffer     ; SPC k show docs/hover
+    (kbd "<leader>r")   'eglot-rename)        ; SPC r rename symbol
+
+  ;; Org-mode navigation in normal state
+  (defun my/org-tab-dwim ()
+    "In a table, move to next cell. Otherwise fold/unfold."
+    (interactive)
+    (if (org-at-table-p)
+        (org-table-next-field)
+      (org-cycle)))
+  (defun my/org-shifttab-dwim ()
+    "In a table, move to previous cell. Otherwise cycle globally."
+    (interactive)
+    (if (org-at-table-p)
+        (org-table-previous-field)
+      (org-shifttab)))
+  (evil-define-key 'normal org-mode-map
+    (kbd "TAB")   'my/org-tab-dwim
+    (kbd "<tab>") 'my/org-tab-dwim
+    (kbd "S-TAB")       'my/org-shifttab-dwim
+    (kbd "<backtab>")   'my/org-shifttab-dwim
+    (kbd "]]") 'org-next-visible-heading
+    (kbd "[[") 'org-previous-visible-heading
+    (kbd "]}") 'org-forward-heading-same-level
+    (kbd "[{") 'org-backward-heading-same-level
+    (kbd "gp") 'org-up-element)
+
+  ;; Helix-inspired normal state bindings
+  (evil-define-key 'normal 'global
+    ;; g-prefix go-to motions (gh/gl/gs/gr)
+    (kbd "gh") 'evil-beginning-of-line
+    (kbd "gl") 'evil-end-of-line
+    (kbd "gs") 'evil-first-non-blank
+    (kbd "gr") 'xref-find-references
+    ;; Bracket motions for diagnostics ([d / ]d)
+    (kbd "[d") 'flymake-goto-prev-error
+    (kbd "]d") 'flymake-goto-next-error))
+
+;;; --------------------[ Editing utilities ]-----------------------------------
 
 ;; This performs poorly on Windows, so I don't enable it on my work machine.
-
 (when (not my-work-machine-p)
   (use-package pulsar
     :ensure t
@@ -356,254 +407,6 @@
           pulsar-delay 0.055
           pulsar-iterations 10)
     (pulsar-global-mode 1)))
-
-;; --------------------[ Org-mode ]---------------------------------------------
-
-(defun fold-done-entries ()
-  "Fold all enteries marked DONE."
-  (interactive)
-  (save-excursion
-    (goto-char (point-max))
-    (while (outline-previous-heading)
-      (when (org-entry-is-done-p)
-        (hide-subtree)))))
-
-(use-package org
-  :init
-  (setq org-hide-emphasis-markers t
-        org-log-done t
-        org-log-into-drawer t
-        org-adapt-indentation nil
-        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
-  :hook
-  (org-mode . fold-done-entries))
-
-(setq org-directory "~/memex")
-;; (setq org-agenda-files `(,org-directory))
-(setq org-agenda-files (nconc
-                        '("gtd.org")
-                        '("todo.org")
-                        (directory-files-recursively org-directory ".*_area.*\.org$")
-                        (directory-files-recursively org-directory ".*_project.*\.org$")))
-
-;; This is where capture will place new content by default
-(setq org-default-notes-file (concat org-directory "/inbox.org"))
-
-(setq org-modules '(org-habit org-protocol))
-
-(add-hook 'org-mode-hook 'turn-on-auto-fill)
-(add-hook 'org-mode-hook (lambda ()
-			                     (setq-local show-trailing-whitespace t)))
-
-(define-key global-map (kbd "C-c c") 'org-capture)
-(define-key global-map (kbd "C-c a") 'org-agenda)
-(define-key global-map (kbd "C-c l") 'org-store-link)
-
-(setq org-pretty-entities t)
-(setq org-fontify-quote-and-verse-blocks t)
-
-(setq org-hierarchical-todo-statistics nil)
-
-(defun am/org-last-heading ()
-  "Go to last visible org heading."
-  (interactive)
-  (progn (goto-char (point-max))
-         (outline-previous-heading)))
-
-(setq org-capture-templates
-      '(("t" "Todo [inbox]" entry
-	       (file+headline "~/memex/gtd.org" "Inbox")
-	       "* TODO %i%?")
-	      ("T" "Tickler" entry
-	       (file+headline "~/memex/gtd.org" "Tickler")
-	       "* %i%? \n %U")
-        ("w" "Weight" table-line
-         (file+olp "~/memex/health.org" "Weight" "Data")
-         "| %U | %? | " :unnarrowed t)))
-
-(setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
-
-;;; --------------------[ EMMS ]------------------------------------------------
-
-;; I go back and forth between using EMMS and bongo but am considering using
-;; Elsa or something else instead.
-
-(use-package emms
-  :ensure t
-  :init
-  (emms-all)
-  (setq emms-info-functions '(emms-info-native
-                              emms-info-metaflac
-                              emms-info-ogginfo))
-  (emms-default-players)
-  :bind (("C-c m p" . emms-pause)
-         ("C-c m m" . emms)
-         ("C-c m r" . emms-random)
-         ("C-c m v" . emms-volume-minor-mode)))
-
-;;; --------------------[ Themes ]----------------------------------------------
-
-(use-package modus-themes
-  :ensure t
-  :init
-  (setq modus-themes-disable-other-themes t
-        modus-themes-mode-line '(borderless accented)
-        modus-themes-org-blocks 'gray-background
-        modus-themes-to-toggle '(modus-operandi modus-vivendi)
-        modus-themes-italic-constructs t
-        modus-themes-bold-constructs t)
-  (load-theme 'modus-operandi)
-  :bind ("<f5>" . modus-themes-toggle))
-
-;;; --------------------[ Markdown ]--------------------------------------------
-
-(use-package markdown-mode
-  :ensure t
-  :init
-  (setq-default markdown-enable-wiki-links t
-                markdown-hide-urls nil
-                markdown-hide-markup nil))
-
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((python . t)
-   (scheme . t)
-   (lisp . t)
-   (octave . t)
-   (shell . t)))
-
-(when my-laptop-p
-  (setq python-shell-interpreter "/usr/local/bin/python3"))
-
-(setq org-babel-python-command "python3")
-(setq org-babel-scheme-command "mit-scheme")
-(setq org-babel-lisp-eval-fn #'sly-eval)
-
-;; --------------------[ Denote ]-----------------------------------------------
-
-(use-package denote
-  :ensure t
-  :after org
-  :hook (dired-mode . denote-dired-mode)
-  :init
-  (denote-rename-buffer-mode)
-  :custom
-  (denote-sort-keywords t)
-  (denote-directory (concat org-directory "/"))
-  (denote-known-keywords '("literature", "idea", "project", "index", "area", "resource"))
-  :bind (("C-c n r" . denote-rename-file)
-         ("C-c n n" . denote-create-note)
-         ("C-c n l" . denote-link-or-create)
-         ("C-c n b" . denote-find-backlink)
-         ("C-c n f" . denote-open-or-create)))
-
-(use-package denote-explore
-  :ensure t)
-
-(use-package denote-journal
-  :ensure t
-  :commands (denote-journal-new-entry
-             denote-journal-new-or-existing-entry
-             denote-journal-link-or-create-entry)
-  :hook (calendar-mode . denote-journal-calendar-mode)
-  :config
-  ;; Use the "journal" subdirectory of the `denote-directory'.  Set this to
-  ;; nil to use the `denote-directory' instead.
-  (setq denote-journal-directory
-        (expand-file-name "journal" denote-directory))
-  ;; Default keyword for new journal entries.  It can also ba a list of
-  ;; strings.
-  (setq denote-journal-keyword "journal")
-  ;; Read the doc string of `denote-journal-title-format'.
-  (setq denote-journal-title-format 'day-date-month-year))
-
-;;; --------------------[ Dired ]-----------------------------------------------
-
-(use-package dired
-  :init
-  (setq dired-dwim-target t)
-  :hook (dired-mode . dired-hide-details-mode))
-
-;;; --------------------[ Magit ]-----------------------------------------------
-
-(use-package magit
-  :ensure t
-  :bind (("C-x g" . magit-status)))
-
-;;; --------------------[ Rust ]------------------------------------------------
-
-(use-package rust-mode
-  :ensure t
-  :bind
-  (("C-c r r" . rust-run)
-   ("C-c r f" . rust-format-buffer)))
-
-;;; --------------------[ Go ]--------------------------------------------------
-
-(use-package go-mode
-  :ensure t
-  :hook
-  (go-mode . (lambda () (setq tab-width 8)))
-  )
-
-;;; --------------------[ Proselint ]-------------------------------------------
-
-(use-package flymake-proselint
-  :ensure t
-  :config
-  (add-hook 'org-mode-hook #'flymake-proselint-setup))
-
-;;; --------------------[ LLMs ]------------------------------------------------
-
-(use-package ellama
-  :ensure t
-  :bind ("C-c e" . ellama-transient-main-menu)
-  :init
-  (require 'llm-ollama)
-  (setq ellama-providers
-        '(("gemma3" . (make-llm-ollama
-                           :chat-model "gemma3:latest"))
-          ("gemma3-27b" . (make-llm-ollama
-                           :chat-model "gemma3:27b"))
-          ("gemma2" . (make-llm-ollama
-                       :chat-model "gemma2:latest"))
-          ("llama3" . (make-llm-ollama
-                       :chat-model "llama3:latest"))
-          ("qwen3" . (make-llm-ollama
-                      :chat-model "qwen3:latest"))
-          ("deepseek" . (make-llm-ollama
-                         :chat-model "deepseek-r1:latest")))))
-
-;;; --------------------[ Useful functions ]------------------------------------
-
-(defun fill-to-eol (char)
-  "Fill a character from point until column 80."
-  (interactive "cChar: ")
-  (insert-char char 80)
-  (move-to-column 80)
-  (kill-line))
-
-(defun insert-comment-header (title)
-  "Create a Lisp comment header with a given title."
-  (interactive "sTitle: ")
-  (insert ";;; --------------------[ ")
-  (insert title)
-  (insert " ]")
-  (fill-to-eol ?\-))
-
-(defun random-list-element (x)
-  (nth (random (length x)) x))
-
-(defun choose-from (x)
-  "Choose at random from a space-dilimited list of choices."
-  (interactive "sChoices: ")
-  (let ((y (split-string x)))
-    (message "Chose: %s" (random-list-element y))))
-
-(defun random-line ()
-  "Go to a random line in the buffer."
-  (interactive)
-  (goto-line (1+ (random (count-lines (point-min) (point-max))))))
 
 (defvar am-repeat-counter '()
   "How often `am-repeat-next' was called in a row using the same command.
@@ -693,6 +496,330 @@
         (funcall func)))))
 
 (keymap-global-set "M-q" #'am-reformat-paragraph-or-region)
+
+;;; --------------------[ Org-mode ]--------------------------------------------
+
+(defun fold-done-entries ()
+  "Fold all enteries marked DONE."
+  (interactive)
+  (save-excursion
+    (goto-char (point-max))
+    (while (outline-previous-heading)
+      (when (org-entry-is-done-p)
+        (hide-subtree)))))
+
+(use-package org
+  :init
+  (setq org-hide-emphasis-markers t
+        org-log-done t
+        org-log-into-drawer t
+        org-adapt-indentation nil
+        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
+  :hook
+  (org-mode . fold-done-entries))
+
+(setq org-directory "~/memex")
+;; (setq org-agenda-files `(,org-directory))
+(setq org-agenda-files (nconc
+                        '("gtd.org")
+                        '("todo.org")
+                        (directory-files-recursively org-directory ".*_area.*\.org$")
+                        (directory-files-recursively org-directory ".*_project.*\.org$")))
+
+;; This is where capture will place new content by default
+(setq org-default-notes-file (concat org-directory "/inbox.org"))
+
+(setq org-modules '(org-habit org-protocol))
+
+(add-hook 'org-mode-hook 'turn-on-auto-fill)
+(add-hook 'org-mode-hook (lambda ()
+			                     (setq-local show-trailing-whitespace t)))
+
+(define-key global-map (kbd "C-c o c") 'org-capture)
+(define-key global-map (kbd "C-c o a") 'org-agenda)
+(define-key global-map (kbd "C-c o l") 'org-store-link)
+
+(setq org-pretty-entities t)
+(setq org-fontify-quote-and-verse-blocks t)
+
+(setq org-hierarchical-todo-statistics nil)
+
+(defun am/org-last-heading ()
+  "Go to last visible org heading."
+  (interactive)
+  (progn (goto-char (point-max))
+         (outline-previous-heading)))
+
+(setq org-capture-templates
+      '(("t" "Todo [inbox]" entry
+	       (file+headline "~/memex/gtd.org" "Inbox")
+	       "* TODO %i%?")
+	      ("T" "Tickler" entry
+	       (file+headline "~/memex/gtd.org" "Tickler")
+	       "* %i%? \n %U")
+        ("j" "Journal" entry
+         (file denote-journal-path-to-new-or-existing-entry)
+         "* %U %?\n%i\n%a"
+         :kill-buffer t
+         :empty-lines 1)
+        ("w" "Weight" table-line
+         (file+olp "~/memex/health.org" "Weight" "Data")
+         "| %U | %? | " :unnarrowed t)))
+
+(setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (scheme . t)
+   (lisp . t)
+   (octave . t)
+   (shell . t)))
+
+(when my-laptop-p
+  (setq python-shell-interpreter "/usr/local/bin/python3"))
+
+(setq org-babel-python-command "python3")
+(setq org-babel-scheme-command "mit-scheme")
+(setq org-babel-lisp-eval-fn #'sly-eval)
+
+;;; --------------------[ Denote ]----------------------------------------------
+
+(use-package denote
+  :ensure t
+  :after org
+  :hook (dired-mode . denote-dired-mode)
+  :init
+  (denote-rename-buffer-mode)
+  :custom
+  (denote-sort-keywords t)
+  (denote-directory (concat org-directory "/"))
+  (denote-known-keywords '("literature", "idea", "project", "index", "area", "resource"))
+  :bind (("C-c n r" . denote-rename-file)
+         ("C-c n n" . denote-create-note)
+         ("C-c n l" . denote-link-or-create)
+         ("C-c n b" . denote-find-backlink)
+         ("C-c n f" . denote-open-or-create)))
+
+(use-package denote-explore
+  :ensure t)
+
+(use-package denote-journal
+  :ensure t
+  :commands (denote-journal-new-entry
+             denote-journal-new-or-existing-entry
+             denote-journal-link-or-create-entry)
+  :hook (calendar-mode . denote-journal-calendar-mode)
+  :bind (("C-c n j" . denote-journal-new-or-existing-entry))
+  :config
+  ;; Use the "journal" subdirectory of the `denote-directory'.  Set this to
+  ;; nil to use the `denote-directory' instead.
+  (setq denote-journal-directory
+        (expand-file-name "journal" denote-directory))
+  ;; Default keyword for new journal entries.  It can also ba a list of
+  ;; strings.
+  (setq denote-journal-keyword "journal")
+  ;; Read the doc string of `denote-journal-title-format'.
+  (setq denote-journal-title-format 'day-date-month-year))
+
+;;; --------------------[ Dired ]-----------------------------------------------
+
+(use-package dired
+  :init
+  (setq dired-dwim-target t)
+  :hook (dired-mode . dired-hide-details-mode))
+
+;;; --------------------[ Magit ]-----------------------------------------------
+
+(use-package magit
+  :ensure t
+  :bind (("C-x g"   . magit-status)
+         ("C-c g s" . magit-status)
+         ("C-c g b" . magit-blame)
+         ("C-c g l" . magit-log-current)))
+
+;;; --------------------[ Development tools ]-----------------------------------
+
+(use-package eglot
+  :ensure t
+  :hook
+  ((rust-mode . rust-ts-mode))
+  ;; :config
+  ;; (add-to-list 'eglot-server-programs
+  ;;              '(python-mode . ("/Library/Frameworks/Python.framework/Versions/3.11/bin/jedi-language-server")))
+  :custom
+  (eglot-send-changes-idle-time 0.1))
+
+(use-package flycheck
+  :ensure)
+
+(use-package flycheck-eglot
+  :ensure)
+
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+
+(use-package rust-mode
+  :ensure t
+  :bind
+  (("C-c r r" . rust-run)
+   ("C-c r f" . rust-format-buffer)))
+
+(use-package go-mode
+  :ensure t
+  :hook
+  (go-mode . (lambda () (setq tab-width 8)))
+  )
+
+(use-package flymake-proselint
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook #'flymake-proselint-setup))
+
+;;; --------------------[ Shell and terminal ]----------------------------------
+
+(use-package eshell
+  :init
+  (defun my/setup-eshell ()
+    (keymap-set eshell-mode-map "C-r" 'consult-history))
+  :hook ((eshell-mode . my/setup-eshell)))
+
+(use-package eat
+  :ensure t
+  :custom
+  (eat-term-name "xterm")
+  :config
+  (eat-eshell-mode)
+  (eat-eshell-visual-command-mode))
+
+;;; --------------------[ Media ]-----------------------------------------------
+
+;; I go back and forth between using EMMS and bongo but am considering using
+;; Elsa or something else instead.
+
+(use-package emms
+  :ensure t
+  :init
+  (emms-all)
+  (setq emms-info-functions '(emms-info-native
+                              emms-info-metaflac
+                              emms-info-ogginfo))
+  (emms-default-players)
+  :bind (("C-c m p" . emms-pause)
+         ("C-c m m" . emms)
+         ("C-c m r" . emms-random)
+         ("C-c m v" . emms-volume-minor-mode)))
+
+;;; --------------------[ Timers ]----------------------------------------------
+
+(use-package tmr
+  :ensure t
+  :custom
+  (tmr-sound-file nil))
+
+(defun start-pomodoro (task)
+  "Start a Pomodoro"
+  (interactive "sTask: ")
+  (tmr-with-description "25m" task))
+
+(defun start-short-break ()
+  "Start a short break"
+  (interactive)
+  (tmr-with-description "5m" "Short break"))
+
+(defun brew-hojicha ()
+  "Brew hojicha"
+  (interactive)
+  (tmr-with-description "3m" "Hojicha"))
+
+(global-set-key (kbd "C-c t p") 'start-pomodoro)
+(global-set-key (kbd "C-c t b") 'start-short-break)
+(global-set-key (kbd "C-c t g") 'brew-hojicha)
+(global-set-key (kbd "C-c t t") 'tmr-tabulated-view)
+
+;;; --------------------[ LLMs ]------------------------------------------------
+
+;; gptel: Claude API integration for chat and code assistance
+;; Requires ANTHROPIC_API_KEY set in the environment (see config.fish)
+(use-package gptel
+  :ensure t
+  :bind (("C-c <return>" . gptel-send)
+         ("C-c e g"      . gptel))
+  :config
+  (setq gptel-model 'claude-sonnet-4-6
+        gptel-backend
+        (gptel-make-anthropic "Claude"
+          :stream t
+          :key (getenv "ANTHROPIC_API_KEY"))))
+
+;; claude-code: Run Claude Code CLI inside Emacs via eat
+(use-package claude-code
+  :ensure t
+  :commands (claude-code claude-code-transient)
+  :bind-keymap ("C-c e c" . claude-code-command-map)
+  :init
+  (setq claude-code-terminal-backend 'eat))
+
+(use-package ellama
+  :ensure t
+  :bind ("C-c e e" . ellama-transient-main-menu)
+  :init
+  (require 'llm-ollama)
+  (setq ellama-providers
+        '(("gemma3" . (make-llm-ollama
+                           :chat-model "gemma3:latest"))
+          ("gemma3-27b" . (make-llm-ollama
+                           :chat-model "gemma3:27b"))
+          ("gemma2" . (make-llm-ollama
+                       :chat-model "gemma2:latest"))
+          ("llama3" . (make-llm-ollama
+                       :chat-model "llama3:latest"))
+          ("qwen3" . (make-llm-ollama
+                      :chat-model "qwen3:latest"))
+          ("deepseek" . (make-llm-ollama
+                         :chat-model "deepseek-r1:latest")))))
+
+;;; --------------------[ Markdown ]--------------------------------------------
+
+(use-package markdown-mode
+  :ensure t
+  :init
+  (setq-default markdown-enable-wiki-links t
+                markdown-hide-urls nil
+                markdown-hide-markup nil))
+
+;;; --------------------[ Useful functions ]------------------------------------
+
+(defun fill-to-eol (char)
+  "Fill a character from point until column 80."
+  (interactive "cChar: ")
+  (insert-char char 80)
+  (move-to-column 80)
+  (kill-line))
+
+(defun insert-comment-header (title)
+  "Create a Lisp comment header with a given title."
+  (interactive "sTitle: ")
+  (insert ";;; --------------------[ ")
+  (insert title)
+  (insert " ]")
+  (fill-to-eol ?\-))
+
+(defun random-list-element (x)
+  (nth (random (length x)) x))
+
+(defun choose-from (x)
+  "Choose at random from a space-dilimited list of choices."
+  (interactive "sChoices: ")
+  (let ((y (split-string x)))
+    (message "Chose: %s" (random-list-element y))))
+
+(defun random-line ()
+  "Go to a random line in the buffer."
+  (interactive)
+  (goto-line (1+ (random (count-lines (point-min) (point-max))))))
 
 ;;; --------------------[ Macros ]----------------------------------------------
 

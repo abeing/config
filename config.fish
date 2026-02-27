@@ -14,5 +14,8 @@ fish_add_path ~/bin
 fish_add_path ~/.cargo/bin
 fish_add_path ~/.local/bin
 
+# LLM API keys — fill in actual values, do not commit
+# set -x ANTHROPIC_API_KEY "sk-ant-..."
+
 # Created by `pipx` on 2023-11-03 02:16:49
 set PATH $PATH /home/adam/.local/bin
