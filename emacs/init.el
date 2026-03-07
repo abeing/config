@@ -118,7 +118,8 @@
 
 (setq visible-bell t)
 
-(set-face-attribute 'default nil :family "Iosevka" :height 140)
+;; (set-face-attribute 'default nil :family "Iosevka" :height 140)
+(set-face-attribute 'default nil :family "Go Mono" :height 100)
 
 (setq shr-width 80)
 
@@ -276,7 +277,7 @@
 (use-package evil
   :ensure t
   :config
-  (evil-mode 1)
+  ;; (evil-mode 1)  ; Enable manually with M-x evil-mode
   (evil-set-leader 'normal (kbd "SPC"))
 
   (evil-define-key 'normal 'global
@@ -511,15 +512,18 @@
 (use-package org
   :init
   (setq org-hide-emphasis-markers t
-        org-log-done t
+        org-log-done 'time
         org-log-into-drawer t
         org-adapt-indentation nil
-        org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "PROJ(p)" "|" "DONE(d)" "CNCL(c)")))
+        org-enforce-todo-dependencies t
+        org-return-follows-link t
+        org-agenda-start-with-log-mode nil
+        org-agenda-window-setup 'current-window
+        org-todo-keywords '((sequence "TODO(t)" "NEXT(n)" "PROJ(p)" "WAIT(w@)" "|" "DONE(d!)" "CNCL(c@)")))
   :hook
   (org-mode . fold-done-entries))
 
 (setq org-directory "~/memex")
-;; (setq org-agenda-files `(,org-directory))
 (setq org-agenda-files (nconc
                         '("gtd.org")
                         '("todo.org")
@@ -527,7 +531,7 @@
                         (directory-files-recursively org-directory ".*_project.*\.org$")))
 
 ;; This is where capture will place new content by default
-(setq org-default-notes-file (concat org-directory "/inbox.org"))
+(setq org-default-notes-file (concat org-directory "/gtd.org"))
 
 (setq org-modules '(org-habit org-protocol))
 
@@ -541,8 +545,17 @@
 
 (setq org-pretty-entities t)
 (setq org-fontify-quote-and-verse-blocks t)
-
 (setq org-hierarchical-todo-statistics nil)
+
+;; GTD context tags (@-prefixed for context, used in agenda "By Context" view)
+(setq org-tag-alist
+      '(("@work"     . ?w)
+        ("@home"     . ?h)
+        ("@errand"   . ?e)
+        ("@call"     . ?p)
+        ("@read"     . ?r)
+        ("@computer" . ?c)))
+
 
 (defun am/org-last-heading ()
   "Go to last visible org heading."
@@ -551,12 +564,21 @@
          (outline-previous-heading)))
 
 (setq org-capture-templates
-      '(("t" "Todo [inbox]" entry
-	       (file+headline "~/memex/gtd.org" "Inbox")
-	       "* TODO %i%?")
-	      ("T" "Tickler" entry
-	       (file+headline "~/memex/gtd.org" "Tickler")
-	       "* %i%? \n %U")
+      '(("t" "Task" entry
+         (file+headline org-default-notes-file "Inbox")
+         "** TODO %?\n%U\n" :empty-lines 1)
+        ("n" "Note" entry
+         (file+headline org-default-notes-file "Inbox")
+         "** %? :note:\n%U\n" :empty-lines 1)
+        ("m" "Meeting note" entry
+         (file+headline org-default-notes-file "Inbox")
+         "** Meeting: %? :meeting:\n%U\nAttendees: \nNotes:\n" :empty-lines 1)
+        ("b" "Bookmark" entry
+         (file+headline org-default-notes-file "Inbox")
+         "** [[%^{URL}][%^{Title}]]\n%U\n%?" :empty-lines 1)
+        ("T" "Tickler" entry
+         (file+headline "~/memex/gtd.org" "Tickler")
+         "* %i%? \n %U")
         ("j" "Journal" entry
          (file denote-journal-path-to-new-or-existing-entry)
          "* %U %?\n%i\n%a"
@@ -567,6 +589,50 @@
          "| %U | %? | " :unnarrowed t)))
 
 (setq org-refile-targets '((org-agenda-files :maxlevel . 3)))
+(setq org-refile-use-outline-path 'file)
+(setq org-outline-path-complete-in-steps nil)
+
+;; A project is "stuck" if it is a level-2 heading with no NEXT action
+(setq org-stuck-projects
+      '("+LEVEL=2/-DONE-CNCL" ("NEXT") nil ""))
+
+;; Agenda custom views
+(setq org-agenda-custom-commands
+      '(("d" "Dashboard — Daily View"
+         ((agenda "" ((org-agenda-span 1)
+                      (org-deadline-warning-days 7)
+                      (org-agenda-overriding-header "Today")))
+          (tags-todo "TODO=\"NEXT\""
+                     ((org-agenda-overriding-header "Next Actions")))
+          (tags-todo "TODO=\"WAIT\""
+                     ((org-agenda-overriding-header "Waiting For")))))
+
+        ("n" "All Next Actions"
+         tags-todo "TODO=\"NEXT\""
+         ((org-agenda-overriding-header "All Next Actions by Context")
+          (org-agenda-sorting-strategy '(tag-up priority-down))))
+
+        ("W" "Weekly Review"
+         ((agenda "" ((org-agenda-span 14)
+                      (org-agenda-overriding-header "Next 2 Weeks")))
+          (tags-todo "TODO=\"WAIT\""
+                     ((org-agenda-overriding-header "Waiting For — Follow up?")))
+          (stuck ""
+                 ((org-agenda-overriding-header "Stuck Projects (no NEXT action)")))
+          (tags-todo "TODO=\"TODO\""
+                     ((org-agenda-overriding-header "All TODOs (review for staleness)")))))
+
+        ("c" "By Context"
+         ((tags-todo "+@work+TODO=\"NEXT\""
+                     ((org-agenda-overriding-header "@work")))
+          (tags-todo "+@home+TODO=\"NEXT\""
+                     ((org-agenda-overriding-header "@home")))
+          (tags-todo "+@errand+TODO=\"NEXT\""
+                     ((org-agenda-overriding-header "@errand")))
+          (tags-todo "+@call+TODO=\"NEXT\""
+                     ((org-agenda-overriding-header "@call")))
+          (tags-todo "+@computer+TODO=\"NEXT\""
+                     ((org-agenda-overriding-header "@computer")))))))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -785,6 +851,9 @@
 
 (use-package markdown-mode
   :ensure t
+  :hook (markdown-mode . visual-line-mode)
+  :custom
+  (visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
   :init
   (setq-default markdown-enable-wiki-links t
                 markdown-hide-urls nil
