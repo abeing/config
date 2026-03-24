@@ -151,6 +151,11 @@
   (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle))
 
+(use-package ef-themes
+  :ensure t)
+
+(global-hl-line-mode)
+
 ;;; --------------------[ Diminish ]--------------------------------------------
 
 (use-package diminish
@@ -397,6 +402,33 @@
     (kbd "[d") 'flymake-goto-prev-error
     (kbd "]d") 'flymake-goto-next-error))
 
+;;; --------------------[ Elfeed ]----------------------------------------------
+
+(use-package elfeed
+  :bind ("C-c f" . elfeed)
+  :custom
+  (elfeed-db-directory "~/.elfeed")
+  (elfeed-search-filter "@2-weeks-ago +unread")  ; show recent unread by default
+  :config
+  ;; Open articles in your external browser with 'b'
+  (define-key elfeed-search-mode-map (kbd "b")
+    (lambda () (interactive)
+      (let ((entry (elfeed-search-selected :single)))
+        (browse-url (elfeed-entry-link entry))
+        (elfeed-untag entry 'unread)
+        (elfeed-search-update-entry entry))))
+
+  (define-key elfeed-show-mode-map (kbd "b")
+    (lambda () (interactive)
+      (browse-url (elfeed-entry-link elfeed-show-entry)))))
+
+;; Manage feeds in an org file instead of a variable
+(use-package elfeed-org
+  :after elfeed
+  :config
+  (setq rmh-elfeed-org-files '("~/memex/elfeed.org"))
+  (elfeed-org))
+
 ;;; --------------------[ Editing utilities ]-----------------------------------
 
 ;; This performs poorly on Windows, so I don't enable it on my work machine.
@@ -511,15 +543,9 @@
 
 (use-package org
   :init
-  (setq org-hide-emphasis-markers t
+  (setq org-hide-emphasis-markers nil
         org-log-done 'time
-        org-log-into-drawer t
-        org-adapt-indentation nil
-        org-enforce-todo-dependencies t
-        org-return-follows-link t
-        org-agenda-start-with-log-mode nil
-        org-agenda-window-setup 'current-window
-        org-todo-keywords '((sequence "TODO(t)" "NEXT(n)" "PROJ(p)" "WAIT(w@)" "|" "DONE(d!)" "CNCL(c@)")))
+        org-adapt-indentation nil)
   :hook
   (org-mode . fold-done-entries))
 
