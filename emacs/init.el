@@ -118,8 +118,8 @@
 
 (setq visible-bell t)
 
-;; (set-face-attribute 'default nil :family "Iosevka" :height 140)
-(set-face-attribute 'default nil :family "Go Mono" :height 100)
+(set-face-attribute 'default nil :family "Iosevka" :height 140)
+;; (set-face-attribute 'default nil :family "Go Mono" :height 100)
 
 (setq shr-width 80)
 
@@ -544,8 +544,10 @@
 (use-package org
   :init
   (setq org-hide-emphasis-markers nil
-        org-log-done 'time
-        org-adapt-indentation nil)
+        org-adapt-indentation nil
+        org-log-into-drawer t)
+  (setq org-todo-keywords
+        '((sequence "TODO(t!)" "WAIT(w@)" "|" "DONE(d!)" "CNCL(c@)")))
   :hook
   (org-mode . fold-done-entries))
 
