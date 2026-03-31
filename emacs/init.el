@@ -154,8 +154,6 @@
 (use-package ef-themes
   :ensure t)
 
-(global-hl-line-mode)
-
 ;;; --------------------[ Diminish ]--------------------------------------------
 
 (use-package diminish
@@ -743,6 +741,19 @@
   ;;              '(python-mode . ("/Library/Frameworks/Python.framework/Versions/3.11/bin/jedi-language-server")))
   :custom
   (eglot-send-changes-idle-time 0.1))
+
+(use-package geiser-guile
+  :ensure t)
+
+(use-package paredit
+  :ensure t
+  :hook ((scheme-mode . paredit-mode)
+         (geiser-repl-mode . paredit-mode)
+         (emacs-lisp-mode . paredit-mode)))
+
+(use-package rainbow-delimiters
+  :ensure t
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package flycheck
   :ensure)
