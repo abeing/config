@@ -543,9 +543,10 @@
   :init
   (setq org-hide-emphasis-markers nil
         org-adapt-indentation nil
-        org-log-into-drawer t)
+        org-log-into-drawer t
+        org-log-done 'time)
   (setq org-todo-keywords
-        '((sequence "TODO(t!)" "WAIT(w@)" "|" "DONE(d!)" "CNCL(c@)")))
+        '((sequence "TODO(t)" "WAIT(w@)" "|" "DONE(d)" "CNCL(c@)")))
   :hook
   (org-mode . fold-done-entries))
 
@@ -589,22 +590,31 @@
   (progn (goto-char (point-max))
          (outline-previous-heading)))
 
+(defun my/org-archive-done-in-subtree ()
+  "Archive all DONE entries within the current subtree."
+  (interactive)
+  (org-map-entries
+   (lambda ()
+     (org-archive-subtree)
+     (setq org-map-continue-from (outline-previous-heading)))
+   "/DONE" 'tree))
+
 (setq org-capture-templates
       '(("t" "Task" entry
          (file+headline org-default-notes-file "Inbox")
-         "** TODO %?\n%U\n" :empty-lines 1)
+         "** TODO %?\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n" :empty-lines 1)
         ("n" "Note" entry
          (file+headline org-default-notes-file "Inbox")
-         "** %? :note:\n%U\n" :empty-lines 1)
+         "** %? :note:\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n" :empty-lines 1)
         ("m" "Meeting note" entry
          (file+headline org-default-notes-file "Inbox")
-         "** Meeting: %? :meeting:\n%U\nAttendees: \nNotes:\n" :empty-lines 1)
+         "** Meeting: %? :meeting:\n:PROPERTIES:\n:CAPTURED: %U\n:END:\nAttendees: \nNotes:\n" :empty-lines 1)
         ("b" "Bookmark" entry
          (file+headline org-default-notes-file "Inbox")
-         "** [[%^{URL}][%^{Title}]]\n%U\n%?" :empty-lines 1)
+         "** [[%^{URL}][%^{Title}]]\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n%?" :empty-lines 1)
         ("T" "Tickler" entry
          (file+headline "~/memex/gtd.org" "Tickler")
-         "* %i%? \n %U")
+         "* %i%?\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n")
         ("j" "Journal" entry
          (file denote-journal-path-to-new-or-existing-entry)
          "* %U %?\n%i\n%a"
