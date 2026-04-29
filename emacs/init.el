@@ -118,7 +118,7 @@
 
 (setq visible-bell t)
 
-(set-face-attribute 'default nil :family "Iosevka" :height 140)
+(set-face-attribute 'default nil :family "Iosevka" :height 120)
 ;; (set-face-attribute 'default nil :family "Go Mono" :height 100)
 
 (setq shr-width 80)
