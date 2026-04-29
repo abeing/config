@@ -753,6 +753,11 @@
   :custom
   (eglot-send-changes-idle-time 0.1))
 
+(use-package sly
+  :ensure t
+  :config
+  (setq inferior-lisp-program "sbcl"))
+
 (use-package geiser-guile
   :ensure t)
 
