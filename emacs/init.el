@@ -857,6 +857,12 @@
 
 ;;; --------------------[ LLMs ]------------------------------------------------
 
+(use-package claude-code-ide
+  :vc (:url "https://github.com/manzaltu/claude-code-ide.el" :rev :newest)
+  :bind ("C-c e c" . claude-code-ide-menu)
+  :config
+  (claude-code-ide-emacs-tools-setup))
+
 ;; gptel: Claude API integration for chat and code assistance
 ;; Requires ANTHROPIC_API_KEY set in the environment (see config.fish)
 (use-package gptel
@@ -870,13 +876,13 @@
           :stream t
           :key (getenv "ANTHROPIC_API_KEY"))))
 
-;; claude-code: Run Claude Code CLI inside Emacs via eat
-(use-package claude-code
-  :ensure t
-  :commands (claude-code claude-code-transient)
-  :bind-keymap ("C-c e c" . claude-code-command-map)
-  :init
-  (setq claude-code-terminal-backend 'eat))
+;; ;; claude-code: Run Claude Code CLI inside Emacs via eat
+;; (use-package claude-code
+;;   :ensure t
+;;   :commands (claude-code claude-code-transient)
+;;   :bind-keymap ("C-c e c" . claude-code-command-map)
+;;   :init
+;;   (setq claude-code-terminal-backend 'eat))
 
 (use-package ellama
   :ensure t
