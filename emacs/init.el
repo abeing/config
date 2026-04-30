@@ -603,19 +603,7 @@
 (setq org-capture-templates
       '(("t" "Task" entry
          (file org-default-notes-file)
-         "* INBOX %?\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n" :empty-lines 1)
-        ("n" "Note" entry
-         (file org-default-notes-file)
-         "* INBOX %? :note:\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n" :empty-lines 1)
-        ("m" "Meeting note" entry
-         (file org-default-notes-file)
-         "* INBOX Meeting: %? :meeting:\n:PROPERTIES:\n:CAPTURED: %U\n:END:\nAttendees: \nNotes:\n" :empty-lines 1)
-        ("b" "Bookmark" entry
-         (file org-default-notes-file)
-         "* INBOX [[%^{URL}][%^{Title}]]\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n%?" :empty-lines 1)
-        ("T" "Tickler" entry
-         (file org-default-notes-file)
-         "* INBOX %i%?\n:PROPERTIES:\n:CAPTURED: %U\n:END:\n")
+         "* INBOX %?\n" :empty-lines 1)
         ("j" "Journal" entry
          (file denote-journal-path-to-new-or-existing-entry)
          "* %U %?\n%i\n%a"
@@ -632,44 +620,6 @@
 ;; A project is "stuck" if it is a level-2 heading with no NEXT action
 (setq org-stuck-projects
       '("+LEVEL=2/-DONE-CNCL" ("NEXT") nil ""))
-
-;; Agenda custom views
-(setq org-agenda-custom-commands
-      '(("d" "Dashboard — Daily View"
-         ((agenda "" ((org-agenda-span 1)
-                      (org-deadline-warning-days 7)
-                      (org-agenda-overriding-header "Today")))
-          (tags-todo "TODO=\"NEXT\""
-                     ((org-agenda-overriding-header "Next Actions")))
-          (tags-todo "TODO=\"WAIT\""
-                     ((org-agenda-overriding-header "Waiting For")))))
-
-        ("n" "All Next Actions"
-         tags-todo "TODO=\"NEXT\""
-         ((org-agenda-overriding-header "All Next Actions by Context")
-          (org-agenda-sorting-strategy '(tag-up priority-down))))
-
-        ("W" "Weekly Review"
-         ((agenda "" ((org-agenda-span 14)
-                      (org-agenda-overriding-header "Next 2 Weeks")))
-          (tags-todo "TODO=\"WAIT\""
-                     ((org-agenda-overriding-header "Waiting For — Follow up?")))
-          (stuck ""
-                 ((org-agenda-overriding-header "Stuck Projects (no NEXT action)")))
-          (tags-todo "TODO=\"TODO\""
-                     ((org-agenda-overriding-header "All TODOs (review for staleness)")))))
-
-        ("c" "By Context"
-         ((tags-todo "+@work+TODO=\"NEXT\""
-                     ((org-agenda-overriding-header "@work")))
-          (tags-todo "+@home+TODO=\"NEXT\""
-                     ((org-agenda-overriding-header "@home")))
-          (tags-todo "+@errand+TODO=\"NEXT\""
-                     ((org-agenda-overriding-header "@errand")))
-          (tags-todo "+@call+TODO=\"NEXT\""
-                     ((org-agenda-overriding-header "@call")))
-          (tags-todo "+@computer+TODO=\"NEXT\""
-                     ((org-agenda-overriding-header "@computer")))))))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
