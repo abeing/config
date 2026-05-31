@@ -1,8 +1,10 @@
 OPTIONS=name:Anwyn
 
 # Dungeon display.
-OPTIONS=color,hilite_pet,!sparkle
+# OPTIONS=symset:curses
+# OPTIONS=color,hilite_pet,!sparkle
 
 # Interface
+OPTIONS=windowtype:X11
 OPTIONS=pickup_types:$"?!=/
 OPTIONS=boulder:0

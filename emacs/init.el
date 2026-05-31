@@ -901,10 +901,28 @@
   (interactive)
   (goto-line (1+ (random (count-lines (point-min) (point-max))))))
 
+(defun my/org-update-heading-count ()
+  "Set the leading number in the current Org heading to the count of
+top-level list items in its section."
+  (interactive)
+  (save-excursion
+    (org-back-to-heading t)
+    (let ((end (save-excursion (org-end-of-subtree t t) (point)))
+          (count 0))
+      (forward-line 1)
+      (while (re-search-forward "^\\([0-9]+[.)]\\|[-+]\\)[ \t]+" end t)
+        (setq count (1+ count)))
+      (org-back-to-heading t)
+      (let ((title (org-get-heading t t t t)))
+        (org-edit-headline
+         (if (string-match "\\`[0-9]+[ \t]+\\(.*\\)" title)
+             (format "%d %s" count (match-string 1 title))
+           (format "%d %s" count title)))))))
+
 ;;; --------------------[ Macros ]----------------------------------------------
 
 (defalias 'tvdb
-   (kmacro "C-y C-u C-SPC \" C-d C-d M-l <escape> SPC - <escape> SPC C-e <backspace> \""))
+  (kmacro "C-y C-u C-SPC \" C-d C-d M-l <escape> SPC - <escape> SPC C-e <backspace> \""))
 
 ;; Return `gc-cons-threshold' to its initial value stored in `early-init.el'
 (setq gc-cons-threshold am/initial-gc-cons-threshold)
