@@ -275,158 +275,6 @@
 (use-package embark-consult
   :ensure t)
 
-;;; --------------------[ Evil ]------------------------------------------------
-
-(use-package evil
-  :ensure t
-  :config
-  ;; (evil-mode 1)  ; Enable manually with M-x evil-mode
-  (evil-set-leader 'normal (kbd "SPC"))
-
-  (evil-define-key 'normal 'global
-    ;; Top-level
-    (kbd "<leader>SPC") 'execute-extended-command
-    (kbd "<leader>a")   'embark-act
-
-    ;; f: Files
-    (kbd "<leader>ff")  'find-file
-    (kbd "<leader>fr")  'consult-recent-file
-    (kbd "<leader>fs")  'save-buffer
-
-    ;; b: Buffers
-    (kbd "<leader>bb")  'consult-buffer
-    (kbd "<leader>bk")  'kill-current-buffer
-    (kbd "<leader>bn")  'next-buffer
-    (kbd "<leader>bp")  'previous-buffer
-
-    ;; w: Windows
-    (kbd "<leader>wo")  'other-window
-    (kbd "<leader>w1")  'delete-other-windows
-    (kbd "<leader>ws")  'split-window-below
-    (kbd "<leader>wv")  'split-window-right
-    (kbd "<leader>wd")  'delete-window
-
-    ;; g: Git
-    (kbd "<leader>gs")  'magit-status
-    (kbd "<leader>gb")  'magit-blame
-    (kbd "<leader>gl")  'magit-log-current
-
-    ;; s: Search
-    (kbd "<leader>ss")  'consult-line
-    (kbd "<leader>sr")  'consult-ripgrep
-    (kbd "<leader>so")  'consult-outline
-    (kbd "<leader>si")  'imenu
-    (kbd "<leader>se")  'consult-flymake
-
-    ;; j: Jump (avy)
-    (kbd "<leader>jl")  'avy-goto-line
-    (kbd "<leader>jc")  'avy-goto-char-timer
-    (kbd "<leader>jw")  'avy-goto-word-0
-
-    ;; o: Org
-    (kbd "<leader>oa")  'org-agenda
-    (kbd "<leader>oc")  'org-capture
-    (kbd "<leader>ol")  'org-store-link
-    (kbd "<leader>ot")  'org-todo
-    (kbd "<leader>os")  'org-schedule
-    (kbd "<leader>od")  'org-deadline
-    (kbd "<leader>or")  'org-refile
-    (kbd "<leader>op")  'org-priority
-
-    ;; n: Notes (denote)
-    (kbd "<leader>nn")  'denote-create-note
-    (kbd "<leader>nf")  'denote-open-or-create
-    (kbd "<leader>nl")  'denote-link-or-create
-    (kbd "<leader>nb")  'denote-find-backlink
-    (kbd "<leader>nr")  'denote-rename-file
-    (kbd "<leader>nj")  'denote-journal-new-or-existing-entry
-
-    ;; m: Media
-    (kbd "<leader>mp")  'emms-pause
-    (kbd "<leader>mm")  'emms
-    (kbd "<leader>mr")  'emms-random
-
-    ;; t: Timers
-    (kbd "<leader>tp")  'start-pomodoro
-    (kbd "<leader>tb")  'start-short-break
-    (kbd "<leader>tt")  'tmr-tabulated-view
-    (kbd "<leader>tg")  'brew-hojicha
-
-    ;; e: LLMs
-    (kbd "<leader>ee")  'ellama-transient-main-menu
-    (kbd "<leader>eg")  'gptel
-    (kbd "<leader>ec")  'claude-code-transient
-
-    ;; T: Themes
-    (kbd "<leader>Tt")  'modus-themes-toggle
-
-    ;; Helix-inspired space mode
-    (kbd "<leader>/")   'consult-ripgrep      ; SPC / global search
-    (kbd "<leader>k")   'eldoc-doc-buffer     ; SPC k show docs/hover
-    (kbd "<leader>r")   'eglot-rename)        ; SPC r rename symbol
-
-  ;; Org-mode navigation in normal state
-  (defun my/org-tab-dwim ()
-    "In a table, move to next cell. Otherwise fold/unfold."
-    (interactive)
-    (if (org-at-table-p)
-        (org-table-next-field)
-      (org-cycle)))
-  (defun my/org-shifttab-dwim ()
-    "In a table, move to previous cell. Otherwise cycle globally."
-    (interactive)
-    (if (org-at-table-p)
-        (org-table-previous-field)
-      (org-shifttab)))
-  (evil-define-key 'normal org-mode-map
-    (kbd "TAB")   'my/org-tab-dwim
-    (kbd "<tab>") 'my/org-tab-dwim
-    (kbd "S-TAB")       'my/org-shifttab-dwim
-    (kbd "<backtab>")   'my/org-shifttab-dwim
-    (kbd "]]") 'org-next-visible-heading
-    (kbd "[[") 'org-previous-visible-heading
-    (kbd "]}") 'org-forward-heading-same-level
-    (kbd "[{") 'org-backward-heading-same-level
-    (kbd "gp") 'org-up-element)
-
-  ;; Helix-inspired normal state bindings
-  (evil-define-key 'normal 'global
-    ;; g-prefix go-to motions (gh/gl/gs/gr)
-    (kbd "gh") 'evil-beginning-of-line
-    (kbd "gl") 'evil-end-of-line
-    (kbd "gs") 'evil-first-non-blank
-    (kbd "gr") 'xref-find-references
-    ;; Bracket motions for diagnostics ([d / ]d)
-    (kbd "[d") 'flymake-goto-prev-error
-    (kbd "]d") 'flymake-goto-next-error))
-
-;;; --------------------[ Elfeed ]----------------------------------------------
-
-(use-package elfeed
-  :bind ("C-c f" . elfeed)
-  :custom
-  (elfeed-db-directory "~/.elfeed")
-  (elfeed-search-filter "@2-weeks-ago +unread")  ; show recent unread by default
-  :config
-  ;; Open articles in your external browser with 'b'
-  (define-key elfeed-search-mode-map (kbd "b")
-    (lambda () (interactive)
-      (let ((entry (elfeed-search-selected :single)))
-        (browse-url (elfeed-entry-link entry))
-        (elfeed-untag entry 'unread)
-        (elfeed-search-update-entry entry))))
-
-  (define-key elfeed-show-mode-map (kbd "b")
-    (lambda () (interactive)
-      (browse-url (elfeed-entry-link elfeed-show-entry)))))
-
-;; Manage feeds in an org file instead of a variable
-(use-package elfeed-org
-  :after elfeed
-  :config
-  (setq rmh-elfeed-org-files '("~/memex/elfeed.org"))
-  (elfeed-org))
-
 ;;; --------------------[ Editing utilities ]-----------------------------------
 
 ;; This performs poorly on Windows, so I don't enable it on my work machine.
@@ -438,95 +286,6 @@
           pulsar-delay 0.055
           pulsar-iterations 10)
     (pulsar-global-mode 1)))
-
-(defvar am-repeat-counter '()
-  "How often `am-repeat-next' was called in a row using the same command.
-   This is an alist of (cat count list) so we can use it for different
-   functions.")
-
-(defun am-unfill-paragraph ()
-  "Replace newline chars in current paragraph by single spaces.  This
-   command does the inverse of `fill-paragraph'."
-  (interactive)
-  (let ((fill-column most-positive-fixnum))
-    (fill-paragraph)))
-
-;; Since my version of Emacs doesn't have `fill-paragraph-semlf' yet, I can't
-;; use semantic linefeed filling.
-;; (defun am-fill-paragraph-semlf-long ()
-;;   (interactive)
-;;   (let ((fill-column most-positive-fixnum))
-;;     (fill-paragraph-semlf)))
-
-(defun am-repeat-next (category &optional element-list reset)
-  "Return the next element for CATEGORY.  Initialize with ELEMENT-LIST if
-   this is the first time."
-  (let* ((counter
-          (or (assoc category am-repeat-counter)
-              (progn
-                (push (list category -1 element-list)
-                      am-repeat-counter)
-                (assoc category am-repeat-counter)))))
-    (setf (elt (cdr counter) 0)
-          (mod
-           (if reset 0 (1+ (elt (cdr counter) 0)))
-           (length (elt (cdr counter) 1))))
-    (elt (elt (cdr counter) 1) (elt (cdr counter) 0))))
-
-(defun am-in-prefixed-comment-p ()
-  (or (member 'font-lock-comment-delimiter-face (face-at-point nil t))
-      (member 'font-lock-comment-face (face-at-point nil t))
-      (save-excursion
-        (beginning-of-line)
-        (comment-search-forward (line-end-position) t))))
-
-;; Taken from Sacha Chua's blog:
-;; https://sachachua.com/blog/2025/09/emacs-cycle-through-different-paragraph-formats-all-on-one-line-wrapped-max-one-sentence-per-line-one-sentence-per-line/
-;; It might be nice to figure out what state we're in and then cycle to the
-;; next one if we're just working with a single paragraph.  In the meantime,
-;; just going by repeats is fine.
-;;
-;; TODO: Add `fill-paragraph-semlf' and `am-fill-paragraph-semlf-long' to the
-;; list passed to `am-repeat-next' when `fill-paragraph-semlf' is available in
-;; Emacs.
-(defun am-reformat-paragraph-or-region ()
-  "Cycles the paragraph between three states:
-   filled/unfilled/fill-sentences.  If a region is selected, handle all
-   paragraphs within that region."
-  (interactive)
-  (let ((func (am-repeat-next 'am-reformat-paragraph
-                              '(fill-paragraph am-unfill-paragraph)  ; Add
-                                                                     ; extra
-                                                                     ; fills
-                                                                     ; here
-                              (not (eq this-command last-command))))
-        (deactivate-mark nil))
-    (if (region-active-p)
-        (save-restriction
-          (save-excursion
-            (narrow-to-region (region-beginning) (region-end))
-            (goto-char (point-min))
-            (while (not (eobp))
-              (skip-syntax-forward " ")
-              (let ((elem (and (derived-mode-p 'org-mode)
-                               (org-element-context))))
-                (cond
-                 ((eq (org-element-type elem) 'headline)
-                  (org-forward-paragraph))
-                 ((member (org-element-type elem)
-                          '(src-block export-block headline property-drawer))
-                  (goto-char
-                   (org-element-end (org-element-context))))
-                 (t
-                  (funcall func)
-                  (if fill-forward-paragraph-function
-                      (funcall fill-forward-paragraph-function)
-                    (forward-paragraph))))))))
-      (save-excursion
-        (move-to-left-margin)
-        (funcall func)))))
-
-(keymap-global-set "M-q" #'am-reformat-paragraph-or-region)
 
 ;;; --------------------[ Org-mode ]--------------------------------------------
 
@@ -554,14 +313,11 @@
 (setq org-directory "~/memex")
 (setq org-agenda-files (nconc
                         '("gtd.org")
-                        '("todo.org")
                         (directory-files-recursively org-directory ".*_area.*\.org$")
                         (directory-files-recursively org-directory ".*_project.*\.org$")))
 
 ;; This is where capture will place new content by default
 (setq org-default-notes-file (concat org-directory "/gtd.org"))
-
-(setq org-modules '(org-habit org-protocol))
 
 (add-hook 'org-mode-hook 'turn-on-auto-fill)
 (add-hook 'org-mode-hook (lambda ()
@@ -575,23 +331,13 @@
 (setq org-fontify-quote-and-verse-blocks t)
 (setq org-hierarchical-todo-statistics nil)
 
-;; GTD context tags (@-prefixed for context, used in agenda "By Context" view)
-(setq org-tag-alist
-      '(("@work"     . ?w)
-        ("@home"     . ?h)
-        ("@errand"   . ?e)
-        ("@call"     . ?p)
-        ("@read"     . ?r)
-        ("@computer" . ?c)))
-
-
 (defun am/org-last-heading ()
   "Go to last visible org heading."
   (interactive)
   (progn (goto-char (point-max))
          (outline-previous-heading)))
 
-(defun my/org-archive-done-in-subtree ()
+(defun am/org-archive-done-in-subtree ()
   "Archive all DONE entries within the current subtree."
   (interactive)
   (org-map-entries
